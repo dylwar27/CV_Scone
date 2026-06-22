@@ -1,46 +1,92 @@
 ---
 layout: default
 ---
+{%- assign p = site.data.profile -%}
 
-![Banner](assets/biscuit.png)
+# {{ p.basics.name }}
 
+{{ p.basics.pronouns }} · {{ p.basics.email }} · {{ p.basics.location.city }}, {{ p.basics.location.region }}
 
-**[Biscuit](http://sblisesivdin.github.io/biscuit)** is a single-page responsive Jekyll theme. This is the simplest and still-good-looking Jekyll theme that you can find. 
+{% for link in p.basics.links -%}
+{%- if link.url and link.url != "" %}[{{ link.label }}]({{ link.url }}) · {% endif -%}
+{%- endfor %}
 
-## Usage
+## Summaries
 
-You can use this theme with [Jekyll](http://jekyllrb.com/) or simply use it with [GitHub Pages](https://pages.github.com).
-For local usage, simply download [Jekyll](http://jekyllrb.com/) and follow the installation guide for more information. You can download the latest Biscuit from [its Github repository](https://github.com/sblisesivdin/biscuit).
+{% for s in p.summaries %}
+**{{ s.id }}** — _{{ s.audience | join: ", " }} · {{ s.length }} · {{ s.status }}_
 
-If you prefer to use GitHub Pages, you do not need to download it, upload files to a new repository, etc., just [fork](https://docs.github.com/en/get-starter/quickstart/fork-a-repo) and use it.
+{{ s.text }}
+{% endfor %}
 
-### Files
+## Roles
 
-* `_config.yml`            : Main configuration file.
-* `index.md`               : Website page (for now, this page).
-* `_includes/head.html`    : File to add custom code to `<head>` section.
-* `_includes/scripts.html` : File to add custom code before `</body>`. You can change footer at here.
-* `_sass` folder           : Related scss files can be found at this folder.
-* `css/main.csss`          : Main scss file.
-* `README.md`              : A simple readme file.
+{% for role in site.data.roles -%}
+{%- unless role.visibility == "private" %}
+### {{ role.title }} — {{ role.org }}
 
-## Example tag usage
+_{{ role.start }} → {{ role.end | default: "present" }}_ · {{ role.location }} · {{ role.type }}
+{% if role.tags %}
+Tags: {{ role.tags | join: ", " }}
+{% endif %}
+{% if role.notes %}
+{{ role.notes }}
+{% endif %}
+{% for bullet in site.data.bullets -%}
+{%- if bullet.role_id == role.id %}
+- {{ bullet.text | strip_newlines }}
+{%- endif -%}
+{%- endfor %}
+{% endunless -%}
+{%- endfor %}
 
-## Header 1
-### Header 2
-#### Header 3
-**bold**
-*italic*
+## Projects
 
-> blockquotes
+{% for proj in site.data.projects -%}
+{%- unless proj.visibility == "private" %}
+### {{ proj.title }}
 
-~~~python
-import os,time
-print ("Biscuit")
-~~~
+_{{ proj.start }}{% if proj.end %} → {{ proj.end }}{% endif %}_{% if proj.role %} · {{ proj.role }}{% endif %}{% if proj.type %} · {{ proj.type }}{% endif %}
 
-## Licence and Author Information
+{{ proj.description }}
+{% if proj.collaborators and proj.collaborators != empty %}
+Collaborators: {{ proj.collaborators | join: ", " }}
+{% endif %}
+{% for bullet in site.data.bullets -%}
+{%- if bullet.project_id == proj.id %}
+- {{ bullet.text | strip_newlines }}
+{%- endif -%}
+{%- endfor %}
+{% endunless -%}
+{%- endfor %}
 
-Biscuit is derived from the currently deprecated theme [Solo](http://github.com/chibicode/solo). The development of Biscuit is maintained by [Sefer Bora Lisesivdin](https://sblisesivdin.github.io).
+## Education
 
-Biscuit and the previous code, where Biscuit is derived, are distributed with [MIT license](https://github.com/sblisesivdin/biscuit/blob/gh-pages/LICENSE).
+{% for ed in site.data.education %}
+### {{ ed.credential }} — {{ ed.institution }}
+
+_{{ ed.start }} → {{ ed.end }}_ · {{ ed.location }}
+{% for h in ed.highlights %}
+- {{ h }}
+{%- endfor %}
+{% endfor %}
+
+## Skills
+
+{% for skill in site.data.skills -%}
+{%- unless skill.visibility == "private" %}
+- **{{ skill.name }}** — {{ skill.proficiency }} · _{{ skill.category }}_{% if skill.last_used %} · last used {{ skill.last_used }}{% endif %}
+{%- endunless -%}
+{%- endfor %}
+
+## Life
+
+{% for l in site.data.life -%}
+{%- unless l.visibility == "private" %}
+### {{ l.title }}
+
+_{{ l.start }} → {{ l.end }}_
+
+{{ l.description }}
+{% endunless -%}
+{%- endfor %}
