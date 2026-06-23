@@ -27,14 +27,9 @@ layout: default
 
 {{ p.basics.pronouns }} · {{ p.basics.email }} · {{ p.basics.location.city }}, {{ p.basics.location.region }}
 
-{% for link in p.basics.links -%}
-{%- if link.url and link.url != "" %}[{{ link.label }}]({{ link.url }}) · {% endif -%}
-{%- endfor %}
+{% assign first_link = true %}{% for link in p.basics.links %}{% if link.url and link.url != "" %}{% unless first_link %} · {% endunless %}[{{ link.label }}]({{ link.url }}){% assign first_link = false %}{% endif %}{% endfor %}
 
-{%- assign lead = p.summaries | where: "id", lead_summary_id | first -%}
-{% if lead %}
-{{ lead.text | strip_newlines }}
-{% endif %}
+{% assign lead = p.summaries | where: "id", lead_summary_id | first %}{% if lead %}{{ lead.text | strip_newlines }}{% endif %}
 
 ## Experience
 
