@@ -96,18 +96,13 @@ With: {{ proj.collaborators | join: ", " }}
 
 ## Education
 
-{% for id in featured_degrees -%}
-{%- assign ed = site.data.education | where: "id", id | first -%}
-{%- if ed -%}
-
+{% for id in featured_degrees %}{% assign ed = site.data.education | where: "id", id | first %}{% if ed %}
 ### {{ ed.credential }} — {{ ed.institution }}
 
 _{{ ed.start | slice: 0, 4 }} → {{ ed.end | slice: 0, 4 }}_ · {{ ed.location }}
 {% for h in ed.highlights %}
 - {{ h }}
-{%- endfor %}
-{%- endif -%}
-{%- endfor %}
+{% endfor %}{% endif %}{% endfor %}
 
 ## Certifications
 
