@@ -29,9 +29,7 @@ _{{ role.start }} → {{ role.end | default: "present" }}_ · {{ role.location }
 {% if role.tags %}
 Tags: {{ role.tags | join: ", " }}
 {% endif %}
-{% if role.notes %}
-{{ role.notes }}
-{% endif %}
+{%- comment -%} role.notes is an internal curation field (provenance, "confirm…" flags). Never render it. {%- endcomment -%}
 {% for bullet in site.data.bullets -%}
 {%- if bullet.role_id == role.id %}
 - {{ bullet.text | strip_newlines }}
@@ -79,14 +77,10 @@ _{{ ed.start }} → {{ ed.end }}_ · {{ ed.location }}
 {%- endunless -%}
 {%- endfor %}
 
-## Life
-
-{% for l in site.data.life -%}
-{%- unless l.visibility == "private" %}
-### {{ l.title }}
-
-_{{ l.start }} → {{ l.end }}_
-
-{{ l.description }}
-{% endunless -%}
-{%- endfor %}
+{%- comment -%}
+Life section intentionally omitted from the public site.
+life.yml holds sensitive, draft-status family entries and has no working
+visibility filter (the `visibility: private` guard was a no-op — no entry set
+the field). This repo is PUBLIC. To publish Life later, re-add a curated
+life.yml (see bin/pull-cv-data.sh) and deliberately restore this section.
+{%- endcomment -%}

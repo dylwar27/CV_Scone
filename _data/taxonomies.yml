@@ -1,0 +1,165 @@
+# Taxonomies — closed vocabulary the LLM is allowed to use.
+# Keep this list ruthlessly short. If a tag here is used in <3 entries, prune it.
+# When you find yourself wanting a tag that's not here, add it deliberately.
+# Last updated: 2026-05-26 (ingest pass — added clinical, arts, and PM vocabulary)
+
+audiences:
+  - id: general
+    description: "Default; no specific audience tuning"
+  - id: tech
+    description: "Software, product, engineering hiring managers"
+  - id: product
+    description: "Product-specific (PM, product design, product ops)"
+  - id: exec
+    description: "Senior leadership / C-suite framing"
+  - id: leadership
+    description: "People-management-heavy roles"
+  - id: clinical
+    description: "Clinical mental health / counseling / behavioral health roles and programs"
+  - id: creative
+    description: "Design, art, creative-direction audiences"
+  - id: art-grant
+    description: "Funders, residencies, fellowships in the arts"
+  - id: residency
+    description: "Artist or research residency applications"
+  - id: academic
+    description: "Academic CV, faculty applications, grad programs"
+  - id: nonprofit
+    description: "Mission-driven orgs"
+  - id: civic
+    description: "Civic tech, government, public sector"
+  - id: research
+    description: "Research-heavy roles or institutions"
+  - id: bio
+    description: "Long-form 'About Me' content"
+  - id: about-page
+    description: "Personal-website About page specifically"
+
+themes:
+  - id: 0-to-1
+    description: "Bringing something new into existence"
+  - id: scaling
+    description: "Growing a thing past its early stage"
+  - id: people-development
+    description: "Mentoring, coaching, hiring, growing teams"
+  - id: research-to-decision
+    description: "Turning evidence into committed direction"
+  - id: community-building
+    description: "Convening, organizing, hosting"
+  - id: service
+    description: "Showing up for others, civic, mutual aid"
+  - id: reinvention
+    description: "Significant pivot in field, medium, or identity"
+  - id: curiosity
+    description: "Self-directed learning, tinkering, side quests"
+  - id: tinkering
+    description: "Hands-on building for its own sake"
+  - id: craft
+    description: "Care about how something is made, not just what"
+  - id: design
+    description: "Composition, form, aesthetics as a through-line"
+  - id: memory
+    description: "Work concerned with memory / archive / time"
+  - id: place
+    description: "Work concerned with place, geography, locale"
+  - id: language
+    description: "Language acquisition, translation, linguistic play"
+  - id: harm-reduction
+    description: "Meeting people where they are; non-punitive support"
+  - id: resilience
+    description: "Working through loss, disruption, or systemic difficulty"
+
+tags:
+  # Clinical / behavioral health
+  - id: harm-reduction
+    description: "Harm reduction programs, protocols, or philosophy"
+  - id: case-management
+    description: "Care coordination and case management"
+  - id: intake-assessment
+    description: "Intake interviews, clinical assessments"
+  - id: group-facilitation
+    description: "Group therapy, psychoeducation, support groups"
+  - id: clinical-documentation
+    description: "Clinical notes, EHR, documentation workflows"
+  - id: dual-diagnosis
+    description: "Co-occurring mental health and substance use"
+  - id: substance-use
+    description: "Substance use, addiction, and recovery topics"
+  - id: crisis-response
+    description: "Crisis intervention, de-escalation"
+  - id: psychoeducation
+    description: "Psychoeducation group programming"
+  - id: outreach
+    description: "Community outreach and engagement"
+  - id: peer-support
+    description: "Peer navigation, resource sharing"
+  - id: queer-competency
+    description: "LGBTQIA+ affirming services and community"
+
+  # Project management / business
+  - id: project-management
+    description: "Formal project management, scoping, delivery"
+  - id: agile
+    description: "Agile methodology, sprints, standups"
+  - id: scrum
+    description: "Scrum framework specifically"
+  - id: budget-management
+    description: "Budget planning, tracking, financial oversight"
+  - id: stakeholder-management
+    description: "Managing up, across, and outward"
+  - id: process-improvement
+    description: "Documenting and improving workflows"
+  - id: data-analysis
+    description: "Quantitative analysis, dashboards, reporting"
+  - id: revenue
+    description: "Direct revenue impact or financial outcome"
+
+  # Arts / production
+  - id: event-production
+    description: "End-to-end event design and execution"
+  - id: arts-administration
+    description: "Arts org management, grants, program ops"
+  - id: video-direction
+    description: "Video direction and film production"
+  - id: sound-design
+    description: "Original sound scores and audio design"
+  - id: choreography
+    description: "Dance choreography"
+  - id: grant-administration
+    description: "Receiving, tracking, or distributing grants"
+  - id: performance
+    description: "Live performance work"
+  - id: immersive
+    description: "Immersive / experiential design"
+  - id: documentary
+    description: "Documentary film and video"
+  - id: art-practice
+    description: "Ongoing personal art practice"
+  - id: time-based-media
+    description: "Video, performance, installation"
+  - id: installation
+    description: "Spatial / installation art"
+  - id: writing
+    description: "Sustained writing practice"
+
+  # Life / community
+  - id: community
+    description: "Community involvement"
+  - id: mutual-aid
+    description: "Mutual aid organizing"
+  - id: organizing
+    description: "Organizing — labor, community, events"
+  - id: queer
+    description: "Queer identity and community"
+  - id: mentorship
+    description: "1:1 mentorship / coaching"
+  - id: leadership
+    description: "People leadership"
+
+  # Learning
+  - id: humanities
+    description: "Humanities background"
+  - id: self-directed
+    description: "Self-directed learning"
+  - id: programming
+    description: "Programming / software"

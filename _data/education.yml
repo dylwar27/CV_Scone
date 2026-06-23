@@ -1,0 +1,106 @@
+# Education — formal degrees, certificates, and training.
+# All entries status: draft. Ingest date: 2026-05-26.
+# Sources: Dylan Ward MH CV 26.docx, DylanW_CV_living.docx
+
+- id: edu.palo-alto-cmhc
+  institution: "Palo Alto University"
+  type: degree
+  credential: "M.A., Clinical Mental Health Counseling"
+  field: "Clinical Mental Health Counseling"
+  start: 2024-01
+  end: 2027-01
+  location: "Remote / Palo Alto, CA"
+  honors: []
+  highlights:
+    - "In progress; expected completion 2027."
+  tags: [case-management, group-facilitation, clinical-documentation]
+  audience: [clinical, academic]
+  status: draft
+
+- id: edu.uw-ba
+  institution: "University of Washington"
+  type: degree
+  credential: "B.A., Comparative History & Theater Production"
+  field: "Comparative History and Theater Production"
+  start: 2010-09
+  end: 2013-06
+  location: "Seattle, WA"
+  honors: []
+  highlights:
+    - "Minor in Dance."
+  tags: [humanities, performance, choreography]
+  audience: [academic, art-grant, general]
+  status: draft
+
+- id: edu.sccc-aa
+  institution: "Seattle Central Community College"
+  type: degree
+  credential: "A.A., University Transfer Focus"
+  field: "University Transfer"
+  start: 2008-09
+  end: 2010-06
+  location: "Seattle, WA"
+  honors: []
+  highlights: []
+  tags: [humanities]
+  audience: [academic, general]
+  status: draft
+
+- id: edu.ggu-cs
+  institution: "Golden Gate University (via Outlier)"
+  type: course
+  credential: "A.S., Applied Computer Science (in progress / paused)"
+  field: "Applied Computer Science"
+  start: 2024-01
+  end: ongoing
+  location: "San Francisco, CA"
+  honors: []
+  highlights:
+    - "Paused after determining clinical path was higher motivation."
+  tags: [programming, self-directed]
+  audience: [tech, general]
+  status: draft
+  notes: "Confirm whether to include on clinical-audience CVs."
+
+- id: edu.pmp
+  institution: "Project Management Institute (PMI)"
+  type: certificate
+  credential: "PMP — Project Management Professional"
+  field: "Project Management"
+  start: 2021-01
+  end: 2021-12
+  location: "Remote"
+  honors: ["Credential ID: #3151150"]
+  highlights: []
+  tags: [project-management, agile]
+  audience: [tech, exec, nonprofit]
+  status: draft
+
+- id: edu.google-data-analytics
+  institution: "Google / Coursera"
+  type: certificate
+  credential: "Google Data Analytics Certificate"
+  field: "Data Analytics"
+  start: 2023-01
+  end: 2023-12
+  location: "Remote"
+  honors: []
+  highlights: []
+  tags: [data-analysis, programming]
+  audience: [tech, exec]
+  status: draft
+
+- id: edu.mhrs
+  institution: "California Department of Health Care Services"
+  type: certificate
+  credential: "Mental Health Rehabilitation Specialist (MHRS) / Case Management Credential"
+  field: "Behavioral Health"
+  start: 2024-01
+  end: 2024-12
+  location: "California"
+  honors: ["NPI registered"]
+  highlights:
+    - "Qualified by B.A. plus prior Lifelong AIDS Alliance experience."
+  tags: [clinical-documentation, case-management, harm-reduction]
+  audience: [clinical, nonprofit]
+  status: draft

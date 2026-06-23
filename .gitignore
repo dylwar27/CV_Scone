@@ -1,0 +1,8 @@
+# This repo is PUBLIC. Never commit the sensitive, draft Life data.
+# life.yml is intentionally excluded from the synced set — see bin/pull-cv-data.sh.
+_data/life.yml
+
+# Jekyll build output (in case the site is ever built locally).
+_site/
+.jekyll-cache/
+.jekyll-metadata

@@ -1,0 +1,1021 @@
+# Bullets — atomic accomplishment statements.
+# Each bullet stands alone, has an ID, tags, and links to ONE parent.
+# All entries status: draft. Ingest date: 2026-05-26.
+# Sources: Dylan Ward MH CV 26.docx, DylanW_CV_living.docx, DW_PersonalStatementv2.docx
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.prc-baker-intake
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.prc-bed-utilization
+  role_id: role.prc-baker-intake
+  text: >
+    Improved average bed utilization from ~62% to 78%+ (rolling 3 months) by
+    digitizing internal intake and referral processes.
+  tags: [intake-assessment, process-improvement, data-analysis]
+  skills: [skill.clinical-intake, skill.process-improvement, skill.clinical-documentation]
+  audience: [clinical, nonprofit, exec]
+  themes: [research-to-decision, scaling]
+  metrics: [utilization-rate]
+  star:
+    situation: "Facility running at 62% bed utilization due to manual, opaque referral tracking."
+    action: "Digitized internal processes, reconciled referral data across Epic and Avatar."
+    result: "Utilization improved to 78%+ over a rolling 3-month window."
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-group-programming
+  role_id: role.prc-baker-intake
+  text: >
+    Built weekly group programming schedules and operationalized 20+ groups per
+    week across psychoeducation, ADLs, social skills, and mindfulness.
+  tags: [group-facilitation, psychoeducation, program-design]
+  skills: [skill.group-facilitation, skill.program-design]
+  audience: [clinical, nonprofit]
+  themes: [0-to-1, community-building]
+  metrics: [group-count]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-group-facilitation
+  role_id: role.prc-baker-intake
+  text: >
+    Led 5–6 groups per week for dual-diagnosis residential clients, spanning
+    psychoeducation, activities of daily living (cooking, cleaning, hygiene,
+    self-organization, scheduling, job search), DBT and interpersonal-effectiveness
+    skills, and emotional process groups.
+  tags: [group-facilitation, psychoeducation, dual-diagnosis]
+  skills: [skill.group-facilitation, skill.psychoeducation]
+  audience: [clinical, academic]
+  themes: [service]
+  metrics: ["5–6 groups/week"]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-referral-intake
+  role_id: role.prc-baker-intake
+  text: >
+    Conducted in-person and virtual intake consultations at jails, hospitals, and
+    inpatient clinics for dual-diagnosis clients; administered ANSA, AOA-07, SDOH,
+    MSE, and ACE assessments, working from a stance of unconditional positive regard,
+    and translated each assessment directly into a treatment plan.
+  tags: [intake-assessment, dual-diagnosis, case-management]
+  skills: [skill.clinical-intake, skill.case-management]
+  audience: [clinical, academic]
+  themes: [service]
+  metrics: ["~32–48 intakes/mo across 4 houses (intake phase)"]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-epic-documentation
+  role_id: role.prc-baker-intake
+  text: >
+    Managed and reconciled referral data across Epic and Avatar EHR systems;
+    served as Epic power-user and resource for counseling staff.
+  tags: [clinical-documentation, case-management]
+  skills: [skill.clinical-documentation]
+  audience: [clinical]
+  themes: [service]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-referral-comms
+  role_id: role.prc-baker-intake
+  text: >
+    Updated agency intake application to more clearly communicate eligibility
+    and timelines to referring clients and providers, reducing confusion in the
+    admissions funnel.
+  tags: [intake-assessment, process-improvement, stakeholder-management]
+  skills: [skill.process-improvement, skill.stakeholder-management]
+  audience: [clinical, nonprofit]
+  themes: [research-to-decision]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-digital-workflow
+  role_id: role.prc-baker-intake
+  text: >
+    Maintained and extended the agency's SQL referral database and built the
+    digital intake workflow around it — online forms, Microsoft Teams routing,
+    email, and website updates — spanning four residential houses, partner jails,
+    and the SF Department of Public Health, replacing a fax-based manual process.
+  variants:
+    - audience: exec
+      text: >
+        Re-engineered a fax-based intake pipeline into a digital workflow on top of
+        an SQL database, cutting client placement time 25–50% and driving missed
+        referrals to near zero across four sites.
+    - audience: clinical
+      text: >
+        Digitized the intake-to-placement workflow across four residential houses,
+        jails, and SF DPH, shortening time-to-placement and ensuring no referral was
+        lost between the referring system and our level of care.
+  tags: [process-improvement, data-analysis, clinical-documentation, stakeholder-management]
+  skills: [skill.process-improvement, skill.data-analysis, skill.microsoft-365]
+  audience: [clinical, nonprofit, exec, tech]
+  themes: [0-to-1, research-to-decision, scaling]
+  metrics:
+    - "client placement 25–50% faster"
+    - "referral-receipt confirmation: a few business days → a few hours"
+    - "missed/dropped referrals: a few per month (fax) → near zero, locatable in minutes not days"
+  star:
+    situation: "Intake ran on faxed referrals across 4 houses, jails, and SF DPH; placements were slow and referrals occasionally went missing."
+    task: "Make intake faster and lossless without losing clinical rigor."
+    action: "Maintained and extended an existing SQL database, designed digital workflows (online forms, Teams, email, website), built redundant submission tracking, and documented the process."
+    result: "Placements 25–50% faster; receipt confirmation dropped from days to hours; missed referrals fell to near zero and were locatable in minutes."
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-staff-training
+  role_id: role.prc-baker-intake
+  text: >
+    Authored process documentation for the new intake workflow and delivered
+    training presentations to all four residential houses and senior staff.
+  tags: [process-improvement, stakeholder-management, group-facilitation]
+  skills: [skill.process-improvement, skill.stakeholder-management]
+  audience: [clinical, nonprofit, exec]
+  themes: [people-development, research-to-decision]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-dph-advocacy
+  role_id: role.prc-baker-intake
+  text: >
+    Advocated directly with the SF Department of Public Health to place clients
+    at the appropriate level of care, coordinating across multiple systems to
+    secure correct placements.
+  tags: [case-management, stakeholder-management, intake-assessment]
+  skills: [skill.case-management, skill.stakeholder-management]
+  audience: [clinical, nonprofit]
+  themes: [service, research-to-decision]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-acting-asst-director
+  role_id: role.prc-baker-intake
+  text: >
+    Served as acting Assistant Director of a residential house while a Residential
+    Counselor (Feb–Aug 2024), overseeing house operations alongside a primary
+    caseload of dual-diagnosis clients.
+  tags: [leadership, case-management]
+  skills: [skill.case-management]
+  audience: [clinical, nonprofit, leadership]
+  themes: [service, people-development]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-care-coordination
+  role_id: role.prc-baker-intake
+  text: >
+    Coordinated care for primary clients — managing appointments, housing
+    arrangements, and transitions to further treatment, including direct transport
+    to the buprenorphine clinic for medication-assisted treatment.
+  tags: [case-management, substance-use, harm-reduction]
+  skills: [skill.case-management]
+  audience: [clinical, nonprofit]
+  themes: [service, harm-reduction]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-treatment-plans
+  role_id: role.prc-baker-intake
+  text: >
+    Delivered and revised client treatment plans co-signed by a supervising LMFT,
+    and wrote progress reports and closing summaries within three days of the
+    corresponding daily notes.
+  tags: [clinical-documentation, case-management]
+  skills: [skill.clinical-documentation, skill.case-management]
+  audience: [clinical, academic]
+  themes: [service, craft]
+  verified: true
+  status: reviewed
+
+- id: bullet.prc-note-systems
+  role_id: role.prc-baker-intake
+  text: >
+    Built systems for efficient clinical note-taking, improving documentation
+    accuracy and cutting time spent on notes by ~75% (Residential Counselor phase).
+  tags: [clinical-documentation, process-improvement]
+  skills: [skill.clinical-documentation, skill.process-improvement]
+  audience: [clinical, nonprofit]
+  themes: [craft, research-to-decision]
+  metrics: ["note-taking time −~75%"]
+  source: "LinkedIn import 2026-06-02"
+  verified: false
+  status: draft
+
+- id: bullet.prc-phi-security
+  role_id: role.prc-baker-intake
+  text: >
+    Strengthened the security of handled PHI as part of the initiative to digitize
+    the intake process across four residential programs.
+  tags: [clinical-documentation, process-improvement, data-analysis]
+  skills: [skill.clinical-documentation, skill.process-improvement]
+  audience: [clinical, nonprofit, exec]
+  themes: [research-to-decision, service]
+  source: "LinkedIn import 2026-06-02"
+  verified: false
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.baaahs-harm-reduction
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.baaahs-hr-program-design
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Designed the harm reduction program for BAAAHS, a large-scale queer arts
+    community at festivals of ~200–800 attendees, including protocols for risk
+    recognition, supportive engagement, and referral-to-care.
+  tags: [harm-reduction, program-design, event-production, outreach]
+  skills: [skill.harm-reduction, skill.program-design]
+  audience: [clinical, nonprofit]
+  themes: [harm-reduction, community-building, 0-to-1]
+  metrics: ["events ~200–800 attendees"]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-volunteer-training
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Trained 3 volunteer "rangers" at BAAAHS in risk recognition, supportive
+    engagement, and referral-to-care protocols for large-scale queer arts events.
+  tags: [harm-reduction, outreach, leadership, queer-competency]
+  skills: [skill.harm-reduction, skill.group-facilitation]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, people-development]
+  metrics: ["3 rangers trained"]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-frontline-ranger
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Serve as a frontline harm-reduction ranger at festivals — sitting with people
+    in altered states, providing psychological first aid and de-escalation,
+    administering naloxone, and executing referral protocols.
+  tags: [harm-reduction, crisis-response, substance-use, peer-support]
+  skills: [skill.harm-reduction, skill.crisis-communication, skill.overdose-response]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, service]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-psychopharm-workshops
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Organize and run on-site psychopharmacoeducation workshops on drug safety
+    (DanceSafe-style), giving festival attendees practical risk-reduction information.
+  tags: [harm-reduction, psychoeducation, substance-use, outreach]
+  skills: [skill.harm-reduction, skill.psychoeducation, skill.program-design]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, community-building]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-sexual-health
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Provide sexual harm reduction and referrals on-site — distributing condoms and
+    connecting attendees to doxy-PEP and PrEP resources.
+  tags: [harm-reduction, queer-competency, peer-support, outreach]
+  skills: [skill.harm-reduction]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, service]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-environmental
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Provide environmental harm reduction at outdoor festivals — addressing cold,
+    insects, dehydration and dryness, and basic first aid alongside substance and
+    psychological support.
+  tags: [harm-reduction, outreach, peer-support]
+  skills: [skill.harm-reduction]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, service]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-advising
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Advise and mentor emerging harm-reduction leaders, helping them develop
+    programs and on-the-ground practice for their own events.
+  tags: [harm-reduction, mentorship, leadership]
+  skills: [skill.harm-reduction, skill.program-design]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, people-development]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-breadth
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Practiced harm reduction for over 15 years across both paid public-health
+    outreach (Lifelong AIDS Alliance, 2007–2012) and volunteer festival contexts
+    (2023–present), spanning substance use, sexual health, psychological first aid,
+    and crisis response.
+  tags: [harm-reduction, substance-use, peer-support, queer-competency]
+  skills: [skill.harm-reduction]
+  audience: [clinical, nonprofit, art-grant, bio]
+  themes: [harm-reduction, service, resilience]
+  metrics: ["15+ years of harm-reduction practice"]
+  verified: true
+  status: reviewed
+
+- id: bullet.baaahs-hr-crisis-support
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Supported psychedelic crisis response within a defined scope under MD/LMFT
+    observation at community events.
+  tags: [harm-reduction, crisis-response, substance-use]
+  skills: [skill.harm-reduction, skill.crisis-communication]
+  audience: [clinical]
+  themes: [harm-reduction, service]
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.lifelong-outreach
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.lifelong-venue-outreach
+  role_id: role.lifelong-outreach
+  text: >
+    Ran late-night volunteer HIV/STI prevention outreach (10pm–2am, 1–2 nights/week
+    over 5 years) in Seattle bathhouses and bars, distributing condoms, lube, and
+    safer-sex materials and engaging ~20–50 men per night — roughly 2,000+ contacts
+    per year sustained.
+  tags: [outreach, harm-reduction, queer-competency, community]
+  skills: [skill.community-outreach, skill.harm-reduction]
+  audience: [clinical, nonprofit]
+  themes: [service, community-building, scaling]
+  metrics: ["~20–50 contacts/night", "~2,000+ contacts/year", "5 years, 1–2 nights/week"]
+  verified: true
+  status: reviewed
+
+- id: bullet.lifelong-surveillance-data
+  role_id: role.lifelong-outreach
+  text: >
+    Collected nightly venue census and referral tally data and submitted it to
+    Lifelong AIDS Alliance, feeding Public Health–Seattle & King County MSM
+    sexual-health surveillance informing HIV/STI prevention and early PrEP research
+    and recruitment.
+  tags: [outreach, data-analysis, queer-competency, community]
+  skills: [skill.community-outreach]
+  audience: [clinical, nonprofit]
+  themes: [research-to-decision, service]
+  metrics: ["nightly census of ~20–50/venue", "field data into county MSM surveillance"]
+  verified: true
+  status: reviewed
+
+- id: bullet.lifelong-sti-navigation
+  role_id: role.lifelong-outreach
+  text: >
+    Provided on-site resource navigation and referrals — ~5–10 per night — connecting
+    men to STI testing, housing, and support services in queer community venues.
+  tags: [outreach, peer-support, case-management, queer-competency]
+  skills: [skill.case-management, skill.harm-reduction]
+  audience: [clinical, nonprofit]
+  themes: [service, harm-reduction]
+  metrics: ["~5–10 referrals/night"]
+  verified: true
+  status: reviewed
+
+- id: bullet.lifelong-harm-reduction-counseling
+  role_id: role.lifelong-outreach
+  text: >
+    Provided 1:1 harm-reduction counseling on safer sex and substance use risk
+    reduction in bathhouse and community settings, listening to client concerns and
+    tailoring information to each conversation.
+  tags: [harm-reduction, substance-use, peer-support, queer-competency]
+  skills: [skill.harm-reduction]
+  audience: [clinical, nonprofit]
+  themes: [harm-reduction, service]
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.sleep-nod-producer
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.sleep-nod-documentary
+  role_id: role.sleep-nod-producer
+  text: >
+    Produced multi-camera documentaries of live performances for nationally touring
+    artists to stream on OtBTV (On the Boards TV).
+  tags: [documentary, video-direction, arts-administration, event-production]
+  skills: [skill.video-production, skill.event-production]
+  audience: [art-grant, creative, residency]
+  themes: [craft, design]
+  verified: true
+  status: draft
+
+- id: bullet.sleep-nod-grants
+  role_id: role.sleep-nod-producer
+  text: >
+    Obtained and administered public grants to produce performances, films, and
+    workshops with local artists; reported on use of public and private grant funds.
+  tags: [grant-administration, arts-administration, event-production]
+  skills: [skill.grant-administration, skill.arts-administration]
+  audience: [art-grant, nonprofit, residency]
+  themes: [service, community-building]
+  verified: true
+  status: draft
+
+- id: bullet.sleep-nod-election-reporting
+  role_id: role.sleep-nod-producer
+  text: >
+    Produced ~450 unique assets within 3 weeks for time-sensitive political
+    reporting during the 2020 election season.
+  tags: [documentary, event-production, project-management]
+  skills: [skill.event-production, skill.project-management]
+  audience: [creative, exec]
+  themes: [0-to-1, craft]
+  metrics: [asset-count]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.edelman-spm
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.edelman-sow-scoping
+  role_id: role.edelman-spm
+  text: >
+    Captured requirements, estimated fees, and developed SOWs for creative, media,
+    and measurement services valued up to $2.2M.
+  tags: [project-management, budget-management, stakeholder-management]
+  skills: [skill.project-management, skill.budget-management, skill.stakeholder-management]
+  audience: [exec, tech]
+  themes: [research-to-decision]
+  metrics: [sow-value]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-standup-coaching
+  role_id: role.edelman-spm
+  text: >
+    Coached account team on emceeing and running effective standups, reducing
+    time spent in meetings by 30–50%.
+  tags: [agile, leadership, process-improvement, stakeholder-management]
+  skills: [skill.agile-scrum, skill.people-development]
+  audience: [exec, leadership]
+  themes: [people-development]
+  metrics: [meeting-time-reduction]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-margin-improvement
+  role_id: role.edelman-spm
+  text: >
+    Identified senior-labor utilization trending 10–15% above target and delivered
+    quarterly staffing recommendations to the portfolio VP from actual-vs-expected
+    hour analysis (Edelman's proprietary SQL platform and Tableau), bringing
+    utilization back to target and advancing portfolio margin +10% YoY.
+  tags: [data-analysis, budget-management, stakeholder-management]
+  skills: [skill.data-analysis, skill.budget-management, skill.martech-analytics]
+  audience: [exec, leadership]
+  themes: [research-to-decision, scaling]
+  metrics: [margin-improvement, "senior-labor utilization 10–15% over target → back to target"]
+  star:
+    situation: "Senior-labor utilization was trending 10–15% above target and the portfolio VP needed data to act."
+    action: "Analyzed actual-vs-expected hours by senior leadership in Edelman's SQL platform and Tableau; identified overservice drivers."
+    result: "Quarterly recommendations adopted; utilization returned to target and portfolio margin advanced +10% YoY."
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-focus-group-program
+  role_id: role.edelman-spm
+  text: >
+    Scheduled and executed a tightly coordinated program comparing a focus group's
+    reaction to OTT concepts, producing the winning concept within 120 days.
+  tags: [project-management, stakeholder-management, event-production]
+  skills: [skill.project-management, skill.stakeholder-management]
+  audience: [exec, creative]
+  themes: [research-to-decision, 0-to-1]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-melissa-doug
+  role_id: role.edelman-spm
+  text: >
+    Owned the Melissa & Doug account — a multimillion-dollar (~$2M) digital
+    advertising program of paid social and banner creative delivered through Google
+    Ads and social platforms — managing ~$2M in budget across teams of 5–10
+    reporting through five senior directors, and running three or four concurrent
+    projects including three ~$2M television production scopes.
+  tags: [project-management, budget-management, stakeholder-management, leadership]
+  skills: [skill.project-management, skill.budget-management, skill.stakeholder-management]
+  audience: [exec, tech, leadership]
+  themes: [scaling, service]
+  metrics: ["~$2M account / budget", "teams of 5–10 under 5 senior directors", "3–4 concurrent projects"]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-comms-consolidation
+  role_id: role.edelman-spm
+  text: >
+    Reorganized cross-team communication, meeting, review, and labor-tracking
+    processes across consolidated creative, account, digital, and media teams,
+    standardizing how work moved and was reviewed in Monday.com.
+  tags: [process-improvement, stakeholder-management, project-management, leadership]
+  skills: [skill.process-improvement, skill.stakeholder-management, skill.pm-tooling]
+  audience: [exec, leadership]
+  themes: [0-to-1, people-development]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-starbucks-reporting
+  role_id: role.edelman-spm
+  text: >
+    Streamlined intra-company communications reporting for Starbucks, replacing a
+    three-tool, ~two-week preparation cycle with a single-tool weekly report built
+    on available data.
+  tags: [process-improvement, data-analysis, stakeholder-management]
+  skills: [skill.process-improvement, skill.data-analysis]
+  audience: [exec, tech]
+  themes: [research-to-decision, scaling]
+  metrics: ["report prep: 3 tools / ~2 weeks → 1 tool, weekly"]
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-grocery-dashboard
+  role_id: role.edelman-spm
+  text: >
+    Built a Tableau campaign dashboard for a grocery client that broke an entire
+    multi-brand campaign into a single rollup view, letting senior leadership
+    review the whole portfolio in one place.
+  tags: [data-analysis, project-management, stakeholder-management]
+  skills: [skill.data-analysis, skill.project-management, skill.martech-analytics]
+  audience: [exec, tech]
+  themes: [research-to-decision]
+  star:
+    situation: "Senior leadership at a multi-brand grocery client needed a single view across many campaigns."
+    action: "Designed and built a Tableau rollup dashboard consolidating campaign performance across brands."
+    result: "Leadership could review the entire campaign portfolio from one surface."
+  verified: true
+  status: reviewed
+
+- id: bullet.edelman-mckinsey-onboarding
+  role_id: role.edelman-spm
+  text: >
+    Helped onboard and launch the McKinsey account, standing up its first
+    multimillion-dollar ($1–3M) project engagements.
+  tags: [project-management, stakeholder-management, budget-management]
+  skills: [skill.project-management, skill.stakeholder-management]
+  audience: [exec, leadership]
+  themes: [0-to-1]
+  metrics: ["$1–3M project engagements"]
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.ab-scrum
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.ab-team-consolidation
+  role_id: role.ab-scrum
+  text: >
+    Led the Scrum transition for Anheuser-Busch's Beyond Beer division (brands
+    outside the core beer portfolio — e.g., MD 20/20, wine, and malt products),
+    consolidating all 12 of the division's brand teams into one streamlined unit
+    with shared agile routines, documented in Microsoft Project and Azure DevOps
+    in collaboration with portfolio VPs.
+  tags: [agile, scrum, leadership, process-improvement]
+  skills: [skill.agile-scrum, skill.process-improvement, skill.pm-tooling]
+  audience: [tech, exec]
+  themes: [0-to-1, scaling]
+  metrics: [team-count]
+  verified: true
+  status: reviewed
+
+- id: bullet.ab-national-training
+  role_id: role.ab-scrum
+  text: >
+    Traveled nationally to train 6 teams of 5–7 people on agile methodology and
+    effective agile ceremonies.
+  tags: [agile, scrum, leadership, mentorship]
+  skills: [skill.agile-scrum, skill.group-facilitation]
+  audience: [tech, exec, leadership]
+  themes: [people-development]
+  metrics: [teams-trained]
+  verified: true
+  status: reviewed
+
+- id: bullet.ab-routine-consolidation
+  role_id: role.ab-scrum
+  text: >
+    Consolidated 7 independent team routines into 3 coordinated agile routines
+    across the division and leaned heavily into Scrum, cutting media- and
+    release-coordination cycles from ~3 days of email back-and-forth to execution
+    within 24 hours.
+  tags: [agile, scrum, process-improvement, leadership]
+  skills: [skill.agile-scrum, skill.process-improvement]
+  audience: [tech, exec]
+  themes: [scaling, 0-to-1]
+  metrics: ["7 routines → 3", "coordination ~3 days → <24h"]
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.jump450-spm
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.jump450-pmo
+  role_id: role.jump450-spm
+  text: >
+    Co-founded agency PMO with SPMs and CCO; documented and distributed best
+    practices across the agency.
+  tags: [project-management, process-improvement, leadership]
+  skills: [skill.project-management, skill.process-improvement]
+  audience: [exec, leadership]
+  themes: [0-to-1]
+  verified: true
+  status: reviewed
+
+- id: bullet.jump450-automation
+  role_id: role.jump450-spm
+  text: >
+    Built an automated, Slack-integrated approval pipeline for Wegmans' creative
+    team using Zapier, Slack, and Airtable — assets submitted to a single Slack
+    channel landed in an organized Airtable database for quick approvals,
+    circumventing email back-and-forth and shortening asset time-to-market from
+    2–3 weeks to 3–4 days.
+  tags: [process-improvement, project-management, data-analysis]
+  skills: [skill.process-improvement, skill.data-analysis, skill.pm-tooling, skill.martech-analytics]
+  audience: [tech, exec]
+  themes: [tinkering, 0-to-1]
+  metrics: ["asset approval: 2–3 weeks → 3–4 days"]
+  verified: true
+  status: reviewed
+
+- id: bullet.jump450-analytics-report
+  role_id: role.jump450-spm
+  text: >
+    Re-engineered analytics reporting on a Tableau stack fed from Airtable and all
+    of Wegmans' social, Google, and ad-tracker data, shifting biweekly output to
+    quick screenshots instead of manual report-gathering — saving each team member
+    4–6 hours per week and cutting media-team labor on the account by ~one third
+    while maintaining or increasing productivity.
+  tags: [data-analysis, process-improvement]
+  skills: [skill.data-analysis, skill.process-improvement, skill.martech-analytics]
+  audience: [tech, exec]
+  themes: [research-to-decision]
+  metrics: [time-saved, "media-team labor −~1/3"]
+  verified: true
+  status: reviewed
+
+- id: bullet.jump450-dashboard-migration
+  role_id: role.jump450-spm
+  text: >
+    Led migration of client campaign dashboard from reporting 5 attributes in
+    Domo to 12 attributes in Tableau.
+  tags: [data-analysis, project-management]
+  skills: [skill.data-analysis, skill.project-management]
+  audience: [tech, exec]
+  themes: [scaling]
+  verified: true
+  status: reviewed
+
+- id: bullet.jump450-client-revenue
+  role_id: role.jump450-spm
+  text: >
+    Advised account teams on building client relationships; team improved
+    commission revenue +115% YoY.
+  tags: [stakeholder-management, mentorship, revenue]
+  skills: [skill.stakeholder-management]
+  audience: [exec, leadership]
+  themes: [people-development, scaling]
+  metrics: [revenue-growth]
+  verified: true
+  status: reviewed
+
+- id: bullet.jump450-wegmans-growth
+  role_id: role.jump450-spm
+  text: >
+    Built the trust that let Wegmans triple monthly ad spend (~$500K → ~$1.5M/mo) —
+    growing agency commission and lifting Wegmans from the agency's #5 to its #1
+    client, the core account before Jump450's acquisition by Omnicom.
+  tags: [stakeholder-management, revenue, data-analysis]
+  skills: [skill.stakeholder-management, skill.data-analysis]
+  audience: [exec, leadership]
+  themes: [scaling, people-development]
+  metrics: ["Wegmans spend ~$500K → ~$1.5M/mo (3×)", "#5 → #1 client"]
+  star:
+    situation: "Wegmans was the agency's #5 client and cautious about increasing ad spend."
+    action: "Earned confidence with faster approvals (Slack/Airtable pipeline) and clearer Tableau reporting, de-risking larger investment."
+    result: "Wegmans tripled monthly spend to ~$1.5M and became the agency's #1 client before its Omnicom acquisition."
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.future-colossal-cpm
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.fc-arctic-refuge
+  role_id: role.future-colossal-cpm
+  text: >
+    Managed all logistics, budget, and procurement for "The Arctic Refuge
+    Experience" — a two-story, multi-sensory immersive installation (screens,
+    light, sound, fans, scent) simulating the Arctic National Wildlife Refuge
+    before oil drilling, paired with a call-your-senator action station for ANWR
+    and the Gwich'in Nation. Toured New York, San Francisco, and Washington DC in
+    collaboration with Wallplay, which donated the exhibition space and a $70K
+    contribution; project valued ~$1.1–1.5M.
+  tags: [project-management, immersive, budget-management, event-production, installation]
+  skills: [skill.project-management, skill.budget-management, skill.event-production]
+  audience: [creative, exec, art-grant]
+  themes: [0-to-1, craft, place]
+  metrics: ["$70K secured donation + donated DC/SF space", "project ~$1.1–1.5M"]
+  verified: true
+  status: reviewed
+
+- id: bullet.fc-arctic-refuge-sound
+  role_id: role.future-colossal-cpm
+  text: >
+    Contributed sound design ideation to "The Arctic Refuge Experience," a
+    multi-sensory immersive installation incorporating 14-channel audio,
+    custom scent, wind, and fog effects.
+  tags: [sound-design, immersive, installation]
+  skills: [skill.sound-design, skill.event-production]
+  audience: [art-grant, creative, residency]
+  themes: [craft, design, place]
+  verified: true
+  status: reviewed
+
+- id: bullet.fc-exhibit-installation
+  role_id: role.future-colossal-cpm
+  text: >
+    Traveled nationally to manage onsite staff and vendor installation of client
+    exhibitions for Future Colossal.
+  tags: [event-production, stakeholder-management, project-management]
+  skills: [skill.event-production, skill.stakeholder-management]
+  audience: [creative, exec]
+  themes: [craft]
+  verified: true
+  status: reviewed
+
+- id: bullet.fc-sow-management
+  role_id: role.future-colossal-cpm
+  text: >
+    Led partner vendors and nonprofits through participation on SOWs valued up to
+    $1.4M across projects budgeted $500K–$15M with crews of 5–7, coordinating
+    ~2–3 vendors per project (custom fabrication contractors, photographers,
+    musicians, overseas/remote QA technicians, on-site logistics crews, and
+    catering); maintained the vendor list and tracked proposed vs. actual spend
+    weekly in Excel, Trello, Jira, Monday.com, and TeamGantt.
+  tags: [project-management, budget-management, stakeholder-management]
+  skills: [skill.project-management, skill.budget-management, skill.stakeholder-management, skill.pm-tooling]
+  audience: [exec, nonprofit]
+  themes: [research-to-decision]
+  metrics: [sow-value, "project budgets $500K–$15M", "crews of 5–7", "~2–3 vendors/project"]
+  verified: true
+  status: reviewed
+
+- id: bullet.fc-ey-megatrends
+  role_id: role.future-colossal-cpm
+  text: >
+    Produced two installations for EY at the 2019 Innovation Realized Conference —
+    an interactive "Megatrends" screen that surfaced and connected EY's concepts as
+    participants approached, and the "Innovation Realized" wheel with a custom rug
+    and podiums where attendees could explore offerings and speak with
+    representatives — drawing strong engagement (~1–2 of every 15 passersby stopping).
+  tags: [project-management, immersive, event-production, installation, stakeholder-management]
+  skills: [skill.project-management, skill.event-production, skill.stakeholder-management]
+  audience: [creative, exec, tech]
+  themes: [craft, 0-to-1]
+  metrics: ["~1–2 of every 15 passersby engaged"]
+  star:
+    situation: "Mid-delivery on the EY conference project, Dyl's co-leader became medically incapacitated."
+    action: "Took on the entire project solo — hiring and coordinating multiple teams and coordinating with Cirque du Soleil staff, the conference's other producers."
+    result: "Both EY installations were delivered successfully under extreme circumstances."
+  verified: true
+  status: reviewed
+
+- id: bullet.fc-windows-1-11
+  role_id: role.future-colossal-cpm
+  text: >
+    Served as QA project manager on "Windows 1.11," a Netflix × Microsoft ×
+    Wunderman viral analog-horror "haunted game" tied to Stranger Things — a
+    clickable Windows parody culminating in a boss fight — that earned press
+    coverage and strong engagement with younger and 80s-nostalgic gamers.
+  tags: [project-management, immersive, event-production]
+  skills: [skill.project-management, skill.event-production]
+  audience: [creative, tech, exec]
+  themes: [craft, 0-to-1]
+  verified: true
+  status: reviewed
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.evia-producer
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.evia-video-team-lead
+  role_id: role.evia-producer
+  text: >
+    Led up to 17 junior editors producing blocks of 500 videos daily within
+    24-hour turnaround times for large-scale tech conferences.
+  tags: [leadership, video-direction, documentary, event-production, project-management]
+  skills: [skill.video-production, skill.event-production, skill.people-development]
+  audience: [exec, creative, leadership]
+  themes: [scaling, people-development]
+  metrics: [video-count, team-size]
+  verified: true
+  status: draft
+
+- id: bullet.evia-production-time
+  role_id: role.evia-producer
+  text: >
+    Implemented onsite communication practices using Skype for Business, reducing
+    average production time by 25% at large events.
+  tags: [process-improvement, event-production, project-management]
+  skills: [skill.process-improvement, skill.event-production]
+  audience: [exec]
+  themes: [scaling]
+  metrics: [production-time-reduction]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.easy-street-producer
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.easy-street-theater
+  role_id: role.easy-street-producer
+  text: >
+    Produced sold-out, site-specific theater pieces and concerts of 75–100
+    attendees with artists local to West Seattle.
+  tags: [event-production, performance, community, arts-administration]
+  skills: [skill.event-production, skill.arts-administration]
+  audience: [art-grant, creative, residency]
+  themes: [community-building, 0-to-1]
+  verified: true
+  status: draft
+
+- id: bullet.easy-street-sales-growth
+  role_id: role.easy-street-producer
+  text: >
+    Streamlined service processes and mise en place, raising daily sales by 35%
+    within three years of hire.
+  tags: [process-improvement, revenue]
+  skills: [skill.process-improvement]
+  audience: [exec]
+  themes: [scaling]
+  metrics: [sales-growth]
+  verified: true
+  status: draft
+
+- id: bullet.easy-street-cafe-volume
+  role_id: role.easy-street-producer
+  text: >
+    Served espresso drinks and breakfast to ~300 covers daily (~$3,000 in daily sales).
+  tags: [hospitality, service]
+  skills: []
+  audience: [general, exec]
+  themes: [service, scaling]
+  metrics: ["~300 covers/day", "~$3,000 daily sales"]
+  source: "LinkedIn import 2026-06-02"
+  verified: false
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.baaahs-food-director (volunteer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.baaahs-fundraiser
+  role_id: role.baaahs-food-director
+  text: >
+    Planned, marketed, and executed a fundraising event of 750 attendees, raising
+    $14k for San Francisco artists.
+  tags: [event-production, community, arts-administration, grant-administration]
+  skills: [skill.event-production, skill.arts-administration]
+  audience: [art-grant, nonprofit]
+  themes: [community-building]
+  metrics: [attendees, revenue]
+  verified: true
+  status: draft
+
+- id: bullet.baaahs-food-program
+  role_id: role.baaahs-food-director
+  text: >
+    Designed and led a vegan-friendly fresh food program for a 3-day campout of
+    125 attendees and staff in a remote wilderness setting, managing all transport,
+    purchasing, storage, and safety logistics.
+  tags: [event-production, mutual-aid, community, organizing]
+  skills: [skill.event-production]
+  audience: [art-grant, creative]
+  themes: [community-building, 0-to-1]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.crfw-consultant (volunteer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.crfw-estate-grants
+  role_id: role.crfw-consultant
+  text: >
+    Advised the use of income streams from an artist's intellectual estate,
+    providing micro-grants supporting Denver-area artists.
+  tags: [grant-administration, arts-administration, community]
+  skills: [skill.grant-administration, skill.arts-administration]
+  audience: [art-grant, nonprofit]
+  themes: [service, community-building]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.base-arts-coordinator (volunteer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.base-arts-countertechnique
+  role_id: role.base-arts-coordinator
+  text: >
+    Made Countertechnique classes available to Seattle artists by inviting and
+    hosting faculty from San Francisco; underwrote a scholarship and work-study
+    program to subsidize enrollment.
+  tags: [arts-administration, community, organizing, event-production]
+  skills: [skill.arts-administration, skill.event-production]
+  audience: [art-grant, residency]
+  themes: [community-building, service]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.velocity-production (volunteer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.velocity-gala
+  role_id: role.velocity-production
+  text: >
+    Contributed to collaborative planning for fundraising galas raising up to
+    $500k; partnered with Velocity to approach individual patrons to fund new
+    production grants for emerging dance artists.
+  tags: [arts-administration, event-production, community]
+  skills: [skill.arts-administration, skill.stakeholder-management]
+  audience: [art-grant, nonprofit]
+  themes: [community-building, service]
+  metrics: [funds-raised]
+  verified: true
+  status: draft
+
+- id: bullet.velocity-documentary
+  role_id: role.velocity-production
+  text: >
+    Produced multi-camera documentaries and sound design files on QLab for
+    Velocity Dance Center's dance events.
+  tags: [documentary, video-direction, sound-design, event-production]
+  skills: [skill.video-production, skill.sound-design]
+  audience: [art-grant, creative, residency]
+  themes: [craft, design]
+  verified: true
+  status: draft
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.cafe-suspiro-biz-dev
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.suspiro-sales-analysis
+  role_id: role.cafe-suspiro-biz-dev
+  text: >
+    Analyzed 2023 sales (~$150k gross) for trends; developed strategic plan
+    targeting 50%+ growth in 2024.
+  tags: [data-analysis, budget-management]
+  skills: [skill.data-analysis]
+  audience: [exec]
+  themes: [research-to-decision]
+  metrics: [sales-volume]
+  verified: true
+  status: reviewed
+
+- id: bullet.suspiro-gp-optimization
+  role_id: role.cafe-suspiro-biz-dev
+  text: >
+    Identified menu items under 0.7 gross-profit margin and ran a profitability
+    analysis of the owner's best-selling, most-focused items; recommended adjusting
+    recipes, pricing, and sales mix toward comparable higher-margin items to lift
+    overall profit margin from ~40% toward 60%.
+  tags: [data-analysis, budget-management, process-improvement]
+  skills: [skill.data-analysis, skill.budget-management]
+  audience: [exec]
+  themes: [research-to-decision]
+  metrics: ["profit margin ~40% → target 60%"]
+  verified: true
+  status: reviewed
+
+- id: bullet.suspiro-barista
+  role_id: role.cafe-suspiro-biz-dev
+  text: >
+    Made custom, luxury espresso drinks in a laid-back environment, covering up to
+    75–100 customers daily.
+  tags: [hospitality, service]
+  skills: []
+  audience: [general]
+  themes: [service, craft]
+  metrics: ["up to 75–100 customers/day"]
+  source: "LinkedIn import 2026-06-02"
+  verified: false
+  status: draft

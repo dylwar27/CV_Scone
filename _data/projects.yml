@@ -1,0 +1,372 @@
+# Projects — self-directed work, art, side projects.
+# Bullets for projects live in bullets.yml with `project_id` instead of `role_id`.
+# All entries status: draft. Ingest date: 2026-05-26.
+# Sources: D_Ward_Arts Resume.docx, D_Ward_Arts Resume_online.docx,
+#          Dylan Ward's Key Projects.pptx, SleepNod_Catalog_of_Works.xlsx
+
+# ── Dance / Choreography ──────────────────────────────────────────────────────
+
+- id: project.artpg-2022
+  title: "ArtPG"
+  type: art
+  start: 2022-01
+  end: 2022-12
+  collaborators: []
+  role: "Choreographer + Sound Design"
+  description: >
+    Original choreography and sound design for stage. Presented at GreenSpace,
+    New York City.
+  tags: [choreography, sound-design, performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.no-haiku-2020
+  title: "No Haiku"
+  type: art
+  start: 2020-01
+  end: 2020-12
+  collaborators: ["Anima Productions"]
+  role: "Choreographer + Producer"
+  description: >
+    Dance-for-film produced with Anima Productions, New York City.
+  tags: [choreography, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.no-one-2018
+  title: "No One Will Ever Love You More Than You Are Capable of Handling"
+  type: art
+  start: 2018-01
+  end: 2018-12
+  collaborators: ["Petra Zanki"]
+  role: "Performer"
+  description: >
+    Performance work with Petra Zanki, presented in New York City and Seattle.
+  tags: [performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+  notes: "Title later recycled as a Substack chapter (SB8). See Sleep Nod catalog."
+
+- id: project.lesser-evils-2017
+  title: "The Lesser Evils"
+  type: art
+  start: 2017-01
+  end: 2017-12
+  collaborators: []
+  role: "Director + Producer"
+  description: >
+    Dance for stage, directed and produced as part of the inaugural production
+    residency at Base Arts Space, Seattle.
+  tags: [choreography, performance, event-production]
+  audience: [art-grant, residency, creative]
+  themes: [craft, 0-to-1]
+  status: draft
+
+- id: project.chimera-2016
+  title: "Chimera"
+  type: art
+  start: 2016-01
+  end: 2016-12
+  collaborators: []
+  role: "Choreographer + Sound Design"
+  description: >
+    Choreography and original sound design for stage. Presented at Men in Dance,
+    Seattle.
+  tags: [choreography, sound-design, performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.sophia-2016
+  title: "Sophia"
+  type: art
+  start: 2016-01
+  end: 2016-12
+  collaborators: []
+  role: "Choreographer + Sound Design"
+  description: >
+    Choreography and original sound design for stage. Presented at NW New Works,
+    Seattle.
+  tags: [choreography, sound-design, performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.dogged-2016
+  title: "Dogged"
+  type: art
+  start: 2016-01
+  end: 2016-12
+  collaborators: []
+  role: "Choreographer + Performer"
+  description: >
+    Choreography and performance for stage. Presented at Gay City Arts, Seattle.
+  tags: [choreography, performance, queer]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.hard-hearts-2015
+  title: "Hard Hearts"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: []
+  role: "Choreographer + Sound Design"
+  description: >
+    Choreography and original sound design for stage. Presented at Men in Dance,
+    Seattle.
+  tags: [choreography, sound-design, performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.eat-the-heart-2015
+  title: "Eat the Heart (Waltzes for People Who Sometimes Do Bad Things)"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: []
+  role: "Choreographer + Sound Design"
+  description: >
+    Choreography and original sound design. Presented at the Bridge Project,
+    University of Washington + Velocity Dance Center residency, Seattle.
+  tags: [choreography, sound-design, performance, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.simply-put-2015
+  title: "Simply Put"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: ["Northwest Dance Project", "Whim W'Him"]
+  role: "Director + Producer"
+  description: >
+    Director and producer of a dance-film residency at Velocity Dance Center,
+    sponsored by the Glen Kawasaki Foundation. Featuring talent from Portland's
+    Northwest Dance Project and Seattle's Whim W'Him. Premiered at the Dance
+    Waves Festival, Nicosia, Cyprus, 2015.
+  artifacts:
+    - label: "Film"
+      url: ""
+  tags: [choreography, documentary, time-based-media, event-production]
+  audience: [art-grant, residency, creative]
+  themes: [craft, 0-to-1]
+  status: draft
+
+# ── Sound Design ──────────────────────────────────────────────────────────────
+
+- id: project.worth-my-salt-2014
+  title: "Worth My Salt"
+  type: art
+  start: 2014-01
+  end: 2014-12
+  collaborators: ["Jody Kuehner (Cherdonna)"]
+  role: "Sound Designer"
+  description: >
+    Original sound score for Cherdonna's first solo work. Layered Swan Lake,
+    noise recorded from distant stars, and 1990s television and film into a
+    pastiche-driven show about self-worth. Sold out every night at Velocity Dance
+    Center, Seattle; subsequently presented in Portland and New York.
+  tags: [sound-design, time-based-media, performance]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.disagreeable-tale-2014
+  title: "A Disagreeable Tale of Duplicity"
+  type: art
+  start: 2014-01
+  end: 2014-12
+  collaborators: ["Olivier Wevers", "Whim W'Him"]
+  role: "Sound Designer"
+  description: >
+    Sound score based heavily on Prokofiev's Romeo et Juliette for Whim W'Him,
+    premiering at the Intiman Theater, Seattle. Critically acclaimed; received
+    special mention from Michael Upchurch of The Seattle Times.
+  tags: [sound-design, time-based-media, performance]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+# ── Video Direction ───────────────────────────────────────────────────────────
+
+- id: project.cold-light-day-2014
+  title: "Cold Light Day"
+  type: art
+  start: 2014-01
+  end: 2014-12
+  collaborators: ["Dayna Hanson", "Jim Kent", "Vinny Smith"]
+  role: "Sound Designer + Performer"
+  description: >
+    Short dance film set in the Key Peninsula, Washington. Performed and
+    contributed sound design. Screened at the Radar Dance Film Series (Vancouver,
+    BC) and Local Sightings Festival (Seattle).
+  tags: [sound-design, documentary, time-based-media, performance]
+  audience: [art-grant, residency, creative]
+  themes: [craft, place]
+  status: draft
+
+- id: project.clear-and-sweet-2016
+  title: "Clear and Sweet"
+  type: art
+  start: 2016-01
+  end: 2016-12
+  collaborators: ["zoe|juniper"]
+  role: "Video Director"
+  description: >
+    Multi-camera performance document for zoe|juniper, shot at On the Boards,
+    Seattle. Produced in single and split-screen format to suggest the experience
+    of watching the work in the round. Subsequently presented in New York, New
+    Orleans, and Nashville.
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+- id: project.bodies-of-water-2016
+  title: "Bodies of Water"
+  type: art
+  start: 2016-01
+  end: 2016-12
+  collaborators: ["Alice Gosti"]
+  role: "Video Director"
+  description: >
+    Promotional video for Alice Gosti's site-specific work at Seattle Waterfront
+    Park, a free public event. Released on Facebook and Instagram with fast
+    turnaround.
+  tags: [video-direction, documentary]
+  audience: [art-grant, creative]
+  themes: [craft, place]
+  status: draft
+
+- id: project.tim-e-2017
+  title: "The Institute of Memory (TIM)e"
+  type: art
+  start: 2017-01
+  end: 2017-12
+  collaborators: ["Lars Jan", "On the Boards TV"]
+  role: "Video Director"
+  description: >
+    Performance film for Lars Jan / Early Morning Opera at On the Boards, Seattle.
+    Shot in one take on opening night, capturing a set built entirely of fluorescent
+    lighting. Available for rent or purchase at Ontheboards.tv.
+  artifacts:
+    - label: "OntheBoards.tv"
+      url: ""
+  tags: [video-direction, documentary, time-based-media, installation]
+  audience: [art-grant, residency, creative]
+  themes: [craft, memory, design]
+  status: draft
+
+- id: project.material-deviation-2018
+  title: "Material Deviation in Contemporary American Culture"
+  type: art
+  start: 2018-01
+  end: 2018-12
+  collaborators: ["Alice Gosti", "On the Boards"]
+  role: "Video Director"
+  description: >
+    Cinematic performance document for Alice Gosti's dance theater work at On the
+    Boards, Seattle. Directed a team of four on opening night; edited into a
+    performance film and promotional piece that enabled Alice to tour the work
+    to Cambridge, New York City, and the University of North Carolina.
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft, design]
+  status: draft
+
+# ── Immersive / Event ─────────────────────────────────────────────────────────
+
+- id: project.arctic-refuge-2019
+  title: "The Arctic Refuge Experience: Step In, Step Up"
+  type: art
+  start: 2019-01
+  end: 2019-12
+  collaborators: ["Future Colossal", "DoSomething Strategic", "The Wilderness Society"]
+  role: "Project Manager + Sound Design"
+  description: >
+    Immersive experience incorporating mirror effects, projection, Kinect sensor
+    integration, 14-channel sound, custom scent, and integrated wind and fog effects.
+    Led participants through four seasons in the Arctic Refuge. Toured New York,
+    San Francisco, and Washington DC. Covered by ABC and CBS News.
+  tags: [immersive, installation, sound-design, event-production, project-management]
+  audience: [art-grant, creative, exec]
+  themes: [0-to-1, craft, design, place]
+  status: draft
+
+- id: project.megatrends-2019
+  title: "Megatrends"
+  type: art
+  start: 2019-01
+  end: 2019-12
+  collaborators: ["Future Colossal", "Ernst and Young"]
+  role: "Event Producer"
+  description: >
+    Interactive installation for EY's Innovation Realized conference in Boston.
+    Used SICK lidar sensors and Unity game engine to create a graphic environment
+    responding to passersby. Thousands of engagements; later inquired about for
+    permanent installation at EY's NYC offices.
+  tags: [immersive, installation, event-production, project-management]
+  audience: [creative, exec]
+  themes: [0-to-1, craft, design]
+  status: draft
+
+- id: project.windows-111-2019
+  title: "Windows 1.11"
+  type: art
+  start: 2019-01
+  end: 2019-12
+  collaborators: ["Future Colossal", "Wasserman", "Netflix", "Microsoft"]
+  role: "Project Manager"
+  description: >
+    Promotional video game based on Microsoft's 1985 Windows 1 OS, cross-promoting
+    Netflix's Stranger Things Season 3. Emulates a computer "infected" by the Upside
+    Down. Managed QA testing, user testing with fans, and stakeholder feedback.
+    Delivered within Netflix and Microsoft brand guidelines. 54,000+ unique users
+    to date.
+  tags: [project-management, stakeholder-management, event-production, immersive]
+  audience: [tech, creative, exec]
+  themes: [0-to-1, craft]
+  metrics: [users]
+  status: draft
+
+# ── Writing / Publishing ──────────────────────────────────────────────────────
+
+- id: project.still-becoming
+  title: "Still Becoming (novel-in-progress)"
+  type: writing
+  start: 2023-01
+  end: ongoing
+  collaborators: []
+  role: "Writer"
+  description: >
+    Serialized science-fiction novel centered on the Tougen / Adam / Sebastien
+    story arc, ~400k words, published on Substack as Sleep Nod. Chapters 1–7 plus
+    additional episodes; Chapter 6.5 unpublished.
+  url: "https://sleepnod.substack.com"
+  tags: [writing, time-based-media]
+  audience: [bio, creative, art-grant]
+  themes: [curiosity, memory, language, reinvention]
+  status: draft
+
+- id: project.desert-mode
+  title: "Desert Mode — essay arc"
+  type: writing
+  start: 2023-01
+  end: ongoing
+  collaborators: []
+  role: "Writer"
+  description: >
+    Multi-part grief and process essay arc published on Substack as Sleep Nod.
+    Explores loss, resilience, and reinvention.
+  url: "https://sleepnod.substack.com"
+  tags: [writing]
+  audience: [bio, creative, art-grant]
+  themes: [resilience, memory, reinvention]
+  status: draft

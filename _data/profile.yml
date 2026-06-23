@@ -1,0 +1,91 @@
+# Profile — Dylan Ward. Multiple summary variants, picked per view.
+# See ../schema/schema.md for field definitions.
+# Status: draft — update name display preference, fill in portfolio/LinkedIn URLs.
+
+basics:
+  name: "Dylan Ward"
+  pronouns: "they/he"
+  email: "dylanrfw@gmail.com"
+  location:
+    city: "San Francisco"
+    region: "CA"
+    country: "US"
+  links:
+    - label: "Substack (Sleep Nod)"
+      url: "https://sleepnod.substack.com"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/dylwar"
+    - label: "Portfolio"
+      url: ""
+
+summaries:
+  - id: summary.linkedin-headline
+    audience: [linkedin, general]
+    length: tagline
+    status: draft
+    source: "LinkedIn headline (linkedin.com/in/dylwar), pulled 2026-06-02"
+    text: >
+      Social Services Leader | PMP-Certified Project Manager | Passionate About
+      Driving Impact & Operational Excellence
+
+  - id: summary.general
+    audience: [general]
+    length: short
+    status: draft
+    text: >
+      Multi-path practitioner spanning clinical mental health, creative production,
+      and project management. Currently completing an M.A. in Clinical Mental Health
+      Counseling at Palo Alto University while working as an intake specialist at a
+      dual-diagnosis residential facility in San Francisco. Former arts producer,
+      choreographer, and corporate PM with 15+ years across nonprofit, arts, and
+      business sectors.
+
+  - id: summary.clinical
+    audience: [clinical, nonprofit, academic]
+    length: short
+    status: draft
+    text: >
+      Intake specialist and residential counselor at a dual-diagnosis behavioral
+      health facility, currently in graduate study at Palo Alto University (M.A.,
+      Clinical Mental Health Counseling, 2027). Registered MHRS with background in
+      harm reduction, case management, group facilitation, and community outreach.
+      Prior career in arts production and corporate project management informs
+      a structured, client-centered approach to behavioral health work.
+
+  - id: summary.art-grant
+    audience: [art-grant, residency, creative]
+    length: medium
+    status: draft
+    text: >
+      Multidisciplinary artist working across choreography, sound design, video
+      direction, and event production. Made and produced work with On the Boards,
+      Velocity Dance Center, Base Arts Space, Future Colossal, and BAAAHS, from
+      Seattle to New York to Burning Man. Sound scores have received critical
+      recognition; video documentation has toured nationally and internationally.
+      Currently writing and publishing long-form fiction and essays as Sleep Nod
+      on Substack.
+
+  - id: summary.bio-long
+    audience: [bio, about-page]
+    length: long
+    status: draft
+    text: >
+      Dylan Ward is a practitioner, artist, and producer whose work moves between
+      clinical mental health, creative production, and systems management. He began
+      his professional life in queer outreach and harm reduction in Seattle, went on
+      to produce and choreograph dance and theater works across the Pacific Northwest,
+      then spent five years as a project manager in New York advertising agencies
+      before returning to the human services work that started it all.
+
+      He is currently completing an M.A. in Clinical Mental Health Counseling at
+      Palo Alto University while working as an intake specialist at PRC Baker Places
+      in San Francisco, a dual-diagnosis residential facility. He holds PMP and MHRS
+      credentials and has worked with Epic and Avatar electronic health record systems.
+
+      His creative work, made under the name Sleep Nod, spans choreography, sound
+      design, video direction, and writing. He has collaborated with Alice Gosti,
+      Lars Jan, zoe|juniper, Petra Zanki, Dayna Hanson, and Jody Kuehner (Cherdonna),
+      and produced immersive experiences for Ernst & Young and The Wilderness Society.
+      He is currently serializing a novel and grief essay arc on Substack.
+
+      He lives in San Francisco.

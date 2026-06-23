@@ -1,0 +1,247 @@
+# Roles — jobs, gigs, residencies, freelance. FACTS ONLY.
+# Bullets / narrative live in bullets.yml, linked via role_id.
+# See ../schema/schema.md.
+# Ingest date: 2026-05-26. All entries status: draft.
+# Sources: Dylan Ward MH CV 26.docx, DylanW_CV_living.docx
+
+# ── Clinical / Behavioral Health ──────────────────────────────────────────────
+
+- id: role.prc-baker-intake
+  title: "Intake Specialist and Residential Counselor"
+  org: "PRC Baker Places"
+  location: "San Francisco, CA"
+  type: full-time
+  start: 2024-01
+  end: 2025-11
+  industry: [behavioral-health, nonprofit]
+  tags: [intake-assessment, case-management, group-facilitation, clinical-documentation, dual-diagnosis, harm-reduction, process-improvement, data-analysis, stakeholder-management]
+  audience: [clinical, nonprofit, academic]
+  visibility: public
+  status: reviewed
+  notes: >
+    Confirmed in interview 2026-06-01. Two phases under one role:
+    (1) Residential Counselor Feb–Aug 2024, also acting Assistant Director of the house;
+    (2) Intake Specialist Aug 2024–Nov 2025 across 4 houses (~32–48 intakes/mo total).
+    Role ended Nov 2025 when Dyl went on medical leave to recover from illness.
+    Tools: Epic & Avatar EHR, SQL (maintained/extended an existing DB), Microsoft Excel,
+    Microsoft Teams, Microsoft 365 / Office suite, online forms, website edits.
+    Treatment plans co-signed by supervising LMFT (confirmed 2026-06-01)."
+
+- id: role.baaahs-harm-reduction
+  title: "Harm Reduction Volunteer"
+  org: "Independent — multiple festivals (incl. BAAAHS)"
+  aliases: ["Harm Reduction Program Lead / Advisor", "BAAAHS Harm Reduction"]
+  location: "San Francisco, CA / festival sites"
+  type: volunteer
+  start: 2023-01
+  end: present
+  industry: [nonprofit, arts, public-health]
+  tags: [harm-reduction, outreach, psychoeducation, crisis-response, queer-competency, event-production, substance-use, peer-support]
+  audience: [clinical, nonprofit, art-grant]
+  visibility: public
+  status: reviewed
+  notes: >
+    Confirmed in interview 2026-06-01. Reframed from BAAAHS-specific 'Program Lead'
+    to a multi-festival Harm Reduction Volunteer practice (~1x/year across festivals).
+    BAAAHS is the flagship event where Dyl designed the HR program and trained 3 rangers;
+    currently serving in a frontline ranger capacity. Events run ~200–800 attendees.
+    Volunteer role with clinical scope. Linked (not merged) with role.lifelong-outreach
+    to evidence multi-year harm-reduction breadth. Co-occurs under MD/LMFT observation
+    for in-scope crisis response."
+
+- id: role.lifelong-outreach
+  title: "Onsite Outreach & Care Coordinator"
+  org: "Lifelong AIDS Alliance"
+  location: "Seattle, WA"
+  type: part-time
+  start: 2007-01
+  end: 2012-01
+  industry: [nonprofit, public-health]
+  tags: [harm-reduction, outreach, peer-support, case-management, queer-competency, substance-use]
+  audience: [clinical, nonprofit]
+  visibility: public
+  status: reviewed
+  notes: "MH CV lists as paid; Living CV has a parallel 'Volunteer' entry for the same org/period. Likely started volunteer then became paid. Confirm."
+
+# ── Arts / Production ─────────────────────────────────────────────────────────
+
+- id: role.sleep-nod-producer
+  title: "Arts Producer & Grant Administrator"
+  org: "Self-Employed (Sleep Nod)"
+  location: "USA"
+  type: freelance
+  start: 2009-01
+  end: 2023-01
+  industry: [arts, nonprofit, media]
+  tags: [arts-administration, grant-administration, event-production, video-direction, documentary, performance]
+  audience: [art-grant, creative, residency, nonprofit]
+  visibility: public
+  status: draft
+  notes: "Umbrella role for all freelance arts/production work. Ran concurrently with other jobs."
+
+- id: role.evia-producer
+  title: "Producer"
+  org: "Evia Events"
+  location: "Seattle, WA"
+  type: full-time
+  start: 2016-07
+  end: 2019-11
+  industry: [events, media]
+  tags: [event-production, video-direction, documentary, leadership, project-management]
+  audience: [creative, nonprofit, exec]
+  visibility: public
+  status: draft
+  notes: "Major clients: Microsoft Ignite, AWS ReInvent. Led large video production teams."
+
+- id: role.easy-street-producer
+  title: "Event Producer and Barista"
+  org: "Easy Street Records and Cafe"
+  location: "Seattle, WA"
+  type: part-time
+  start: 2009-09
+  end: 2018-08
+  industry: [arts, hospitality, music]
+  tags: [event-production, community, arts-administration, performance]
+  audience: [art-grant, creative]
+  visibility: public
+  status: draft
+  notes: "Long-running concurrent role. Mix of event production and cafe service."
+
+# ── Business / Project Management ─────────────────────────────────────────────
+
+- id: role.future-colossal-cpm
+  title: "Creative Project Manager"
+  org: "Future Colossal"
+  location: "New York, NY"
+  type: full-time
+  start: 2019-01
+  end: 2020-01
+  industry: [advertising, events, experiential]
+  tags: [project-management, event-production, immersive, stakeholder-management, budget-management]
+  audience: [creative, exec, tech]
+  visibility: public
+  status: reviewed
+  notes: "Clients: Do Something Strategic, Netflix, EY. Produced Arctic Refuge, Megatrends, Windows 1.11."
+
+- id: role.edelman-spm
+  title: "Senior Project Manager"
+  org: "Edelman DxI"
+  location: "New York, NY"
+  type: full-time
+  start: 2021-11
+  end: 2022-12
+  industry: [advertising, communications]
+  tags: [project-management, stakeholder-management, budget-management, data-analysis, leadership]
+  audience: [exec, tech, leadership]
+  visibility: public
+  status: reviewed
+  notes: "Clients: Melissa and Doug, Citigroup, Starbucks, McKinsey. SOWs up to $2.2M."
+
+- id: role.ab-scrum
+  title: "Scrum Master (Consultant)"
+  org: "Anheuser-Busch"
+  location: "New York, NY"
+  type: contract
+  start: 2021-07
+  end: 2021-11
+  industry: [advertising, beverage-cpg]
+  tags: [agile, scrum, project-management, leadership, process-improvement]
+  audience: [tech, exec]
+  visibility: public
+  status: reviewed
+  notes: >
+    Enriched from voice memo 2026-06-02. Scrum transition for the Beyond Beer
+    division (non-beer brands incl. MD 20/20, wine, malt). Tools: Microsoft Project,
+    Azure DevOps. Outcomes: 12 brand teams → 1 unit; 7 routines → 3; coordination
+    ~3 days → <24h. Confirmed 2026-06-02: all 12 brand teams were within the
+    Beyond Beer division.
+
+- id: role.jump450-spm
+  title: "Senior Project Manager"
+  org: "Jump450 Media"
+  location: "New York, NY"
+  type: full-time
+  start: 2020-03
+  end: 2021-07
+  industry: [advertising, media]
+  tags: [project-management, process-improvement, data-analysis, agile, budget-management]
+  audience: [tech, exec]
+  visibility: public
+  status: reviewed
+  notes: "Clients: Wegmans, Monro Auto. Founded PMO with SPMs and CCO."
+
+- id: role.cafe-suspiro-biz-dev
+  title: "Business Development Consultant"
+  aliases: ["Business Analyst & Barista"]
+  org: "Cafe Suspiro"
+  location: "San Francisco, CA"
+  type: contract
+  start: 2023-09
+  end: 2024-02
+  industry: [hospitality, small-business]
+  tags: [data-analysis, budget-management, process-improvement]
+  audience: [exec, nonprofit]
+  visibility: public
+  status: reviewed
+  notes: >
+    Enriched from voice memo 2026-06-02. Self-initiated: Dyl was working as a
+    barista after moving to San Francisco and proactively ran a business-development
+    analysis for the owner — a sales-trend (Pareto-style) analysis over the year plus
+    an item-level profitability report, with a mix-shift recommendation to push
+    profit margin from ~40% toward 60%.
+
+# ── Volunteer ─────────────────────────────────────────────────────────────────
+
+- id: role.baaahs-food-director
+  title: "Food Program Director and Event Lead"
+  org: "BAAAHS"
+  location: "San Francisco, CA / Mendocino, CA"
+  type: volunteer
+  start: 2023-01
+  end: 2023-12
+  industry: [arts, nonprofit, events]
+  tags: [event-production, community, mutual-aid, arts-administration]
+  audience: [art-grant, nonprofit, creative]
+  visibility: public
+  status: draft
+  notes: "Two BAAAHS events: fundraiser in SF (750 attendees, $14k raised) and Wild Inclinations campout in Mendocino."
+
+- id: role.crfw-consultant
+  title: "Family Consultant"
+  org: "CRFW (Colin Richard Ferguson Ward) Fund"
+  location: "Denver, CO"
+  type: volunteer
+  start: 2018-01
+  end: 2020-01
+  industry: [arts, nonprofit]
+  tags: [arts-administration, grant-administration, community]
+  audience: [art-grant, nonprofit]
+  visibility: public
+  status: draft
+  notes: "CRFW is Dyl's family; advising the use of an artistic estate. Sensitive — confirm visibility."
+
+- id: role.base-arts-coordinator
+  title: "Volunteer Event and Workshop Coordinator"
+  org: "BASE Art Space"
+  location: "Seattle, WA"
+  type: volunteer
+  start: 2016-01
+  end: 2017-01
+  industry: [arts, nonprofit]
+  tags: [event-production, community, arts-administration, organizing]
+  audience: [art-grant, nonprofit, residency]
+  visibility: public
+  status: draft
+
+- id: role.velocity-production
+  title: "Event & A/V Production, Donor Relations"
+  org: "Velocity Dance Center"
+  location: "Seattle, WA"
+  type: volunteer
+  start: 2013-01
+  end: 2017-01
+  industry: [arts, nonprofit, dance]
+  tags: [event-production, documentary, video-direction, arts-administration, community]
+  audience: [art-grant, nonprofit, residency]
+  visibility: public
+  status: draft

@@ -1,0 +1,273 @@
+# Skills — named capabilities with proficiency and evidence.
+# `evidence:` references role/project/bullet IDs so any claim is traceable.
+# All entries status: draft. Ingest date: 2026-05-26.
+
+# ── Clinical ──────────────────────────────────────────────────────────────────
+
+- id: skill.clinical-intake
+  name: "Clinical Intake & Assessment"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-referral-intake, bullet.prc-bed-utilization]
+  audience: [clinical, academic]
+  visibility: public
+
+- id: skill.harm-reduction
+  name: "Harm Reduction Practice"
+  category: technical
+  proficiency: expert
+  last_used: 2026-05
+  evidence: [role.baaahs-harm-reduction, role.lifelong-outreach, bullet.baaahs-hr-program-design, bullet.baaahs-hr-frontline-ranger, bullet.baaahs-hr-breadth, bullet.lifelong-harm-reduction-counseling]
+  audience: [clinical, nonprofit, art-grant]
+  visibility: public
+
+- id: skill.overdose-response
+  name: "Overdose Response (Naloxone)"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.baaahs-harm-reduction, bullet.baaahs-hr-frontline-ranger]
+  audience: [clinical, nonprofit]
+  visibility: public
+
+- id: skill.group-facilitation
+  name: "Group Facilitation"
+  category: leadership
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-group-facilitation, bullet.prc-group-programming]
+  audience: [clinical, nonprofit, general]
+  visibility: public
+
+- id: skill.case-management
+  name: "Case Management & Care Coordination"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, role.lifelong-outreach, bullet.prc-referral-intake, bullet.lifelong-sti-navigation]
+  audience: [clinical, nonprofit]
+  visibility: public
+
+- id: skill.community-outreach
+  name: "Community & Street-Based Outreach"
+  category: technical
+  proficiency: proficient
+  last_used: 2023-09
+  evidence: [role.lifelong-outreach, bullet.lifelong-venue-outreach, bullet.lifelong-surveillance-data]
+  audience: [clinical, nonprofit, art-grant]
+  visibility: public
+
+- id: skill.clinical-documentation
+  name: "Clinical Documentation (Epic, Avatar)"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-epic-documentation, bullet.prc-treatment-plans]
+  audience: [clinical]
+  visibility: public
+
+- id: skill.clinical-note-formats
+  name: "Clinical Note Formats & Documentation Frameworks (SOAP, DAP, PIRP)"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-treatment-plans, bullet.prc-epic-documentation, bullet.prc-note-systems]
+  audience: [clinical, academic]
+  visibility: public
+  source: "Confirmed by Dyl 2026-06-02. Familiar with SOAP, DAP, and PIRP progress-note formats, closing summaries, and treatment planning."
+
+- id: skill.clinical-assessments
+  name: "Clinical Assessment Instruments (AOA-07 Domains, SDOH, ACE)"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-referral-intake]
+  audience: [clinical, academic]
+  visibility: public
+  source: "Confirmed by Dyl 2026-06-02. Familiar with AOA-07 Domains, SDOH, and ACE assessments (also ANSA, MSE per intake bullet)."
+
+- id: skill.crisis-communication
+  name: "Crisis-Aware Communication"
+  category: technical
+  proficiency: working
+  last_used: 2026-05
+  evidence: [role.baaahs-harm-reduction, bullet.baaahs-hr-crisis-support]
+  audience: [clinical, nonprofit]
+  visibility: public
+
+- id: skill.psychoeducation
+  name: "Psychoeducation & Group Programming"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, bullet.prc-group-facilitation, bullet.prc-group-programming]
+  audience: [clinical, academic]
+  visibility: public
+
+- id: skill.program-design
+  name: "Program Design"
+  category: leadership
+  proficiency: proficient
+  last_used: 2026-05
+  evidence: [role.prc-baker-intake, role.baaahs-harm-reduction, bullet.prc-group-programming, bullet.baaahs-hr-program-design]
+  audience: [clinical, nonprofit, art-grant]
+  visibility: public
+
+# ── Project Management / Business ─────────────────────────────────────────────
+
+- id: skill.project-management
+  name: "Project Management (PMP)"
+  category: leadership
+  proficiency: expert
+  last_used: 2026-05
+  evidence: [role.edelman-spm, role.future-colossal-cpm, role.jump450-spm, bullet.edelman-sow-scoping, bullet.jump450-pmo]
+  audience: [tech, exec, nonprofit]
+  visibility: public
+
+- id: skill.agile-scrum
+  name: "Agile / Scrum"
+  category: technical
+  proficiency: expert
+  last_used: 2022-12
+  evidence: [role.ab-scrum, role.jump450-spm, bullet.ab-team-consolidation, bullet.ab-national-training, bullet.edelman-standup-coaching]
+  audience: [tech, exec]
+  visibility: public
+
+- id: skill.budget-management
+  name: "Budget Management"
+  category: leadership
+  proficiency: proficient
+  last_used: 2022-12
+  evidence: [role.edelman-spm, role.future-colossal-cpm, bullet.edelman-sow-scoping, bullet.fc-sow-management]
+  audience: [exec, nonprofit, art-grant]
+  visibility: public
+
+- id: skill.stakeholder-management
+  name: "Stakeholder Management"
+  category: leadership
+  proficiency: expert
+  last_used: 2022-12
+  evidence: [role.edelman-spm, role.future-colossal-cpm, bullet.edelman-sow-scoping, bullet.fc-sow-management]
+  audience: [exec, tech, leadership]
+  visibility: public
+
+- id: skill.process-improvement
+  name: "Process Improvement & Documentation"
+  category: technical
+  proficiency: expert
+  last_used: 2026-05
+  evidence: [role.jump450-spm, role.prc-baker-intake, bullet.prc-bed-utilization, bullet.jump450-pmo, bullet.jump450-automation]
+  audience: [tech, exec, clinical, nonprofit]
+  visibility: public
+
+- id: skill.data-analysis
+  name: "Data Analysis (SQL, R, Tableau)"
+  category: technical
+  proficiency: proficient
+  last_used: 2025-11
+  evidence: [role.edelman-spm, role.jump450-spm, role.cafe-suspiro-biz-dev, role.prc-baker-intake, bullet.edelman-margin-improvement, bullet.jump450-analytics-report, bullet.prc-digital-workflow]
+  audience: [tech, exec]
+  visibility: public
+
+- id: skill.microsoft-365
+  name: "Microsoft 365 (Excel, Teams, Office Suite, Forms)"
+  category: tool
+  proficiency: proficient
+  last_used: 2025-11
+  evidence: [role.prc-baker-intake, bullet.prc-digital-workflow, bullet.prc-staff-training]
+  audience: [clinical, nonprofit, exec, tech]
+  visibility: public
+
+- id: skill.people-development
+  name: "People Development & Mentorship"
+  category: leadership
+  proficiency: proficient
+  last_used: 2022-12
+  evidence: [role.ab-scrum, bullet.ab-national-training, bullet.edelman-standup-coaching, bullet.jump450-client-revenue]
+  audience: [leadership, exec, nonprofit]
+  visibility: public
+
+- id: skill.pm-tooling
+  name: "Project & Work Management Tools (Jira, Monday.com, Trello, TeamGantt, MS Project, Azure DevOps)"
+  category: tool
+  proficiency: expert
+  last_used: 2022-12
+  evidence: [role.edelman-spm, role.jump450-spm, role.future-colossal-cpm, role.ab-scrum, bullet.edelman-comms-consolidation, bullet.fc-sow-management, bullet.ab-team-consolidation, bullet.jump450-automation]
+  audience: [tech, exec, leadership]
+  visibility: public
+
+- id: skill.martech-analytics
+  name: "Marketing & Analytics Stack (Tableau, Google Ads, Domo, Airtable, Zapier, Slack)"
+  category: tool
+  proficiency: proficient
+  last_used: 2022-12
+  evidence: [role.edelman-spm, role.jump450-spm, bullet.edelman-grocery-dashboard, bullet.edelman-margin-improvement, bullet.jump450-automation, bullet.jump450-analytics-report, bullet.jump450-dashboard-migration]
+  audience: [tech, exec]
+  visibility: public
+
+# ── Arts / Production ─────────────────────────────────────────────────────────
+
+- id: skill.event-production
+  name: "Event Production"
+  category: creative
+  proficiency: expert
+  last_used: 2023-12
+  evidence: [role.sleep-nod-producer, role.evia-producer, role.future-colossal-cpm, role.baaahs-food-director, bullet.evia-video-team-lead, bullet.baaahs-fundraiser]
+  audience: [art-grant, creative, nonprofit]
+  visibility: public
+
+- id: skill.video-production
+  name: "Video Direction & Documentary Production"
+  category: creative
+  proficiency: expert
+  last_used: 2023-01
+  evidence: [role.sleep-nod-producer, role.evia-producer, project.material-deviation-2018, project.tim-e-2017, project.clear-and-sweet-2016, bullet.sleep-nod-documentary]
+  audience: [art-grant, creative, residency]
+  visibility: public
+
+- id: skill.sound-design
+  name: "Sound Design & Composition"
+  category: creative
+  proficiency: expert
+  last_used: 2022-12
+  evidence: [project.artpg-2022, project.chimera-2016, project.worth-my-salt-2014, project.disagreeable-tale-2014, project.arctic-refuge-2019]
+  audience: [art-grant, creative, residency]
+  visibility: public
+
+- id: skill.choreography
+  name: "Choreography"
+  category: creative
+  proficiency: expert
+  last_used: 2022-12
+  evidence: [project.artpg-2022, project.no-haiku-2020, project.chimera-2016, project.sophia-2016, project.eat-the-heart-2015, project.hard-hearts-2015]
+  audience: [art-grant, residency, creative]
+  visibility: public
+
+- id: skill.arts-administration
+  name: "Arts Administration"
+  category: leadership
+  proficiency: expert
+  last_used: 2023-12
+  evidence: [role.sleep-nod-producer, role.crfw-consultant, role.base-arts-coordinator, role.velocity-production, bullet.sleep-nod-grants, bullet.crfw-estate-grants]
+  audience: [art-grant, nonprofit, residency]
+  visibility: public
+
+- id: skill.grant-administration
+  name: "Grant Administration"
+  category: technical
+  proficiency: proficient
+  last_used: 2023-01
+  evidence: [role.sleep-nod-producer, role.crfw-consultant, bullet.sleep-nod-grants, bullet.crfw-estate-grants]
+  audience: [art-grant, nonprofit]
+  visibility: public
+
+- id: skill.adobe-creative-suite
+  name: "Adobe Creative Suite (incl. Audition)"
+  category: tool
+  proficiency: proficient
+  last_used: 2019-11
+  evidence: [role.evia-producer, role.easy-street-producer, role.sleep-nod-producer]
+  audience: [art-grant, creative, residency]
+  visibility: public
+  source: "LinkedIn import 2026-06-02 (Adobe Audition listed under Evia / Easy Street)"
