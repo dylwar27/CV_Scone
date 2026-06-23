@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+{%- comment -%}
+═══════════════════════════════════════════════════════════════════════════════
+ CURATION KNOBS — this is where you re-curate the public CV.
+ These lists live in the TEMPLATE, not in _data/, so they SURVIVE
+ `bin/pull-cv-data.sh` (which overwrites _data/ from the source database).
+ NEVER curate by hand-editing _data/*.yml — those edits get clobbered on pull.
+ To re-curate: change a `lead_summary_id`, bump `bullets_per_role`, or add /
+ remove an id in one of the featured_* / skills_* lists below. Ids come from the
+ `id:` fields in _data/*.yml. Within a role, which bullets show = the first N in
+ bullets.yml (reorder there in the source DB to change the pick).
+═══════════════════════════════════════════════════════════════════════════════
+{%- endcomment -%}
+{%- assign lead_summary_id = "summary.general" -%}
+{%- assign bullets_per_role = 3 -%}
+{%- assign featured_projects = "project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.tim-e-2017,project.material-deviation-2018,project.worth-my-salt-2014,project.simply-put-2015,project.still-becoming,project.desert-mode" | split: "," -%}
+{%- assign skills_clinical = "skill.clinical-intake,skill.harm-reduction,skill.group-facilitation,skill.case-management,skill.clinical-documentation,skill.crisis-communication" | split: "," -%}
+{%- assign skills_pm = "skill.project-management,skill.agile-scrum,skill.stakeholder-management,skill.process-improvement,skill.data-analysis,skill.budget-management" | split: "," -%}
+{%- assign skills_creative = "skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration" | split: "," -%}
+{%- assign featured_degrees = "edu.palo-alto-cmhc,edu.uw-ba" | split: "," -%}
+{%- assign featured_certs = "edu.pmp,edu.mhrs,edu.google-data-analytics" | split: "," -%}
 {%- assign p = site.data.profile -%}
 
 # {{ p.basics.name }}
@@ -11,70 +31,91 @@ layout: default
 {%- if link.url and link.url != "" %}[{{ link.label }}]({{ link.url }}) · {% endif -%}
 {%- endfor %}
 
-## Summaries
+{%- assign lead = p.summaries | where: "id", lead_summary_id | first -%}
+{% if lead %}
+{{ lead.text | strip_newlines }}
+{% endif %}
 
-{% for s in p.summaries %}
-**{{ s.id }}** — _{{ s.audience | join: ", " }} · {{ s.length }} · {{ s.status }}_
-
-{{ s.text }}
-{% endfor %}
-
-## Roles
+## Experience
 
 {% for role in site.data.roles -%}
-{%- unless role.visibility == "private" %}
+{%- unless role.visibility == "private" -%}
+
 ### {{ role.title }} — {{ role.org }}
 
 _{{ role.start }} → {{ role.end | default: "present" }}_ · {{ role.location }} · {{ role.type }}
-{% if role.tags %}
-Tags: {{ role.tags | join: ", " }}
-{% endif %}
-{%- comment -%} role.notes is an internal curation field (provenance, "confirm…" flags). Never render it. {%- endcomment -%}
-{% for bullet in site.data.bullets -%}
-{%- if bullet.role_id == role.id %}
+{% assign role_bullets = site.data.bullets | where: "role_id", role.id %}
+{% for bullet in role_bullets limit: bullets_per_role %}
 - {{ bullet.text | strip_newlines }}
-{%- endif -%}
 {%- endfor %}
 {% endunless -%}
 {%- endfor %}
 
-## Projects
+## Selected Projects
 
-{% for proj in site.data.projects -%}
-{%- unless proj.visibility == "private" %}
+{% for id in featured_projects -%}
+{%- assign proj = site.data.projects | where: "id", id | first -%}
+{%- if proj and proj.visibility != "private" -%}
+
 ### {{ proj.title }}
 
-_{{ proj.start }}{% if proj.end %} → {{ proj.end }}{% endif %}_{% if proj.role %} · {{ proj.role }}{% endif %}{% if proj.type %} · {{ proj.type }}{% endif %}
+_{{ proj.start | slice: 0, 4 }}{% if proj.end == "ongoing" %} – ongoing{% endif %}_{% if proj.role %} · {{ proj.role }}{% endif %}
 
-{{ proj.description }}
+{{ proj.description | strip_newlines }}
 {% if proj.collaborators and proj.collaborators != empty %}
-Collaborators: {{ proj.collaborators | join: ", " }}
-{% endif %}
-{% for bullet in site.data.bullets -%}
-{%- if bullet.project_id == proj.id %}
-- {{ bullet.text | strip_newlines }}
+With: {{ proj.collaborators | join: ", " }}
+{% endif -%}
 {%- endif -%}
 {%- endfor %}
-{% endunless -%}
+
+## Skills
+
+### Clinical & Behavioral Health
+{% for id in skills_clinical -%}
+{%- assign skill = site.data.skills | where: "id", id | first -%}
+{%- if skill and skill.visibility != "private" %}
+- **{{ skill.name }}**{% if skill.proficiency %} — {{ skill.proficiency }}{% endif %}
+{%- endif -%}
+{%- endfor %}
+
+### Project & Program Management
+{% for id in skills_pm -%}
+{%- assign skill = site.data.skills | where: "id", id | first -%}
+{%- if skill and skill.visibility != "private" %}
+- **{{ skill.name }}**{% if skill.proficiency %} — {{ skill.proficiency }}{% endif %}
+{%- endif -%}
+{%- endfor %}
+
+### Creative Production
+{% for id in skills_creative -%}
+{%- assign skill = site.data.skills | where: "id", id | first -%}
+{%- if skill and skill.visibility != "private" %}
+- **{{ skill.name }}**{% if skill.proficiency %} — {{ skill.proficiency }}{% endif %}
+{%- endif -%}
 {%- endfor %}
 
 ## Education
 
-{% for ed in site.data.education %}
+{% for id in featured_degrees -%}
+{%- assign ed = site.data.education | where: "id", id | first -%}
+{%- if ed -%}
+
 ### {{ ed.credential }} — {{ ed.institution }}
 
-_{{ ed.start }} → {{ ed.end }}_ · {{ ed.location }}
+_{{ ed.start | slice: 0, 4 }} → {{ ed.end | slice: 0, 4 }}_ · {{ ed.location }}
 {% for h in ed.highlights %}
 - {{ h }}
 {%- endfor %}
-{% endfor %}
+{%- endif -%}
+{%- endfor %}
 
-## Skills
+## Certifications
 
-{% for skill in site.data.skills -%}
-{%- unless skill.visibility == "private" %}
-- **{{ skill.name }}** — {{ skill.proficiency }} · _{{ skill.category }}_{% if skill.last_used %} · last used {{ skill.last_used }}{% endif %}
-{%- endunless -%}
+{% for id in featured_certs -%}
+{%- assign cert = site.data.education | where: "id", id | first -%}
+{%- if cert %}
+- **{{ cert.credential }}** — {{ cert.institution }} · {{ cert.start | slice: 0, 4 }}{% if cert.honors and cert.honors != empty %} · {{ cert.honors | join: ", " }}{% endif %}
+{%- endif -%}
 {%- endfor %}
 
 {%- comment -%}

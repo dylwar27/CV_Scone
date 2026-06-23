@@ -7,6 +7,6 @@ plugins:
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md", "bin", "Gemfile", "Gemfile.lock"]
+exclude: ["README.md", "bin", "Gemfile", "Gemfile.lock", "claude-thoughts"]
 sass:
   style: compressed

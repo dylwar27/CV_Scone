@@ -6,3 +6,6 @@ _data/life.yml
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+# Private working notes / handoffs — never publish.
+claude-thoughts/
