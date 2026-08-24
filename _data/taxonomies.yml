@@ -163,3 +163,17 @@ tags:
     description: "Self-directed learning"
   - id: programming
     description: "Programming / software"
+
+  # Health IT / compliance / automation (added 2026-08-24, dump session)
+  - id: health-it
+    description: "EHR systems work: superuser, template/SmartPhrase design, reporting, records research"
+  - id: compliance
+    description: "Regulatory and reimbursement compliance: HIPAA, 42 CFR Part 2, Medi-Cal medical necessity, audits"
+  - id: automation
+    description: "Automating manual workflows: no-code integration, scripting, pipelines"
+  - id: ai-tooling
+    description: "Building with or for LLMs: structured systems, prompts, agent workflows"
+  - id: program-design
+    description: "Designing programs and curricula, clinical or community"
+  - id: hospitality
+    description: "Food, beverage, and hospitality service operations"

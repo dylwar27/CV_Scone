@@ -22,76 +22,28 @@
     action: "Digitized internal processes, reconciled referral data across Epic and Avatar."
     result: "Utilization improved to 78%+ over a rolling 3-month window."
   verified: true
-  status: reviewed
-
-- id: bullet.prc-group-programming
+  status: active
+- id: bullet.prc-records-research
   role_id: role.prc-baker-intake
   text: >
-    Built weekly group programming schedules and operationalized 20+ groups per
-    week across psychoeducation, ADLs, social skills, and mindfulness.
-  tags: [group-facilitation, psychoeducation, program-design]
-  skills: [skill.group-facilitation, skill.program-design]
-  audience: [clinical, nonprofit]
-  themes: [0-to-1, community-building]
-  metrics: [group-count]
+    Ran multi-provider records research to complete AO-07 intake assessments —
+    pulling directly from Epic, then chasing three to five outside providers per
+    client by Epic messaging, phone, and email, and reconstructing incomplete
+    social histories from fragmentary records. Sharply reduced late assessments
+    and moved assessment turnaround from roughly seven days to 24–72 hours.
+  tags: [health-it, intake-assessment, case-management, clinical-documentation, process-improvement]
+  skills: [skill.medical-records-research, skill.clinical-assessments, skill.clinical-intake, skill.epic-superuser]
+  audience: [clinical, nonprofit, academic]
+  themes: [research-to-decision, service]
+  metrics: ["3–5 outside providers reconciled per client", "assessment turnaround ~7 days → 24–72 hours"]
+  star:
+    situation: "Intake assessments stalled because client histories were scattered across multiple health systems and arrived incomplete."
+    task: "Complete AO-07 assessments fast enough that beds did not sit empty waiting on paperwork."
+    action: "Pulled records directly from Epic, then worked 3–5 outside providers per client by Epic message, phone, and email; reconstructed missing social history from partial records."
+    result: "Late assessments dropped sharply and turnaround fell from ~7 days to 24–72 hours, feeding the bed-utilization gain."
+  source: "Dump session 2026-08-24."
   verified: true
-  status: reviewed
-
-- id: bullet.prc-group-facilitation
-  role_id: role.prc-baker-intake
-  text: >
-    Led 5–6 groups per week for dual-diagnosis residential clients, spanning
-    psychoeducation, activities of daily living (cooking, cleaning, hygiene,
-    self-organization, scheduling, job search), DBT and interpersonal-effectiveness
-    skills, and emotional process groups.
-  tags: [group-facilitation, psychoeducation, dual-diagnosis]
-  skills: [skill.group-facilitation, skill.psychoeducation]
-  audience: [clinical, academic]
-  themes: [service]
-  metrics: ["5–6 groups/week"]
-  verified: true
-  status: reviewed
-
-- id: bullet.prc-referral-intake
-  role_id: role.prc-baker-intake
-  text: >
-    Conducted in-person and virtual intake consultations at jails, hospitals, and
-    inpatient clinics for dual-diagnosis clients; administered ANSA, AOA-07, SDOH,
-    MSE, and ACE assessments, working from a stance of unconditional positive regard,
-    and translated each assessment directly into a treatment plan.
-  tags: [intake-assessment, dual-diagnosis, case-management]
-  skills: [skill.clinical-intake, skill.case-management]
-  audience: [clinical, academic]
-  themes: [service]
-  metrics: ["~32–48 intakes/mo across 4 houses (intake phase)"]
-  verified: true
-  status: reviewed
-
-- id: bullet.prc-epic-documentation
-  role_id: role.prc-baker-intake
-  text: >
-    Managed and reconciled referral data across Epic and Avatar EHR systems;
-    served as Epic power-user and resource for counseling staff.
-  tags: [clinical-documentation, case-management]
-  skills: [skill.clinical-documentation]
-  audience: [clinical]
-  themes: [service]
-  verified: true
-  status: reviewed
-
-- id: bullet.prc-referral-comms
-  role_id: role.prc-baker-intake
-  text: >
-    Updated agency intake application to more clearly communicate eligibility
-    and timelines to referring clients and providers, reducing confusion in the
-    admissions funnel.
-  tags: [intake-assessment, process-improvement, stakeholder-management]
-  skills: [skill.process-improvement, skill.stakeholder-management]
-  audience: [clinical, nonprofit]
-  themes: [research-to-decision]
-  verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.prc-digital-workflow
   role_id: role.prc-baker-intake
   text: >
@@ -124,33 +76,93 @@
     action: "Maintained and extended an existing SQL database, designed digital workflows (online forms, Teams, email, website), built redundant submission tracking, and documented the process."
     result: "Placements 25–50% faster; receipt confirmation dropped from days to hours; missed referrals fell to near zero and were locatable in minutes."
   verified: true
-  status: reviewed
-
-- id: bullet.prc-staff-training
+  status: active
+- id: bullet.prc-epic-superuser
   role_id: role.prc-baker-intake
   text: >
-    Authored process documentation for the new intake workflow and delivered
-    training presentations to all four residential houses and senior staff.
-  tags: [process-improvement, stakeholder-management, group-facilitation]
-  skills: [skill.process-improvement, skill.stakeholder-management]
-  audience: [clinical, nonprofit, exec]
-  themes: [people-development, research-to-decision]
+    Named by the program manager as the site's Epic resource: formally trained
+    three clinicians on documentation workflows and served as the standing
+    escalation point for Epic questions across the residential program.
+  tags: [health-it, clinical-documentation, mentorship, process-improvement]
+  skills: [skill.epic-superuser, skill.people-development, skill.clinical-documentation]
+  audience: [clinical, nonprofit, leadership]
+  themes: [people-development, craft]
+  metrics: ["3 clinicians formally trained"]
+  star:
+    situation: "Counseling staff were slow and inconsistent in Epic, with no designated local expert."
+    action: "Accepted the program manager's request to own Epic proficiency for the site — trained three clinicians directly and took ongoing escalations."
+    result: "The program had a single reliable point of Epic expertise; documentation practice standardized across staff."
+  source: "Dump session 2026-08-24."
   verified: true
-  status: reviewed
-
-- id: bullet.prc-dph-advocacy
+  status: active
+- id: bullet.prc-utilization-reporting
   role_id: role.prc-baker-intake
   text: >
-    Advocated directly with the SF Department of Public Health to place clients
-    at the appropriate level of care, coordinating across multiple systems to
-    secure correct placements.
-  tags: [case-management, stakeholder-management, intake-assessment]
-  skills: [skill.case-management, skill.stakeholder-management]
+    Built the program's utilization reporting — same-day census pulled from Epic
+    plus longitudinal trend analysis — and combined it with a Microsoft Access
+    database and Excel models into high-level dashboards for agency leadership and
+    the San Francisco Department of Public Health.
+  tags: [health-it, data-analysis, process-improvement, stakeholder-management]
+  skills: [skill.epic-superuser, skill.data-analysis, skill.microsoft-365]
+  audience: [clinical, exec, leadership, nonprofit, civic]
+  themes: [research-to-decision]
+  source: "Dump session 2026-08-24."
+  verified: true
+  status: active
+- id: bullet.prc-billable-documentation
+  role_id: role.prc-baker-intake
+  text: >
+    Owned documentation compliance for intake — bringing AO-07 social-history
+    assessments to completeness and notes to a billable standard under Medi-Cal
+    medical-necessity requirements, and personally correcting the documentation
+    that failed review.
+  tags: [compliance, clinical-documentation, intake-assessment]
+  skills: [skill.billable-documentation, skill.clinical-note-formats, skill.clinical-documentation]
   audience: [clinical, nonprofit]
-  themes: [service, research-to-decision]
+  themes: [craft]
+  source: "Dump session 2026-08-24. Dyl was the sole corrector at program level; claims submission sat with another team."
   verified: true
-  status: reviewed
-
+  status: active
+- id: bullet.prc-referral-intake
+  role_id: role.prc-baker-intake
+  text: >
+    Conducted in-person and virtual intake consultations at jails, hospitals, and
+    inpatient clinics for dual-diagnosis clients; administered ANSA, AOA-07, SDOH,
+    MSE, and ACE assessments, working from a stance of unconditional positive regard,
+    and translated each assessment directly into a treatment plan.
+  tags: [intake-assessment, dual-diagnosis, case-management]
+  skills: [skill.clinical-intake, skill.case-management]
+  audience: [clinical, academic]
+  themes: [service]
+  metrics: ["~32–48 intakes/mo across 4 houses (intake phase)"]
+  verified: true
+  status: active
+- id: bullet.prc-epic-documentation
+  role_id: role.prc-baker-intake
+  text: >
+    Managed and reconciled referral data across Epic and Avatar EHR systems;
+    served as Epic power-user and resource for counseling staff.
+  tags: [clinical-documentation, case-management]
+  skills: [skill.clinical-documentation]
+  audience: [clinical]
+  themes: [service]
+  verified: true
+  status: active
+- id: bullet.prc-note-systems
+  role_id: role.prc-baker-intake
+  text: >
+    Authored the program's Epic template and SmartPhrase library — census capture,
+    daily/monthly/closing notes, and keystroke shortcuts for high-frequency
+    documentation — driving typical note time down from ~30 minutes toward a
+    5-minute target, with some clinicians consistently reaching it.
+  tags: [clinical-documentation, process-improvement, health-it]
+  skills: [skill.epic-superuser, skill.clinical-documentation, skill.process-improvement]
+  audience: [clinical, nonprofit, leadership]
+  themes: [craft, research-to-decision]
+  metrics: ["typical note time ~30 min → toward a 5-min target; adoption varied by clinician"]
+  source: "LinkedIn import 2026-06-02; mechanism and honest framing confirmed by Dyl 2026-08-24."
+  verified: true
+  status: active
 - id: bullet.prc-acting-asst-director
   role_id: role.prc-baker-intake
   text: >
@@ -162,8 +174,7 @@
   audience: [clinical, nonprofit, leadership]
   themes: [service, people-development]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.prc-care-coordination
   role_id: role.prc-baker-intake
   text: >
@@ -175,8 +186,7 @@
   audience: [clinical, nonprofit]
   themes: [service, harm-reduction]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.prc-treatment-plans
   role_id: role.prc-baker-intake
   text: >
@@ -188,22 +198,68 @@
   audience: [clinical, academic]
   themes: [service, craft]
   verified: true
-  status: reviewed
-
-- id: bullet.prc-note-systems
+  status: active
+- id: bullet.prc-group-programming
   role_id: role.prc-baker-intake
   text: >
-    Built systems for efficient clinical note-taking, improving documentation
-    accuracy and cutting time spent on notes by ~75% (Residential Counselor phase).
-  tags: [clinical-documentation, process-improvement]
-  skills: [skill.clinical-documentation, skill.process-improvement]
+    Built weekly group programming schedules and operationalized 20+ groups per
+    week across psychoeducation, ADLs, social skills, and mindfulness.
+  tags: [group-facilitation, psychoeducation, program-design]
+  skills: [skill.group-facilitation, skill.program-design]
   audience: [clinical, nonprofit]
-  themes: [craft, research-to-decision]
-  metrics: ["note-taking time −~75%"]
-  source: "LinkedIn import 2026-06-02"
-  verified: false
-  status: draft
-
+  themes: [0-to-1, community-building]
+  metrics: [group-count]
+  verified: true
+  status: active
+- id: bullet.prc-group-facilitation
+  role_id: role.prc-baker-intake
+  text: >
+    Led 5–6 groups per week for dual-diagnosis residential clients, spanning
+    psychoeducation, activities of daily living (cooking, cleaning, hygiene,
+    self-organization, scheduling, job search), DBT and interpersonal-effectiveness
+    skills, and emotional process groups.
+  tags: [group-facilitation, psychoeducation, dual-diagnosis]
+  skills: [skill.group-facilitation, skill.psychoeducation]
+  audience: [clinical, academic]
+  themes: [service]
+  metrics: ["5–6 groups/week"]
+  verified: true
+  status: active
+- id: bullet.prc-dph-advocacy
+  role_id: role.prc-baker-intake
+  text: >
+    Advocated directly with the SF Department of Public Health to place clients
+    at the appropriate level of care, coordinating across multiple systems to
+    secure correct placements.
+  tags: [case-management, stakeholder-management, intake-assessment]
+  skills: [skill.case-management, skill.stakeholder-management]
+  audience: [clinical, nonprofit]
+  themes: [service, research-to-decision]
+  verified: true
+  status: active
+- id: bullet.prc-referral-comms
+  role_id: role.prc-baker-intake
+  text: >
+    Updated agency intake application to more clearly communicate eligibility
+    and timelines to referring clients and providers, reducing confusion in the
+    admissions funnel.
+  tags: [intake-assessment, process-improvement, stakeholder-management]
+  skills: [skill.process-improvement, skill.stakeholder-management]
+  audience: [clinical, nonprofit]
+  themes: [research-to-decision]
+  verified: true
+  status: active
+- id: bullet.prc-staff-training
+  role_id: role.prc-baker-intake
+  text: >
+    Authored process documentation for the new intake workflow and delivered
+    training presentations to all four residential houses and senior staff.
+  tags: [process-improvement, stakeholder-management, group-facilitation]
+  skills: [skill.process-improvement, skill.stakeholder-management]
+  audience: [clinical, nonprofit, exec]
+  themes: [people-development, research-to-decision]
+  verified: true
+  status: active
 - id: bullet.prc-phi-security
   role_id: role.prc-baker-intake
   text: >
@@ -215,8 +271,7 @@
   themes: [research-to-decision, service]
   source: "LinkedIn import 2026-06-02"
   verified: false
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.baaahs-harm-reduction
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -233,8 +288,7 @@
   themes: [harm-reduction, community-building, 0-to-1]
   metrics: ["events ~200–800 attendees"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-volunteer-training
   role_id: role.baaahs-harm-reduction
   text: >
@@ -246,8 +300,7 @@
   themes: [harm-reduction, people-development]
   metrics: ["3 rangers trained"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-frontline-ranger
   role_id: role.baaahs-harm-reduction
   text: >
@@ -259,8 +312,7 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, service]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-psychopharm-workshops
   role_id: role.baaahs-harm-reduction
   text: >
@@ -271,8 +323,7 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, community-building]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-sexual-health
   role_id: role.baaahs-harm-reduction
   text: >
@@ -283,8 +334,7 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, service]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-environmental
   role_id: role.baaahs-harm-reduction
   text: >
@@ -296,8 +346,7 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, service]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-advising
   role_id: role.baaahs-harm-reduction
   text: >
@@ -308,8 +357,7 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, people-development]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-breadth
   role_id: role.baaahs-harm-reduction
   text: >
@@ -323,8 +371,7 @@
   themes: [harm-reduction, service, resilience]
   metrics: ["15+ years of harm-reduction practice"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.baaahs-hr-crisis-support
   role_id: role.baaahs-harm-reduction
   text: >
@@ -335,8 +382,7 @@
   audience: [clinical]
   themes: [harm-reduction, service]
   verified: true
-  status: reviewed
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.lifelong-outreach
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -354,8 +400,7 @@
   themes: [service, community-building, scaling]
   metrics: ["~20–50 contacts/night", "~2,000+ contacts/year", "5 years, 1–2 nights/week"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.lifelong-surveillance-data
   role_id: role.lifelong-outreach
   text: >
@@ -369,8 +414,7 @@
   themes: [research-to-decision, service]
   metrics: ["nightly census of ~20–50/venue", "field data into county MSM surveillance"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.lifelong-sti-navigation
   role_id: role.lifelong-outreach
   text: >
@@ -382,8 +426,7 @@
   themes: [service, harm-reduction]
   metrics: ["~5–10 referrals/night"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.lifelong-harm-reduction-counseling
   role_id: role.lifelong-outreach
   text: >
@@ -395,8 +438,7 @@
   audience: [clinical, nonprofit]
   themes: [harm-reduction, service]
   verified: true
-  status: reviewed
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.sleep-nod-producer
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -411,8 +453,7 @@
   audience: [art-grant, creative, residency]
   themes: [craft, design]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.sleep-nod-grants
   role_id: role.sleep-nod-producer
   text: >
@@ -423,8 +464,7 @@
   audience: [art-grant, nonprofit, residency]
   themes: [service, community-building]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.sleep-nod-election-reporting
   role_id: role.sleep-nod-producer
   text: >
@@ -436,8 +476,7 @@
   themes: [0-to-1, craft]
   metrics: [asset-count]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.edelman-spm
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -453,8 +492,7 @@
   themes: [research-to-decision]
   metrics: [sow-value]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-standup-coaching
   role_id: role.edelman-spm
   text: >
@@ -466,8 +504,7 @@
   themes: [people-development]
   metrics: [meeting-time-reduction]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-margin-improvement
   role_id: role.edelman-spm
   text: >
@@ -485,8 +522,7 @@
     action: "Analyzed actual-vs-expected hours by senior leadership in Edelman's SQL platform and Tableau; identified overservice drivers."
     result: "Quarterly recommendations adopted; utilization returned to target and portfolio margin advanced +10% YoY."
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-focus-group-program
   role_id: role.edelman-spm
   text: >
@@ -497,8 +533,7 @@
   audience: [exec, creative]
   themes: [research-to-decision, 0-to-1]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-melissa-doug
   role_id: role.edelman-spm
   text: >
@@ -513,8 +548,7 @@
   themes: [scaling, service]
   metrics: ["~$2M account / budget", "teams of 5–10 under 5 senior directors", "3–4 concurrent projects"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-comms-consolidation
   role_id: role.edelman-spm
   text: >
@@ -526,8 +560,7 @@
   audience: [exec, leadership]
   themes: [0-to-1, people-development]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-starbucks-reporting
   role_id: role.edelman-spm
   text: >
@@ -540,8 +573,7 @@
   themes: [research-to-decision, scaling]
   metrics: ["report prep: 3 tools / ~2 weeks → 1 tool, weekly"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-grocery-dashboard
   role_id: role.edelman-spm
   text: >
@@ -557,8 +589,7 @@
     action: "Designed and built a Tableau rollup dashboard consolidating campaign performance across brands."
     result: "Leadership could review the entire campaign portfolio from one surface."
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.edelman-mckinsey-onboarding
   role_id: role.edelman-spm
   text: >
@@ -570,8 +601,7 @@
   themes: [0-to-1]
   metrics: ["$1–3M project engagements"]
   verified: true
-  status: reviewed
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.ab-scrum
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -590,8 +620,7 @@
   themes: [0-to-1, scaling]
   metrics: [team-count]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.ab-national-training
   role_id: role.ab-scrum
   text: >
@@ -603,8 +632,7 @@
   themes: [people-development]
   metrics: [teams-trained]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.ab-routine-consolidation
   role_id: role.ab-scrum
   text: >
@@ -618,8 +646,27 @@
   themes: [scaling, 0-to-1]
   metrics: ["7 routines → 3", "coordination ~3 days → <24h"]
   verified: true
-  status: reviewed
-
+  status: active
+- id: bullet.ab-portfolio-trackers
+  role_id: role.ab-scrum
+  text: >
+    Built cross-portfolio tracking in Azure DevOps spanning five brands, giving
+    division leadership one live view of project progress and of the shared
+    employees working across those brands — so they could shift focus toward
+    whichever brand was actually generating demand instead of waiting on status
+    meetings.
+  tags: [automation, project-management, agile, stakeholder-management, leadership]
+  skills: [skill.workflow-automation, skill.pm-tooling, skill.agile-scrum, skill.stakeholder-management]
+  audience: [exec, leadership, product]
+  themes: [research-to-decision, scaling]
+  metrics: ["5 brands tracked in one view", "shared-resource allocation visible live"]
+  star:
+    situation: "Five brands shared staff across a division, and leadership had no single view of who was working on what or where demand was actually landing."
+    action: "Built cross-portfolio tracking in Azure DevOps covering all five brands and the shared employees moving between them."
+    result: "Leadership could see progress and resourcing live and reallocate focus to the brands with real demand, rather than reconstructing status by meeting."
+  source: "Dump session 2026-08-24."
+  verified: true
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.jump450-spm
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -634,8 +681,7 @@
   audience: [exec, leadership]
   themes: [0-to-1]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.jump450-automation
   role_id: role.jump450-spm
   text: >
@@ -650,8 +696,7 @@
   themes: [tinkering, 0-to-1]
   metrics: ["asset approval: 2–3 weeks → 3–4 days"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.jump450-analytics-report
   role_id: role.jump450-spm
   text: >
@@ -666,8 +711,7 @@
   themes: [research-to-decision]
   metrics: [time-saved, "media-team labor −~1/3"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.jump450-dashboard-migration
   role_id: role.jump450-spm
   text: >
@@ -678,8 +722,7 @@
   audience: [tech, exec]
   themes: [scaling]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.jump450-client-revenue
   role_id: role.jump450-spm
   text: >
@@ -691,26 +734,45 @@
   themes: [people-development, scaling]
   metrics: [revenue-growth]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.jump450-wegmans-growth
   role_id: role.jump450-spm
   text: >
-    Built the trust that let Wegmans triple monthly ad spend (~$500K → ~$1.5M/mo) —
-    growing agency commission and lifting Wegmans from the agency's #5 to its #1
-    client, the core account before Jump450's acquisition by Omnicom.
+    Built the trust that let Wegmans grow monthly ad spend from ~$500K to roughly
+    $1M–$1.5M/mo depending on season — growing agency commission and lifting
+    Wegmans from the agency's #5 to its #1 client, the core account before
+    Jump450's acquisition by Omnicom.
   tags: [stakeholder-management, revenue, data-analysis]
   skills: [skill.stakeholder-management, skill.data-analysis]
   audience: [exec, leadership]
   themes: [scaling, people-development]
-  metrics: ["Wegmans spend ~$500K → ~$1.5M/mo (3×)", "#5 → #1 client"]
+  metrics: ["Wegmans spend ~$500K → ~$1M–$1.5M/mo, seasonal (2–3×)", "#5 → #1 client"]
   star:
     situation: "Wegmans was the agency's #5 client and cautious about increasing ad spend."
     action: "Earned confidence with faster approvals (Slack/Airtable pipeline) and clearer Tableau reporting, de-risking larger investment."
-    result: "Wegmans tripled monthly spend to ~$1.5M and became the agency's #1 client before its Omnicom acquisition."
+    result: "Wegmans grew monthly spend to ~$1M–$1.5M seasonally and became the agency's #1 client before its Omnicom acquisition."
   verified: true
-  status: reviewed
-
+  status: active
+- id: bullet.jump450-asset-taxonomy
+  role_id: role.jump450-spm
+  text: >
+    Designed the tagging schema behind the Wegmans asset pipeline — every submitted
+    creative auto-tagged on intake against campaign, store set, and eleven further
+    attributes — turning an approval queue into a queryable performance database
+    that let the client's marketing team see results of their own creative
+    iterations for the first time.
+  tags: [automation, data-analysis, process-improvement, project-management]
+  skills: [skill.workflow-automation, skill.data-analysis, skill.martech-analytics]
+  audience: [exec, product, tech, leadership]
+  themes: [0-to-1, research-to-decision]
+  metrics: ["13+ attributes auto-tagged per asset"]
+  star:
+    situation: "Approved assets moved between the client's marketing team and the agency's media buyers with no structured record of what was being tested."
+    action: "Built an auto-tagging schema into the Slack/Zapier/Airtable pipeline capturing campaign, store set, and 11 further attributes at submission."
+    result: "The approval queue became a performance database; the client's marketing community could finally see how their own creative iterations performed."
+  source: "Dump session 2026-08-24."
+  verified: true
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.future-colossal-cpm
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -731,8 +793,7 @@
   themes: [0-to-1, craft, place]
   metrics: ["$70K secured donation + donated DC/SF space", "project ~$1.1–1.5M"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.fc-arctic-refuge-sound
   role_id: role.future-colossal-cpm
   text: >
@@ -744,8 +805,7 @@
   audience: [art-grant, creative, residency]
   themes: [craft, design, place]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.fc-exhibit-installation
   role_id: role.future-colossal-cpm
   text: >
@@ -756,8 +816,7 @@
   audience: [creative, exec]
   themes: [craft]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.fc-sow-management
   role_id: role.future-colossal-cpm
   text: >
@@ -773,8 +832,7 @@
   themes: [research-to-decision]
   metrics: [sow-value, "project budgets $500K–$15M", "crews of 5–7", "~2–3 vendors/project"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.fc-ey-megatrends
   role_id: role.future-colossal-cpm
   text: >
@@ -793,8 +851,7 @@
     action: "Took on the entire project solo — hiring and coordinating multiple teams and coordinating with Cirque du Soleil staff, the conference's other producers."
     result: "Both EY installations were delivered successfully under extreme circumstances."
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.fc-windows-1-11
   role_id: role.future-colossal-cpm
   text: >
@@ -807,8 +864,7 @@
   audience: [creative, tech, exec]
   themes: [craft, 0-to-1]
   verified: true
-  status: reviewed
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.evia-producer
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -824,8 +880,7 @@
   themes: [scaling, people-development]
   metrics: [video-count, team-size]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.evia-production-time
   role_id: role.evia-producer
   text: >
@@ -837,8 +892,7 @@
   themes: [scaling]
   metrics: [production-time-reduction]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.easy-street-producer
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -853,8 +907,7 @@
   audience: [art-grant, creative, residency]
   themes: [community-building, 0-to-1]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.easy-street-sales-growth
   role_id: role.easy-street-producer
   text: >
@@ -866,21 +919,19 @@
   themes: [scaling]
   metrics: [sales-growth]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.easy-street-cafe-volume
   role_id: role.easy-street-producer
   text: >
     Served espresso drinks and breakfast to ~300 covers daily (~$3,000 in daily sales).
-  tags: [hospitality, service]
+  tags: [hospitality]
   skills: []
   audience: [general, exec]
   themes: [service, scaling]
   metrics: ["~300 covers/day", "~$3,000 daily sales"]
   source: "LinkedIn import 2026-06-02"
   verified: false
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.baaahs-food-director (volunteer)
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -896,8 +947,7 @@
   themes: [community-building]
   metrics: [attendees, revenue]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.baaahs-food-program
   role_id: role.baaahs-food-director
   text: >
@@ -909,8 +959,7 @@
   audience: [art-grant, creative]
   themes: [community-building, 0-to-1]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.crfw-consultant (volunteer)
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -925,8 +974,7 @@
   audience: [art-grant, nonprofit]
   themes: [service, community-building]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.base-arts-coordinator (volunteer)
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -942,8 +990,7 @@
   audience: [art-grant, residency]
   themes: [community-building, service]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.velocity-production (volunteer)
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -960,8 +1007,7 @@
   themes: [community-building, service]
   metrics: [funds-raised]
   verified: true
-  status: draft
-
+  status: active
 - id: bullet.velocity-documentary
   role_id: role.velocity-production
   text: >
@@ -972,8 +1018,7 @@
   audience: [art-grant, creative, residency]
   themes: [craft, design]
   verified: true
-  status: draft
-
+  status: active
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.cafe-suspiro-biz-dev
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -989,8 +1034,7 @@
   themes: [research-to-decision]
   metrics: [sales-volume]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.suspiro-gp-optimization
   role_id: role.cafe-suspiro-biz-dev
   text: >
@@ -1004,18 +1048,17 @@
   themes: [research-to-decision]
   metrics: ["profit margin ~40% → target 60%"]
   verified: true
-  status: reviewed
-
+  status: active
 - id: bullet.suspiro-barista
   role_id: role.cafe-suspiro-biz-dev
   text: >
     Made custom, luxury espresso drinks in a laid-back environment, covering up to
     75–100 customers daily.
-  tags: [hospitality, service]
+  tags: [hospitality]
   skills: []
   audience: [general]
   themes: [service, craft]
   metrics: ["up to 75–100 customers/day"]
   source: "LinkedIn import 2026-06-02"
   verified: false
-  status: draft
+  status: active

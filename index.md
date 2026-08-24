@@ -93,7 +93,8 @@ Open to project, program, and operations roles across healthcare, behavioral hea
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Project &amp; systems management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.program-design,skill.budget-management,skill.data-analysis,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management" %}
     {% include skill-group.html title="Clinical &amp; behavioral health" ids="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction,skill.group-facilitation,skill.psychoeducation,skill.clinical-assessments,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
-    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.martech-analytics,skill.microsoft-365,skill.adobe-creative-suite" %}
+    {% include skill-group.html title="Health IT &amp; compliance" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.clinical-note-formats" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
+    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365,skill.adobe-creative-suite" %}
     {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" %}
 
     <h2 class="section__title">Selected Projects</h2>
@@ -104,12 +105,12 @@ Open to project, program, and operations roles across healthcare, behavioral hea
   <section class="lens-panel" data-lens="clinical">
     <h2 class="section__title">Clinical Work</h2>
     <p class="lens-intro">Direct behavioral health practice — intake and assessment, group programming, clinical documentation, and harm reduction — plus the systems work that made the care actually reach people.</p>
-    {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="5" %}
-    {% include lens-roles.html title="Systems work that transfers into care settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis" limit="2" %}
+    {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,health-it,compliance,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="7" %}
+    {% include lens-roles.html title="Systems work that transfers into care settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Clinical &amp; behavioral health" ids="skill.clinical-intake,skill.clinical-assessments,skill.clinical-documentation,skill.clinical-note-formats,skill.case-management,skill.harm-reduction,skill.overdose-response,skill.group-facilitation,skill.psychoeducation,skill.community-outreach,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
-    {% include skill-group.html title="Systems &amp; documentation" ids="skill.process-improvement,skill.data-analysis,skill.program-design,skill.project-management,skill.microsoft-365" %}
+    {% include skill-group.html title="Systems &amp; documentation" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.process-improvement,skill.data-analysis,skill.program-design,skill.project-management,skill.microsoft-365" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
 
     <h2 class="section__title">Writing</h2>
     {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
@@ -119,14 +120,14 @@ Open to project, program, and operations roles across healthcare, behavioral hea
   <section class="lens-panel" data-lens="digital">
     <h2 class="section__title">Digital Project Management</h2>
     <p class="lens-intro">Agency-side program management, PMO building, agile transitions, and the reporting and automation stacks underneath them — including the ones I built inside a healthcare facility.</p>
-    {% include lens-roles.html ids="role.prc-baker-intake,role.cafe-suspiro-biz-dev,role.edelman-spm,role.ab-scrum,role.jump450-spm,role.evia-producer" tags="project-management,process-improvement,data-analysis,agile,scrum,stakeholder-management,budget-management,leadership,revenue,clinical-documentation" limit="4" %}
+    {% include lens-roles.html ids="role.prc-baker-intake,role.cafe-suspiro-biz-dev,role.edelman-spm,role.ab-scrum,role.jump450-spm,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,health-it,compliance,agile,scrum,stakeholder-management,budget-management,leadership,revenue,clinical-documentation" limit="4" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Project &amp; systems management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.program-design,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.data-analysis" %}
-    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.martech-analytics,skill.microsoft-365,skill.clinical-documentation" %}
+    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.epic-superuser,skill.martech-analytics,skill.microsoft-365,skill.clinical-documentation" key="skill.workflow-automation,skill.epic-superuser" %}
 
     <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.windows-111-2019,project.arctic-refuge-2019,project.megatrends-2019" %}
+    {% include lens-projects.html ids="project.cv-database,project.windows-111-2019,project.arctic-refuge-2019,project.megatrends-2019" %}
   </section>
 
   {%- comment -%} ═══ ONSITE PM ═══ {%- endcomment -%}

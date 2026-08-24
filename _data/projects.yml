@@ -19,8 +19,7 @@
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.no-haiku-2020
   title: "No Haiku"
   type: art
@@ -33,8 +32,7 @@
   tags: [choreography, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.no-one-2018
   title: "No One Will Ever Love You More Than You Are Capable of Handling"
   type: art
@@ -47,7 +45,7 @@
   tags: [performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
+  status: active
   notes: "Title later recycled as a Substack chapter (SB8). See Sleep Nod catalog."
 
 - id: project.lesser-evils-2017
@@ -63,8 +61,7 @@
   tags: [choreography, performance, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
-  status: draft
-
+  status: active
 - id: project.chimera-2016
   title: "Chimera"
   type: art
@@ -78,8 +75,7 @@
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.sophia-2016
   title: "Sophia"
   type: art
@@ -93,8 +89,7 @@
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.dogged-2016
   title: "Dogged"
   type: art
@@ -107,8 +102,7 @@
   tags: [choreography, performance, queer]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.hard-hearts-2015
   title: "Hard Hearts"
   type: art
@@ -122,8 +116,7 @@
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.eat-the-heart-2015
   title: "Eat the Heart (Waltzes for People Who Sometimes Do Bad Things)"
   type: art
@@ -137,8 +130,7 @@
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.simply-put-2015
   title: "Simply Put"
   type: art
@@ -157,8 +149,7 @@
   tags: [choreography, documentary, time-based-media, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
-  status: draft
-
+  status: active
 # ── Sound Design ──────────────────────────────────────────────────────────────
 
 - id: project.worth-my-salt-2014
@@ -181,8 +172,7 @@
   tags: [sound-design, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.disagreeable-tale-2014
   title: "A Disagreeable Tale of Duplicity"
   type: art
@@ -197,8 +187,7 @@
   tags: [sound-design, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 # ── Video Direction ───────────────────────────────────────────────────────────
 
 - id: project.cold-light-day-2014
@@ -215,8 +204,7 @@
   tags: [sound-design, documentary, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, place]
-  status: draft
-
+  status: active
 - id: project.clear-and-sweet-2016
   title: "Clear and Sweet"
   type: art
@@ -232,8 +220,7 @@
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 - id: project.bodies-of-water-2016
   title: "Bodies of Water"
   type: art
@@ -248,8 +235,7 @@
   tags: [video-direction, documentary]
   audience: [art-grant, creative]
   themes: [craft, place]
-  status: draft
-
+  status: active
 - id: project.tim-e-2017
   title: "The Institute of Memory (TIM)e"
   type: art
@@ -267,8 +253,7 @@
   tags: [video-direction, documentary, time-based-media, installation]
   audience: [art-grant, residency, creative]
   themes: [craft, memory, design]
-  status: draft
-
+  status: active
 - id: project.material-deviation-2018
   title: "Material Deviance in Contemporary American Culture"
   type: art
@@ -287,8 +272,7 @@
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
-  status: draft
-
+  status: active
 # ── Immersive / Event ─────────────────────────────────────────────────────────
 
 - id: project.arctic-refuge-2019
@@ -319,8 +303,7 @@
   tags: [immersive, installation, sound-design, event-production, project-management]
   audience: [art-grant, creative, exec]
   themes: [0-to-1, craft, design, place]
-  status: draft
-
+  status: active
 - id: project.megatrends-2019
   title: "Megatrends"
   type: art
@@ -339,8 +322,7 @@
   tags: [immersive, installation, event-production, project-management]
   audience: [creative, exec]
   themes: [0-to-1, craft, design]
-  status: draft
-
+  status: active
 - id: project.windows-111-2019
   title: "Windows 1.11"
   type: art
@@ -361,8 +343,7 @@
   audience: [tech, creative, exec]
   themes: [0-to-1, craft]
   metrics: [users]
-  status: draft
-
+  status: active
 # ── Writing / Publishing ──────────────────────────────────────────────────────
 
 - id: project.still-becoming
@@ -380,8 +361,7 @@
   tags: [writing, time-based-media]
   audience: [bio, creative, art-grant]
   themes: [curiosity, memory, language, reinvention]
-  status: draft
-
+  status: active
 - id: project.desert-mode
   title: "Desert Mode — essay arc"
   type: writing
@@ -396,4 +376,26 @@
   tags: [writing]
   audience: [bio, creative, art-grant]
   themes: [resilience, memory, reinvention]
-  status: draft
+  status: active
+- id: project.cv-database
+  title: "Curriculum Viatae — Structured CV Database & Agent Ingest Pipeline"
+  type: software
+  start: 2026-05
+  end: ongoing
+  role: "Designer and sole builder"
+  description: >
+    A structured YAML database of every role, accomplishment, project, and skill,
+    with a closed tagging vocabulary (audience, theme, tag) that lets an LLM
+    reassemble a résumé for any given audience on demand. Includes a documented
+    schema, an agent ingest contract that turns raw source documents and spoken
+    brain-dumps into validated draft entries, and a Jekyll site that renders the
+    same database through switchable lenses — clinical, digital PM, onsite PM,
+    arts — each pulling a different slice of the same underlying facts.
+  url: "https://dylwar27.github.io/CV_Scone/"
+  artifacts:
+    - label: "Live CV site"
+      url: "https://dylwar27.github.io/CV_Scone/"
+  tags: [ai-tooling, automation, data-analysis, process-improvement, programming]
+  audience: [tech, product, general]
+  themes: [0-to-1, tinkering, curiosity, craft]
+  status: active

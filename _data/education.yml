@@ -15,8 +15,7 @@
     - "In progress; expected completion 2027."
   tags: [case-management, group-facilitation, clinical-documentation]
   audience: [clinical, academic]
-  status: draft
-
+  status: active
 - id: edu.uw-ba
   institution: "University of Washington"
   type: degree
@@ -30,8 +29,7 @@
     - "Minor in Dance."
   tags: [humanities, performance, choreography]
   audience: [academic, art-grant, general]
-  status: draft
-
+  status: active
 - id: edu.sccc-aa
   institution: "Seattle Central Community College"
   type: degree
@@ -44,8 +42,7 @@
   highlights: []
   tags: [humanities]
   audience: [academic, general]
-  status: draft
-
+  status: active
 - id: edu.ggu-cs
   institution: "Golden Gate University (via Outlier)"
   type: course
@@ -59,7 +56,7 @@
     - "Paused after determining clinical path was higher motivation."
   tags: [programming, self-directed]
   audience: [tech, general]
-  status: draft
+  status: active
   notes: "Confirm whether to include on clinical-audience CVs."
 
 - id: edu.pmp
@@ -74,8 +71,7 @@
   highlights: []
   tags: [project-management, agile]
   audience: [tech, exec, nonprofit]
-  status: draft
-
+  status: active
 - id: edu.google-data-analytics
   institution: "Google / Coursera"
   type: certificate
@@ -88,8 +84,7 @@
   highlights: []
   tags: [data-analysis, programming]
   audience: [tech, exec]
-  status: draft
-
+  status: active
 - id: edu.mhrs
   institution: "California Department of Health Care Services"
   type: certificate
@@ -103,4 +98,4 @@
     - "Qualified by B.A. plus prior Lifelong AIDS Alliance experience."
   tags: [clinical-documentation, case-management, harm-reduction]
   audience: [clinical, nonprofit]
-  status: draft
+  status: active
