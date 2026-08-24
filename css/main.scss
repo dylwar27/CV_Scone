@@ -1,9 +1,8 @@
 ---
-# Main scss file
+# Main stylesheet. Design lives in _sass/_cv.scss.
 ---
 @charset "utf-8";
 
 @import
   'normalize',
-  'biscuit',
-  'syntax';
+  'cv';

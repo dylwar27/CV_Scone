@@ -15,8 +15,10 @@ basics:
       url: "https://sleepnod.substack.com"
     - label: "LinkedIn"
       url: "https://www.linkedin.com/in/dylwar"
+    - label: "Vimeo"
+      url: "https://vimeo.com/dfw"
     - label: "Portfolio"
-      url: ""
+      url: "https://sleep-nod.com"
 
 summaries:
   - id: summary.linkedin-headline

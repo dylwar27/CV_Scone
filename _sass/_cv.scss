@@ -1,0 +1,535 @@
+// ─────────────────────────────────────────────────────────────────────────────
+//  CV — design layer. Written for GitHub Pages' Ruby Sass (no @use / modules).
+// ─────────────────────────────────────────────────────────────────────────────
+
+:root {
+  --bg: #fbfaf8;
+  --panel: #f3f0ea;
+  --ink: #1b1b19;
+  --muted: #56534c;
+  --faint: #8b877d;
+  --rule: #e3ded4;
+  --accent: #1d5c58;
+  --accent-ink: #14403d;
+  --accent-soft: #e9f1ef;
+  --shadow: 0 1px 2px rgba(27,27,25,.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --panel: #1b1e23;
+    --ink: #e9e6df;
+    --muted: #a7a49c;
+    --faint: #7d7a72;
+    --rule: #2b2f36;
+    --accent: #74b9b2;
+    --accent-ink: #a5d6d1;
+    --accent-soft: #1a262a;
+    --shadow: none;
+  }
+}
+
+$serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+* { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: $sans;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover, a:focus { border-bottom-color: currentColor; }
+
+.wrap {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// ── Hero ─────────────────────────────────────────────────────────────────────
+
+.hero { padding: 3.25rem 0 1.5rem; }
+
+@media (min-width: 46rem) {
+  .hero { padding: 5rem 0 2rem; }
+}
+
+.hero__name {
+  font-family: $serif;
+  font-size: 2.6rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 0 0 .6rem;
+  color: var(--ink);
+}
+
+@media (min-width: 46rem) {
+  .hero__name { font-size: 3.4rem; }
+}
+
+.hero__tagline {
+  margin: 0 0 1.6rem;
+  color: var(--muted);
+  font-size: .95rem;
+  letter-spacing: .02em;
+}
+
+.hero__lead {
+  font-size: 1.1rem;
+  line-height: 1.62;
+  max-width: 38rem;
+  margin: 0 0 2rem;
+}
+
+@media (min-width: 46rem) {
+  .hero__lead { font-size: 1.2rem; }
+}
+
+.hero__lead strong { font-weight: 600; }
+
+// ── Buttons / contact row ────────────────────────────────────────────────────
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .62rem 1.1rem;
+  border-radius: 8px;
+  font-size: .95rem;
+  font-weight: 500;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: var(--shadow);
+}
+.btn:hover, .btn:focus { background: var(--accent-ink); border-color: var(--accent-ink); color: var(--bg); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: none;
+}
+.btn--ghost:hover, .btn--ghost:focus { background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent); }
+
+.meta-line {
+  color: var(--faint);
+  font-size: .88rem;
+  margin: 1.1rem 0 0;
+}
+
+// ── Jump nav ─────────────────────────────────────────────────────────────────
+
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1.25rem;
+  margin: 1.6rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+  font-size: .87rem;
+}
+
+.jump a {
+  color: var(--muted);
+  letter-spacing: .01em;
+}
+
+.jump a:hover, .jump a:focus { color: var(--accent); }
+
+// ── Sections ─────────────────────────────────────────────────────────────────
+
+.section { padding: 2rem 0 .5rem; }
+
+.section__title {
+  font-family: $sans;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 0 0 .25rem;
+  padding-bottom: .7rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.group__title {
+  font-family: $sans;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--muted);
+  margin: 2rem 0 0;
+}
+
+.group:first-of-type .group__title { margin-top: 1.6rem; }
+
+// ── Entries (roles, projects, education) ─────────────────────────────────────
+
+.entry {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .15rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+@media (min-width: 46rem) {
+  .entry {
+    grid-template-columns: 8.5rem 1fr;
+    gap: 0 2rem;
+  }
+}
+
+.entry__when {
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--faint);
+  padding-top: .3rem;
+  letter-spacing: .01em;
+}
+
+.entry__title {
+  font-family: $serif;
+  font-size: 1.22rem;
+  line-height: 1.3;
+  margin: 0 0 .12rem;
+  color: var(--ink);
+}
+
+.entry__org {
+  margin: 0 0 .1rem;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.entry__meta {
+  margin: 0;
+  font-size: .84rem;
+  color: var(--faint);
+}
+
+.entry__desc {
+  margin: .55rem 0 0;
+  color: var(--muted);
+}
+
+.entry ul {
+  margin: .7rem 0 0;
+  padding-left: 1.05rem;
+}
+
+.entry li {
+  margin-bottom: .45rem;
+  color: var(--muted);
+}
+
+.entry li::marker { color: var(--faint); }
+
+.entry__with {
+  margin: .5rem 0 0;
+  font-size: .84rem;
+  color: var(--faint);
+}
+
+// ── Chips (skills) ───────────────────────────────────────────────────────────
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: .7rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .3rem .75rem;
+  font-size: .85rem;
+  color: var(--muted);
+  background: var(--panel);
+}
+
+.chip--key {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  font-weight: 500;
+}
+
+// ── Credentials strip ────────────────────────────────────────────────────────
+
+.creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.creds li {
+  font-size: .85rem;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  background: var(--panel);
+  border-radius: 6px;
+  padding: .28rem .65rem;
+}
+
+// ── Closing CTA ──────────────────────────────────────────────────────────────
+
+.cta {
+  margin: 3.5rem 0 1rem;
+  padding: 2.2rem;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  border: 1px solid var(--rule);
+}
+
+.cta h2 {
+  font-family: $serif;
+  font-size: 1.8rem;
+  margin: 0 0 .6rem;
+  color: var(--ink);
+}
+
+.cta p {
+  margin: 0 0 1.4rem;
+  max-width: 34rem;
+  color: var(--muted);
+}
+
+// ── Footer ───────────────────────────────────────────────────────────────────
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding: 1.6rem 0 3rem;
+  border-top: 1px solid var(--rule);
+  font-size: .82rem;
+  color: var(--faint);
+}
+
+.site-footer a { color: var(--faint); }
+
+// ── Print: clean single-document CV ──────────────────────────────────────────
+
+@media print {
+  :root {
+    --bg: #fff; --panel: #fff; --ink: #000; --muted: #222;
+    --faint: #555; --rule: #bbb; --accent: #000; --accent-ink: #000;
+    --accent-soft: #fff; --shadow: none;
+  }
+  body { font-size: 10.5pt; line-height: 1.42; }
+  .wrap { max-width: none; padding: 0; }
+  .hero { padding: 0 0 .6rem; }
+  .hero__name { font-size: 22pt; }
+  .hero__lead { font-size: 10.5pt; margin-bottom: .6rem; }
+  .actions, .cta .actions, .jump { display: none; }
+  .cta { border: none; padding: 0; margin: 1rem 0 0; }
+  .cta h2 { font-size: 13pt; }
+  .section { padding: .8rem 0 0; }
+  .entry { padding: .6rem 0; page-break-inside: avoid; }
+  .site-footer { border: none; padding-top: .5rem; }
+  a { color: #000; }
+}
+
+// ── Hero additions: personal statement + primary CTA ─────────────────────────
+
+.hero__statement {
+  max-width: 38rem;
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+.hero__cta { margin: 1.6rem 0 0; }
+
+.btn--big {
+  font-size: 1rem;
+  padding: .8rem 1.4rem;
+}
+
+// ── Lens layout: sidebar + panels ────────────────────────────────────────────
+
+.lens-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+  scroll-margin-top: 1.5rem;
+}
+
+// Grid children default to min-width:auto, which lets the horizontally
+// scrolling lens bar stretch the whole layout on narrow screens.
+.lens-layout > * { min-width: 0; }
+
+@media (min-width: 62rem) {
+  .lens-layout {
+    grid-template-columns: 13.5rem minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+.lensbar__title {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 0 0 .8rem;
+  padding-bottom: .7rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.lensbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: .4rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.lensbar ul::-webkit-scrollbar { display: none; }
+
+.lensbar li { flex: 0 0 auto; }
+
+.lensbar button {
+  font: inherit;
+  font-size: .9rem;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--muted);
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .45rem .85rem;
+}
+
+.lensbar button:hover { color: var(--accent-ink); border-color: var(--accent); }
+
+.lensbar button.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+  font-weight: 500;
+}
+
+@media (min-width: 62rem) {
+  .lensbar {
+    position: sticky;
+    top: 2rem;
+  }
+  .lensbar ul {
+    flex-direction: column;
+    gap: .15rem;
+    overflow: visible;
+  }
+  .lensbar button {
+    width: 100%;
+    white-space: normal;
+    border-radius: 7px;
+    border-color: transparent;
+    background: transparent;
+    padding: .5rem .7rem;
+  }
+  .lensbar button:hover { background: var(--panel); border-color: var(--rule); }
+  .lensbar button.is-active { background: var(--accent); border-color: var(--accent); }
+}
+
+// Progressive enhancement: with no JS every panel renders (full CV, crawlable).
+// With JS, only the selected lens shows.
+.lens-prompt { display: none; }
+.js .lens-panel { display: none; }
+.js .lens-panel.is-active { display: block; }
+
+.lens-panels .section__title { margin-top: 2.5rem; }
+
+@media (min-width: 62rem) {
+  .lens-panels .entry { grid-template-columns: 7rem 1fr; gap: 0 1.5rem; }
+}
+.lens-panels .lens-panel > .section__title:first-child { margin-top: 0; }
+
+.lens-intro {
+  margin: 1.1rem 0 .5rem;
+  max-width: 40rem;
+  color: var(--muted);
+}
+
+.prompt {
+  margin: 0;
+  padding: 2rem;
+  border: 1px dashed var(--rule);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--muted);
+  max-width: 40rem;
+}
+
+// ── Press / project links ────────────────────────────────────────────────────
+
+.links {
+  margin: .7rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.links:empty { display: none; }
+
+.link-pill {
+  font-size: .82rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .25rem .7rem;
+  color: var(--accent);
+  background: var(--bg);
+}
+
+.link-pill:hover, .link-pill:focus {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+
+.entry ul:empty { display: none; }
+
+// ── Print: lenses collapse back to the whole CV ──────────────────────────────
+
+@media print {
+  .lensbar, .lens-prompt, .hero__cta { display: none !important; }
+  .js .lens-panel { display: block !important; }
+  .lens-layout { display: block; padding-top: 0; }
+  .link-pill { border: none; padding: 0 .4rem 0 0; }
+}

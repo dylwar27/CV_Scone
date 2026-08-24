@@ -1,0 +1,40 @@
+{%- comment -%}
+  Renders one labelled group of roles.
+  Params: title, ids (comma-separated role ids, in display order),
+          bullets (max bullets per role), spotlight (ids getting spotlight_bullets),
+          spotlight_bullets
+{%- endcomment -%}
+{%- assign id_list = include.ids | split: "," -%}
+{%- assign spot_list = include.spotlight | default: "" | split: "," -%}
+<div class="group">
+  <h3 class="group__title">{{ include.title }}</h3>
+  {%- for id in id_list -%}
+  {%- assign role = site.data.roles | where: "id", id | first -%}
+  {%- if role and role.visibility != "private" -%}
+  {%- assign limit = include.bullets | plus: 0 -%}
+  {%- if spot_list contains id -%}{%- assign limit = include.spotlight_bullets | plus: 0 -%}{%- endif -%}
+  {%- assign from = role.start | slice: 0, 4 -%}
+  {%- if role.end == nil or role.end == "present" or role.end == "ongoing" -%}
+    {%- assign to = "Present" -%}
+  {%- else -%}
+    {%- assign to = role.end | slice: 0, 4 -%}
+  {%- endif -%}
+  <article class="entry">
+    <div class="entry__when">{% if from == to %}{{ from }}{% else %}{{ from }} &ndash; {{ to }}{% endif %}</div>
+    <div class="entry__body">
+      <h4 class="entry__title">{{ role.title }}</h4>
+      <p class="entry__org">{{ role.org }}</p>
+      <p class="entry__meta">{{ role.location }} &middot; {{ role.type | capitalize }}</p>
+      {%- assign role_bullets = site.data.bullets | where: "role_id", role.id -%}
+      {%- if role_bullets.size > 0 %}
+      <ul>
+        {%- for bullet in role_bullets limit: limit %}
+        <li>{{ bullet.text | strip_newlines | strip }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </article>
+  {%- endif -%}
+  {%- endfor -%}
+</div>

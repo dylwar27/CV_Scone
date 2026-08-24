@@ -1,0 +1,17 @@
+{%- comment -%}
+  Renders one labelled row of skill chips.
+  Params: title, ids (comma-separated skill ids), key (ids to emphasise)
+{%- endcomment -%}
+{%- assign id_list = include.ids | split: "," -%}
+{%- assign key_list = include.key | default: "" | split: "," -%}
+<div class="group">
+  <h3 class="group__title">{{ include.title }}</h3>
+  <ul class="chips">
+    {%- for id in id_list -%}
+    {%- assign skill = site.data.skills | where: "id", id | first -%}
+    {%- if skill and skill.visibility != "private" %}
+    <li class="chip{% if key_list contains id %} chip--key{% endif %}">{{ skill.name }}</li>
+    {%- endif -%}
+    {%- endfor %}
+  </ul>
+</div>

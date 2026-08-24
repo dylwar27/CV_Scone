@@ -1,6 +1,10 @@
 # Site settings
-title: CV
-description: CV
+title: "Dylan Ward — Project & Program Management"
+description: "Project, program, and operations management across healthcare, behavioral health, and creative production. PMP and MHRS credentialed, based in San Francisco."
+author: "Dylan Ward"
+url: "https://dylwar27.github.io"
+baseurl: "/CV_Scone"
+lang: en
 
 plugins:
   - jekyll-seo-tag

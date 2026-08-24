@@ -1,0 +1,11 @@
+{%- comment -%}
+  A labelled run of roles sharing one bullet-tag filter.
+  Params: title (optional), ids, tags, limit
+{%- endcomment -%}
+{%- assign id_list = include.ids | split: "," -%}
+<div class="group">
+  {%- if include.title %}<h3 class="group__title">{{ include.title }}</h3>{% endif -%}
+  {%- for id in id_list -%}
+  {%- include lens-role.html id=id tags=include.tags limit=include.limit -%}
+  {%- endfor -%}
+</div>

@@ -173,6 +173,11 @@
     noise recorded from distant stars, and 1990s television and film into a
     pastiche-driven show about self-worth. Sold out every night at Velocity Dance
     Center, Seattle; subsequently presented in Portland and New York.
+  artifacts:
+    - label: "Velocity Dance Center — Made in Seattle archive"
+      url: "https://archive.velocitydancecenter.org/program/made-in-seattle/"
+    - label: "SeattleDances review"
+      url: "https://seattledances.com/2014/10/do-you-think-this-is-easy-for-me-asks-cherdonna/"
   tags: [sound-design, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -257,15 +262,15 @@
     Shot in one take on opening night, capturing a set built entirely of fluorescent
     lighting. Available for rent or purchase at Ontheboards.tv.
   artifacts:
-    - label: "OntheBoards.tv"
-      url: ""
+    - label: "OntheBoards.tv — watch the film"
+      url: "https://www.ontheboards.tv/performances/institute-memory-time"
   tags: [video-direction, documentary, time-based-media, installation]
   audience: [art-grant, residency, creative]
   themes: [craft, memory, design]
   status: draft
 
 - id: project.material-deviation-2018
-  title: "Material Deviation in Contemporary American Culture"
+  title: "Material Deviance in Contemporary American Culture"
   type: art
   start: 2018-01
   end: 2018-12
@@ -276,6 +281,9 @@
     Boards, Seattle. Directed a team of four on opening night; edited into a
     performance film and promotional piece that enabled Alice to tour the work
     to Cambridge, New York City, and the University of North Carolina.
+  artifacts:
+    - label: "Alice Gosti — work page"
+      url: "http://www.gostia.com/mdicac/"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -295,6 +303,19 @@
     integration, 14-channel sound, custom scent, and integrated wind and fog effects.
     Led participants through four seasons in the Arctic Refuge. Toured New York,
     San Francisco, and Washington DC. Covered by ABC and CBS News.
+  artifacts:
+    - label: "Future Colossal — project page"
+      url: "https://www.futurecolossal.com/arcticrefuge"
+    - label: "CBS New York"
+      url: "https://www.cbsnews.com/newyork/news/arctic-experience-transports-new-yorkers-into-alaskan-wilds/"
+    - label: "ABC7 New York"
+      url: "https://abc7ny.com/experience-arctic-refuge-at-immersive-nyc-exhibition/5638642/"
+    - label: "Audubon"
+      url: "https://www.audubon.org/news/a-stunning-new-exhibit-transported-me-arctic-refuge-and-made-me-realize-whats"
+    - label: "DCist"
+      url: "https://dcist.com/story/19/11/05/this-immersive-pop-up-exhibit-places-you-inside-the-arctic-refuge/"
+    - label: "No Proscenium"
+      url: "https://www.noproscenium.com/dc-sf-the-arctic-refuge-experience/"
   tags: [immersive, installation, sound-design, event-production, project-management]
   audience: [art-grant, creative, exec]
   themes: [0-to-1, craft, design, place]
@@ -312,6 +333,9 @@
     Used SICK lidar sensors and Unity game engine to create a graphic environment
     responding to passersby. Thousands of engagements; later inquired about for
     permanent installation at EY's NYC offices.
+  artifacts:
+    - label: "Future Colossal — EY Innovation Realized 2019"
+      url: "https://www.futurecolossal.com/ey2019"
   tags: [immersive, installation, event-production, project-management]
   audience: [creative, exec]
   themes: [0-to-1, craft, design]
@@ -330,6 +354,9 @@
     Down. Managed QA testing, user testing with fans, and stakeholder feedback.
     Delivered within Netflix and Microsoft brand guidelines. 54,000+ unique users
     to date.
+  artifacts:
+    - label: "Future Colossal — project page"
+      url: "https://www.futurecolossal.com/microsoft-windows-111"
   tags: [project-management, stakeholder-management, event-production, immersive]
   audience: [tech, creative, exec]
   themes: [0-to-1, craft]

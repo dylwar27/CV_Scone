@@ -1,0 +1,31 @@
+{%- comment -%}
+  Projects for a lens, with any verified press / project links.
+  Params: ids, max_links (default 3)
+  Links come from each project's `artifacts` (and `url`) in the source database —
+  empty urls are skipped, so a link appears the moment it is filled in there.
+{%- endcomment -%}
+{%- assign id_list = include.ids | split: "," -%}
+{%- assign max_links = include.max_links | default: 3 | plus: 0 -%}
+{%- for id in id_list -%}
+{%- assign proj = site.data.projects | where: "id", id | first -%}
+{%- if proj and proj.visibility != "private" -%}
+<article class="entry">
+  <div class="entry__when">{{ proj.start | slice: 0, 4 }}{% if proj.end == "ongoing" %} &ndash; Present{% endif %}</div>
+  <div class="entry__body">
+    <h4 class="entry__title">{{ proj.title }}</h4>
+    {%- if proj.role %}<p class="entry__meta">{{ proj.role }}</p>{% endif %}
+    <p class="entry__desc">{{ proj.description | strip_newlines | strip }}</p>
+    {%- if proj.collaborators and proj.collaborators != empty %}
+    <p class="entry__with">With {{ proj.collaborators | join: ", " }}</p>
+    {%- endif -%}
+    {%- assign shown = 0 -%}
+    <p class="links">
+    {%- if proj.url and proj.url != "" %}<a class="link-pill" href="{{ proj.url }}">Read it</a>{% assign shown = shown | plus: 1 %}{% endif -%}
+    {%- for a in proj.artifacts -%}
+    {%- if a.url and a.url != "" and shown < max_links %}<a class="link-pill" href="{{ a.url }}">{{ a.label }}</a>{% assign shown = shown | plus: 1 %}{% endif -%}
+    {%- endfor %}
+    </p>
+  </div>
+</article>
+{%- endif -%}
+{%- endfor -%}

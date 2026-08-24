@@ -1,0 +1,45 @@
+{%- comment -%}
+  One role, with its bullets filtered by tag.
+  Params: id  — role id
+          tags — comma-separated bullet tags; a bullet shows if it carries ANY
+                 of them. Omit or pass "" for no filter (show first N).
+          limit — max bullets to show (default 3)
+  Bullet order comes from bullets.yml, so the "best" bullet for a lens is the
+  earliest matching one. Reorder in the source database to change the pick.
+{%- endcomment -%}
+{%- assign role = site.data.roles | where: "id", include.id | first -%}
+{%- if role and role.visibility != "private" -%}
+{%- assign limit = include.limit | default: 3 | plus: 0 -%}
+{%- assign from = role.start | slice: 0, 4 -%}
+{%- if role.end == nil or role.end == "present" or role.end == "ongoing" -%}
+  {%- assign to = "Present" -%}
+{%- else -%}
+  {%- assign to = role.end | slice: 0, 4 -%}
+{%- endif -%}
+<article class="entry">
+  <div class="entry__when">{% if from == to %}{{ from }}{% else %}{{ from }} &ndash; {{ to }}{% endif %}</div>
+  <div class="entry__body">
+    <h4 class="entry__title">{{ role.title }}</h4>
+    <p class="entry__org">{{ role.org }}</p>
+    <p class="entry__meta">{{ role.location }} &middot; {{ role.type | capitalize }}</p>
+    {%- assign role_bullets = site.data.bullets | where: "role_id", role.id -%}
+    <ul>
+    {%- assign shown = 0 -%}
+    {%- for b in role_bullets -%}
+      {%- if shown < limit -%}
+        {%- if include.tags == nil or include.tags == "" -%}
+          {%- assign hit = true -%}
+        {%- else -%}
+          {%- assign hit = false -%}
+          {%- assign tag_list = include.tags | split: "," -%}
+          {%- for t in tag_list -%}{%- if b.tags contains t -%}{%- assign hit = true -%}{%- endif -%}{%- endfor -%}
+        {%- endif -%}
+        {%- if hit %}
+      <li>{{ b.text | strip_newlines | strip }}</li>
+        {%- assign shown = shown | plus: 1 -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor %}
+    </ul>
+  </div>
+</article>
+{%- endif -%}

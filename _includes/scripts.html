@@ -1,5 +1,44 @@
-<div id="footer">
-<center>
-<small> This site uses a simple and beautiful Jekyll theme: <a href="https://sblisesivdin.github.io/biscuit">Biscuit</a></small>
-</center>
-</div>
+<footer class="site-footer">
+  <div class="wrap">
+    &copy; {{ 'now' | date: "%Y" }} {{ site.author }} &middot;
+    <a href="mailto:{{ site.data.profile.basics.email }}">{{ site.data.profile.basics.email }}</a> &middot;
+    <a href="https://github.com/dylwar27/CV_Scone">Source</a>
+  </div>
+</footer>
+<script>
+(function () {
+  var bar = document.querySelector('[data-lensbar]');
+  if (!bar) return;
+  var buttons = bar.querySelectorAll('button[data-lens]');
+  var panels  = document.querySelectorAll('.lens-panel[data-lens]');
+
+  function show(lens, push) {
+    var found = false;
+    for (var i = 0; i < panels.length; i++) {
+      var on = panels[i].getAttribute('data-lens') === lens;
+      panels[i].classList.toggle('is-active', on);
+      if (on) found = true;
+    }
+    if (!found) return false;
+    for (var j = 0; j < buttons.length; j++) {
+      var active = buttons[j].getAttribute('data-lens') === lens;
+      buttons[j].setAttribute('aria-pressed', active ? 'true' : 'false');
+      buttons[j].classList.toggle('is-active', active);
+    }
+    if (push && history.replaceState) {
+      history.replaceState(null, '', lens === 'start' ? location.pathname : '#view-' + lens);
+    }
+    return true;
+  }
+
+  for (var k = 0; k < buttons.length; k++) {
+    buttons[k].addEventListener('click', function () {
+      show(this.getAttribute('data-lens'), true);
+    });
+  }
+
+  // Deep link: /#view-clinical opens straight into that lens.
+  var m = location.hash.match(/^#view-([a-z]+)$/);
+  if (!m || !show(m[1], false)) show('start', false);
+})();
+</script>

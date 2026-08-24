@@ -1,0 +1,14 @@
+{%- comment -%}
+  Contact buttons. Renders ONLY the labels named in `order` (comma-separated,
+  matching `label` values in _data/profile.yml), in that order, skipping any
+  with an empty url. Deliberately does not auto-append every link in the
+  database — the hero stays a short, professional row. To surface another link
+  (Vimeo, Portfolio), add its label to the `link_order` knob in index.md.
+{%- endcomment -%}
+{%- assign order = include.order | default: "" | split: "," -%}
+{%- for label in order -%}
+{%- assign link = site.data.profile.basics.links | where: "label", label | first -%}
+{%- if link and link.url and link.url != "" %}
+<a class="btn btn--ghost" href="{{ link.url }}">{{ link.label }}</a>
+{%- endif -%}
+{%- endfor -%}
