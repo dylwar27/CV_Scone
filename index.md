@@ -13,8 +13,14 @@ layout: default
  Each lens is a panel below. A lens names (a) which roles it shows, in order,
  and (b) which bullet TAGS qualify — a bullet appears if it carries any of them.
  That is what lets a lens pull relevant work out of an unrelated industry: the
- Digital PM lens surfaces the PRC Baker bullets tagged process-improvement and
- data-analysis, and skips the group-facilitation ones. Tag vocabulary lives in
+ Systems lens surfaces the PRC Baker bullets tagged health-it and data-analysis,
+ and skips the group-facilitation ones; the Teaching lens does the reverse.
+
+ THE AXIS IS MODALITY, NOT INDUSTRY (decision 2026-08-24). Clinical = working
+ with a person in distress · Systems = working through systems and data ·
+ Teaching = working with a group in a room · Onsite = working in physical space
+ with fixed deadlines · Arts = working in an expressive medium. Never add an
+ industry-shaped lens ("Healthcare"); rename or retag instead. Tag vocabulary lives in
  _data/bullets.yml. Within a role, the bullets shown are the first N matching in
  that file — reorder there, in the source database, to change the pick.
 
@@ -23,22 +29,29 @@ layout: default
 ═══════════════════════════════════════════════════════════════════════════════
 {%- endcomment -%}
 
-{%- assign tagline = "Project &amp; program management &middot; Healthcare and behavioral health operations &middot; San Francisco" -%}
+{%- comment -%}
+ The four knobs below carry the LOCKED POSITIONING (JOB_SEARCH.md, 2026-08-24):
+ "Assessment and collaborative problem-solving — with individuals and with systems."
+ exec_summary is word-for-word the résumé summary (profile.yml → summary.assessment-codesign).
+ If the résumé summary changes, change it here too. Availability is PART-TIME.
+{%- endcomment -%}
+
+{%- assign tagline = "Assessment &amp; collaborative problem-solving &middot; Behavioral health, health IT &amp; program management &middot; San Francisco" -%}
 {%- assign link_order = "LinkedIn,Portfolio,Substack (Sleep Nod)" -%}
 
 {%- capture exec_summary -%}
-I'm a project and systems manager with a PMP and fifteen years of making complicated operations run — five of them building PMOs and running programs inside New York agencies, the most recent two inside behavioral health in San Francisco. At PRC Baker Places I ran intake across four dual-diagnosis residential houses, worked daily in Epic and Avatar, and lifted bed utilization from 62% to 78%+ by digitizing the referral pipeline. I'm finishing an M.A. in Clinical Mental Health Counseling at Palo Alto University.
+Behavioral-health intake specialist and PMP-certified project manager. The same practice in an intake room and a project plan: surface what's actually going on beneath what's reported, then build the response with the people who have to live inside it. MHRS-credentialed and NPI-registered; hands-on Epic and Avatar; five years of agency project management in New York; M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
 {%- endcapture -%}
 
 {%- capture personal_statement -%}
-The through-line is systems in service of people. I've built a PMO and run an agile transition across a twelve-team division, and I've sat with someone in an altered state at four in the morning. Underneath, it's the same job: see what's actually happening, make the next step possible, and leave the process better documented than you found it. I'm looking for project, program, and operations work where healthcare systems meet the people using them — and I'm glad to hear about good problems outside that lane too.
+I don't take the presenting problem at face value, and I don't solve it alone. I've run intake across four dual-diagnosis residential houses and lifted bed utilization from 62% to 78%+ by rebuilding the referral pipeline; I've built a PMO and led an agile transition across a twelve-team division; and I've sat with someone in an altered state at four in the morning. Underneath, it's one practice: see what's actually happening, build the next step with the people who have to carry it out, and leave the process better documented than you found it. The lenses below are that one career framed for different work — pick the one you're hiring for.
 {%- endcapture -%}
 
 {%- capture availability -%}
-Open to project, program, and operations roles across healthcare, behavioral health, and EHR/workflow — full-time, contract, or consulting. Currently in San Francisco and open to remote.
+I'm looking for <strong>part-time</strong> work through the end of my M.A. — behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, and teaching or research assistance. Supervised, structured settings. Based in San Francisco; remote preferred, Bay Area in person works.
 {%- endcapture -%}
 
-{%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist,Epic &amp; Avatar EHR,M.A. Clinical Mental Health Counseling (2027)" | split: "," -%}
+{%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist &middot; NPI-registered,Epic &amp; Avatar EHR,Google Data Analytics,M.A. Clinical Mental Health Counseling (Jan 2027)" | split: "," -%}
 
 {%- assign featured_degrees = "edu.palo-alto-cmhc,edu.uw-ba" | split: "," -%}
 {%- assign featured_certs = "edu.pmp,edu.mhrs,edu.google-data-analytics" | split: "," -%}
@@ -70,7 +83,8 @@ Open to project, program, and operations roles across healthcare, behavioral hea
     <ul>
       <li><button type="button" data-lens="all" aria-pressed="false">All</button></li>
       <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical Work</button></li>
-      <li><button type="button" data-lens="digital" aria-pressed="false">Digital Project Management</button></li>
+      <li><button type="button" data-lens="digital" aria-pressed="false">Systems, Data &amp; Health IT</button></li>
+      <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching &amp; Facilitation</button></li>
       <li><button type="button" data-lens="onsite" aria-pressed="false">Onsite Project Management</button></li>
       <li><button type="button" data-lens="arts" aria-pressed="false">Arts Production</button></li>
     </ul>
@@ -116,18 +130,36 @@ Open to project, program, and operations roles across healthcare, behavioral hea
     {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
   </section>
 
-  {%- comment -%} ═══ DIGITAL PM ═══ {%- endcomment -%}
+  {%- comment -%} ═══ SYSTEMS, DATA & HEALTH IT (data-lens stays "digital" so /#view-digital deep links keep working) ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="digital">
-    <h2 class="section__title">Digital Project Management</h2>
-    <p class="lens-intro">Agency-side program management, PMO building, agile transitions, and the reporting and automation stacks underneath them — including the ones I built inside a healthcare facility.</p>
-    {% include lens-roles.html ids="role.prc-baker-intake,role.cafe-suspiro-biz-dev,role.edelman-spm,role.ab-scrum,role.jump450-spm,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,health-it,compliance,agile,scrum,stakeholder-management,budget-management,leadership,revenue,clinical-documentation" limit="4" %}
+    <h2 class="section__title">Systems, Data &amp; Health IT</h2>
+    <p class="lens-intro">Working through systems and data: EHR workflow and documentation compliance, utilization reporting, referral pipelines, and the PMO, agile, and automation work underneath them — built inside a behavioral-health facility and inside New York agencies.</p>
+    {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" tags="health-it,compliance,data-analysis,process-improvement,automation" limit="6" %}
+    {% include lens-roles.html title="Agency PMO, agile &amp; reporting" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
 
     <h2 class="section__title">Skills</h2>
+    {% include skill-group.html title="Health IT &amp; compliance" ids="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.medical-records-research,skill.clinical-note-formats,skill.clinical-documentation" key="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance" %}
     {% include skill-group.html title="Project &amp; systems management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.program-design,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.data-analysis" %}
-    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.epic-superuser,skill.martech-analytics,skill.microsoft-365,skill.clinical-documentation" key="skill.workflow-automation,skill.epic-superuser" %}
+    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365" key="skill.workflow-automation" %}
 
     <h2 class="section__title">Selected Projects</h2>
     {% include lens-projects.html ids="project.cv-database,project.windows-111-2019,project.arctic-refuge-2019,project.megatrends-2019" %}
+  </section>
+
+  {%- comment -%} ═══ TEACHING & FACILITATION — working with a group in a room ═══ {%- endcomment -%}
+  <section class="lens-panel" data-lens="teaching">
+    <h2 class="section__title">Teaching &amp; Facilitation</h2>
+    <p class="lens-intro">Working with a group in a room: psychoeducation and skills groups for dual-diagnosis clients, drug-safety workshops at festivals, training clinicians on documentation, coaching twelve brand teams through an agile transition, and mentoring the people who run programs after you leave. Facilitation is facilitation, whatever the room.</p>
+    {% include lens-roles.html title="Groups, psychoeducation &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
+    {% include lens-roles.html title="Agile coaching &amp; team training" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
+    {% include lens-roles.html title="Workshops &amp; teaching artists" ids="role.base-arts-coordinator,role.sleep-nod-producer" tags="organizing,grant-administration" limit="1" %}
+
+    <h2 class="section__title">Skills</h2>
+    {% include skill-group.html title="Facilitation &amp; teaching" ids="skill.group-facilitation,skill.psychoeducation,skill.program-design,skill.people-development,skill.agile-scrum,skill.community-outreach,skill.crisis-communication,skill.harm-reduction" key="skill.group-facilitation,skill.psychoeducation,skill.people-development,skill.agile-scrum" %}
+    {% include skill-group.html title="Assessment &amp; research" ids="skill.clinical-assessments,skill.clinical-intake,skill.data-analysis,skill.clinical-documentation,skill.microsoft-365" key="skill.clinical-assessments,skill.data-analysis" %}
+
+    <h2 class="section__title">Writing</h2>
+    {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
   </section>
 
   {%- comment -%} ═══ ONSITE PM ═══ {%- endcomment -%}

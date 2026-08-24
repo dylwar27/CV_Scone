@@ -528,7 +528,7 @@ a:hover, a:focus { border-bottom-color: currentColor; }
 // ── Print: lenses collapse back to the whole CV ──────────────────────────────
 
 @media print {
-  .lensbar, .lens-prompt, .hero__cta { display: none !important; }
+  .lensbar, .lens-prompt, .js .lens-panel.lens-prompt, .hero__cta { display: none !important; }
   .js .lens-panel { display: block !important; }
   .lens-layout { display: block; padding-top: 0; }
   .link-pill { border: none; padding: 0 .4rem 0 0; }

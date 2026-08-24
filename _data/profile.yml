@@ -6,6 +6,7 @@ basics:
   name: "Dylan Ward"
   pronouns: "they/he"
   email: "dylanrfw@gmail.com"
+  phone: "(415) 238-0307"
   location:
     city: "San Francisco"
     region: "CA"
@@ -21,14 +22,29 @@ basics:
       url: "https://sleep-nod.com"
 
 summaries:
+  - id: summary.assessment-codesign
+    audience: [clinical, nonprofit, academic, civic, tech, general]
+    length: short
+    status: active
+    source: "Written 2026-08-24 on the locked positioning (JOB_SEARCH.md). Approved by Dyl 2026-08-24. The master résumé's summary."
+    text: >
+      Behavioral-health intake specialist and PMP-certified project manager.
+      The same practice in an intake room and a project plan: surface what's
+      actually going on beneath what's reported, then build the response with
+      the people who have to live inside it. MHRS-credentialed and NPI-registered;
+      hands-on Epic and Avatar; five years of agency project management in
+      New York; M.A. in Clinical Mental Health Counseling in progress
+      (Palo Alto University, expected Jan 2027).
+
   - id: summary.linkedin-headline
     audience: [linkedin, general]
     length: tagline
-    status: draft
-    source: "LinkedIn headline (linkedin.com/in/dylwar), pulled 2026-06-02"
+    status: active
+    source: "Rewritten 2026-08-24 to the locked positioning; full paste-sheet at database/render/linkedin/LINKEDIN.md. Previous (pulled 2026-06-02): 'Social Services Leader | PMP-Certified Project Manager | Passionate About Driving Impact & Operational Excellence'."
     text: >
-      Social Services Leader | PMP-Certified Project Manager | Passionate About
-      Driving Impact & Operational Excellence
+      Behavioral-Health Intake Specialist & PMP Project Manager | Epic & Avatar EHR ·
+      Utilization Reporting · Program Coordination | MHRS, NPI | M.A. Clinical Mental
+      Health Counseling (PAU, Jan 2027) | Open to part-time
 
   - id: summary.general
     audience: [general]
