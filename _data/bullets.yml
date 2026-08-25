@@ -272,6 +272,51 @@
   source: "LinkedIn import 2026-06-02"
   verified: false
   status: active
+- id: bullet.prc-compliance-rollup
+  role_id: role.prc-baker-intake
+  text: >
+    Built and ran the program's daily compliance and clearance roll-up — every
+    current client across four houses with what was outstanding on each:
+    assessments due, notes due, house review or entry follow-up, and TB or other
+    medical clearance. Sent to leadership each morning, who carried it to the SF
+    Department of Public Health to expedite treatment and provider coverage.
+    Cross-checked against the source systems every morning, with a built-in
+    checksum that highlighted any error immediately.
+  variants:
+    - audience: exec
+      text: >
+        Built a self-checking daily roll-up of outstanding clinical and medical
+        clearances per client across four houses — the report leadership carried to
+        SF DPH to expedite provider coverage — cross-checked each morning with a
+        built-in checksum.
+  tags: [compliance, data-analysis, clinical-documentation, health-it, stakeholder-management]
+  skills: [skill.microsoft-365, skill.data-analysis, skill.billable-documentation]
+  audience: [clinical, nonprofit, exec, civic, tech]
+  themes: [research-to-decision, craft, service]
+  metrics: ["daily cadence", "4 houses", "checksum-verified"]
+  star:
+    situation: "Outstanding assessments, notes, and medical clearances were scattered per client and per house; DPH could not see what was blocking coverage."
+    task: "Give leadership one daily view of what each client still needed so DPH could act on it."
+    action: "Built a consolidated per-client roll-up (SUMIF, COUNTIF, INDEX/MATCH, VLOOKUP, pivots) with a checksum tab; cross-checked it against Epic/Avatar every morning."
+    result: "Leadership took the roll-up to SF DPH to expedite treatment and provider coverage; errors surfaced immediately rather than in review."
+  source: "Ophelia application interview 2026-08-25. Dyl's words: 'a consolidated roll up... needs for assessment, needs for notes, needs for follow-up or review by houses for their entry, or any needs for their tuberculosis or other medical clearance... It was reported to our leadership who spoke with the public health department... cross checked by us every morning, and it had a checksum within it.'"
+  verified: true
+  status: draft
+- id: bullet.prc-census-coverage
+  role_id: role.prc-baker-intake
+  text: >
+    Tracked census and coverage across four houses for a dual-diagnosis
+    population — flagged open beds and stale referrals in a morning report,
+    coordinated referrals in and client transitions from inpatient facilities and
+    jails, and kept the trackers the whole program worked from current.
+  tags: [case-management, data-analysis, intake-assessment, process-improvement, dual-diagnosis]
+  skills: [skill.case-management, skill.microsoft-365, skill.clinical-intake]
+  audience: [clinical, nonprofit, exec]
+  themes: [service, research-to-decision]
+  metrics: ["4 houses", "morning open-bed / stale-referral flags"]
+  source: "Written for the Ophelia résumé variant 2026-08-24 to answer a panel-management responsibility; confirmed by Dyl 2026-08-25 with one correction — transitions were FROM inpatient facilities and jails INTO the program, not between houses. Flags were reported on each morning."
+  verified: true
+  status: draft
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.baaahs-harm-reduction
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -311,6 +356,8 @@
   skills: [skill.harm-reduction, skill.crisis-communication, skill.overdose-response]
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, service]
+  metrics: ["led the program at 1 festival; volunteered on 3 other festivals' teams", "assisted in psychiatric and medical crises"]
+  source: "Ingest 2026-06-02. Metrics added 2026-08-25 from Ophelia interview: 'led one program run, and then participated as volunteer in 3 others, assisted in psychiatric and medical crisis.'"
   verified: true
   status: active
 - id: bullet.baaahs-hr-psychopharm-workshops

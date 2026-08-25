@@ -193,10 +193,30 @@
   category: tool
   proficiency: proficient
   last_used: 2025-11
-  evidence: [role.prc-baker-intake, bullet.prc-digital-workflow, bullet.prc-staff-training]
+  evidence: [role.prc-baker-intake, bullet.prc-digital-workflow, bullet.prc-staff-training, bullet.prc-compliance-rollup, bullet.prc-census-coverage]
   audience: [clinical, nonprofit, exec, tech]
   visibility: public
   status: active
+  source: "Evidence extended 2026-08-25 (Ophelia interview). Functions Dyl names: SUMIF, COUNTIF, INDEX/MATCH, VLOOKUP, pivot tables — used in combination; checksum tabs for self-checking trackers."
+
+- id: skill.clinical-data-translation
+  name: "Clinician–Data Translation"
+  category: leadership
+  proficiency: proficient
+  last_used: 2025-11
+  evidence: [role.prc-baker-intake, bullet.prc-utilization-reporting, bullet.prc-compliance-rollup, bullet.prc-epic-superuser, bullet.prc-staff-training]
+  audience: [clinical, tech, product, exec, nonprofit, civic]
+  visibility: public
+  status: draft
+  source: >
+    Ophelia interview 2026-08-25. Dyl's framing: clinicians aren't trained in data —
+    the language used to describe it assumes query fluency they don't have, so they
+    need extra time and attention to provide data in a queryable form. Engineers
+    aren't trained to discuss sensitive topics with clinicians, who use vagueness on
+    purpose to protect clients (the client is their first priority). So the data side
+    has to learn to ask questions clinicians can feel comfortable answering. This is
+    the skill of sitting between the two. Candidate for the assessment-and-co-design
+    positioning; promote once a second piece of evidence outside PRC is logged.
 
 - id: skill.people-development
   name: "People Development & Mentorship"
