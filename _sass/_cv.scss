@@ -85,7 +85,7 @@ a:hover, a:focus { border-bottom-color: currentColor; }
 }
 
 .hero__tagline {
-  margin: 0 0 1.6rem;
+  margin: 0 0 .4rem;
   color: var(--muted);
   font-size: .95rem;
   letter-spacing: .02em;
@@ -140,6 +140,10 @@ a:hover, a:focus { border-bottom-color: currentColor; }
   font-size: .88rem;
   margin: 1.1rem 0 0;
 }
+
+// In the hero the identity line is the tagline's second line, so it hugs the
+// tagline above and carries the gap down to the summary.
+.hero .meta-line { margin: 0 0 1.8rem; }
 
 // ── Jump nav ─────────────────────────────────────────────────────────────────
 

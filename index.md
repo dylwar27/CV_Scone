@@ -37,7 +37,7 @@ layout: default
  If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME.
 {%- endcomment -%}
 
-{%- assign tagline = "Behavioral &amp; mental health &middot; Health IT &middot; Program management &middot; San Francisco" -%}
+{%- assign tagline = "Behavioral &amp; mental health &middot; Health IT &middot; Program management" -%}
 {%- comment -%}
  OUTBOUND-LINK POLICY (set by Dyl 2026-08-31). The site does not send visitors
  away: if someone found it, keep them here. Third-party PRESS links on projects
@@ -70,11 +70,13 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 <header class="hero">
   <h1 class="hero__name">{{ p.basics.name }}</h1>
   <p class="hero__tagline">{{ tagline }}</p>
-  <p class="hero__lead">{{ exec_summary | strip_newlines | strip }}</p>
-  <div class="actions">
-    <a class="btn" href="mailto:{{ site.contact_email }}">Email me</a>
-  </div>
+  {%- comment -%}
+   Identity line sits directly under the tagline (Dyl, 2026-08-31). The hero has
+   NO email button — the only calls to action are "View my experience" here and
+   the address in the closing CTA and footer. Do not reintroduce a hero button.
+  {%- endcomment -%}
   <p class="meta-line">{{ p.basics.pronouns }} &middot; {{ p.basics.location.city }}, {{ p.basics.location.region }} &middot; <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+  <p class="hero__lead">{{ exec_summary | strip_newlines | strip }}</p>
   <ul class="creds">
     {%- for c in credentials %}
     <li>{{ c }}</li>
@@ -89,11 +91,11 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     <h2 class="lensbar__title">View Experience</h2>
     <ul>
       <li><button type="button" data-lens="all" aria-pressed="false">All</button></li>
-      <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical Work</button></li>
-      <li><button type="button" data-lens="digital" aria-pressed="false">Systems, Data &amp; Health IT</button></li>
-      <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching &amp; Facilitation</button></li>
-      <li><button type="button" data-lens="onsite" aria-pressed="false">Onsite Project Management</button></li>
-      <li><button type="button" data-lens="arts" aria-pressed="false">Arts Production</button></li>
+      <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical</button></li>
+      <li><button type="button" data-lens="digital" aria-pressed="false">Health IT &amp; Data</button></li>
+      <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching</button></li>
+      <li><button type="button" data-lens="onsite" aria-pressed="false">Onsite Projects</button></li>
+      <li><button type="button" data-lens="arts" aria-pressed="false">Arts</button></li>
     </ul>
   </nav>
 
@@ -101,7 +103,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ── Start state: shown only when JS is on and nothing is picked ── {%- endcomment -%}
   <section class="lens-panel lens-prompt is-active" data-lens="start">
-    <p class="prompt">Pick a lens on the left and the r&eacute;sum&eacute; fills in — the same career, framed for the work you're hiring for. <strong>All</strong> shows everything.</p>
+    <p class="prompt">Choose a lens on the left to view a selection of my experience.</p>
   </section>
 
   {%- comment -%} ═══ ALL ═══ {%- endcomment -%}
@@ -124,7 +126,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="clinical">
-    <h2 class="section__title">Clinical Work</h2>
+    <h2 class="section__title">Clinical</h2>
     <p class="lens-intro">Direct behavioral health practice — intake and assessment, group programming, clinical documentation, and harm reduction — plus the systems work that made the care actually reach people.</p>
     {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,health-it,compliance,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="7" %}
     {% include lens-roles.html title="Systems work that transfers into care settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
@@ -139,7 +141,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ═══ SYSTEMS, DATA & HEALTH IT (data-lens stays "digital" so /#view-digital deep links keep working) ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="digital">
-    <h2 class="section__title">Systems, Data &amp; Health IT</h2>
+    <h2 class="section__title">Health IT &amp; Data</h2>
     <p class="lens-intro">Working through systems and data: EHR workflow and documentation compliance, utilization reporting, referral pipelines, and the PMO, agile, and automation work underneath them — built inside a behavioral-health facility and inside New York agencies.</p>
     {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" tags="health-it,compliance,data-analysis,process-improvement,automation" limit="6" %}
     {% include lens-roles.html title="Agency PMO, agile &amp; reporting" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
@@ -155,7 +157,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ═══ TEACHING & FACILITATION — working with a group in a room ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="teaching">
-    <h2 class="section__title">Teaching &amp; Facilitation</h2>
+    <h2 class="section__title">Teaching</h2>
     <p class="lens-intro">Working with a group in a room: psychoeducation and skills groups for dual-diagnosis clients, drug-safety workshops at festivals, training clinicians on documentation, coaching twelve brand teams through an agile transition, and mentoring the people who run programs after you leave. Facilitation is facilitation, whatever the room.</p>
     {% include lens-roles.html title="Groups, psychoeducation &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
     {% include lens-roles.html title="Agile coaching &amp; team training" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
@@ -171,7 +173,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ═══ ONSITE PM ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="onsite">
-    <h2 class="section__title">Onsite Project Management</h2>
+    <h2 class="section__title">Onsite Projects</h2>
     <p class="lens-intro">Producing in physical space: immersive installations, live events, touring crews, vendors, and load-in deadlines that don't move.</p>
     {% include lens-roles.html ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.velocity-production,role.easy-street-producer,role.base-arts-coordinator" tags="event-production,project-management,budget-management,stakeholder-management,leadership,community,mutual-aid,organizing,performance,arts-administration" limit="3" %}
     {% include lens-roles.html title="Programming and logistics in other settings" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
@@ -186,7 +188,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
   {%- comment -%} ═══ ARTS ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="arts">
-    <h2 class="section__title">Arts Production</h2>
+    <h2 class="section__title">Arts</h2>
     <p class="lens-intro">Choreography, sound score, video direction, and the producing and grant work that got the work made and toured. Work under the name Sleep Nod.</p>
     {% include lens-roles.html ids="role.sleep-nod-producer,role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.crfw-consultant,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator" tags="choreography,sound-design,video-direction,documentary,performance,arts-administration,grant-administration,event-production,immersive,installation,community,organizing,mutual-aid" limit="2" %}
 
