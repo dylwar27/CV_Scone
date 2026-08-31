@@ -32,9 +32,19 @@ layout: default
 {%- comment -%}
  Knobs rewritten with Dyl 2026-08-31 (plain register — see project memory voice rule):
  tagline is plain facts (the assessment-as-intervention idea stays strategy, not copy);
- exec_summary is word-for-word the résumé summary (profile.yml → summary.assessment-codesign);
  personal_statement was CUT deliberately — do not reintroduce it.
- If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME.
+ Availability is PART- OR FULL-TIME.
+
+ exec_summary DELIBERATELY NO LONGER MATCHES the résumé summary (Dyl, 2026-08-31).
+ The résumé opens with "Counselor in training and digital project manager…" and
+ closes with "MHRS, NPI-registered, PMP. M.A. …" because a résumé has no tagline
+ and no credential chips above the summary. This page has both: the tagline names
+ the tracks and the chips carry the credentials, so saying either in prose here
+ said the same thing three times in a hundred words. What is left is the middle —
+ the only part that was not repeated elsewhere in the hero.
+ So: DO NOT "re-sync" this to profile.yml → summary.assessment-codesign. If the
+ FACTS change (years, program, dates), change both. If the résumé summary is
+ merely reworded, leave this alone.
 {%- endcomment -%}
 
 {%- assign tagline = "Behavioral &amp; mental health &middot; Program management &middot; Clinical counselor in training" -%}
@@ -53,7 +63,7 @@ layout: default
 {%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com" -%}
 
 {%- capture exec_summary -%}
-Counselor in training and digital project manager. Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York. MHRS, NPI-registered, PMP. M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
+Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York.
 {%- endcapture -%}
 
 {%- capture availability -%}
