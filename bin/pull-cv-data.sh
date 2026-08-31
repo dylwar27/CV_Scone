@@ -14,7 +14,8 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SRC="/Users/dward/_Kitchen Table/Curriculum Vitae/Curriculum Viatae/database/data"
+# The database now lives alongside this repo (../database/data). Override with CV_DB=.
+SRC="${CV_DB:-$(cd "$REPO_ROOT/.." && pwd)/database/data}"
 DEST="$REPO_ROOT/_data"
 
 # Explicit allowlist — anything NOT listed here never reaches the public repo,

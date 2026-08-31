@@ -26,25 +26,23 @@ summaries:
     audience: [clinical, nonprofit, academic, civic, tech, general]
     length: short
     status: active
-    source: "Written 2026-08-24 on the locked positioning (JOB_SEARCH.md). Approved by Dyl 2026-08-24. The master résumé's summary."
+    source: "Rewritten by Dyl 2026-08-25 (Counselor-in-Training lead; part- or full-time). Previous 08-24 version: 'Behavioral-health intake specialist and PMP-certified project manager. The same practice in an intake room and a project plan...' The master résumé's summary."
     text: >
-      Behavioral-health intake specialist and PMP-certified project manager.
-      The same practice in an intake room and a project plan: surface what's
-      actually going on beneath what's reported, then build the response with
-      the people who have to live inside it. MHRS-credentialed and NPI-registered;
-      hands-on Epic and Avatar; five years of agency project management in
-      New York; M.A. in Clinical Mental Health Counseling in progress
+      Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project
+      Manager (PMP). Direct experience authoring, managing, and reporting within
+      EHR data (Epic, Avatar); media production and agency project management in
+      New York and Seattle; M.A. in Clinical Mental Health Counseling in progress
       (Palo Alto University, expected Jan 2027).
 
   - id: summary.linkedin-headline
     audience: [linkedin, general]
     length: tagline
     status: active
-    source: "Rewritten 2026-08-24 to the locked positioning; full paste-sheet at database/render/linkedin/LINKEDIN.md. Previous (pulled 2026-06-02): 'Social Services Leader | PMP-Certified Project Manager | Passionate About Driving Impact & Operational Excellence'."
+    source: "Rewritten by Dyl 2026-08-25 (dropped 'Open to part-time' — now open to part- or full-time). 08-24 version: 'Behavioral-Health Intake Specialist & PMP Project Manager | ... | Open to part-time'. Earlier rewrite 2026-08-24 to the locked positioning; full paste-sheet at database/render/linkedin/LINKEDIN.md. Previous (pulled 2026-06-02): 'Social Services Leader | PMP-Certified Project Manager | Passionate About Driving Impact & Operational Excellence'."
     text: >
-      Behavioral-Health Intake Specialist & PMP Project Manager | Epic & Avatar EHR ·
+      Counselor in Training, Behavioral-Health Clinician & Project Manager | Epic & Avatar EHR ·
       Utilization Reporting · Program Coordination | MHRS, NPI | M.A. Clinical Mental
-      Health Counseling (PAU, Jan 2027) | Open to part-time
+      Health Counseling (PAU, Jan 2027)
 
   - id: summary.general
     audience: [general]

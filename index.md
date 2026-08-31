@@ -30,25 +30,25 @@ layout: default
 {%- endcomment -%}
 
 {%- comment -%}
- The four knobs below carry the LOCKED POSITIONING (JOB_SEARCH.md, 2026-08-24):
- "Assessment and collaborative problem-solving — with individuals and with systems."
+ The four knobs below carry the POSITIONING (JOB_SEARCH.md; rewritten by Dyl 2026-08-25):
+ "Collaborative assessment as intervention — with individuals and with systems."
  exec_summary is word-for-word the résumé summary (profile.yml → summary.assessment-codesign).
- If the résumé summary changes, change it here too. Availability is PART-TIME.
+ If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME (changed 08-25).
 {%- endcomment -%}
 
-{%- assign tagline = "Assessment &amp; collaborative problem-solving &middot; Behavioral health, health IT &amp; program management &middot; San Francisco" -%}
+{%- assign tagline = "Collaborative Assessment as Intervention &middot; Behavioral and mental health, health IT &amp; program management &middot; San Francisco" -%}
 {%- assign link_order = "LinkedIn,Portfolio,Substack (Sleep Nod)" -%}
 
 {%- capture exec_summary -%}
-Behavioral-health intake specialist and PMP-certified project manager. The same practice in an intake room and a project plan: surface what's actually going on beneath what's reported, then build the response with the people who have to live inside it. MHRS-credentialed and NPI-registered; hands-on Epic and Avatar; five years of agency project management in New York; M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
+Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project Manager (PMP). Direct experience authoring, managing, and reporting within EHR data (Epic, Avatar); media production and agency project management in New York and Seattle; M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
 {%- endcapture -%}
 
 {%- capture personal_statement -%}
-I don't take the presenting problem at face value, and I don't solve it alone. I've run intake across four dual-diagnosis residential houses and lifted bed utilization from 62% to 78%+ by rebuilding the referral pipeline; I've built a PMO and led an agile transition across a twelve-team division; and I've sat with someone in an altered state at four in the morning. Underneath, it's one practice: see what's actually happening, build the next step with the people who have to carry it out, and leave the process better documented than you found it. The lenses below are that one career framed for different work — pick the one you're hiring for.
+I don't take a presenting issue at face value, and I don't solve it alone. I've run intake across four dual-diagnosis residential houses and lifted bed utilization from 62% to 78%+ by rebuilding the referral pipeline; I've built a PMO and led an agile transition across a multi-team division; and I've sat with someone in their deepest feelings. I've led real change in organizational and personal areas by remaining curious about cause, building measured, real next steps, and documenting.
 {%- endcapture -%}
 
 {%- capture availability -%}
-I'm looking for <strong>part-time</strong> work through the end of my M.A. — behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, and teaching or research assistance. Supervised, structured settings. Based in San Francisco; remote preferred, Bay Area in person works.
+Available for <strong>part- or full-time</strong> work in behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, and teaching or research assistance. Supervised, structured settings. Based in San Francisco; remote preferred, Bay Area in person works.
 {%- endcapture -%}
 
 {%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist &middot; NPI-registered,Epic &amp; Avatar EHR,Google Data Analytics,M.A. Clinical Mental Health Counseling (Jan 2027)" | split: "," -%}
