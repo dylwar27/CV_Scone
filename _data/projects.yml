@@ -389,10 +389,10 @@
     a documented schema, an ingest contract that turns raw documents and spoken notes into
     draft entries, and a Jekyll site that renders the same database through switchable
     lenses.
-  url: "https://dylwar27.github.io/CV_Scone/"
+  url: "https://dylanward.work"
   artifacts:
     - label: "Live CV site"
-      url: "https://dylwar27.github.io/CV_Scone/"
+      url: "https://dylanward.work"
   tags: [ai-tooling, automation, data-analysis, process-improvement, programming]
   audience: [tech, product, general]
   themes: [0-to-1, tinkering, curiosity, craft]

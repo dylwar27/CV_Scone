@@ -56,11 +56,14 @@ layout: default
  link in the footer; LinkedIn is the hop that carries anyone who wants more on
  to the portfolio. Email uses site.contact_email (the dylanward.work alias), not
  the Gmail in the source database.
+ dylanward.work is on the list ON PURPOSE: project.cv-database points at this very
+ site (its url was the github.io address until 2026-08-31, which the list already
+ caught). Blocking it keeps the CV-database project from rendering a self-link.
  Any project link whose url contains a substring below is dropped by
  _includes/lens-projects.html — that include can see this variable because
  Jekyll includes share the page's scope.
 {%- endcomment -%}
-{%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com" -%}
+{%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com,dylanward.work" -%}
 
 {%- capture exec_summary -%}
 Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York.

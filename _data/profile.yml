@@ -12,6 +12,11 @@ basics:
     region: "CA"
     country: "US"
   links:
+    # dylanward.work is the CV site (live 2026-08-31). It leads the list because it is
+    # now the primary destination on the resume header and in LinkedIn Featured.
+    # The site itself links onward to nothing but email + LinkedIn (outbound-link policy).
+    - label: "CV site"
+      url: "https://dylanward.work"
     - label: "Substack (Sleep Nod)"
       url: "https://sleepnod.substack.com"
     - label: "LinkedIn"
@@ -63,8 +68,9 @@ summaries:
     source: >
       Co-written with Dyl 2026-08-31 (evening), plain-professional register per the voice
       rule (no aphorisms, minimal em-dashes, one number per paragraph). Renders to
-      render/linkedin/LINKEDIN.md §2. CV_Scone link deliberately omitted until the site
-      has its own domain. The "What I'm looking for" paragraph is the audience-swap slot.
+      render/linkedin/LINKEDIN.md §2. The site link is deliberately NOT in the About body —
+      LinkedIn does not hyperlink About text. dylanward.work went live 2026-08-31 and lives
+      in Featured (§7) instead, where it is clickable. The "What I'm looking for" paragraph is the audience-swap slot.
     text: >
       I'm a counselor in training and a digital project manager. Recently I ran intake
       at a dual-diagnosis residential program in San Francisco: up to 40 assessments a
