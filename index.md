@@ -37,7 +37,7 @@ layout: default
  If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME.
 {%- endcomment -%}
 
-{%- assign tagline = "Behavioral &amp; mental health &middot; Health IT &middot; Program management" -%}
+{%- assign tagline = "Behavioral &amp; mental health &middot; Program management &middot; Clinical counselor in training" -%}
 {%- comment -%}
  OUTBOUND-LINK POLICY (set by Dyl 2026-08-31). The site does not send visitors
  away: if someone found it, keep them here. Third-party PRESS links on projects
@@ -127,7 +127,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="clinical">
     <h2 class="section__title">Clinical</h2>
-    <p class="lens-intro">Direct behavioral health practice — intake and assessment, group programming, clinical documentation, and harm reduction — plus the systems work that made the care actually reach people.</p>
+    <p class="lens-intro">Intake and assessment, groups, clinical documentation, and harm reduction.</p>
     {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,health-it,compliance,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="7" %}
     {% include lens-roles.html title="Systems work from other settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
 
@@ -142,7 +142,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ SYSTEMS, DATA & HEALTH IT (data-lens stays "digital" so /#view-digital deep links keep working) ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="digital">
     <h2 class="section__title">Health IT &amp; Data</h2>
-    <p class="lens-intro">Working through systems and data: EHR workflow and documentation compliance, utilization reporting, referral pipelines, and the PMO, agile, and automation work underneath them — built inside a behavioral-health facility and inside New York agencies.</p>
+    <p class="lens-intro">EHR workflow, documentation compliance, utilization reporting, and referral pipelines.</p>
     {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" tags="health-it,compliance,data-analysis,process-improvement,automation" limit="6" %}
     {% include lens-roles.html title="Agency project management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
 
@@ -158,7 +158,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ TEACHING & FACILITATION — working with a group in a room ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="teaching">
     <h2 class="section__title">Teaching</h2>
-    <p class="lens-intro">Working with a group in a room: psychoeducation and skills groups for dual-diagnosis clients, drug-safety workshops at festivals, training clinicians on documentation, coaching twelve brand teams through an agile transition, and mentoring the people who run programs after you leave. Facilitation is facilitation, whatever the room.</p>
+    <p class="lens-intro">Psychoeducation and skills groups for dual-diagnosis clients. Drug-safety workshops at festivals. Training clinicians on documentation, and coaching twelve brand teams through an agile transition.</p>
     {% include lens-roles.html title="Groups &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
     {% include lens-roles.html title="Agile coaching" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
     {% include lens-roles.html title="Arts workshops" ids="role.base-arts-coordinator,role.sleep-nod-producer" tags="organizing,grant-administration" limit="1" %}
@@ -174,7 +174,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ ONSITE PM ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="onsite">
     <h2 class="section__title">Onsite Projects</h2>
-    <p class="lens-intro">Producing in physical space: immersive installations, live events, touring crews, vendors, and load-in deadlines that don't move.</p>
+    <p class="lens-intro">Immersive installations, live events, touring crews, and vendors.</p>
     {% include lens-roles.html ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.velocity-production,role.easy-street-producer,role.base-arts-coordinator" tags="event-production,project-management,budget-management,stakeholder-management,leadership,community,mutual-aid,organizing,performance,arts-administration" limit="3" %}
     {% include lens-roles.html title="Programming in a care setting" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
 
@@ -189,7 +189,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ ARTS ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="arts">
     <h2 class="section__title">Arts</h2>
-    <p class="lens-intro">Choreography, sound score, video direction, and the producing and grant work that got the work made and toured. Work under the name Sleep Nod.</p>
+    <p class="lens-intro">Choreography, sound score, and video direction, plus the producing and grant work behind them. Under the name Sleep Nod.</p>
     {% include lens-roles.html ids="role.sleep-nod-producer,role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.crfw-consultant,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator" tags="choreography,sound-design,video-direction,documentary,performance,arts-administration,grant-administration,event-production,immersive,installation,community,organizing,mutual-aid" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
