@@ -2,9 +2,18 @@
 title: "Dylan Ward — Assessment & Collaborative Problem-Solving"
 description: "Behavioral-health intake specialist and PMP-certified project manager. Epic and Avatar EHR, utilization reporting, program coordination, and agile facilitation. MHRS and NPI-registered, M.A. Clinical Mental Health Counseling in progress. San Francisco, part-time and remote."
 author: "Dylan Ward"
-url: "https://dylwar27.github.io"
-baseurl: "/CV_Scone"
+url: "https://dylanward.work"
+baseurl: ""
 lang: en
+
+# Contact. The site shows the dylanward.work alias, NOT the personal Gmail in
+# the source database — dyl@ forwards to it via Cloudflare Email Routing.
+# The source database (database/data/profile.yml) still carries the Gmail, so
+# the resume and cover letters are unaffected.
+contact_email: "dyl@dylanward.work"
+# The ONE outbound link on the site, in the footer. LinkedIn is the hop that
+# carries anyone who wants more on to the portfolio.
+linkedin_url: "https://www.linkedin.com/in/dylwar"
 
 plugins:
   - jekyll-seo-tag

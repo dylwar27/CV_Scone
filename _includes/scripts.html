@@ -1,8 +1,12 @@
+{%- comment -%}
+  Footer. This is the ONLY outbound link on the site (see the outbound-link
+  policy comment at the top of index.md). Email is the dylanward.work alias in
+  _config.yml, not the Gmail in the source database.
+{%- endcomment -%}
 <footer class="site-footer">
   <div class="wrap">
-    &copy; {{ 'now' | date: "%Y" }} {{ site.author }} &middot;
-    <a href="mailto:{{ site.data.profile.basics.email }}">{{ site.data.profile.basics.email }}</a> &middot;
-    <a href="https://github.com/dylwar27/CV_Scone">Source</a>
+    <p class="site-footer__contact">Email at <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a> or connect on <a href="{{ site.linkedin_url }}">LinkedIn</a>.</p>
+    <p class="site-footer__legal">&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</p>
   </div>
 </footer>
 <script>

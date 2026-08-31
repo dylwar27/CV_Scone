@@ -337,6 +337,21 @@ a:hover, a:focus { border-bottom-color: currentColor; }
 }
 
 .site-footer a { color: var(--faint); }
+.site-footer p { margin: 0; }
+
+// One quiet contact line, then the copyright. This is the only place on the
+// site that links out — see the outbound-link policy at the top of index.md.
+.site-footer__contact {
+  margin-bottom: .35rem;
+}
+.site-footer__contact a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.site-footer__legal {
+  font-size: .76rem;
+  opacity: .75;
+}
 
 // ── Print: clean single-document CV ──────────────────────────────────────────
 

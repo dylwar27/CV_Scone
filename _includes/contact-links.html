@@ -1,4 +1,10 @@
 {%- comment -%}
+  RETIRED 2026-08-31 — the hero no longer renders a social-link row (see the
+  outbound-link policy at the top of index.md). Kept so the capability is
+  documented and easy to restore: re-add a `link_order` assign in index.md and
+  call this include again from the hero .actions div.
+{%- endcomment -%}
+{%- comment -%}
   Contact buttons. Renders ONLY the labels named in `order` (comma-separated,
   matching `label` values in _data/profile.yml), in that order, skipping any
   with an empty url. Deliberately does not auto-append every link in the

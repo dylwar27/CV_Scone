@@ -3,9 +3,17 @@
   Params: ids, max_links (default 3)
   Links come from each project's `artifacts` (and `url`) in the source database —
   empty urls are skipped, so a link appears the moment it is filled in there.
+
+  OUTBOUND-LINK POLICY (2026-08-31): third-party press stays, Dyl's own channels
+  come off. `link_blocklist` is assigned at the top of index.md and is visible
+  here because Jekyll includes share the page's variable scope. Any link whose
+  url contains one of those substrings is dropped, and the links row is omitted
+  entirely when nothing survives. Do NOT strip links in _data/ — that file is
+  overwritten by bin/pull-cv-data.sh.
 {%- endcomment -%}
 {%- assign id_list = include.ids | split: "," -%}
 {%- assign max_links = include.max_links | default: 3 | plus: 0 -%}
+{%- assign blocked = link_blocklist | default: "" | split: "," -%}
 {%- for id in id_list -%}
 {%- assign proj = site.data.projects | where: "id", id | first -%}
 {%- if proj and proj.visibility != "private" -%}
@@ -19,12 +27,24 @@
     <p class="entry__with">With {{ proj.collaborators | join: ", " }}</p>
     {%- endif -%}
     {%- assign shown = 0 -%}
-    <p class="links">
-    {%- if proj.url and proj.url != "" %}<a class="link-pill" href="{{ proj.url }}">Read it</a>{% assign shown = shown | plus: 1 %}{% endif -%}
+    {%- capture links_html -%}
+    {%- if proj.url and proj.url != "" -%}
+      {%- assign drop = false -%}
+      {%- for b in blocked -%}{%- if proj.url contains b -%}{%- assign drop = true -%}{%- endif -%}{%- endfor -%}
+      {%- unless drop %}<a class="link-pill" href="{{ proj.url }}">Read it</a>{% assign shown = shown | plus: 1 %}{% endunless -%}
+    {%- endif -%}
     {%- for a in proj.artifacts -%}
-    {%- if a.url and a.url != "" and shown < max_links %}<a class="link-pill" href="{{ a.url }}">{{ a.label }}</a>{% assign shown = shown | plus: 1 %}{% endif -%}
-    {%- endfor %}
-    </p>
+      {%- if a.url and a.url != "" and shown < max_links -%}
+        {%- assign drop = false -%}
+        {%- for b in blocked -%}{%- if a.url contains b -%}{%- assign drop = true -%}{%- endif -%}{%- endfor -%}
+        {%- unless drop %}<a class="link-pill" href="{{ a.url }}">{{ a.label }}</a>{% assign shown = shown | plus: 1 %}{% endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign links_trimmed = links_html | strip -%}
+    {%- if links_trimmed != "" %}
+    <p class="links">{{ links_trimmed }}</p>
+    {%- endif %}
   </div>
 </article>
 {%- endif -%}

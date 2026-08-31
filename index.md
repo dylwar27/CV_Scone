@@ -37,7 +37,19 @@ layout: default
 {%- endcomment -%}
 
 {%- assign tagline = "Collaborative Assessment as Intervention &middot; Behavioral and mental health, health IT &amp; program management &middot; San Francisco" -%}
-{%- assign link_order = "LinkedIn,Portfolio,Substack (Sleep Nod)" -%}
+{%- comment -%}
+ OUTBOUND-LINK POLICY (set by Dyl 2026-08-31). The site does not send visitors
+ away: if someone found it, keep them here. Third-party PRESS links on projects
+ STAY — they are evidence somebody else published the work. Dyl's own channels
+ (LinkedIn, portfolio, Substack, Vimeo, the repo) come off, except one LinkedIn
+ link in the footer; LinkedIn is the hop that carries anyone who wants more on
+ to the portfolio. Email uses site.contact_email (the dylanward.work alias), not
+ the Gmail in the source database.
+ Any project link whose url contains a substring below is dropped by
+ _includes/lens-projects.html — that include can see this variable because
+ Jekyll includes share the page's scope.
+{%- endcomment -%}
+{%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com" -%}
 
 {%- capture exec_summary -%}
 Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project Manager (PMP). Direct experience authoring, managing, and reporting within EHR data (Epic, Avatar); media production and agency project management in New York and Seattle; M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
@@ -64,10 +76,9 @@ Available for <strong>part- or full-time</strong> work in behavioral-health oper
   <p class="hero__lead">{{ exec_summary | strip_newlines | strip }}</p>
   <p class="hero__statement">{{ personal_statement | strip_newlines | strip }}</p>
   <div class="actions">
-    <a class="btn" href="mailto:{{ p.basics.email }}">Email me</a>
-    {%- include contact-links.html order=link_order -%}
+    <a class="btn" href="mailto:{{ site.contact_email }}">Email me</a>
   </div>
-  <p class="meta-line">{{ p.basics.pronouns }} &middot; {{ p.basics.location.city }}, {{ p.basics.location.region }} &middot; <a href="mailto:{{ p.basics.email }}">{{ p.basics.email }}</a></p>
+  <p class="meta-line">{{ p.basics.pronouns }} &middot; {{ p.basics.location.city }}, {{ p.basics.location.region }} &middot; <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
   <ul class="creds">
     {%- for c in credentials %}
     <li>{{ c }}</li>
@@ -180,7 +191,7 @@ Available for <strong>part- or full-time</strong> work in behavioral-health oper
   {%- comment -%} ═══ ARTS ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="arts">
     <h2 class="section__title">Arts Production</h2>
-    <p class="lens-intro">Choreography, sound score, video direction, and the producing and grant work that got the work made and toured. Work under the name Sleep Nod &mdash; the full portfolio is at <a href="https://sleep-nod.com">sleep-nod.com</a>, a video archive at <a href="https://vimeo.com/dfw">vimeo.com/dfw</a>, and the writing at <a href="https://sleepnod.substack.com">Substack</a>.</p>
+    <p class="lens-intro">Choreography, sound score, video direction, and the producing and grant work that got the work made and toured. Work under the name Sleep Nod.</p>
     {% include lens-roles.html ids="role.sleep-nod-producer,role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.crfw-consultant,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator" tags="choreography,sound-design,video-direction,documentary,performance,arts-administration,grant-administration,event-production,immersive,installation,community,organizing,mutual-aid" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
@@ -237,8 +248,7 @@ Available for <strong>part- or full-time</strong> work in behavioral-health oper
   <h2>Let's talk.</h2>
   <p>{{ availability | strip_newlines | strip }}</p>
   <div class="actions">
-    <a class="btn" href="mailto:{{ p.basics.email }}">{{ p.basics.email }}</a>
-    {%- include contact-links.html order=link_order -%}
+    <a class="btn" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
   </div>
 </section>
 
