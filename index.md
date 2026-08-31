@@ -109,15 +109,15 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- comment -%} ═══ ALL ═══ {%- endcomment -%}
   <section class="lens-panel" data-lens="all">
     <h2 class="section__title">Experience</h2>
-    {% include lens-roles.html title="Healthcare &amp; behavioral health operations" ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" limit="4" %}
-    {% include lens-roles.html title="Project, program &amp; systems management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.future-colossal-cpm,role.evia-producer,role.cafe-suspiro-biz-dev" limit="3" %}
-    {% include lens-roles.html title="Arts production &amp; community work" ids="role.sleep-nod-producer,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator,role.baaahs-food-director,role.crfw-consultant" limit="2" %}
+    {% include lens-roles.html title="Behavioral health" ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" limit="4" %}
+    {% include lens-roles.html title="Project management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.future-colossal-cpm,role.evia-producer,role.cafe-suspiro-biz-dev" limit="3" %}
+    {% include lens-roles.html title="Arts &amp; community" ids="role.sleep-nod-producer,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator,role.baaahs-food-director,role.crfw-consultant" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Project &amp; systems management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.program-design,skill.budget-management,skill.data-analysis,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management" %}
-    {% include skill-group.html title="Clinical &amp; behavioral health" ids="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction,skill.group-facilitation,skill.psychoeducation,skill.clinical-assessments,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
-    {% include skill-group.html title="Health IT &amp; compliance" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.clinical-note-formats" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
-    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365,skill.adobe-creative-suite" %}
+    {% include skill-group.html title="Project management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.program-design,skill.budget-management,skill.data-analysis,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management" %}
+    {% include skill-group.html title="Clinical" ids="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction,skill.group-facilitation,skill.psychoeducation,skill.clinical-assessments,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
+    {% include skill-group.html title="Health IT" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.clinical-note-formats" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
+    {% include skill-group.html title="Tools" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365,skill.adobe-creative-suite" %}
     {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" %}
 
     <h2 class="section__title">Selected Projects</h2>
@@ -129,10 +129,10 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     <h2 class="section__title">Clinical</h2>
     <p class="lens-intro">Direct behavioral health practice — intake and assessment, group programming, clinical documentation, and harm reduction — plus the systems work that made the care actually reach people.</p>
     {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,health-it,compliance,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="7" %}
-    {% include lens-roles.html title="Systems work that transfers into care settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
+    {% include lens-roles.html title="Systems work from other settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Clinical &amp; behavioral health" ids="skill.clinical-intake,skill.clinical-assessments,skill.clinical-documentation,skill.clinical-note-formats,skill.case-management,skill.harm-reduction,skill.overdose-response,skill.group-facilitation,skill.psychoeducation,skill.community-outreach,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
+    {% include skill-group.html title="Clinical" ids="skill.clinical-intake,skill.clinical-assessments,skill.clinical-documentation,skill.clinical-note-formats,skill.case-management,skill.harm-reduction,skill.overdose-response,skill.group-facilitation,skill.psychoeducation,skill.community-outreach,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
     {% include skill-group.html title="Systems &amp; documentation" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.process-improvement,skill.data-analysis,skill.program-design,skill.project-management,skill.microsoft-365" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
 
     <h2 class="section__title">Writing</h2>
@@ -144,12 +144,12 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     <h2 class="section__title">Health IT &amp; Data</h2>
     <p class="lens-intro">Working through systems and data: EHR workflow and documentation compliance, utilization reporting, referral pipelines, and the PMO, agile, and automation work underneath them — built inside a behavioral-health facility and inside New York agencies.</p>
     {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" tags="health-it,compliance,data-analysis,process-improvement,automation" limit="6" %}
-    {% include lens-roles.html title="Agency PMO, agile &amp; reporting" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
+    {% include lens-roles.html title="Agency project management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
 
     <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Health IT &amp; compliance" ids="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.medical-records-research,skill.clinical-note-formats,skill.clinical-documentation" key="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance" %}
-    {% include skill-group.html title="Project &amp; systems management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.program-design,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.data-analysis" %}
-    {% include skill-group.html title="Tools &amp; platforms" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365" key="skill.workflow-automation" %}
+    {% include skill-group.html title="Health IT" ids="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.medical-records-research,skill.clinical-note-formats,skill.clinical-documentation" key="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance" %}
+    {% include skill-group.html title="Project management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.program-design,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.data-analysis" %}
+    {% include skill-group.html title="Tools" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365" key="skill.workflow-automation" %}
 
     <h2 class="section__title">Selected Projects</h2>
     {% include lens-projects.html ids="project.cv-database,project.windows-111-2019,project.arctic-refuge-2019,project.megatrends-2019" %}
@@ -159,12 +159,12 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   <section class="lens-panel" data-lens="teaching">
     <h2 class="section__title">Teaching</h2>
     <p class="lens-intro">Working with a group in a room: psychoeducation and skills groups for dual-diagnosis clients, drug-safety workshops at festivals, training clinicians on documentation, coaching twelve brand teams through an agile transition, and mentoring the people who run programs after you leave. Facilitation is facilitation, whatever the room.</p>
-    {% include lens-roles.html title="Groups, psychoeducation &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
-    {% include lens-roles.html title="Agile coaching &amp; team training" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
-    {% include lens-roles.html title="Workshops &amp; teaching artists" ids="role.base-arts-coordinator,role.sleep-nod-producer" tags="organizing,grant-administration" limit="1" %}
+    {% include lens-roles.html title="Groups &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
+    {% include lens-roles.html title="Agile coaching" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
+    {% include lens-roles.html title="Arts workshops" ids="role.base-arts-coordinator,role.sleep-nod-producer" tags="organizing,grant-administration" limit="1" %}
 
     <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Facilitation &amp; teaching" ids="skill.group-facilitation,skill.psychoeducation,skill.program-design,skill.people-development,skill.agile-scrum,skill.community-outreach,skill.crisis-communication,skill.harm-reduction" key="skill.group-facilitation,skill.psychoeducation,skill.people-development,skill.agile-scrum" %}
+    {% include skill-group.html title="Facilitation" ids="skill.group-facilitation,skill.psychoeducation,skill.program-design,skill.people-development,skill.agile-scrum,skill.community-outreach,skill.crisis-communication,skill.harm-reduction" key="skill.group-facilitation,skill.psychoeducation,skill.people-development,skill.agile-scrum" %}
     {% include skill-group.html title="Assessment &amp; research" ids="skill.clinical-assessments,skill.clinical-intake,skill.data-analysis,skill.clinical-documentation,skill.microsoft-365" key="skill.clinical-assessments,skill.data-analysis" %}
 
     <h2 class="section__title">Writing</h2>
@@ -176,10 +176,10 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     <h2 class="section__title">Onsite Projects</h2>
     <p class="lens-intro">Producing in physical space: immersive installations, live events, touring crews, vendors, and load-in deadlines that don't move.</p>
     {% include lens-roles.html ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.velocity-production,role.easy-street-producer,role.base-arts-coordinator" tags="event-production,project-management,budget-management,stakeholder-management,leadership,community,mutual-aid,organizing,performance,arts-administration" limit="3" %}
-    {% include lens-roles.html title="Programming and logistics in other settings" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
+    {% include lens-roles.html title="Programming in a care setting" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Production &amp; delivery" ids="skill.event-production,skill.project-management,skill.budget-management,skill.stakeholder-management,skill.program-design,skill.people-development" key="skill.event-production,skill.project-management,skill.budget-management" %}
+    {% include skill-group.html title="Production" ids="skill.event-production,skill.project-management,skill.budget-management,skill.stakeholder-management,skill.program-design,skill.people-development" key="skill.event-production,skill.project-management,skill.budget-management" %}
     {% include skill-group.html title="Craft &amp; tools" ids="skill.video-production,skill.sound-design,skill.arts-administration,skill.pm-tooling,skill.adobe-creative-suite" %}
 
     <h2 class="section__title">Selected Projects</h2>

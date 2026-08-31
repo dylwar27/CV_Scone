@@ -676,8 +676,8 @@
     Consolidated 7 independent team routines into 3 coordinated agile routines
     across the division and leaned heavily into Scrum, cutting the
     data-gathering-to-insight pipeline from ~3 days of email back-and-forth to
-    under 24 hours. (Metric corrected by Dyl 2026-08-31: the ~3d→<24h figure is
-    the data-to-insight pipeline, not coordination cycles.)
+    under 24 hours.
+  source: "Metric corrected by Dyl 2026-08-31: the ~3d→<24h figure is the data-to-insight pipeline, not coordination cycles."
   tags: [agile, scrum, process-improvement, leadership]
   skills: [skill.agile-scrum, skill.process-improvement]
   audience: [tech, exec]
