@@ -26,11 +26,10 @@
 - id: bullet.prc-records-research
   role_id: role.prc-baker-intake
   text: >
-    Ran multi-provider records research to complete AO-07 intake assessments —
-    pulling directly from Epic, then chasing three to five outside providers per
-    client by Epic messaging, phone, and email, and reconstructing incomplete
-    social histories from fragmentary records. Sharply reduced late assessments
-    and moved assessment turnaround from roughly seven days to 24–72 hours.
+    Completed AO-07 intake assessments through multi-provider records research: Epic
+    first, then three to five outside providers per client by message, phone, and email,
+    rebuilding social histories from fragmentary records. Assessment turnaround fell from
+    about seven days to 24–72 hours.
   tags: [health-it, intake-assessment, case-management, clinical-documentation, process-improvement]
   skills: [skill.medical-records-research, skill.clinical-assessments, skill.clinical-intake, skill.epic-superuser]
   audience: [clinical, nonprofit, academic]
@@ -47,10 +46,9 @@
 - id: bullet.prc-digital-workflow
   role_id: role.prc-baker-intake
   text: >
-    Maintained and extended the agency's SQL referral database and built the
-    digital intake workflow around it — online forms, Microsoft Teams routing,
-    email, and website updates — spanning four residential houses, partner jails,
-    and the SF Department of Public Health, replacing a fax-based manual process.
+    Maintained and extended the agency's SQL referral database and built the digital
+    intake workflow around it: online forms, Teams routing, email, and website updates
+    across four houses, partner jails, and SF DPH. It replaced a fax-based manual process.
   variants:
     - audience: exec
       text: >
@@ -98,10 +96,8 @@
 - id: bullet.prc-utilization-reporting
   role_id: role.prc-baker-intake
   text: >
-    Built the program's utilization reporting — same-day census pulled from Epic
-    plus longitudinal trend analysis — and combined it with a Microsoft Access
-    database and Excel models into high-level dashboards for agency leadership and
-    the San Francisco Department of Public Health.
+    Built the program's utilization reporting: same-day census from Epic, longitudinal
+    trends in Access and Excel, read by agency leadership and SF DPH.
   tags: [health-it, data-analysis, process-improvement, stakeholder-management]
   skills: [skill.epic-superuser, skill.data-analysis, skill.microsoft-365]
   audience: [clinical, exec, leadership, nonprofit, civic]
@@ -151,10 +147,10 @@
 - id: bullet.prc-note-systems
   role_id: role.prc-baker-intake
   text: >
-    Authored the program's Epic template and SmartPhrase library — census capture,
-    daily/monthly/closing notes, and keystroke shortcuts for high-frequency
-    documentation — driving typical note time down from ~30 minutes toward a
-    5-minute target, with some clinicians consistently reaching it.
+    Wrote the program's Epic template and SmartPhrase library: census capture, daily,
+    monthly, and closing notes, and keystroke shortcuts for the high-frequency
+    documentation. Typical note time fell from about 30 minutes toward a 5-minute target,
+    and some clinicians hit it consistently.
   tags: [clinical-documentation, process-improvement, health-it]
   skills: [skill.epic-superuser, skill.clinical-documentation, skill.process-improvement]
   audience: [clinical, nonprofit, leadership]
@@ -275,13 +271,10 @@
 - id: bullet.prc-compliance-rollup
   role_id: role.prc-baker-intake
   text: >
-    Built and ran the program's daily compliance and clearance roll-up — every
-    current client across four houses with what was outstanding on each:
-    assessments due, notes due, house review or entry follow-up, and TB or other
-    medical clearance. Sent to leadership each morning, who carried it to the SF
-    Department of Public Health to expedite treatment and provider coverage.
-    Cross-checked against the source systems every morning, with a built-in
-    checksum that highlighted any error immediately.
+    Built and ran the daily compliance roll-up: every current client across four houses
+    and what was outstanding on each, from assessments and notes to medical clearances.
+    Leadership carried it to SF DPH each morning to expedite coverage. A built-in checksum
+    caught errors against the source systems.
   variants:
     - audience: exec
       text: >
@@ -584,11 +577,10 @@
 - id: bullet.edelman-melissa-doug
   role_id: role.edelman-spm
   text: >
-    Owned the Melissa & Doug account — a multimillion-dollar (~$2M) digital
-    advertising program of paid social and banner creative delivered through Google
-    Ads and social platforms — managing ~$2M in budget across teams of 5–10
-    reporting through five senior directors, and running three or four concurrent
-    projects including three ~$2M television production scopes.
+    Owned the Melissa & Doug account, a ~$2M digital advertising program across paid
+    social and banner creative. Managed teams of 5–10 reporting through five senior
+    directors, running three or four projects at a time, including three television
+    production scopes.
   tags: [project-management, budget-management, stakeholder-management, leadership]
   skills: [skill.project-management, skill.budget-management, skill.stakeholder-management]
   audience: [exec, tech, leadership]
@@ -656,11 +648,9 @@
 - id: bullet.ab-team-consolidation
   role_id: role.ab-scrum
   text: >
-    Led the Scrum transition for Anheuser-Busch's Beyond Beer division (brands
-    outside the core beer portfolio — e.g., MD 20/20, wine, and malt products),
-    consolidating all 12 of the division's brand teams into one streamlined unit
-    with shared agile routines, documented in Microsoft Project and Azure DevOps
-    in collaboration with portfolio VPs.
+    Led the Scrum transition for Anheuser-Busch's Beyond Beer division, consolidating its
+    twelve brand teams into one operating unit. Shared agile routines were documented in
+    Microsoft Project and Azure DevOps with the portfolio VPs.
   tags: [agile, scrum, leadership, process-improvement]
   skills: [skill.agile-scrum, skill.process-improvement, skill.pm-tooling]
   audience: [tech, exec]
@@ -684,24 +674,23 @@
   role_id: role.ab-scrum
   text: >
     Consolidated 7 independent team routines into 3 coordinated agile routines
-    across the division and leaned heavily into Scrum, cutting media- and
-    release-coordination cycles from ~3 days of email back-and-forth to execution
-    within 24 hours.
+    across the division and leaned heavily into Scrum, cutting the
+    data-gathering-to-insight pipeline from ~3 days of email back-and-forth to
+    under 24 hours. (Metric corrected by Dyl 2026-08-31: the ~3d→<24h figure is
+    the data-to-insight pipeline, not coordination cycles.)
   tags: [agile, scrum, process-improvement, leadership]
   skills: [skill.agile-scrum, skill.process-improvement]
   audience: [tech, exec]
   themes: [scaling, 0-to-1]
-  metrics: ["7 routines → 3", "coordination ~3 days → <24h"]
+  metrics: ["7 routines → 3", "data-to-insight ~3 days → <24h"]
   verified: true
   status: active
 - id: bullet.ab-portfolio-trackers
   role_id: role.ab-scrum
   text: >
-    Built cross-portfolio tracking in Azure DevOps spanning five brands, giving
-    division leadership one live view of project progress and of the shared
-    employees working across those brands — so they could shift focus toward
-    whichever brand was actually generating demand instead of waiting on status
-    meetings.
+    Built cross-portfolio tracking in Azure DevOps across five brands: one live view of
+    progress and shared staffing, so leadership could shift focus to whichever brand was
+    generating demand without waiting on status meetings.
   tags: [automation, project-management, agile, stakeholder-management, leadership]
   skills: [skill.workflow-automation, skill.pm-tooling, skill.agile-scrum, skill.stakeholder-management]
   audience: [exec, leadership, product]
@@ -732,11 +721,13 @@
 - id: bullet.jump450-automation
   role_id: role.jump450-spm
   text: >
-    Built an automated, Slack-integrated approval pipeline for Wegmans' creative
-    team using Zapier, Slack, and Airtable — assets submitted to a single Slack
-    channel landed in an organized Airtable database for quick approvals,
-    circumventing email back-and-forth and shortening asset time-to-market from
-    2–3 weeks to 3–4 days.
+    Built an automated, Slack-integrated approval pipeline between Wegmans and
+    Jump450 using Zapier, Slack, and Airtable — assets submitted to a single
+    Slack channel landed in an organized Airtable database for quick approvals,
+    shortening asset time-to-market from 2–3 weeks to 3–4 days and giving the
+    team granular data on each asset's social and digital ad performance.
+    (Scope clarified by Dyl 2026-08-31: pipeline ran between the two orgs, and
+    the per-asset performance visibility was part of the win.)
   tags: [process-improvement, project-management, data-analysis]
   skills: [skill.process-improvement, skill.data-analysis, skill.pm-tooling, skill.martech-analytics]
   audience: [tech, exec]
@@ -785,10 +776,9 @@
 - id: bullet.jump450-wegmans-growth
   role_id: role.jump450-spm
   text: >
-    Built the trust that let Wegmans grow monthly ad spend from ~$500K to roughly
-    $1M–$1.5M/mo depending on season — growing agency commission and lifting
-    Wegmans from the agency's #5 to its #1 client, the core account before
-    Jump450's acquisition by Omnicom.
+    Wegmans' monthly ad spend grew from about $500K to $1M–1.5M while I ran the account,
+    moving them from the agency's #5 client to its #1 — the core account before Jump450's
+    acquisition by Omnicom.
   tags: [stakeholder-management, revenue, data-analysis]
   skills: [skill.stakeholder-management, skill.data-analysis]
   audience: [exec, leadership]
@@ -803,11 +793,10 @@
 - id: bullet.jump450-asset-taxonomy
   role_id: role.jump450-spm
   text: >
-    Designed the tagging schema behind the Wegmans asset pipeline — every submitted
-    creative auto-tagged on intake against campaign, store set, and eleven further
-    attributes — turning an approval queue into a queryable performance database
-    that let the client's marketing team see results of their own creative
-    iterations for the first time.
+    Designed the tagging schema behind the Wegmans asset pipeline. Every creative was
+    auto-tagged on intake against campaign, store set, and eleven other attributes. For
+    the first time, Wegmans' marketing team could see how their own creative iterations
+    performed.
   tags: [automation, data-analysis, process-improvement, project-management]
   skills: [skill.workflow-automation, skill.data-analysis, skill.martech-analytics]
   audience: [exec, product, tech, leadership]
@@ -827,13 +816,11 @@
 - id: bullet.fc-arctic-refuge
   role_id: role.future-colossal-cpm
   text: >
-    Managed all logistics, budget, and procurement for "The Arctic Refuge
-    Experience" — a two-story, multi-sensory immersive installation (screens,
-    light, sound, fans, scent) simulating the Arctic National Wildlife Refuge
-    before oil drilling, paired with a call-your-senator action station for ANWR
-    and the Gwich'in Nation. Toured New York, San Francisco, and Washington DC in
-    collaboration with Wallplay, which donated the exhibition space and a $70K
-    contribution; project valued ~$1.1–1.5M.
+    Managed logistics, budget, and procurement for "The Arctic Refuge Experience," a
+    two-story immersive installation simulating the Arctic National Wildlife Refuge before
+    oil drilling, with a call-your-senator station for ANWR and the Gwich'in Nation.
+    Toured New York, San Francisco, and Washington DC with Wallplay; project valued around
+    $1.1–1.5M.
   tags: [project-management, immersive, budget-management, event-production, installation]
   skills: [skill.project-management, skill.budget-management, skill.event-production]
   audience: [creative, exec, art-grant]
@@ -867,12 +854,9 @@
 - id: bullet.fc-sow-management
   role_id: role.future-colossal-cpm
   text: >
-    Led partner vendors and nonprofits through participation on SOWs valued up to
-    $1.4M across projects budgeted $500K–$15M with crews of 5–7, coordinating
-    ~2–3 vendors per project (custom fabrication contractors, photographers,
-    musicians, overseas/remote QA technicians, on-site logistics crews, and
-    catering); maintained the vendor list and tracked proposed vs. actual spend
-    weekly in Excel, Trello, Jira, Monday.com, and TeamGantt.
+    Led vendors and nonprofit partners through SOWs up to $1.4M on projects budgeted
+    $500K–$15M: two or three vendors per project, from fabrication contractors to remote
+    QA technicians. Tracked proposed vs. actual spend weekly.
   tags: [project-management, budget-management, stakeholder-management]
   skills: [skill.project-management, skill.budget-management, skill.stakeholder-management, skill.pm-tooling]
   audience: [exec, nonprofit]
@@ -883,11 +867,10 @@
 - id: bullet.fc-ey-megatrends
   role_id: role.future-colossal-cpm
   text: >
-    Produced two installations for EY at the 2019 Innovation Realized Conference —
-    an interactive "Megatrends" screen that surfaced and connected EY's concepts as
-    participants approached, and the "Innovation Realized" wheel with a custom rug
-    and podiums where attendees could explore offerings and speak with
-    representatives — drawing strong engagement (~1–2 of every 15 passersby stopping).
+    Produced two installations for EY at the 2019 Innovation Realized Conference: an
+    interactive "Megatrends" screen that connected EY's concepts as participants
+    approached, and the "Innovation Realized" wheel, where attendees explored offerings
+    and talked with representatives. About one or two of every fifteen passersby stopped.
   tags: [project-management, immersive, event-production, installation, stakeholder-management]
   skills: [skill.project-management, skill.event-production, skill.stakeholder-management]
   audience: [creative, exec, tech]
@@ -902,10 +885,9 @@
 - id: bullet.fc-windows-1-11
   role_id: role.future-colossal-cpm
   text: >
-    Served as QA project manager on "Windows 1.11," a Netflix × Microsoft ×
-    Wunderman viral analog-horror "haunted game" tied to Stranger Things — a
-    clickable Windows parody culminating in a boss fight — that earned press
-    coverage and strong engagement with younger and 80s-nostalgic gamers.
+    QA project manager on "Windows 1.11," a Netflix × Microsoft × Wunderman analog-horror
+    game tied to Stranger Things: a clickable Windows parody ending in a boss fight. It
+    went viral and earned press coverage.
   tags: [project-management, immersive, event-production]
   skills: [skill.project-management, skill.event-production]
   audience: [creative, tech, exec]

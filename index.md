@@ -30,13 +30,14 @@ layout: default
 {%- endcomment -%}
 
 {%- comment -%}
- The four knobs below carry the POSITIONING (JOB_SEARCH.md; rewritten by Dyl 2026-08-25):
- "Collaborative assessment as intervention — with individuals and with systems."
- exec_summary is word-for-word the résumé summary (profile.yml → summary.assessment-codesign).
- If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME (changed 08-25).
+ Knobs rewritten with Dyl 2026-08-31 (plain register — see project memory voice rule):
+ tagline is plain facts (the assessment-as-intervention idea stays strategy, not copy);
+ exec_summary is word-for-word the résumé summary (profile.yml → summary.assessment-codesign);
+ personal_statement was CUT deliberately — do not reintroduce it.
+ If the résumé summary changes, change it here too. Availability is PART- OR FULL-TIME.
 {%- endcomment -%}
 
-{%- assign tagline = "Collaborative Assessment as Intervention &middot; Behavioral and mental health, health IT &amp; program management &middot; San Francisco" -%}
+{%- assign tagline = "Behavioral &amp; mental health &middot; Health IT &middot; Program management &middot; San Francisco" -%}
 {%- comment -%}
  OUTBOUND-LINK POLICY (set by Dyl 2026-08-31). The site does not send visitors
  away: if someone found it, keep them here. Third-party PRESS links on projects
@@ -52,15 +53,11 @@ layout: default
 {%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com" -%}
 
 {%- capture exec_summary -%}
-Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project Manager (PMP). Direct experience authoring, managing, and reporting within EHR data (Epic, Avatar); media production and agency project management in New York and Seattle; M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
-{%- endcapture -%}
-
-{%- capture personal_statement -%}
-I don't take a presenting issue at face value, and I don't solve it alone. I've run intake across four dual-diagnosis residential houses and lifted bed utilization from 62% to 78%+ by rebuilding the referral pipeline; I've built a PMO and led an agile transition across a multi-team division; and I've sat with someone in their deepest feelings. I've led real change in organizational and personal areas by remaining curious about cause, building measured, real next steps, and documenting.
+Counselor in training and digital project manager. Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York. MHRS, NPI-registered, PMP. M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jan 2027).
 {%- endcapture -%}
 
 {%- capture availability -%}
-Available for <strong>part- or full-time</strong> work in behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, and teaching or research assistance. Supervised, structured settings. Based in San Francisco; remote preferred, Bay Area in person works.
+Available for <strong>part- or full-time</strong> work: behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, teaching or research assistance. Based in San Francisco; remote or Bay Area in person.
 {%- endcapture -%}
 
 {%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist &middot; NPI-registered,Epic &amp; Avatar EHR,Google Data Analytics,M.A. Clinical Mental Health Counseling (Jan 2027)" | split: "," -%}
@@ -74,7 +71,6 @@ Available for <strong>part- or full-time</strong> work in behavioral-health oper
   <h1 class="hero__name">{{ p.basics.name }}</h1>
   <p class="hero__tagline">{{ tagline }}</p>
   <p class="hero__lead">{{ exec_summary | strip_newlines | strip }}</p>
-  <p class="hero__statement">{{ personal_statement | strip_newlines | strip }}</p>
   <div class="actions">
     <a class="btn" href="mailto:{{ site.contact_email }}">Email me</a>
   </div>

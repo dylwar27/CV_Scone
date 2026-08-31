@@ -384,13 +384,11 @@
   end: ongoing
   role: "Designer and sole builder"
   description: >
-    A structured YAML database of every role, accomplishment, project, and skill,
-    with a closed tagging vocabulary (audience, theme, tag) that lets an LLM
-    reassemble a résumé for any given audience on demand. Includes a documented
-    schema, an agent ingest contract that turns raw source documents and spoken
-    brain-dumps into validated draft entries, and a Jekyll site that renders the
-    same database through switchable lenses — clinical, digital PM, onsite PM,
-    arts — each pulling a different slice of the same underlying facts.
+    A structured YAML database of every role, accomplishment, project, and skill, with a
+    closed tagging vocabulary that lets a résumé be reassembled for any audience. Includes
+    a documented schema, an ingest contract that turns raw documents and spoken notes into
+    draft entries, and a Jekyll site that renders the same database through switchable
+    lenses.
   url: "https://dylwar27.github.io/CV_Scone/"
   artifacts:
     - label: "Live CV site"

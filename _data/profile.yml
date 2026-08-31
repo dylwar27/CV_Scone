@@ -26,23 +26,78 @@ summaries:
     audience: [clinical, nonprofit, academic, civic, tech, general]
     length: short
     status: active
-    source: "Rewritten by Dyl 2026-08-25 (Counselor-in-Training lead; part- or full-time). Previous 08-24 version: 'Behavioral-health intake specialist and PMP-certified project manager. The same practice in an intake room and a project plan...' The master résumé's summary."
+    source: "Rewritten with Dyl 2026-08-31 evening, plain register — matches the rendered master résumé and the site hero lead. The 08-25 version led 'Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project Manager (PMP)...'. Previous 08-24 version: 'Behavioral-health intake specialist and PMP-certified project manager. The same practice in an intake room and a project plan...' The master résumé's summary."
     text: >
-      Counselor-in-Training, Behavioral-health Clinician (MHRS) and Digital Project
-      Manager (PMP). Direct experience authoring, managing, and reporting within
-      EHR data (Epic, Avatar); media production and agency project management in
-      New York and Seattle; M.A. in Clinical Mental Health Counseling in progress
-      (Palo Alto University, expected Jan 2027).
+      Counselor in training and digital project manager. Two years running intake at a
+      dual-diagnosis residential program in San Francisco, where I also rebuilt the
+      systems around the job: the referral pipeline, the utilization reporting, and the
+      Epic templates the program ran on. Before that, five years of agency project
+      management in New York. MHRS, NPI-registered, PMP. M.A. in Clinical Mental Health
+      Counseling in progress (Palo Alto University, expected Jan 2027).
 
   - id: summary.linkedin-headline
     audience: [linkedin, general]
     length: tagline
     status: active
-    source: "Rewritten by Dyl 2026-08-25 (dropped 'Open to part-time' — now open to part- or full-time). 08-24 version: 'Behavioral-Health Intake Specialist & PMP Project Manager | ... | Open to part-time'. Earlier rewrite 2026-08-24 to the locked positioning; full paste-sheet at database/render/linkedin/LINKEDIN.md. Previous (pulled 2026-06-02): 'Social Services Leader | PMP-Certified Project Manager | Passionate About Driving Impact & Operational Excellence'."
+    source: "Rewritten with Dyl 2026-08-31 evening, plain register (tagline dropped, PAU abbreviated to fit 220; see voice rule). Earlier that day: rewritten to the OVERLAP positioning after the 08-31 direction change (AI trust & safety / user well-being = target class #1, BH ops and PAU stay live). Keyword-forward for recruiter search; audience split moved to the About closing paragraph and Open-to-work, not the headline. BH-ops-forward variant kept below as summary.linkedin-headline-bhops. Full paste-sheet at database/render/linkedin/LINKEDIN.md. Previous (pulled 2026-06-02, still live until pasted): 'Social Services Leader | PMP-Certified Project Manager | Passionate About Driving Impact & Operational Excellence'."
+    text: >
+      Counselor in Training (MHRS) & Project Manager (PMP) | Policy & Review
+      Operations in Clinical and Creative Settings · QA · Harm Reduction · Epic &
+      Avatar EHR | M.A. Clinical Mental Health Counseling (PAU, Jan 2027)
+
+  - id: summary.linkedin-headline-bhops
+    audience: [linkedin, clinical, nonprofit]
+    length: tagline
+    status: draft
+    source: "The 2026-08-25 headline, demoted to a variant 08-31. Use if the PAU / county track is what converts."
     text: >
       Counselor in Training, Behavioral-Health Clinician & Project Manager | Epic & Avatar EHR ·
       Utilization Reporting · Program Coordination | MHRS, NPI | M.A. Clinical Mental
       Health Counseling (PAU, Jan 2027)
+
+
+  - id: summary.linkedin-about
+    audience: [linkedin, general]
+    length: long
+    status: active
+    source: >
+      Co-written with Dyl 2026-08-31 (evening), plain-professional register per the voice
+      rule (no aphorisms, minimal em-dashes, one number per paragraph). Renders to
+      render/linkedin/LINKEDIN.md §2. CV_Scone link deliberately omitted until the site
+      has its own domain. The "What I'm looking for" paragraph is the audience-swap slot.
+    text: >
+      I'm a counselor in training and a digital project manager. Recently I ran intake
+      at a dual-diagnosis residential program in San Francisco: up to 40 assessments a
+      month for residential transfer from jails and hospitals. I also rebuilt the
+      systems around the job, digitizing the referral pipeline, automating the
+      utilization reporting, and consolidating the Epic templates the program ran on.
+      Bed utilization went from averaging 62% to over 78% while I had it.
+
+
+      A lot of that work was documentation compliance. Medi-Cal's rules are written
+      for auditors, so I turned them into criteria and templates clinicians could
+      actually apply, then audited against them and fixed what failed.
+
+
+      Outside of work I lead harm reduction for community events, run with the same
+      attention to protocol and follow-through.
+
+
+      Before clinical work I spent five years as an agency project manager in New
+      York. I co-founded a PMO, led the agile transition that consolidated twelve
+      brand teams at Anheuser-Busch into a single operating unit, and built reporting
+      and automation that gave teams real hours back each week, built trust with
+      clients, and made us money.
+
+
+      Credentials: MHRS, NPI-registered, PMP, Google Data Analytics Certificate,
+      hands-on Epic and Netsmart Avatar. M.A. in Clinical Mental Health Counseling at
+      Palo Alto University, finishing January 2027.
+
+
+      I'm looking for work where clinical judgment and constructive supervision get
+      built into systems: trust and safety, user well-being, quality and utilization
+      review, or program design. San Francisco or remote.
 
   - id: summary.general
     audience: [general]
