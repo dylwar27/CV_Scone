@@ -20,7 +20,24 @@
   <div class="entry__when">{% if from == to %}{{ from }}{% else %}{{ from }} &ndash; {{ to }}{% endif %}</div>
   <div class="entry__body">
     <h4 class="entry__title">{{ role.title }}</h4>
+    {%- comment -%}
+      Org name links out to the company / venue when roles.yml carries a `url`
+      (added 2026-09-02 — Dyl asked for outbound links to the places he worked).
+      Honours the same link_blocklist as lens-projects.html, so the policy is
+      enforced in one vocabulary. No url, or a blocked one, renders plain text.
+    {%- endcomment -%}
+    {%- assign role_blocked = link_blocklist | default: "" | split: "," -%}
+    {%- assign drop_org = false -%}
+    {%- if role.url and role.url != "" -%}
+      {%- for b in role_blocked -%}{%- if role.url contains b -%}{%- assign drop_org = true -%}{%- endif -%}{%- endfor -%}
+    {%- else -%}
+      {%- assign drop_org = true -%}
+    {%- endif -%}
+    {%- if drop_org -%}
     <p class="entry__org">{{ role.org }}</p>
+    {%- else -%}
+    <p class="entry__org"><a href="{{ role.url }}">{{ role.org }}</a></p>
+    {%- endif -%}
     <p class="entry__meta">{{ role.location }} &middot; {{ role.type | capitalize }}</p>
     {%- assign role_bullets = site.data.bullets | where: "role_id", role.id -%}
     <ul>
@@ -40,6 +57,27 @@
       {%- endif -%}
     {%- endfor %}
     </ul>
+    {%- comment -%}
+      Role-level evidence links (2026-09-02). Same shape and blocklist as
+      lens-projects.html: press or a client/company page that shows what the
+      work WAS. Roles have no `url`-vs-`artifacts` split — everything is in
+      roles.yml `artifacts:`. Keep these to things a stranger can verify.
+    {%- endcomment -%}
+    {%- assign role_max = 3 -%}
+    {%- assign role_shown = 0 -%}
+    {%- capture role_links -%}
+    {%- for a in role.artifacts -%}
+      {%- if a.url and a.url != "" and role_shown < role_max -%}
+        {%- assign drop_a = false -%}
+        {%- for b in role_blocked -%}{%- if a.url contains b -%}{%- assign drop_a = true -%}{%- endif -%}{%- endfor -%}
+        {%- unless drop_a %}<a class="link-pill" href="{{ a.url }}">{{ a.label }}</a>{% assign role_shown = role_shown | plus: 1 %}{% endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign role_links_trimmed = role_links | strip -%}
+    {%- if role_links_trimmed != "" %}
+    <p class="links">{{ role_links_trimmed }}</p>
+    {%- endif %}
   </div>
 </article>
 {%- endif -%}

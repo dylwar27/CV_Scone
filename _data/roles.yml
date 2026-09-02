@@ -9,6 +9,7 @@
 - id: role.prc-baker-intake
   title: "Intake Specialist and Residential Counselor"
   org: "PRC Baker Places"
+  url: "https://www.prcsf.org"
   location: "San Francisco, CA"
   type: full-time
   start: 2024-01
@@ -58,6 +59,7 @@
 - id: role.lifelong-outreach
   title: "Onsite Outreach & Care Coordinator"
   org: "Lifelong AIDS Alliance"
+  url: "https://www.lifelong.org"
   location: "Seattle, WA"
   type: part-time
   start: 2007-01
@@ -74,6 +76,7 @@
 - id: role.sleep-nod-producer
   title: "Arts Producer & Grant Administrator"
   org: "Self-Employed (Sleep Nod)"
+  url: "https://vimeo.com/dfw"
   location: "USA"
   type: freelance
   start: 2009-01
@@ -102,6 +105,7 @@
 - id: role.easy-street-producer
   title: "Event Producer and Barista"
   org: "Easy Street Records and Cafe"
+  url: "https://www.easystreetonline.com"
   location: "Seattle, WA"
   type: part-time
   start: 2009-09
@@ -118,11 +122,17 @@
 - id: role.future-colossal-cpm
   title: "Creative Project Manager"
   org: "Future Colossal"
+  url: "https://www.futurecolossal.com"
   location: "New York, NY"
   type: full-time
   start: 2019-01
   end: 2020-01
   industry: [advertising, events, experiential]
+  artifacts:
+    - label: "Future Colossal — The Arctic Refuge Experience"
+      url: "https://www.futurecolossal.com/arcticrefuge"
+    - label: "CBS New York — the installation"
+      url: "https://www.cbsnews.com/newyork/news/arctic-experience-transports-new-yorkers-into-alaskan-wilds/"
   tags: [project-management, event-production, immersive, stakeholder-management, budget-management]
   audience: [creative, exec, tech]
   visibility: public
@@ -132,6 +142,7 @@
 - id: role.edelman-spm
   title: "Senior Project Manager"
   org: "Edelman DxI"
+  url: "https://www.edelman.com"
   location: "New York, NY"
   type: full-time
   start: 2021-11
@@ -146,11 +157,15 @@
 - id: role.ab-scrum
   title: "Scrum Master (Consultant)"
   org: "Anheuser-Busch"
+  url: "https://www.anheuser-busch.com"
   location: "New York, NY"
   type: contract
   start: 2021-07
   end: 2021-11
   industry: [advertising, beverage-cpg]
+  artifacts:
+    - label: "AB InBev — the Beyond Beer portfolio"
+      url: "https://www.ab-inbev.com/news-media/news-stories/inside-look-at-ab-in-bevs-beyond-beer-portfolio"
   tags: [agile, scrum, project-management, leadership, process-improvement]
   audience: [tech, exec]
   visibility: public
@@ -170,6 +185,11 @@
   start: 2020-03
   end: 2021-07
   industry: [advertising, media]
+  artifacts:
+    - label: "Marketing Dive — Omnicom acquires Jump 450"
+      url: "https://www.marketingdive.com/news/omnicom-acquires-jump-450-to-build-out-performance-marketing-offering/607884/"
+    - label: "MediaPost — Omnicom Media Group buys Jump 450"
+      url: "https://www.mediapost.com/publications/article/367554/omnicom-media-group-buys-jump-450-media.html"
   tags: [project-management, process-improvement, data-analysis, agile, budget-management]
   audience: [tech, exec]
   visibility: public
@@ -201,6 +221,7 @@
 - id: role.baaahs-food-director
   title: "Food Program Director and Event Lead"
   org: "BAAAHS"
+  url: "https://baaahs.org"
   location: "San Francisco, CA / Mendocino, CA"
   type: volunteer
   start: 2023-01
@@ -241,6 +262,7 @@
 - id: role.velocity-production
   title: "Event & A/V Production, Donor Relations"
   org: "Velocity Dance Center"
+  url: "https://velocitydancecenter.org"
   location: "Seattle, WA"
   type: volunteer
   start: 2013-01

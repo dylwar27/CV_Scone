@@ -30,27 +30,32 @@ layout: default
 {%- endcomment -%}
 
 {%- comment -%}
- Knobs rewritten with Dyl 2026-08-31 (plain register — see project memory voice rule):
- tagline is plain facts (the assessment-as-intervention idea stays strategy, not copy);
- personal_statement was CUT deliberately — do not reintroduce it.
- Availability is PART- OR FULL-TIME.
+ Knobs. Rewritten with Dyl 2026-08-31 (plain register), then cut back hard
+ 2026-09-02 when the hero was removed.
 
- exec_summary DELIBERATELY NO LONGER MATCHES the résumé summary (Dyl, 2026-08-31).
- The résumé opens with "Counselor in training and digital project manager…" and
- closes with "MHRS, NPI-registered, PMP. M.A. …" because a résumé has no tagline
- and no credential chips above the summary. This page has both: the tagline names
- the tracks and the chips carry the credentials, so saying either in prose here
- said the same thing three times in a hundred words. What is left is the middle —
- the only part that was not repeated elsewhere in the hero.
- So: DO NOT "re-sync" this to profile.yml → summary.assessment-codesign. If the
- FACTS change (years, program, dates), change both. If the résumé summary is
- merely reworded, leave this alone.
+ GONE, and not to be reintroduced without Dyl saying so: `tagline`,
+ `exec_summary`, `personal_statement`. All three were the page asserting who he
+ is before the reader had asked. The lens menu does that job now by showing the
+ shape of the work instead of describing it. If you find yourself wanting a
+ headline back, the thing to write is a better lens one-liner.
+
+ `credentials` survives and now renders in the Education section.
+ `availability` still drives the closing CTA.
 {%- endcomment -%}
 
-{%- assign tagline = "Behavioral &amp; mental health &middot; Program management &middot; Clinical counselor in training" -%}
 {%- comment -%}
- OUTBOUND-LINK POLICY (set by Dyl 2026-08-31). The site does not send visitors
- away: if someone found it, keep them here. Third-party PRESS links on projects
+ OUTBOUND-LINK POLICY — REVISED BY DYL 2026-09-02. The 08-31 rule ("don't
+ send visitors away") is PARTLY REVERSED: evidence now outranks containment.
+ A CV that says "I directed a performance film for Lars Jan" and gives you no
+ way to watch it is asking to be taken on faith. So links out are now welcome
+ where they PROVE something — press, venues, client project pages, the company
+ you worked at, and the film itself. vimeo.com came OFF the blocklist because
+ most of the arts work has no third-party video and Dyl's archive is the only
+ place it can be watched. Roles carry a `url` too now (roles.yml), rendered by
+ _includes/lens-role.html under the same blocklist.
+ STILL BLOCKED, deliberately: sleep-nod.com and the Substack. Those are
+ destinations, not evidence — LinkedIn in the footer stays the single hop that
+ carries anyone who wants the whole portfolio. Third-party PRESS links on projects
  STAY — they are evidence somebody else published the work. Dyl's own channels
  (LinkedIn, portfolio, Substack, Vimeo, the repo) come off, except one LinkedIn
  link in the footer; LinkedIn is the hop that carries anyone who wants more on
@@ -63,7 +68,7 @@ layout: default
  _includes/lens-projects.html — that include can see this variable because
  Jekyll includes share the page's scope.
 {%- endcomment -%}
-{%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,vimeo.com,linkedin.com,github.io,github.com,dylanward.work" -%}
+{%- assign link_blocklist = "sleepnod.substack.com,sleep-nod.com,linkedin.com,github.io,github.com,dylanward.work" -%}
 
 {%- capture exec_summary -%}
 Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York.
@@ -80,28 +85,20 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
 {%- assign p = site.data.profile -%}
 
-<header class="hero">
-  <h1 class="hero__name">{{ p.basics.name }}</h1>
-  <p class="hero__tagline">{{ tagline }}</p>
-  {%- comment -%}
-   Identity line sits directly under the tagline (Dyl, 2026-08-31). The hero has
-   NO email button — the only calls to action are "View my experience" here and
-   the address in the closing CTA and footer. Do not reintroduce a hero button.
-  {%- endcomment -%}
-  <p class="meta-line">{{ p.basics.pronouns }} &middot; {{ p.basics.location.city }}, {{ p.basics.location.region }} &middot; <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
-  <p class="hero__lead">{{ exec_summary | strip_newlines | strip }}</p>
-  <ul class="creds">
-    {%- for c in credentials %}
-    <li>{{ c }}</li>
-    {%- endfor %}
-  </ul>
-  {%- comment -%}
-   Résumé download added 2026-09-01. Deliberately NOT a second button: the hero
-   keeps one call to action. This is a quiet secondary link beside it. The PDF is
-   the master résumé rendered from database/render/html/resume.html — re-render and
-   re-copy to assets/ whenever that changes, or the site serves a stale one.
-  {%- endcomment -%}
-  <p class="hero__cta"><a class="btn btn--big" href="#experience">View my experience &darr;</a><a class="hero__resume" href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">Résumé (PDF)</a></p>
+{%- comment -%}
+ THE OPENING — rebuilt with Dyl 2026-09-02.
+ Cut deliberately, DO NOT REINTRODUCE: the h1 name, the tagline, the identity
+ line, the exec_summary paragraph and the credential chip row. A reader (Dyl's
+ partner) hit the old hero, read it as a normal résumé header, and could not
+ tell what the page was FOR. The fix is not a better headline — it is to stop
+ asserting and start explaining. The page now opens by naming itself as a made
+ thing and handing over the controls; the credentials moved down to Education,
+ where someone looking for them will look.
+ The greeting is Dyl's own line, semicolon included.
+{%- endcomment -%}
+<header class="hero hero--greeting">
+  <p class="greeting">Thanks for being here;</p>
+  <p class="greeting__what">This is my CV, built so you can read only the part you came for. Pick one.</p>
 </header>
 
 <div class="lens-layout" id="experience">
@@ -113,16 +110,29 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
       <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical</button></li>
       <li><button type="button" data-lens="digital" aria-pressed="false">Health IT &amp; Data</button></li>
       <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching</button></li>
-      <li><button type="button" data-lens="onsite" aria-pressed="false">Onsite Projects</button></li>
-      <li><button type="button" data-lens="arts" aria-pressed="false">Arts</button></li>
+      <li><button type="button" data-lens="arts" aria-pressed="false">Arts and Event Production</button></li>
     </ul>
   </nav>
 
   <div class="lens-panels">
 
   {%- comment -%} ── Start state: shown only when JS is on and nothing is picked ── {%- endcomment -%}
+  {%- comment -%}
+   The start panel is a MENU, not a placeholder (2026-09-02). Its job is the
+   "oh, they made this" moment: before you click anything you can already see
+   the whole shape of the career and choose your way in. Each line is a real
+   button wired to the same JS as the sidebar. Keep these one-liners matched to
+   each panel's own lens-intro — they are the same promise, made twice.
+  {%- endcomment -%}
   <section class="lens-panel lens-prompt is-active" data-lens="start">
-    <p class="prompt">Choose a lens on the left to view a selection of my experience.</p>
+    <ul class="lens-menu">
+      <li><button type="button" data-lens="clinical"><span class="lens-menu__name">Clinical</span><span class="lens-menu__what">Intake and assessment, groups, clinical documentation, and harm reduction.</span></button></li>
+      <li><button type="button" data-lens="digital"><span class="lens-menu__name">Health IT &amp; Data</span><span class="lens-menu__what">EHR workflow, documentation compliance, utilization reporting, and referral pipelines.</span></button></li>
+      <li><button type="button" data-lens="teaching"><span class="lens-menu__name">Teaching</span><span class="lens-menu__what">Psychoeducation and skills groups, drug-safety workshops, clinician training, and agile coaching.</span></button></li>
+      <li><button type="button" data-lens="arts"><span class="lens-menu__name">Arts and Event Production</span><span class="lens-menu__what">Performance films made for other artists, immersive installations, live events, and touring crews.</span></button></li>
+      <li><button type="button" data-lens="all"><span class="lens-menu__name">All</span><span class="lens-menu__what">The whole record, in one page.</span></button></li>
+    </ul>
+    <p class="lens-menu__aside">Or take the one-page <a href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">r&eacute;sum&eacute; (PDF)</a>.</p>
   </section>
 
   {%- comment -%} ═══ ALL ═══ {%- endcomment -%}
@@ -140,7 +150,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" %}
 
     <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.tim-e-2017,project.material-deviation-2018,project.worth-my-salt-2014,project.simply-put-2015,project.still-becoming,project.desert-mode" %}
+    {% include lens-projects.html ids="project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.cold-light-day-2014,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
   </section>
 
   {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
@@ -190,33 +200,34 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
   </section>
 
-  {%- comment -%} ═══ ONSITE PM ═══ {%- endcomment -%}
-  <section class="lens-panel" data-lens="onsite">
-    <h2 class="section__title">Onsite Projects</h2>
-    <p class="lens-intro">Immersive installations, live events, touring crews, and vendors.</p>
-    {% include lens-roles.html ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.velocity-production,role.easy-street-producer,role.base-arts-coordinator" tags="event-production,project-management,budget-management,stakeholder-management,leadership,community,mutual-aid,organizing,performance,arts-administration" limit="3" %}
+  {%- comment -%}
+   ═══ ARTS AND EVENT PRODUCTION ═══
+   Merged 2026-09-02 from the old "Onsite Projects" and "Arts" lenses, at Dyl's
+   direction. They were one modality pretending to be two: physical space, a
+   fixed date, other people's vision to serve. Splitting them buried the
+   contract work — the performance films made for Alice Gosti, Lars Jan,
+   zoe|juniper, Cherdonna and Dayna Hanson were scattered across both.
+   data-lens stays "arts" so /#view-arts still resolves; /#view-onsite is
+   aliased to it in _includes/scripts.html so the old deep link is not broken.
+   ORDER IS THE POINT (Dyl): collaborations lead, his own authored work goes
+   last and stays short. Do not promote "My own work" up this panel.
+  {%- endcomment -%}
+  <section class="lens-panel" data-lens="arts">
+    <h2 class="section__title">Arts and Event Production</h2>
+    <p class="lens-intro">Performance films made for other artists, immersive installations, live events, and touring crews.</p>
+    {% include lens-roles.html title="Hired by other artists" ids="role.sleep-nod-producer" tags="documentary,video-direction,arts-administration,grant-administration,event-production,project-management" limit="3" %}
+    {% include lens-roles.html title="Immersive &amp; live events" ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.easy-street-producer" tags="event-production,project-management,budget-management,stakeholder-management,leadership,immersive,installation,community,mutual-aid" limit="3" %}
+    {% include lens-roles.html title="Venues, grants &amp; community" ids="role.velocity-production,role.base-arts-coordinator,role.crfw-consultant" tags="arts-administration,grant-administration,event-production,organizing,community,performance" limit="2" %}
     {% include lens-roles.html title="Programming in a care setting" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Production" ids="skill.event-production,skill.project-management,skill.budget-management,skill.stakeholder-management,skill.program-design,skill.people-development" key="skill.event-production,skill.project-management,skill.budget-management" %}
-    {% include skill-group.html title="Craft &amp; tools" ids="skill.video-production,skill.sound-design,skill.arts-administration,skill.pm-tooling,skill.adobe-creative-suite" %}
-
-    <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.arctic-refuge-2019,project.megatrends-2019,project.windows-111-2019,project.simply-put-2015" %}
-  </section>
-
-  {%- comment -%} ═══ ARTS ═══ {%- endcomment -%}
-  <section class="lens-panel" data-lens="arts">
-    <h2 class="section__title">Arts</h2>
-    <p class="lens-intro">Choreography, sound score, and video direction, plus the producing and grant work behind them. Under the name Sleep Nod.</p>
-    {% include lens-roles.html ids="role.sleep-nod-producer,role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.crfw-consultant,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator" tags="choreography,sound-design,video-direction,documentary,performance,arts-administration,grant-administration,event-production,immersive,installation,community,organizing,mutual-aid" limit="2" %}
-
-    <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" key="skill.sound-design,skill.video-production,skill.event-production" %}
-    {% include skill-group.html title="Tools" ids="skill.adobe-creative-suite,skill.pm-tooling" %}
+    {% include skill-group.html title="Creative" ids="skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration,skill.adobe-creative-suite,skill.pm-tooling" key="skill.video-production,skill.sound-design" %}
 
     <h2 class="section__title">Selected Work</h2>
-    {% include lens-projects.html ids="project.tim-e-2017,project.material-deviation-2018,project.worth-my-salt-2014,project.arctic-refuge-2019,project.simply-put-2015,project.still-becoming,project.desert-mode" %}
+    {% include lens-projects.html title="Made with other artists" ids="project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014,project.bodies-of-water-2016,project.no-one-2018" %}
+    {% include lens-projects.html title="Immersive &amp; events" ids="project.arctic-refuge-2019,project.megatrends-2019,project.windows-111-2019" %}
+    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.no-haiku-2020,project.lesser-evils-2017,project.simply-put-2015" %}
   </section>
 
   </div>
@@ -224,6 +235,16 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 
 <section class="section" id="education">
   <h2 class="section__title">Education &amp; Credentials</h2>
+  {%- comment -%}
+   The chip row USED to sit in the hero. It moved here 2026-09-02 when the hero
+   was cut: a credential is something a reader goes looking for, not something
+   that needs to interrupt them on arrival. `credentials` is still the knob.
+  {%- endcomment -%}
+  <ul class="creds creds--edu">
+    {%- for c in credentials %}
+    <li>{{ c }}</li>
+    {%- endfor %}
+  </ul>
   {%- for id in featured_degrees -%}
   {%- assign ed = site.data.education | where: "id", id | first -%}
   {%- if ed -%}

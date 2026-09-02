@@ -13,8 +13,13 @@
 (function () {
   var bar = document.querySelector('[data-lensbar]');
   if (!bar) return;
+  // Sidebar buttons carry the pressed state; the start-panel menu buttons are
+  // wired to the same handler so the menu is a real way in, not decoration.
   var buttons = bar.querySelectorAll('button[data-lens]');
+  var clickable = document.querySelectorAll('button[data-lens]');
   var panels  = document.querySelectorAll('.lens-panel[data-lens]');
+  // The Arts and Onsite lenses merged 2026-09-02. Old deep links still land.
+  var ALIAS = { onsite: 'arts' };
 
   function show(lens, push) {
     var found = false;
@@ -35,14 +40,15 @@
     return true;
   }
 
-  for (var k = 0; k < buttons.length; k++) {
-    buttons[k].addEventListener('click', function () {
+  for (var k = 0; k < clickable.length; k++) {
+    clickable[k].addEventListener('click', function () {
       show(this.getAttribute('data-lens'), true);
     });
   }
 
   // Deep link: /#view-clinical opens straight into that lens.
   var m = location.hash.match(/^#view-([a-z]+)$/);
-  if (!m || !show(m[1], false)) show('start', false);
+  var want = m ? (ALIAS[m[1]] || m[1]) : null;
+  if (!want || !show(want, false)) show('start', false);
 })();
 </script>

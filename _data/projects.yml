@@ -42,6 +42,9 @@
   role: "Performer"
   description: >
     Performance work with Petra Zanki, presented in New York City and Seattle.
+  artifacts:
+    - label: "Petra Zanki"
+      url: "http://www.petrazanki.com/"
   tags: [performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -146,6 +149,8 @@
   artifacts:
     - label: "Film"
       url: ""
+    - label: "Northwest Dance Project"
+      url: "https://www.nwdanceproject.org"
   tags: [choreography, documentary, time-based-media, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
@@ -169,6 +174,8 @@
       url: "https://archive.velocitydancecenter.org/program/made-in-seattle/"
     - label: "SeattleDances review"
       url: "https://seattledances.com/2014/10/do-you-think-this-is-easy-for-me-asks-cherdonna/"
+    - label: "Seattle Met — interview with Jody Kuehner"
+      url: "https://www.seattlemet.com/arts-and-culture/2014/10/a-fiendish-conversation-with-jody-kuehner-cherdonna-shinatra-october-2014"
   tags: [sound-design, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -184,6 +191,9 @@
     Sound score based heavily on Prokofiev's Romeo et Juliette for Whim W'Him,
     premiering at the Intiman Theater, Seattle. Critically acclaimed; received
     special mention from Michael Upchurch of The Seattle Times.
+  artifacts:
+    - label: "Whim W'Him"
+      url: "https://www.whimwhim.org"
   tags: [sound-design, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -201,6 +211,11 @@
     Short dance film set in the Key Peninsula, Washington. Performed and
     contributed sound design. Screened at the Radar Dance Film Series (Vancouver,
     BC) and Local Sightings Festival (Seattle).
+  artifacts:
+    - label: "Dayna Hanson — credits"
+      url: "https://www.daynahanson.com/filmtv/coldlightday"
+    - label: "Watch the film"
+      url: "https://vimeo.com/103555193"
   tags: [sound-design, documentary, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft, place]
@@ -217,6 +232,11 @@
     Seattle. Produced in single and split-screen format to suggest the experience
     of watching the work in the round. Subsequently presented in New York, New
     Orleans, and Nashville.
+  artifacts:
+    - label: "The Stranger — review"
+      url: "https://www.thestranger.com/dance/2016/10/20/24630177/heaven-and-hell-clash-in-clear-and-sweet-at-on-the-boards"
+    - label: "OZ Arts Nashville — tour presentation"
+      url: "https://www.ozartsnashville.org/press-release-zoe-juniper-clear-and-sweet/"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -232,6 +252,9 @@
     Promotional video for Alice Gosti's site-specific work at Seattle Waterfront
     Park, a free public event. Released on Facebook and Instagram with fast
     turnaround.
+  artifacts:
+    - label: "Alice Gosti"
+      url: "http://www.gostia.com"
   tags: [video-direction, documentary]
   audience: [art-grant, creative]
   themes: [craft, place]
@@ -269,6 +292,8 @@
   artifacts:
     - label: "Alice Gosti — work page"
       url: "http://www.gostia.com/mdicac/"
+    - label: "Seattle Gay Scene — review"
+      url: "https://seattlegayscene.com/2018/03/with-material-deviance-alice-gosti-unearths-the-stuff-of-modern-america/"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -339,6 +364,8 @@
   artifacts:
     - label: "Future Colossal — project page"
       url: "https://www.futurecolossal.com/microsoft-windows-111"
+    - label: "GeekWire — Microsoft x Netflix"
+      url: "https://www.geekwire.com/2019/microsoft-partners-netflix-celebrate-new-stranger-things-season-windows-1-11-app/"
   tags: [project-management, stakeholder-management, event-production, immersive]
   audience: [tech, creative, exec]
   themes: [0-to-1, craft]
