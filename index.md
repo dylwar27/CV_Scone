@@ -98,7 +98,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
 {%- endcomment -%}
 <header class="hero hero--greeting">
   <p class="greeting">Thanks for being here;</p>
-  <p class="greeting__what">This is my CV, built so you can read only the part you came for. Pick one.</p>
+  <p class="greeting__what">I&rsquo;ve worked in clinics, agencies, and theaters, and I want what I&rsquo;ve learned there to leave people better off. Read the part you came for.</p>
 </header>
 
 <div class="lens-layout" id="experience">
