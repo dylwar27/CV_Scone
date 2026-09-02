@@ -16,6 +16,9 @@
   description: >
     Original choreography and sound design for stage. Presented at GreenSpace,
     New York City.
+  artifacts:
+    - label: "Watch (10:23)"
+      url: "https://vimeo.com/697981021"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -61,6 +64,9 @@
   description: >
     Dance for stage, directed and produced as part of the inaugural production
     residency at Base Arts Space, Seattle.
+  artifacts:
+    - label: "Watch the full work (51 min)"
+      url: "https://vimeo.com/202340237"
   tags: [choreography, performance, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
@@ -75,6 +81,9 @@
   description: >
     Choreography and original sound design for stage. Presented at Men in Dance,
     Seattle.
+  artifacts:
+    - label: "Watch (10:57)"
+      url: "https://vimeo.com/189684560"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -89,6 +98,9 @@
   description: >
     Choreography and original sound design for stage. Presented at NW New Works,
     Seattle.
+  artifacts:
+    - label: "Watch (17:36)"
+      url: "https://vimeo.com/174725930"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -116,6 +128,9 @@
   description: >
     Choreography and original sound design for stage. Presented at Men in Dance,
     Seattle.
+  artifacts:
+    - label: "Watch (8:04)"
+      url: "https://vimeo.com/143517257"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -130,6 +145,9 @@
   description: >
     Choreography and original sound design. Presented at the Bridge Project,
     University of Washington + Velocity Dance Center residency, Seattle.
+  artifacts:
+    - label: "Watch (15:48)"
+      url: "https://vimeo.com/1149091504"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -237,6 +255,8 @@
       url: "https://www.thestranger.com/dance/2016/10/20/24630177/heaven-and-hell-clash-in-clear-and-sweet-at-on-the-boards"
     - label: "OZ Arts Nashville — tour presentation"
       url: "https://www.ozartsnashville.org/press-release-zoe-juniper-clear-and-sweet/"
+    - label: "Watch the performance film"
+      url: "https://vimeo.com/200286236"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -294,6 +314,8 @@
       url: "http://www.gostia.com/mdicac/"
     - label: "Seattle Gay Scene — review"
       url: "https://seattlegayscene.com/2018/03/with-material-deviance-alice-gosti-unearths-the-stuff-of-modern-america/"
+    - label: "Watch the performance film"
+      url: "https://vimeo.com/283162811"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -423,4 +445,176 @@
   tags: [ai-tooling, automation, data-analysis, process-improvement, programming]
   audience: [tech, product, general]
   themes: [0-to-1, tinkering, curiosity, craft]
+  status: active
+# ── Added 2026-09-02 ──────────────────────────────────────────────────────────
+# Sourced from the Sleep Nod vault (~/_sleep-nod/sleep-nod/Works.md), which held
+# a decade of work the CV database had never captured. Every Vimeo id below was
+# checked public via Vimeo's oEmbed endpoint before it was written here.
+# ── Video direction for other artists ─────────────────────────────────────────
+
+- id: project.rehearsal-13-problems-2025
+  title: "A Rehearsal for 13 Problems"
+  type: art
+  start: 2025-01
+  end: 2025-12
+  collaborators: ["Dayna Hanson"]
+  role: "Video Director"
+  description: >
+    Rehearsal capture for Dayna Hanson. Shot and cut as a working document of
+    the piece in progress rather than a performance record.
+  artifacts:
+    - label: "Watch (5:20)"
+      url: "https://vimeo.com/1149096106"
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft]
+  status: active
+
+- id: project.great-hunger-2017
+  title: "A Great Hunger"
+  type: art
+  start: 2017-01
+  end: 2017-12
+  collaborators: ["Jessica Jobaris", "General Magic", "On the Boards"]
+  role: "Director of Photography"
+  description: >
+    Director of photography on the film version of Jessica Jobaris / General
+    Magic's performance work at On the Boards, Seattle.
+  artifacts:
+    - label: "Watch the film (6:16)"
+      url: "https://vimeo.com/227174434"
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft]
+  status: active
+
+- id: project.its-a-boy-2015
+  title: "It's a Boy!"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: ["Joshua L. Peugh", "Dark Circles Contemporary Dance"]
+  role: "Video Director + Editor"
+  description: >
+    Video direction and edit for Joshua L. Peugh's choreography with Dark
+    Circles Contemporary Dance, Dallas.
+  artifacts:
+    - label: "Watch (3:13)"
+      url: "https://vimeo.com/139273989"
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft]
+  status: active
+# ── Authored stage work ───────────────────────────────────────────────────────
+
+- id: project.melody-nelson-2015
+  title: "MELODY NELSON"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: []
+  role: "Producer + Choreographer"
+  description: >
+    A 65-minute theater piece at Velocity Dance Center, Seattle. Produced and
+    choreographed end to end, from casting and rehearsal through the run.
+  artifacts:
+    - label: "Watch the full work (67 min)"
+      url: "https://vimeo.com/112599962"
+  tags: [choreography, sound-design, performance, time-based-media, event-production]
+  audience: [art-grant, residency, creative]
+  themes: [craft, 0-to-1]
+  status: active
+
+- id: project.work-magic-thinking-2015
+  title: "WORK (or Magic Thinking)"
+  type: art
+  start: 2015-01
+  end: 2015-12
+  collaborators: ["Jim Kent", "Alex Pham", "Devin McDermott", "Evan Anderson"]
+  role: "Producer + Choreographer"
+  description: >
+    Evening-length work at Velocity Dance Center, Seattle, built in collaboration
+    with its performers. Lighting design by Evan Anderson.
+  artifacts:
+    - label: "Watch the full work (35 min)"
+      url: "https://vimeo.com/157255132"
+  tags: [choreography, performance, time-based-media, event-production]
+  audience: [art-grant, residency, creative]
+  themes: [craft, 0-to-1]
+  status: active
+# ── Reel ──────────────────────────────────────────────────────────────────────
+
+- id: project.sleep-nod-reel-2018
+  title: "Sleep Nod Video Reel"
+  type: art
+  start: 2018-01
+  end: 2018-12
+  collaborators: []
+  role: "Director + Editor"
+  description: >
+    Eighty-five seconds cut from a decade of performance films, dance for camera,
+    and commissioned video. The fastest way to see the range of the work.
+  artifacts:
+    - label: "Watch the reel (1:25)"
+      url: "https://vimeo.com/282444722"
+  tags: [video-direction, documentary, time-based-media]
+  audience: [art-grant, residency, creative]
+  themes: [craft]
+  status: active
+# ── Music ─────────────────────────────────────────────────────────────────────
+
+- id: project.responsibilities-2025
+  title: "Responsibilities"
+  type: art
+  start: 2025-01
+  end: 2025-12
+  collaborators: ["Aaron Sarles"]
+  role: "Writer + Producer"
+  description: >
+    Six-track album released as Sleep Nod. Aaron Sarles features on "Anthem."
+  artifacts:
+    - label: "Listen on Spotify"
+      url: "https://open.spotify.com/album/7llkoKa8HcqWqZKqzeNyqG"
+  tags: [sound-design, time-based-media]
+  audience: [art-grant, creative]
+  themes: [craft, design]
+  status: active
+
+- id: project.whyers-2022
+  title: "Whyers"
+  type: art
+  start: 2022-01
+  end: 2022-12
+  collaborators: ["Aaron Sarles"]
+  role: "Writer + Producer"
+  description: >
+    Electronic album released as Dylan Ward & Aaron Sarles.
+  artifacts:
+    - label: "Listen on Spotify"
+      url: "https://open.spotify.com/album/0cceRPmzecj0Wl85PINjFs"
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/whyers/1618853132"
+  tags: [sound-design, time-based-media]
+  audience: [art-grant, creative]
+  themes: [craft, design]
+  status: active
+
+- id: project.talking-to-myself-2022
+  title: "Talking to Myself"
+  type: art
+  start: 2022-01
+  end: 2022-12
+  collaborators: []
+  role: "Writer + Producer"
+  description: >
+    EP released under Dylan Ward. Two singles followed the same year, "Cat Magic"
+    and "I Am A Very Sexy And Forlorn Robot Person," released as Sleep Nod.
+  artifacts:
+    - label: "Listen on Spotify"
+      url: "https://open.spotify.com/album/4Ox2fUaE3sjX6b1bAd4QTy"
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/talking-to-myself-ep/1627394760"
+  tags: [sound-design, time-based-media]
+  audience: [art-grant, creative]
+  themes: [craft, design]
   status: active

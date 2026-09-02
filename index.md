@@ -129,7 +129,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
       <li><button type="button" data-lens="clinical"><span class="lens-menu__name">Clinical</span><span class="lens-menu__what">Intake and assessment, groups, clinical documentation, and harm reduction.</span></button></li>
       <li><button type="button" data-lens="digital"><span class="lens-menu__name">Health IT &amp; Data</span><span class="lens-menu__what">EHR workflow, documentation compliance, utilization reporting, and referral pipelines.</span></button></li>
       <li><button type="button" data-lens="teaching"><span class="lens-menu__name">Teaching</span><span class="lens-menu__what">Psychoeducation and skills groups, drug-safety workshops, clinician training, and agile coaching.</span></button></li>
-      <li><button type="button" data-lens="arts"><span class="lens-menu__name">Arts and Event Production</span><span class="lens-menu__what">Performance films made for other artists, immersive installations, live events, and touring crews.</span></button></li>
+      <li><button type="button" data-lens="arts"><span class="lens-menu__name">Arts and Event Production</span><span class="lens-menu__what">Performance films made for other artists, immersive installations, live events, touring crews, and records.</span></button></li>
       <li><button type="button" data-lens="all"><span class="lens-menu__name">All</span><span class="lens-menu__what">The whole record, in one page.</span></button></li>
     </ul>
     <p class="lens-menu__aside">Or take the one-page <a href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">r&eacute;sum&eacute; (PDF)</a>.</p>
@@ -150,7 +150,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" %}
 
     <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.cold-light-day-2014,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
+    {% include lens-projects.html ids="project.sleep-nod-reel-2018,project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.rehearsal-13-problems-2025,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
   </section>
 
   {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
@@ -214,7 +214,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- endcomment -%}
   <section class="lens-panel" data-lens="arts">
     <h2 class="section__title">Arts and Event Production</h2>
-    <p class="lens-intro">Performance films made for other artists, immersive installations, live events, and touring crews.</p>
+    <p class="lens-intro">Performance films made for other artists, immersive installations, live events, and touring crews. Records under Sleep Nod.</p>
     {% include lens-roles.html title="Hired by other artists" ids="role.sleep-nod-producer" tags="documentary,video-direction,arts-administration,grant-administration,event-production,project-management" limit="3" %}
     {% include lens-roles.html title="Immersive &amp; live events" ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.easy-street-producer" tags="event-production,project-management,budget-management,stakeholder-management,leadership,immersive,installation,community,mutual-aid" limit="3" %}
     {% include lens-roles.html title="Venues, grants &amp; community" ids="role.velocity-production,role.base-arts-coordinator,role.crfw-consultant" tags="arts-administration,grant-administration,event-production,organizing,community,performance" limit="2" %}
@@ -225,9 +225,17 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include skill-group.html title="Creative" ids="skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration,skill.adobe-creative-suite,skill.pm-tooling" key="skill.video-production,skill.sound-design" %}
 
     <h2 class="section__title">Selected Work</h2>
-    {% include lens-projects.html title="Made with other artists" ids="project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014,project.bodies-of-water-2016,project.no-one-2018" %}
+    {%- comment -%}
+     "Start here" is one 85-second reel. A stranger who will not watch eleven
+     performance films will watch one, and this is the fastest route into the
+     whole body of work. Keep it alone in its group — the moment a second item
+     joins it, it stops being an obvious first click.
+    {%- endcomment -%}
+    {% include lens-projects.html title="Start here" ids="project.sleep-nod-reel-2018" %}
+    {% include lens-projects.html title="Made with other artists" ids="project.rehearsal-13-problems-2025,project.material-deviation-2018,project.tim-e-2017,project.great-hunger-2017,project.clear-and-sweet-2016,project.its-a-boy-2015,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014,project.bodies-of-water-2016,project.no-one-2018" %}
     {% include lens-projects.html title="Immersive &amp; events" ids="project.arctic-refuge-2019,project.megatrends-2019,project.windows-111-2019" %}
-    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.no-haiku-2020,project.lesser-evils-2017,project.simply-put-2015" %}
+    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.melody-nelson-2015,project.work-magic-thinking-2015" %}
+    {% include lens-projects.html title="Music" ids="project.responsibilities-2025,project.whyers-2022,project.talking-to-myself-2022" %}
   </section>
 
   </div>
