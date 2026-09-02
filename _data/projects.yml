@@ -452,11 +452,11 @@
 # checked public via Vimeo's oEmbed endpoint before it was written here.
 # ── Video direction for other artists ─────────────────────────────────────────
 
-- id: project.rehearsal-13-problems-2025
+- id: project.rehearsal-13-problems-2016
   title: "A Rehearsal for 13 Problems"
   type: art
-  start: 2025-01
-  end: 2025-12
+  start: 2016-01
+  end: 2016-12
   collaborators: ["Dayna Hanson"]
   role: "Video Director"
   description: >
@@ -465,6 +465,7 @@
   artifacts:
     - label: "Watch (5:20)"
       url: "https://vimeo.com/1149096106"
+  source: "Made 2016; the Vimeo upload is dated 2025-12-23. Date confirmed by Dyl 2026-09-02 — go by the work, not the upload."
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft]
@@ -615,6 +616,37 @@
     - label: "Apple Music"
       url: "https://music.apple.com/us/album/talking-to-myself-ep/1627394760"
   tags: [sound-design, time-based-media]
+  audience: [art-grant, creative]
+  themes: [craft, design]
+  status: active
+
+- id: project.as-you-like-it-2017
+  title: "As You Like It"
+  type: art
+  start: 2017-01
+  end: 2017-12
+  collaborators: ["Jeffry Frace"]
+  role: "Video Director"
+  description: >
+    Video direction on Jeffry Frace's stage production of As You Like It.
+  tags: [video-direction, documentary, time-based-media, performance]
+  audience: [art-grant, residency, creative]
+  themes: [craft]
+  status: active
+
+- id: project.fuzzy-math-2017
+  title: "Identify \u2014 Fuzzy Math"
+  type: art
+  start: 2017-01
+  end: 2017-12
+  collaborators: ["Fuzzy Math"]
+  role: "Director"
+  description: >
+    Music video for the band Fuzzy Math.
+  artifacts:
+    - label: "Watch (5:43)"
+      url: "https://vimeo.com/199385586"
+  tags: [video-direction, time-based-media, sound-design]
   audience: [art-grant, creative]
   themes: [craft, design]
   status: active

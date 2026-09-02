@@ -150,7 +150,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include skill-group.html title="Creative production" ids="skill.event-production,skill.video-production,skill.sound-design,skill.choreography,skill.arts-administration,skill.grant-administration" %}
 
     <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.sleep-nod-reel-2018,project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.rehearsal-13-problems-2025,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
+    {% include lens-projects.html ids="project.sleep-nod-reel-2018,project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.rehearsal-13-problems-2016,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
   </section>
 
   {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
@@ -232,7 +232,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
      joins it, it stops being an obvious first click.
     {%- endcomment -%}
     {% include lens-projects.html title="Start here" ids="project.sleep-nod-reel-2018" %}
-    {% include lens-projects.html title="Made with other artists" ids="project.rehearsal-13-problems-2025,project.material-deviation-2018,project.tim-e-2017,project.great-hunger-2017,project.clear-and-sweet-2016,project.its-a-boy-2015,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014,project.bodies-of-water-2016,project.no-one-2018" %}
+    {% include lens-projects.html title="Made with other artists" ids="project.material-deviation-2018,project.no-one-2018,project.tim-e-2017,project.great-hunger-2017,project.as-you-like-it-2017,project.fuzzy-math-2017,project.rehearsal-13-problems-2016,project.clear-and-sweet-2016,project.bodies-of-water-2016,project.its-a-boy-2015,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014" %}
     {% include lens-projects.html title="Immersive &amp; events" ids="project.arctic-refuge-2019,project.megatrends-2019,project.windows-111-2019" %}
     {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.melody-nelson-2015,project.work-magic-thinking-2015" %}
     {% include lens-projects.html title="Music" ids="project.responsibilities-2025,project.whyers-2022,project.talking-to-myself-2022" %}
