@@ -80,7 +80,7 @@
   location: "USA"
   type: freelance
   start: 2009-01
-  end: 2023-01
+  end: present
   industry: [arts, nonprofit, media]
   tags: [arts-administration, grant-administration, event-production, video-direction, documentary, performance]
   audience: [art-grant, creative, residency, nonprofit]
