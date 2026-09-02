@@ -175,5 +175,7 @@ tags:
     description: "Building with or for LLMs: structured systems, prompts, agent workflows"
   - id: program-design
     description: "Designing programs and curricula, clinical or community"
+  - id: policy-design
+    description: "Writing the rules others operate: decision criteria, escalation tiers, review guidelines, eligibility rules (added 2026-09-01 for the trust-and-safety class)"
   - id: hospitality
     description: "Food, beverage, and hospitality service operations"

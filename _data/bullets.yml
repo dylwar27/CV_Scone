@@ -105,6 +105,28 @@
   source: "Dump session 2026-08-24."
   verified: true
   status: active
+- id: bullet.prc-capacity-forecast
+  role_id: role.prc-baker-intake
+  text: >
+    Rebuilt the bed census as a forecast instead of a daily count. Bucketed admitted
+    clients at 45, 90, and 120 days of stay, flagged stays past 90 as extensions that
+    would not free on the standard cycle, and joined the census on medical record number
+    to the clearance and authorization records so each referral showed what documentation
+    was still missing. Refreshed daily and read by the CEO, clinical leadership, and the
+    San Francisco Department of Public Health.
+  tags: [health-it, data-analysis, process-improvement, stakeholder-management, intake-assessment]
+  skills: [skill.data-analysis, skill.microsoft-365, skill.process-improvement, skill.clinical-data-translation]
+  audience: [clinical, exec, leadership, nonprofit, civic, tech]
+  themes: [research-to-decision, 0-to-1]
+  metrics: ["4 houses", "length-of-stay buckets at 45 / 90 / 120 days", "daily refresh"]
+  star:
+    situation: "Bed capacity was a point-in-time count. During the city's residential treatment push SF DPH was asking what capacity existed, and the program could only estimate."
+    task: "Make capacity answerable months out, and make it clear which referrals were actually admissible."
+    action: "Built length-of-stay logic against admitted referrals in Microsoft Access, set thresholds at 45 / 90 / 120 days, flagged over-90 stays as extensions held outside the standard cycle, and joined on medical record number to the tables holding TB clearance, physician clearance, and Medi-Cal and other insurance authorization."
+    result: "Leadership and the San Francisco Department of Public Health worked off a daily forecast rather than a snapshot. When referral volume ran past forecast capacity, the program routed the overflow to other providers instead of queueing it."
+  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01. Tool was Microsoft Access (Query Design view). Join key was the MRN — the medical record number tracked in the SF DPH system. Authorship stated plainly: specified the logic and composed it through the Access query builder, validated output by reading the generated query back against intent; did not hand-author SQL text."
+  verified: true
+  status: active
 - id: bullet.prc-billable-documentation
   role_id: role.prc-baker-intake
   text: >
@@ -327,6 +349,25 @@
   metrics: ["events ~200–800 attendees"]
   verified: true
   status: active
+- id: bullet.baaahs-hr-escalation-protocol
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Wrote the escalation protocol the harm reduction team worked from. Five tiers, from
+    disoriented-but-well through medical need to a 911 call, each with a defined response
+    and a defined handoff. Standing rules across every tier: work in pairs, stay on radio
+    with event and venue leads, and check back on anyone who was handed off.
+  tags: [harm-reduction, crisis-response, program-design, process-improvement, policy-design]
+  skills: [skill.harm-reduction, skill.program-design, skill.crisis-communication]
+  audience: [clinical, nonprofit, tech, product]
+  themes: [harm-reduction, research-to-decision, 0-to-1]
+  metrics: ["5 escalation tiers", "events ~200-800 attendees"]
+  star:
+    situation: "Harm reduction at these events ran on improvisation and whoever happened to be present."
+    action: "Wrote tiered decision rules mapping each observed state to a response and a handoff, adapted from festival protocols worked under previously, and trained the team against them in person."
+    result: "Responses became consistent between responders. After one crisis had to be handled by doctors who happened to be attending, the protocol changed structurally rather than by exhortation: subsequent events contracted EMTs on site."
+  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01. The de-escalation tier includes sensory grounding (having the person describe what they see and hear) — recognized crisis-intervention technique, run in the field before the coursework that names it."
+  verified: true
+  status: active
 - id: bullet.baaahs-hr-volunteer-training
   role_id: role.baaahs-harm-reduction
   text: >
@@ -337,6 +378,26 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, people-development]
   metrics: ["3 rangers trained"]
+  verified: true
+  status: active
+- id: bullet.baaahs-hr-scope-boundary
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Narrowed what frontline volunteers were expected to carry. Before the protocol,
+    rangers felt obligated to talk people through crises themselves. The written tiers
+    gave them a response for each situation and a person to route it to, so their job
+    was to stabilize and hand off rather than to fix. One said it was much easier than
+    they had thought.
+  tags: [harm-reduction, program-design, leadership, people-development, policy-design]
+  skills: [skill.harm-reduction, skill.program-design, skill.people-development]
+  audience: [clinical, nonprofit, tech, product, leadership]
+  themes: [harm-reduction, people-development, service]
+  metrics: ["3 rangers trained"]
+  star:
+    situation: "Volunteers were improvising a clinical role they were not trained for and could not sustain across a multi-day event."
+    action: "Defined the scope of the role downward — stabilize, affirm, route — and gave each category of harm a named resource to hand to."
+    result: "Volunteers stopped carrying decisions above their level. One ranger's response to the training was 'oh, that's much easier than I thought.' A workload and burnout intervention as much as a safety one."
+  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01, who supplied the exact quote. This is the trauma-informed reviewer-support story: the same structure trust-and-safety teams use — clear tiers, defined handoffs, nobody carrying decisions above their level."
   verified: true
   status: active
 - id: bullet.baaahs-hr-frontline-ranger
@@ -753,12 +814,15 @@
 - id: bullet.jump450-dashboard-migration
   role_id: role.jump450-spm
   text: >
-    Led migration of client campaign dashboard from reporting 5 attributes in
-    Domo to 12 attributes in Tableau.
-  tags: [data-analysis, project-management]
-  skills: [skill.data-analysis, skill.project-management]
-  audience: [tech, exec]
-  themes: [scaling]
+    Moved a business-critical reporting dataset off a single account manager's Excel
+    file and onto an IT-supported Tableau stack drawing from a metadata table, Airtable,
+    and the full asset table. Reporting went from 5 attributes to 12.
+  tags: [data-analysis, project-management, process-improvement]
+  skills: [skill.data-analysis, skill.project-management, skill.martech-analytics]
+  audience: [tech, exec, product]
+  themes: [scaling, research-to-decision]
+  metrics: ["5 attributes -> 12", "single-owner spreadsheet -> IT-supported stack"]
+  source: "Rewritten 2026-09-01 from the voice memo. The original bullet reported the attribute count only; the migration off a single-owner spreadsheet is the part a hiring manager recognizes."
   verified: true
   status: active
 - id: bullet.jump450-client-revenue

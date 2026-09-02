@@ -1,6 +1,10 @@
 # Site settings
-title: "Dylan Ward — Assessment & Collaborative Problem-Solving"
-description: "Behavioral-health intake specialist and PMP-certified project manager. Epic and Avatar EHR, utilization reporting, program coordination, and agile facilitation. MHRS and NPI-registered, M.A. Clinical Mental Health Counseling in progress. San Francisco, part-time and remote."
+title: "Dylan Ward"
+# jekyll-seo-tag renders the home page <title> as "title | tagline" when a tagline
+# exists, and falls back to the whole description when it does not — which produced a
+# paragraph-length browser tab. Keep this short (2026-09-01).
+tagline: "Behavioral health, program management, counseling"
+description: "Counselor in training and digital project manager in San Francisco. Two years running intake at a dual-diagnosis residential program, where I rebuilt the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York. MHRS-credentialed, NPI-registered, PMP."
 author: "Dylan Ward"
 url: "https://dylanward.work"
 baseurl: ""

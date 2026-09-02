@@ -179,14 +179,23 @@
   status: active
 
 - id: skill.data-analysis
-  name: "Data Analysis (SQL, R, Tableau)"
+  name: "Data Analysis & Reporting (Access, Excel, Tableau, Airtable)"
   category: technical
   proficiency: proficient
   last_used: 2025-11
-  evidence: [role.edelman-spm, role.jump450-spm, role.cafe-suspiro-biz-dev, role.prc-baker-intake, bullet.edelman-margin-improvement, bullet.jump450-analytics-report, bullet.prc-digital-workflow]
-  audience: [tech, exec]
+  evidence: [role.edelman-spm, role.jump450-spm, role.cafe-suspiro-biz-dev, role.prc-baker-intake, bullet.edelman-margin-improvement, bullet.jump450-analytics-report, bullet.prc-digital-workflow, bullet.prc-capacity-forecast, bullet.jump450-dashboard-migration]
+  audience: [tech, exec, clinical, civic]
   visibility: public
   status: active
+  source: >
+    Renamed 2026-09-01. Was "Data Analysis (SQL, R, Tableau)". SQL and R were dropped from
+    the label because neither survives follow-up: the SQL was composed through the Microsoft
+    Access query builder and validated by reading the generated query back against intent,
+    not hand-authored, and R is Google Data Analytics coursework with no work evidence.
+    The honest ceiling, stated by Dyl 2026-08-31: specified the logic, read queries back to
+    verify them, did not write the SQL text. Anthropic reqs a19/a20 require "SQL and/or data
+    analysis tools" - the Tableau/Access/Airtable evidence satisfies that without an SQL claim.
+    DYL TO CONFIRM this removal.
 
 - id: skill.microsoft-365
   name: "Microsoft 365 (Excel, Teams, Office Suite, Forms)"

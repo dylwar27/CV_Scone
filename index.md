@@ -95,7 +95,13 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     <li>{{ c }}</li>
     {%- endfor %}
   </ul>
-  <p class="hero__cta"><a class="btn btn--big" href="#experience">View my experience &darr;</a></p>
+  {%- comment -%}
+   Résumé download added 2026-09-01. Deliberately NOT a second button: the hero
+   keeps one call to action. This is a quiet secondary link beside it. The PDF is
+   the master résumé rendered from database/render/html/resume.html — re-render and
+   re-copy to assets/ whenever that changes, or the site serves a stale one.
+  {%- endcomment -%}
+  <p class="hero__cta"><a class="btn btn--big" href="#experience">View my experience &darr;</a><a class="hero__resume" href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">Résumé (PDF)</a></p>
 </header>
 
 <div class="lens-layout" id="experience">

@@ -552,3 +552,11 @@ a:hover, a:focus { border-bottom-color: currentColor; }
   .lens-layout { display: block; padding-top: 0; }
   .link-pill { border: none; padding: 0 .4rem 0 0; }
 }
+
+/* Résumé download — a quiet secondary link beside the one hero button (2026-09-01).
+   Deliberately not styled as a button; the hero keeps a single call to action. */
+.hero__resume {
+  margin-left: 1.1rem;
+  font-size: .95rem;
+  white-space: nowrap;
+}
