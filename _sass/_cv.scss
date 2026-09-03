@@ -427,18 +427,18 @@ a:hover, a:focus { border-bottom-color: currentColor; }
   border-bottom: 2px solid var(--ink);
 }
 
+// On a phone the pills WRAP rather than scroll sideways (site-qa run 1,
+// 2026-09-03): at 390px the fifth lens sat entirely off-screen with no hint
+// that it existed. Every lens is now visible without a swipe, and each pill
+// clears the 44px touch-target minimum.
 .lensbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: .4rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
-
-.lensbar ul::-webkit-scrollbar { display: none; }
 
 .lensbar li { flex: 0 0 auto; }
 
@@ -446,6 +446,7 @@ a:hover, a:focus { border-bottom-color: currentColor; }
   font: inherit;
   font-size: .9rem;
   line-height: 1.3;
+  min-height: 2.75rem;
   text-align: left;
   cursor: pointer;
   white-space: nowrap;
