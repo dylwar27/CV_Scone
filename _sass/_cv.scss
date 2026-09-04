@@ -57,6 +57,15 @@ a {
 }
 a:hover, a:focus { border-bottom-color: currentColor; }
 
+// Keyboard focus: one deliberate ring instead of the browser default (2026-09-03, site-qa run 4).
+// Only for :focus-visible, so mouse and touch stay quiet; the offset keeps it legible on the
+// teal active pill and in dark mode.
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
+
 .wrap {
   max-width: 60rem;
   margin: 0 auto;
