@@ -668,7 +668,17 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 .creds--edu { margin: 0 0 .5rem; }
 
 // Role org names link out to the company / venue when roles.yml has a url.
-.entry__org a { color: var(--ink); text-decoration-color: var(--rule); }
+// The global `a` rule sets text-decoration: none, so the decoration colour alone
+// drew nothing and 26 org links read as plain bold text (site-qa run 8,
+// 2026-09-04). A quiet 1px underline in the meta grey marks them as evidence.
+.entry__org a {
+  color: var(--ink);
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--faint);
+  text-underline-offset: .18em;
+}
 .entry__org a:hover, .entry__org a:focus { color: var(--accent-ink); text-decoration-color: currentColor; }
 
 @media print {
