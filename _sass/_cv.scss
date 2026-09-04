@@ -554,11 +554,16 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 
 .entry ul:empty { display: none; }
 
-// ── Print: lenses collapse back to the whole CV ──────────────────────────────
+// ── Print: the lens on screen, or "All" from the start menu ──────────────────
+// Printing every panel put the same roles on paper five times over (26 pages;
+// site-qa run 9, 2026-09-04). Now print shows the lens the reader chose; from
+// the start menu it prints "All". Without JS every panel still renders.
 
 @media print {
   .lensbar, .lens-prompt, .js .lens-panel.lens-prompt, .hero__cta { display: none !important; }
-  .js .lens-panel { display: block !important; }
+  .js .lens-panel { display: none !important; }
+  .js .lens-panel.is-active:not(.lens-prompt),
+  .js .lens-prompt.is-active ~ .lens-panel[data-lens="all"] { display: block !important; }
   .lens-layout { display: block; padding-top: 0; }
   .link-pill { border: none; padding: 0 .4rem 0 0; }
 }
