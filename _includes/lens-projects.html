@@ -16,13 +16,19 @@
 {%- assign blocked = link_blocklist | default: "" | split: "," -%}
 {%- comment -%} Optional `title` wraps the run in a .group so project lists can be labelled like role groups. {%- endcomment -%}
 {%- if include.title %}<div class="group"><h3 class="group__title">{{ include.title }}</h3>{% endif -%}
+{%- comment -%}
+  Entry titles sit one level under the nearest heading (site-qa run 7,
+  2026-09-04, same pattern as lens-roles.html): h4 under this include's own
+  group h3, h3 straight under the panel h2 when there is no title.
+{%- endcomment -%}
+{%- if include.title -%}{%- assign proj_h = "h4" -%}{%- else -%}{%- assign proj_h = "h3" -%}{%- endif -%}
 {%- for id in id_list -%}
 {%- assign proj = site.data.projects | where: "id", id | first -%}
 {%- if proj and proj.visibility != "private" -%}
 <article class="entry">
   <div class="entry__when">{{ proj.start | slice: 0, 4 }}{% if proj.end == "ongoing" %} &ndash; Present{% endif %}</div>
   <div class="entry__body">
-    <h4 class="entry__title">{{ proj.title }}</h4>
+    <{{ proj_h }} class="entry__title">{{ proj.title }}</{{ proj_h }}>
     {%- if proj.role %}<p class="entry__meta">{{ proj.role }}</p>{% endif %}
     <p class="entry__desc">{{ proj.description | strip_newlines | strip }}</p>
     {%- if proj.collaborators and proj.collaborators != empty %}
