@@ -19,7 +19,8 @@
 <article class="entry">
   <div class="entry__when">{% if from == to %}{{ from }}{% else %}{{ from }} &ndash; {{ to }}{% endif %}</div>
   <div class="entry__body">
-    <h4 class="entry__title">{{ role.title }}</h4>
+    {%- assign h = entry_h | default: "h4" %}
+    <{{ h }} class="entry__title">{{ role.title }}</{{ h }}>
     {%- comment -%}
       Org name links out to the company / venue when roles.yml carries a `url`
       (added 2026-09-02 — Dyl asked for outbound links to the places he worked).

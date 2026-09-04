@@ -3,6 +3,12 @@
   Params: title (optional), ids, tags, limit
 {%- endcomment -%}
 {%- assign id_list = include.ids | split: "," -%}
+{%- comment -%}
+  Entry titles sit one level under the nearest heading (site-qa run 6,
+  2026-09-04): h4 under a group h3, h3 straight under the panel h2. Page-scope
+  variable — lens-role.html reads it.
+{%- endcomment -%}
+{%- if include.title -%}{%- assign entry_h = "h4" -%}{%- else -%}{%- assign entry_h = "h3" -%}{%- endif -%}
 <div class="group">
   {%- if include.title %}<h3 class="group__title">{{ include.title }}</h3>{% endif -%}
   {%- for id in id_list -%}
