@@ -1,1 +1,22 @@
 <script>document.documentElement.className += ' js';</script>
+{%- comment -%}
+ JSON-LD Person for the page's subject. Facts come from _data/profile.yml
+ (regenerated from the database) and _config.yml; nothing is typed here.
+ jekyll-seo-tag's own block above describes the WebSite; this one names the person.
+{%- endcomment -%}
+{%- assign p = site.data.profile.basics -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ p.name | jsonify }},
+  "url": {{ site.url | append: "/" | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": {{ p.location.city | jsonify }},
+    "addressRegion": {{ p.location.region | jsonify }},
+    "addressCountry": {{ p.location.country | jsonify }}
+  },
+  "sameAs": [{{ site.linkedin_url | jsonify }}]
+}
+</script>
