@@ -554,6 +554,20 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   color: var(--accent-ink);
 }
 
+// On a phone the 23 press/project pills were 31px tall in tight rows — the last
+// tap target under 44px (site-qa run 11, 2026-09-04). Phone only; desktop keeps
+// the compact pills.
+@media (max-width: 45.99rem) {
+  .links { gap: .5rem; }
+  .link-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+  }
+}
+
 .entry ul:empty { display: none; }
 
 // ── Print: the lens on screen, or "All" from the start menu ──────────────────
