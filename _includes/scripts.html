@@ -34,6 +34,12 @@
       buttons[j].setAttribute('aria-pressed', active ? 'true' : 'false');
       buttons[j].classList.toggle('is-active', active);
     }
+    // A click from the sticky sidebar while deep in a long panel would otherwise
+    // land mid-way through the new one; bring the lens layout back into view.
+    if (push) {
+      var layout = document.querySelector('.lens-layout');
+      if (layout && layout.getBoundingClientRect().top < 0) layout.scrollIntoView();
+    }
     if (push && history.replaceState) {
       history.replaceState(null, '', lens === 'start' ? location.pathname : '#view-' + lens);
     }
