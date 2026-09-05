@@ -106,11 +106,11 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   <nav class="lensbar" data-lensbar aria-label="View experience">
     <h2 class="lensbar__title">View Experience</h2>
     <ul>
-      <li><button type="button" data-lens="all" aria-pressed="false">All</button></li>
       <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical</button></li>
       <li><button type="button" data-lens="digital" aria-pressed="false">Health IT &amp; Data</button></li>
       <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching</button></li>
       <li><button type="button" data-lens="arts" aria-pressed="false">Arts and Event Production</button></li>
+      <li><button type="button" data-lens="all" aria-pressed="false">All</button></li>
     </ul>
   </nav>
 
