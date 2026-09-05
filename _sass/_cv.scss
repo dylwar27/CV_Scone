@@ -384,6 +384,8 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   .cta h2 { font-size: 13pt; }
   .section { padding: .8rem 0 0; }
   .entry { padding: .6rem 0; page-break-inside: avoid; }
+  // A heading stays with what it heads: no group label or section title alone at the foot of a page (run 10).
+  h2, h3, .section__title, .group__title { break-after: avoid; page-break-after: avoid; }
   .site-footer { border: none; padding-top: .5rem; }
   a { color: #000; }
 }
