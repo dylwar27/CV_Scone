@@ -499,6 +499,20 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   .lensbar button.is-active { background: var(--accent); border-color: var(--accent); }
 }
 
+// Windows High Contrast / forced colors strips backgrounds, and the teal
+// background was the only thing that marked the open lens — five identical
+// outlined pills (site-qa run 20, 2026-09-06). Paint the active pill in the
+// reader's own highlight colours; everything else keeps the system palette.
+@media (forced-colors: active) {
+  .lensbar button.is-active {
+    forced-color-adjust: none;
+    background: Highlight;
+    border-color: Highlight;
+    color: HighlightText;
+  }
+  .lensbar button.is-active:focus-visible { outline-color: CanvasText; }
+}
+
 // Progressive enhancement: with no JS every panel renders (full CV, crawlable).
 // With JS, only the selected lens shows.
 .lens-prompt { display: none; }
