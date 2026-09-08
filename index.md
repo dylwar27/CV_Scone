@@ -237,7 +237,7 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {%- endcomment -%}
     {% include lens-projects.html title="Start here" ids="project.sleep-nod-reel-2018" %}
     {% include lens-projects.html title="Made with other artists" ids="project.material-deviation-2018,project.no-one-2018,project.tim-e-2017,project.great-hunger-2017,project.as-you-like-it-2017,project.fuzzy-math-2017,project.rehearsal-13-problems-2016,project.clear-and-sweet-2016,project.bodies-of-water-2016,project.its-a-boy-2015,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014" %}
-    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.dogged-2016,project.melody-nelson-2015,project.work-magic-thinking-2015" %}
+    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.dogged-2016,project.work-magic-thinking-2015,project.melody-nelson-2015" %}
     {% include lens-projects.html title="Music" ids="project.responsibilities-2025,project.whyers-2022,project.talking-to-myself-2022" %}
     {% include lens-projects.html title="Writing" ids="project.still-becoming,project.desert-mode" %}
   </section>
