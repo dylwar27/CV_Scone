@@ -103,10 +103,9 @@
 - id: bullet.prc-billable-documentation
   role_id: role.prc-baker-intake
   text: >
-    Owned documentation compliance for intake — bringing AOA-07 social-history
-    assessments to completeness and notes to a billable standard under Medi-Cal
-    medical-necessity requirements, and personally correcting the documentation
-    that failed review.
+    Owned documentation compliance for intake. Turned Medi-Cal medical-necessity rules
+    into criteria and templates clinicians could apply, audited against them, and fixed
+    what failed. No client of mine went unbilled for want of documentation.
   tags: [compliance, clinical-documentation, intake-assessment]
   skills: [skill.billable-documentation, skill.clinical-note-formats, skill.clinical-documentation]
   audience: [clinical, nonprofit]
@@ -563,7 +562,7 @@
   text: >
     Identified senior-labor utilization trending 10–15% above target and delivered
     quarterly staffing recommendations to the portfolio VP from actual-vs-expected
-    hour analysis (Edelman's proprietary SQL platform and Tableau), bringing
+    hour analysis (Edelman's reporting platform and Tableau), bringing
     utilization back to target and advancing portfolio margin +10% YoY.
   tags: [data-analysis, budget-management, stakeholder-management]
   skills: [skill.data-analysis, skill.budget-management, skill.martech-analytics]

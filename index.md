@@ -78,10 +78,10 @@ Two years running intake at a dual-diagnosis residential program in San Francisc
 {%- endcapture -%}
 
 {%- capture availability -%}
-Available for <strong>part- or full-time</strong> work: behavioral-health operations, quality and utilization reporting, EHR and Avatar workflow support, program coordination, teaching or research assistance. Based in San Francisco; remote or Bay Area in person.
+Available for <strong>part- or full-time</strong> work, remote or in person in the Bay Area. I'm looking for work where the clinical judgment and the systems around it are the same job. Happy to talk about anything on this page.
 {%- endcapture -%}
 
-{%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist &middot; NPI-registered,Epic &amp; Avatar EHR,Google Data Analytics,M.A. Clinical Mental Health Counseling (Jan 2027)" | split: "," -%}
+{%- assign credentials = "PMP &mdash; Project Management Professional,MHRS &mdash; Mental Health Rehabilitation Specialist &middot; NPI-registered,Epic &amp; Avatar EHR,Google Data Analytics,M.A. Clinical Mental Health Counseling (Jun 2027)" | split: "," -%}
 
 {%- assign featured_degrees = "edu.palo-alto-cmhc,edu.uw-ba" | split: "," -%}
 {%- assign featured_certs = "edu.pmp,edu.mhrs,edu.google-data-analytics" | split: "," -%}

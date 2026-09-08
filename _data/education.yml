@@ -7,12 +7,12 @@
   type: degree
   credential: "M.A., Clinical Mental Health Counseling"
   field: "Clinical Mental Health Counseling"
-  start: 2024-01
-  end: 2027-01
+  start: 2025-04
+  end: 2027-06
   location: "Remote / Palo Alto, CA"
   honors: []
   highlights:
-    - "In progress; expected completion 2027."
+    - "In progress; expected completion June 2027."
   tags: [case-management, group-facilitation, clinical-documentation]
   audience: [clinical, academic]
   status: active
@@ -56,7 +56,7 @@
     - "Paused after determining clinical path was higher motivation."
   tags: [programming, self-directed]
   audience: [tech, general]
-  status: active
+  status: draft
 - id: edu.pmp
   institution: "Project Management Institute (PMI)"
   type: certificate
