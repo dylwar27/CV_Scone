@@ -179,3 +179,13 @@ tags:
     description: "Writing the rules others operate: decision criteria, escalation tiers, review guidelines, eligibility rules (added 2026-09-01 for the trust-and-safety class)"
   - id: hospitality
     description: "Food, beverage, and hospitality service operations"
+
+  # Archive / preservation / infrastructure (added 2026-09-02, CRFW ingest)
+  - id: digital-preservation
+    description: "Archival practice: fixity/checksums, provenance, tiered access, never-delete policy, custody planning"
+  - id: trust-and-safety
+    description: "Sensitivity classification, privacy holds, consent routing, publish gates, flag-don't-interpret handling rules. NOTE: estate/archive work, NOT platform content moderation — see claims ceiling."
+  - id: infrastructure
+    description: "Object storage, DNS/CDN, static-site deployment pipelines, cloud migration runbooks"
+  - id: agent-direction
+    description: "Directing AI coding agents via written protocols, hard rules, sub-agent fan-out, and unattended scheduled runs — distinct from ai-tooling (building with LLMs)"

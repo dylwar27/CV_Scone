@@ -44,7 +44,8 @@
     <ul>
     {%- assign shown = 0 -%}
     {%- for b in role_bullets -%}
-      {%- if shown < limit -%}
+      {%- comment -%} Drafts never render (2026-09-08): unverified voice-memo bullets sync in with status: draft. {%- endcomment -%}
+      {%- if shown < limit and b.status != "draft" -%}
         {%- if include.tags == nil or include.tags == "" -%}
           {%- assign hit = true -%}
         {%- else -%}

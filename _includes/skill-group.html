@@ -9,7 +9,7 @@
   <ul class="chips">
     {%- for id in id_list -%}
     {%- assign skill = site.data.skills | where: "id", id | first -%}
-    {%- if skill and skill.visibility != "private" %}
+    {%- if skill and skill.visibility != "private" and skill.status != "draft" %}
     <li class="chip{% if key_list contains id %} chip--key{% endif %}">{{ skill.name }}</li>
     {%- endif -%}
     {%- endfor %}

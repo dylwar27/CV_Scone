@@ -52,8 +52,6 @@
   audience: [art-grant, residency, creative]
   themes: [craft, design]
   status: active
-  notes: "Title later recycled as a Substack chapter (SB8). See Sleep Nod catalog."
-
 - id: project.lesser-evils-2017
   title: "The Lesser Evils"
   type: art
@@ -67,6 +65,10 @@
   artifacts:
     - label: "Watch the full work (51 min)"
       url: "https://vimeo.com/202340237"
+    - label: "SeattleDances — review (Base, 2016)"
+      url: "https://seattledances.com/2016/09/lesser-evils-show-finds-strength-in-vulnerability/"
+    - label: "SeattleDances — Out of Nowhere (2017)"
+      url: "https://seattledances.com/2017/12/out-of-nowhere/"
   tags: [choreography, performance, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
@@ -84,6 +86,8 @@
   artifacts:
     - label: "Watch (10:57)"
       url: "https://vimeo.com/189684560"
+    - label: "Men in Dance festival"
+      url: "https://menindance.org/"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -101,6 +105,8 @@
   artifacts:
     - label: "Watch (17:36)"
       url: "https://vimeo.com/174725930"
+    - label: "SeattleDances — NW New Works highlights"
+      url: "https://seattledances.com/2016/06/nwnw-highlights-weekend-one/"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -114,6 +120,9 @@
   role: "Choreographer + Performer"
   description: >
     Choreography and performance for stage. Presented at Gay City Arts, Seattle.
+  artifacts:
+    - label: "Seattle Channel Art Zone — rehearsal segment"
+      url: "https://www.seattlechannel.org/ArtZone/segments?videoid=x53858"
   tags: [choreography, performance, queer]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -131,6 +140,8 @@
   artifacts:
     - label: "Watch (8:04)"
       url: "https://vimeo.com/143517257"
+    - label: "Men in Dance festival"
+      url: "https://menindance.org/"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -148,6 +159,8 @@
   artifacts:
     - label: "Watch (15:48)"
       url: "https://vimeo.com/1149091504"
+    - label: "BroadwayWorld — Bridge Project 2015 (first UW Dance residency)"
+      url: "https://www.broadwayworld.com/bwwdance/article/Velocitys-BRIDGE-PROJECT-2015-to-Kick-Off-Jan-30-20150112"
   tags: [choreography, sound-design, performance, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft, design]
@@ -275,6 +288,10 @@
   artifacts:
     - label: "Alice Gosti"
       url: "http://www.gostia.com"
+    - label: "Alice Gosti — Bodies of water"
+      url: "http://www.gostia.com/bodiesofwater"
+    - label: "SeattleDances — review"
+      url: "https://seattledances.com/2016/08/bodiesofwaterbringsarttoall/"
   tags: [video-direction, documentary]
   audience: [art-grant, creative]
   themes: [craft, place]
@@ -293,6 +310,8 @@
   artifacts:
     - label: "OntheBoards.tv — watch the film"
       url: "https://www.ontheboards.tv/performances/institute-memory-time"
+    - label: "Early Morning Opera — project page"
+      url: "https://earlymorningopera.com/wp/projects/time/"
   tags: [video-direction, documentary, time-based-media, installation]
   audience: [art-grant, residency, creative]
   themes: [craft, memory, design]
@@ -465,7 +484,6 @@
   artifacts:
     - label: "Watch (5:20)"
       url: "https://vimeo.com/1149096106"
-  source: "Made 2016; the Vimeo upload is dated 2025-12-23. Date confirmed by Dyl 2026-09-02 — go by the work, not the upload."
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft]
@@ -484,6 +502,8 @@
   artifacts:
     - label: "Watch the film (6:16)"
       url: "https://vimeo.com/227174434"
+    - label: "City Arts — review of the stage work"
+      url: "https://www.cityartsmagazine.com/still-hungry/"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft]
@@ -502,6 +522,8 @@
   artifacts:
     - label: "Watch (3:13)"
       url: "https://vimeo.com/139273989"
+    - label: "Dark Circles Contemporary Dance"
+      url: "https://www.darkcirclescontemporarydance.com/"
   tags: [video-direction, documentary, time-based-media]
   audience: [art-grant, residency, creative]
   themes: [craft]
@@ -521,6 +543,8 @@
   artifacts:
     - label: "Watch the full work (67 min)"
       url: "https://vimeo.com/112599962"
+    - label: "BroadwayWorld — Next Fest NW commission"
+      url: "https://www.broadwayworld.com/bwwdance/article/Velocitys-BRIDGE-PROJECT-2015-to-Kick-Off-Jan-30-20150112"
   tags: [choreography, sound-design, performance, time-based-media, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
@@ -539,6 +563,8 @@
   artifacts:
     - label: "Watch the full work (35 min)"
       url: "https://vimeo.com/157255132"
+    - label: "SeattleDances — review"
+      url: "https://seattledances.com/2015/12/work-pays-off-for-ward-and-lusk/"
   tags: [choreography, performance, time-based-media, event-production]
   audience: [art-grant, residency, creative]
   themes: [craft, 0-to-1]
@@ -629,6 +655,9 @@
   role: "Video Director"
   description: >
     Video direction on Jeffry Frace's stage production of As You Like It.
+  artifacts:
+    - label: "BroadwayWorld — UW Drama production"
+      url: "https://www.broadwayworld.com/seattle/article/UW-Drama-to-Stage-Trippy-Physical-Take-on-AS-YOU-LIKE-IT-20170202"
   tags: [video-direction, documentary, time-based-media, performance]
   audience: [art-grant, residency, creative]
   themes: [craft]

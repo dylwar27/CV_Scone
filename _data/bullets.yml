@@ -17,16 +17,12 @@
   audience: [clinical, nonprofit, exec]
   themes: [research-to-decision, scaling]
   metrics: [utilization-rate]
-  star:
-    situation: "Facility running at 62% bed utilization due to manual, opaque referral tracking."
-    action: "Digitized internal processes, reconciled referral data across Epic and Avatar."
-    result: "Utilization improved to 78%+ over a rolling 3-month window."
   verified: true
   status: active
 - id: bullet.prc-records-research
   role_id: role.prc-baker-intake
   text: >
-    Completed AO-07 intake assessments through multi-provider records research: Epic
+    Completed AOA-07 intake assessments through multi-provider records research: Epic
     first, then three to five outside providers per client by message, phone, and email,
     rebuilding social histories from fragmentary records. Assessment turnaround fell from
     about seven days to 24–72 hours.
@@ -35,12 +31,6 @@
   audience: [clinical, nonprofit, academic]
   themes: [research-to-decision, service]
   metrics: ["3–5 outside providers reconciled per client", "assessment turnaround ~7 days → 24–72 hours"]
-  star:
-    situation: "Intake assessments stalled because client histories were scattered across multiple health systems and arrived incomplete."
-    task: "Complete AO-07 assessments fast enough that beds did not sit empty waiting on paperwork."
-    action: "Pulled records directly from Epic, then worked 3–5 outside providers per client by Epic message, phone, and email; reconstructed missing social history from partial records."
-    result: "Late assessments dropped sharply and turnaround fell from ~7 days to 24–72 hours, feeding the bed-utilization gain."
-  source: "Dump session 2026-08-24."
   verified: true
   status: active
 - id: bullet.prc-digital-workflow
@@ -68,11 +58,6 @@
     - "client placement 25–50% faster"
     - "referral-receipt confirmation: a few business days → a few hours"
     - "missed/dropped referrals: a few per month (fax) → near zero, locatable in minutes not days"
-  star:
-    situation: "Intake ran on faxed referrals across 4 houses, jails, and SF DPH; placements were slow and referrals occasionally went missing."
-    task: "Make intake faster and lossless without losing clinical rigor."
-    action: "Maintained and extended an existing SQL database, designed digital workflows (online forms, Teams, email, website), built redundant submission tracking, and documented the process."
-    result: "Placements 25–50% faster; receipt confirmation dropped from days to hours; missed referrals fell to near zero and were locatable in minutes."
   verified: true
   status: active
 - id: bullet.prc-epic-superuser
@@ -86,11 +71,6 @@
   audience: [clinical, nonprofit, leadership]
   themes: [people-development, craft]
   metrics: ["3 clinicians formally trained"]
-  star:
-    situation: "Counseling staff were slow and inconsistent in Epic, with no designated local expert."
-    action: "Accepted the program manager's request to own Epic proficiency for the site — trained three clinicians directly and took ongoing escalations."
-    result: "The program had a single reliable point of Epic expertise; documentation practice standardized across staff."
-  source: "Dump session 2026-08-24."
   verified: true
   status: active
 - id: bullet.prc-utilization-reporting
@@ -102,7 +82,6 @@
   skills: [skill.epic-superuser, skill.data-analysis, skill.microsoft-365]
   audience: [clinical, exec, leadership, nonprofit, civic]
   themes: [research-to-decision]
-  source: "Dump session 2026-08-24."
   verified: true
   status: active
 - id: bullet.prc-capacity-forecast
@@ -119,18 +98,12 @@
   audience: [clinical, exec, leadership, nonprofit, civic, tech]
   themes: [research-to-decision, 0-to-1]
   metrics: ["4 houses", "length-of-stay buckets at 45 / 90 / 120 days", "daily refresh"]
-  star:
-    situation: "Bed capacity was a point-in-time count. During the city's residential treatment push SF DPH was asking what capacity existed, and the program could only estimate."
-    task: "Make capacity answerable months out, and make it clear which referrals were actually admissible."
-    action: "Built length-of-stay logic against admitted referrals in Microsoft Access, set thresholds at 45 / 90 / 120 days, flagged over-90 stays as extensions held outside the standard cycle, and joined on medical record number to the tables holding TB clearance, physician clearance, and Medi-Cal and other insurance authorization."
-    result: "Leadership and the San Francisco Department of Public Health worked off a daily forecast rather than a snapshot. When referral volume ran past forecast capacity, the program routed the overflow to other providers instead of queueing it."
-  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01. Tool was Microsoft Access (Query Design view). Join key was the MRN — the medical record number tracked in the SF DPH system. Authorship stated plainly: specified the logic and composed it through the Access query builder, validated output by reading the generated query back against intent; did not hand-author SQL text."
   verified: true
   status: active
 - id: bullet.prc-billable-documentation
   role_id: role.prc-baker-intake
   text: >
-    Owned documentation compliance for intake — bringing AO-07 social-history
+    Owned documentation compliance for intake — bringing AOA-07 social-history
     assessments to completeness and notes to a billable standard under Medi-Cal
     medical-necessity requirements, and personally correcting the documentation
     that failed review.
@@ -138,7 +111,6 @@
   skills: [skill.billable-documentation, skill.clinical-note-formats, skill.clinical-documentation]
   audience: [clinical, nonprofit]
   themes: [craft]
-  source: "Dump session 2026-08-24. Dyl was the sole corrector at program level; claims submission sat with another team."
   verified: true
   status: active
 - id: bullet.prc-referral-intake
@@ -178,7 +150,6 @@
   audience: [clinical, nonprofit, leadership]
   themes: [craft, research-to-decision]
   metrics: ["typical note time ~30 min → toward a 5-min target; adoption varied by clinician"]
-  source: "LinkedIn import 2026-06-02; mechanism and honest framing confirmed by Dyl 2026-08-24."
   verified: true
   status: active
 - id: bullet.prc-acting-asst-director
@@ -287,7 +258,6 @@
   skills: [skill.clinical-documentation, skill.process-improvement]
   audience: [clinical, nonprofit, exec]
   themes: [research-to-decision, service]
-  source: "LinkedIn import 2026-06-02"
   verified: false
   status: active
 - id: bullet.prc-compliance-rollup
@@ -309,12 +279,6 @@
   audience: [clinical, nonprofit, exec, civic, tech]
   themes: [research-to-decision, craft, service]
   metrics: ["daily cadence", "4 houses", "checksum-verified"]
-  star:
-    situation: "Outstanding assessments, notes, and medical clearances were scattered per client and per house; DPH could not see what was blocking coverage."
-    task: "Give leadership one daily view of what each client still needed so DPH could act on it."
-    action: "Built a consolidated per-client roll-up (SUMIF, COUNTIF, INDEX/MATCH, VLOOKUP, pivots) with a checksum tab; cross-checked it against Epic/Avatar every morning."
-    result: "Leadership took the roll-up to SF DPH to expedite treatment and provider coverage; errors surfaced immediately rather than in review."
-  source: "Ophelia application interview 2026-08-25. Dyl's words: 'a consolidated roll up... needs for assessment, needs for notes, needs for follow-up or review by houses for their entry, or any needs for their tuberculosis or other medical clearance... It was reported to our leadership who spoke with the public health department... cross checked by us every morning, and it had a checksum within it.'"
   verified: true
   status: draft
 - id: bullet.prc-census-coverage
@@ -329,7 +293,6 @@
   audience: [clinical, nonprofit, exec]
   themes: [service, research-to-decision]
   metrics: ["4 houses", "morning open-bed / stale-referral flags"]
-  source: "Written for the Ophelia résumé variant 2026-08-24 to answer a panel-management responsibility; confirmed by Dyl 2026-08-25 with one correction — transitions were FROM inpatient facilities and jails INTO the program, not between houses. Flags were reported on each morning."
   verified: true
   status: draft
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -361,11 +324,6 @@
   audience: [clinical, nonprofit, tech, product]
   themes: [harm-reduction, research-to-decision, 0-to-1]
   metrics: ["5 escalation tiers", "events ~200-800 attendees"]
-  star:
-    situation: "Harm reduction at these events ran on improvisation and whoever happened to be present."
-    action: "Wrote tiered decision rules mapping each observed state to a response and a handoff, adapted from festival protocols worked under previously, and trained the team against them in person."
-    result: "Responses became consistent between responders. After one crisis had to be handled by doctors who happened to be attending, the protocol changed structurally rather than by exhortation: subsequent events contracted EMTs on site."
-  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01. The de-escalation tier includes sensory grounding (having the person describe what they see and hear) — recognized crisis-intervention technique, run in the field before the coursework that names it."
   verified: true
   status: active
 - id: bullet.baaahs-hr-volunteer-training
@@ -393,11 +351,6 @@
   audience: [clinical, nonprofit, tech, product, leadership]
   themes: [harm-reduction, people-development, service]
   metrics: ["3 rangers trained"]
-  star:
-    situation: "Volunteers were improvising a clinical role they were not trained for and could not sustain across a multi-day event."
-    action: "Defined the scope of the role downward — stabilize, affirm, route — and gave each category of harm a named resource to hand to."
-    result: "Volunteers stopped carrying decisions above their level. One ranger's response to the training was 'oh, that's much easier than I thought.' A workload and burnout intervention as much as a safety one."
-  source: "Voice memo 2026-08-31; verified by Dyl 2026-09-01, who supplied the exact quote. This is the trauma-informed reviewer-support story: the same structure trust-and-safety teams use — clear tiers, defined handoffs, nobody carrying decisions above their level."
   verified: true
   status: active
 - id: bullet.baaahs-hr-frontline-ranger
@@ -411,7 +364,6 @@
   audience: [clinical, nonprofit, art-grant]
   themes: [harm-reduction, service]
   metrics: ["led the program at 1 festival; volunteered on 3 other festivals' teams", "assisted in psychiatric and medical crises"]
-  source: "Ingest 2026-06-02. Metrics added 2026-08-25 from Ophelia interview: 'led one program run, and then participated as volunteer in 3 others, assisted in psychiatric and medical crisis.'"
   verified: true
   status: active
 - id: bullet.baaahs-hr-psychopharm-workshops
@@ -618,10 +570,6 @@
   audience: [exec, leadership]
   themes: [research-to-decision, scaling]
   metrics: [margin-improvement, "senior-labor utilization 10–15% over target → back to target"]
-  star:
-    situation: "Senior-labor utilization was trending 10–15% above target and the portfolio VP needed data to act."
-    action: "Analyzed actual-vs-expected hours by senior leadership in Edelman's SQL platform and Tableau; identified overservice drivers."
-    result: "Quarterly recommendations adopted; utilization returned to target and portfolio margin advanced +10% YoY."
   verified: true
   status: active
 - id: bullet.edelman-focus-group-program
@@ -684,10 +632,6 @@
   skills: [skill.data-analysis, skill.project-management, skill.martech-analytics]
   audience: [exec, tech]
   themes: [research-to-decision]
-  star:
-    situation: "Senior leadership at a multi-brand grocery client needed a single view across many campaigns."
-    action: "Designed and built a Tableau rollup dashboard consolidating campaign performance across brands."
-    result: "Leadership could review the entire campaign portfolio from one surface."
   verified: true
   status: active
 - id: bullet.edelman-mckinsey-onboarding
@@ -738,7 +682,6 @@
     across the division and leaned heavily into Scrum, cutting the
     data-gathering-to-insight pipeline from ~3 days of email back-and-forth to
     under 24 hours.
-  source: "Metric corrected by Dyl 2026-08-31: the ~3d→<24h figure is the data-to-insight pipeline, not coordination cycles."
   tags: [agile, scrum, process-improvement, leadership]
   skills: [skill.agile-scrum, skill.process-improvement]
   audience: [tech, exec]
@@ -757,11 +700,6 @@
   audience: [exec, leadership, product]
   themes: [research-to-decision, scaling]
   metrics: ["5 brands tracked in one view", "shared-resource allocation visible live"]
-  star:
-    situation: "Five brands shared staff across a division, and leadership had no single view of who was working on what or where demand was actually landing."
-    action: "Built cross-portfolio tracking in Azure DevOps covering all five brands and the shared employees moving between them."
-    result: "Leadership could see progress and resourcing live and reallocate focus to the brands with real demand, rather than reconstructing status by meeting."
-  source: "Dump session 2026-08-24."
   verified: true
   status: active
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -787,8 +725,6 @@
     Slack channel landed in an organized Airtable database for quick approvals,
     shortening asset time-to-market from 2–3 weeks to 3–4 days and giving the
     team granular data on each asset's social and digital ad performance.
-    (Scope clarified by Dyl 2026-08-31: pipeline ran between the two orgs, and
-    the per-asset performance visibility was part of the win.)
   tags: [process-improvement, project-management, data-analysis]
   skills: [skill.process-improvement, skill.data-analysis, skill.pm-tooling, skill.martech-analytics]
   audience: [tech, exec]
@@ -822,7 +758,6 @@
   audience: [tech, exec, product]
   themes: [scaling, research-to-decision]
   metrics: ["5 attributes -> 12", "single-owner spreadsheet -> IT-supported stack"]
-  source: "Rewritten 2026-09-01 from the voice memo. The original bullet reported the attribute count only; the migration off a single-owner spreadsheet is the part a hiring manager recognizes."
   verified: true
   status: active
 - id: bullet.jump450-client-revenue
@@ -848,10 +783,6 @@
   audience: [exec, leadership]
   themes: [scaling, people-development]
   metrics: ["Wegmans spend ~$500K → ~$1M–$1.5M/mo, seasonal (2–3×)", "#5 → #1 client"]
-  star:
-    situation: "Wegmans was the agency's #5 client and cautious about increasing ad spend."
-    action: "Earned confidence with faster approvals (Slack/Airtable pipeline) and clearer Tableau reporting, de-risking larger investment."
-    result: "Wegmans grew monthly spend to ~$1M–$1.5M seasonally and became the agency's #1 client before its Omnicom acquisition."
   verified: true
   status: active
 - id: bullet.jump450-asset-taxonomy
@@ -866,11 +797,6 @@
   audience: [exec, product, tech, leadership]
   themes: [0-to-1, research-to-decision]
   metrics: ["13+ attributes auto-tagged per asset"]
-  star:
-    situation: "Approved assets moved between the client's marketing team and the agency's media buyers with no structured record of what was being tested."
-    action: "Built an auto-tagging schema into the Slack/Zapier/Airtable pipeline capturing campaign, store set, and 11 further attributes at submission."
-    result: "The approval queue became a performance database; the client's marketing community could finally see how their own creative iterations performed."
-  source: "Dump session 2026-08-24."
   verified: true
   status: active
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -940,10 +866,6 @@
   audience: [creative, exec, tech]
   themes: [craft, 0-to-1]
   metrics: ["~1–2 of every 15 passersby engaged"]
-  star:
-    situation: "Mid-delivery on the EY conference project, Dyl's co-leader became medically incapacitated."
-    action: "Took on the entire project solo — hiring and coordinating multiple teams and coordinating with Cirque du Soleil staff, the conference's other producers."
-    result: "Both EY installations were delivered successfully under extreme circumstances."
   verified: true
   status: active
 - id: bullet.fc-windows-1-11
@@ -1022,7 +944,6 @@
   audience: [general, exec]
   themes: [service, scaling]
   metrics: ["~300 covers/day", "~$3,000 daily sales"]
-  source: "LinkedIn import 2026-06-02"
   verified: false
   status: active
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -1152,6 +1073,432 @@
   audience: [general]
   themes: [service, craft]
   metrics: ["up to 75–100 customers/day"]
-  source: "LinkedIn import 2026-06-02"
   verified: false
   status: active
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# role.crfw-archive-lead (volunteer / independent estate project)
+# Added 2026-09-02 from the CRFW Résumé Work Inventory.
+# NAMING RULE: never name the subject or the family relationship in bullet text.
+# CLAIMS CEILING: "designed / specified / directed / verified" for engineering;
+# "shipped / live" only for the site, domain, audio bucket, manifest, vault,
+# triage and quarantine. Everything else is "designed", "scoped", or
+# "runbook written". Never claim hand-authored code volume.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.crfw-archive-manifest
+  role_id: role.crfw-archive-lead
+  text: >
+    Inventoried a 304 GB, 48,538-file digital estate into a queryable SQLite
+    manifest with SHA-256 fixity on all 35,866 on-disk files, surfacing 179 GB
+    that existed only as cloud placeholders as the archive's largest custody risk.
+  variants:
+    - audience: exec
+      text: >
+        Turned an undocumented 304 GB inheritance into a measured, checksummed
+        asset register, and identified the single largest risk of permanent loss.
+  tags: [digital-preservation, data-analysis, infrastructure]
+  skills: [skill.digital-preservation, skill.data-modeling]
+  audience: [tech, product, art-grant, nonprofit]
+  themes: [memory, 0-to-1, research-to-decision]
+  metrics: [volume, file-count, coverage]
+  verified: true
+  status: active
+
+- id: bullet.crfw-quarantine-provenance
+  role_id: role.crfw-archive-lead
+  text: >
+    Moved 32,652 files (17.7 GB) into quarantine across five batches under a
+    never-delete rule, logging every original path so any decision stays
+    reversible; re-pathed the entire archive and repointed every tool and
+    catalog entry with zero stale references.
+  tags: [digital-preservation, process-improvement, infrastructure]
+  skills: [skill.digital-preservation, skill.process-improvement]
+  audience: [tech, product, nonprofit, art-grant]
+  themes: [memory, craft]
+  metrics: [file-count, error-rate]
+  verified: true
+  status: active
+
+- id: bullet.crfw-vault-schema
+  role_id: role.crfw-archive-lead
+  text: >
+    Designed a 2,300-record knowledge base across 18 entity types as the archive's
+    single source of truth — YAML schema with provenance, confidence, sensitivity
+    tiers and a publish gate — so the public site, database and browsable explorer
+    all regenerate from it rather than being edited by hand.
+  variants:
+    - audience: product
+      text: >
+        Established one source of truth for 2,300 records and made every downstream
+        surface a regenerated projection of it, eliminating drift between them.
+  tags: [digital-preservation, data-analysis, program-design]
+  skills: [skill.data-modeling, skill.digital-preservation]
+  audience: [tech, product, academic, art-grant]
+  themes: [0-to-1, craft, memory]
+  metrics: [record-count]
+  verified: true
+  status: active
+
+- id: bullet.crfw-content-policy
+  role_id: role.crfw-archive-lead
+  text: >
+    Authored and enforced the publishing policy for a dead person's personal
+    material: verbatim-only sourcing, no machine-generated interpretation, and
+    privacy holds on 89 of 866 archived posts because they named living people
+    who had not consented — shipping 1,420 pages with zero restricted content
+    reaching the public build.
+  variants:
+    - audience: clinical
+      text: >
+        Wrote and enforced the rules governing what may be published from a
+        deceased person's private material, including consent routing for third
+        parties named in it and a default of withholding when consent is unclear.
+  tags: [trust-and-safety, policy-design, digital-preservation]
+  skills: [skill.content-policy-triage]
+  audience: [tech, product, clinical, nonprofit, academic]
+  themes: [service, craft, resilience]
+  metrics: [coverage, error-rate]
+  verified: true
+  status: active
+
+- id: bullet.crfw-voice-memo-triage
+  role_id: role.crfw-archive-lead
+  text: >
+    Classified 317 private voice recordings for type and sensitivity against
+    written handling rules — never characterize the subject's state of mind, flag
+    rather than interpret, describe in eight words or fewer, name no living
+    person — escalating 21 files to human review and producing an access tier
+    recommendation of none-by-default for public.
+  variants:
+    - audience: clinical
+      text: >
+        Built and applied a sensitivity triage for 317 private recordings,
+        including handling rules for slurs and self-harm references, with explicit
+        escalation to a human reader rather than an automated ruling.
+  tags: [trust-and-safety, policy-design, digital-preservation]
+  skills: [skill.content-policy-triage, skill.agent-direction]
+  audience: [tech, product, clinical, academic, nonprofit]
+  themes: [service, resilience, memory]
+  metrics: [file-count, coverage]
+  verified: true
+  status: active
+
+- id: bullet.crfw-site-shipped
+  role_id: role.crfw-archive-lead
+  text: >
+    Shipped the public archive at crfw.place — 1,420 pages generated from the
+    catalog through a Python content pipeline, deployed on Cloudflare Pages, with
+    the custom domain, apex and www redirect and canonical URLs configured and
+    externally verified the same day.
+  variants:
+    - audience: exec
+      text: >
+        Took an inaccessible private archive to a live public site with a custom
+        domain, cutting the information architecture to five entry points a
+        non-technical visitor can navigate.
+  tags: [infrastructure, programming, digital-preservation]
+  skills: [skill.cloud-infrastructure]
+  audience: [tech, product, creative, art-grant, bio]
+  themes: [0-to-1, craft, design]
+  metrics: [page-count]
+  verified: true
+  status: active
+
+- id: bullet.crfw-scope-reduction
+  role_id: role.crfw-archive-lead
+  text: >
+    Retired a working 193-commit site after recognizing it had outgrown a single
+    maintainer, and deliberately replaced it with a smaller system organized
+    around five entry points — trading built features for something that can be
+    operated by someone other than its author.
+  variants:
+    - audience: product
+      text: >
+        Chose to replace a shipped system I had built with a simpler one, on the
+        grounds that maintainability by a non-author mattered more than feature
+        coverage.
+  tags: [process-improvement, project-management, program-design]
+  skills: [skill.project-management]
+  audience: [tech, product, exec, leadership]
+  themes: [research-to-decision, craft, reinvention]
+  verified: true
+  status: active
+- id: bullet.crfw-audio-hosting
+  role_id: role.crfw-archive-lead
+  text: >
+    Stood up object storage serving 848 verified audio files (3.4 GB) to the
+    public archive, building two upload paths to work around cloud-placeholder
+    files and verifying every object against its source size with zero mismatches.
+  tags: [infrastructure, programming, digital-preservation]
+  skills: [skill.cloud-infrastructure]
+  audience: [tech, product, creative]
+  themes: [craft, tinkering]
+  metrics: [file-count, volume, error-rate]
+  verified: true
+  status: active
+
+- id: bullet.crfw-catalog-reconciliation
+  role_id: role.crfw-archive-lead
+  text: >
+    Reconciled 288 catalogued releases against 57 live on the artist's store by
+    fingerprinting archive folders against published tracklists, establishing a
+    true gap of 15 releases and 59 tracks, and prepared every missing release for
+    upload with lossless conversion, end-to-end decode verification and a
+    facts-only submission sheet citing the source of each date.
+  tags: [digital-preservation, arts-administration, data-analysis]
+  skills: [skill.digital-preservation, skill.arts-administration]
+  audience: [tech, art-grant, creative, nonprofit]
+  themes: [craft, memory]
+  metrics: [record-count]
+  verified: true
+  status: active
+- id: bullet.crfw-video-catalog
+  role_id: role.crfw-archive-lead
+  text: >
+    Built the catalog of record for 581 video works, archived 123 files across
+    eight channels, matched 74 previously unlinked videos to catalog entries, and
+    recovered two works an earlier inventory had declared nonexistent — including
+    identifying an installation built from the artist's proposal after his death.
+  tags: [digital-preservation, documentary, time-based-media, data-analysis]
+  skills: [skill.digital-preservation]
+  audience: [art-grant, creative, tech, academic]
+  themes: [memory, craft]
+  metrics: [record-count, file-count]
+  verified: true
+  status: active
+
+- id: bullet.crfw-custody-plan
+  role_id: role.crfw-archive-lead
+  text: >
+    Designed the custody handoff that removes me as the archive's single point of
+    failure: a three-copy backup model with four access tiers, a 193.5 GB cloud
+    migration runbook with a cost model, account-recovery hardening across roughly
+    15 platform identities sequenced by irreversibility, and a catalog service
+    gated on a non-technical family member being able to use it unaided.
+  variants:
+    - audience: exec
+      text: >
+        Planned business continuity for an archive whose only operator was me —
+        ownership transfer, recovery paths, and a usability gate before the paid
+        account can be cancelled.
+  tags: [infrastructure, digital-preservation, project-management, stakeholder-management]
+  skills: [skill.digital-preservation, skill.cloud-infrastructure, skill.project-management]
+  audience: [tech, product, exec, leadership, nonprofit]
+  themes: [service, research-to-decision, resilience]
+  metrics: [volume, cost]
+  verified: true
+  status: active
+- id: bullet.crfw-agent-direction
+  role_id: role.crfw-archive-lead
+  text: >
+    Ran the build by directing AI coding agents as the execution layer — writing
+    the operating protocols, hard rules and review queues they work inside,
+    fanning sensitive work out to isolated sub-agents, and scheduling weekly
+    unattended integrity sweeps that report into a session journal.
+  variants:
+    - audience: tech
+      text: >
+        Directed AI coding agents through written protocols and hard rules rather
+        than hand-authoring the code, including a verify-external-state-before-
+        acting rule added after catching three sessions of unverified claims.
+  tags: [agent-direction, ai-tooling, automation, process-improvement]
+  skills: [skill.agent-direction, skill.ai-llm-systems]
+  audience: [tech, product, exec, leadership]
+  themes: [tinkering, curiosity, craft]
+  verified: true
+  status: active
+- id: bullet.crfw-stakeholder-family
+  role_id: role.crfw-archive-lead
+  text: >
+    Managed a bereaved family as the project's stakeholders and reviewers — running
+    two rounds of feedback with the artist's mother, setting up a story-intake
+    channel that defaults to unpublished and forbids automated outreach to
+    grieving people, and drafting the approaches to collaborators, a photographer
+    and a music writer.
+  tags: [stakeholder-management, trust-and-safety, community, arts-administration]
+  skills: [skill.stakeholder-management, skill.content-policy-triage]
+  audience: [clinical, nonprofit, exec, leadership, art-grant, bio]
+  themes: [service, community-building, resilience]
+  verified: true
+  status: active
+
+- id: bullet.crfw-program-ops
+  role_id: role.crfw-archive-lead
+  text: >
+    Ran the program on a self-updating status board with a dependency graph,
+    computed milestones and an explicit list of decisions only the owner can make,
+    backed by session journals, review queues and runbooks ordered by
+    irreversibility so a stranger could pick up any subsystem.
+  tags: [project-management, process-improvement, program-design, agent-direction]
+  skills: [skill.project-management, skill.agent-direction]
+  audience: [tech, product, exec, leadership, nonprofit]
+  themes: [craft, research-to-decision]
+  verified: true
+  status: active
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# DRAFTS — voice memo 2026-09-02 (Anthropic a21/a19 prompt set)
+# Appended by Claude via the cv-dump-flow. All status: draft, verified: false
+# until Dyl confirms. Open questions are in each entry's notes:. Raw transcript:
+# research/voice-memo_2026-09-02_anthropic-prompt.md
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.prc-referral-triage-board
+  role_id: role.prc-baker-intake
+  text: >
+    Built the referral triage board leadership worked from each morning: every open
+    referral with its age, its source (inpatient units needing to discharge and jails
+    took priority), the client's housing status, and which of the required clearances
+    (medical, TB, Medi-Cal authorization) were still missing. Target was a wait under a
+    month. Refreshed each morning and cross-checked against live Epic.
+  tags: [health-it, intake-assessment, data-analysis, process-improvement, policy-design]
+  skills: [skill.data-analysis, skill.process-improvement, skill.clinical-data-translation, skill.program-design]
+  audience: [clinical, exec, leadership, nonprofit, civic, tech, product]
+  themes: [research-to-decision, 0-to-1]
+  metrics: ["referral-to-admission ~6 weeks → ~3 weeks in some cases", "~1 week → days when a bed was open", "wait target < 1 month"]
+  verified: false
+  status: draft
+- id: bullet.prc-referral-followup-rule
+  role_id: role.prc-baker-intake
+  text: >
+    Wrote the rules the intake team applied to every referral: a 72-business-hour
+    rule (no response from a house on a bed review in three business days triggers a
+    follow-up) and an if-then screening path (specific histories — violence, severe
+    substance use, particular diagnoses — trigger an additional check or interview
+    before admission).
+  tags: [intake-assessment, policy-design, process-improvement, compliance]
+  skills: [skill.program-design, skill.process-improvement, skill.clinical-intake]
+  audience: [clinical, nonprofit, tech, product, leadership]
+  themes: [research-to-decision, craft]
+  metrics: ["72-business-hour follow-up rule"]
+  verified: false
+  status: draft
+- id: bullet.prc-data-verification
+  role_id: role.prc-baker-intake
+  text: >
+    Kept the intake board honest three ways: a checksum on the form that flagged totals
+    that could not be right, a daily match against Epic census, and source-level
+    verification with the agency data team when anything disagreed. The one recurring
+    error source was referrers using decommissioned fax numbers; fixed by publishing the
+    current submission path and a named contact on the website so referrers could
+    confirm their own submissions.
+  tags: [health-it, data-analysis, compliance, process-improvement]
+  skills: [skill.data-analysis, skill.process-improvement, skill.clinical-data-translation]
+  audience: [tech, product, exec, clinical]
+  themes: [research-to-decision, craft]
+  verified: false
+  status: draft
+
+- id: bullet.prc-overflow-routing
+  role_id: role.prc-baker-intake
+  text: >
+    Used the forecast to run intake week to week: light weeks went to preparing future
+    intakes, heavy weeks to assessments in front of us, and referrals past forecast
+    capacity went to a partner provider through a standing weekly meeting.
+  tags: [intake-assessment, stakeholder-management, process-improvement]
+  skills: [skill.process-improvement, skill.stakeholder-management, skill.case-management]
+  audience: [clinical, nonprofit, exec, leadership]
+  themes: [research-to-decision, scaling]
+  verified: false
+  status: draft
+- id: bullet.prc-packet-consolidation
+  role_id: role.prc-baker-intake
+  text: >
+    Cut the referral packet from a 13–14 page handwritten fax to a consolidated form
+    sent by email, with receipt confirmed within 24 hours. Removed the fields repeated
+    across forms, trained clinicians across the agency on email, OneDrive, and PHI
+    handling, and kept accepting fax from long-tenured clinicians as long as a director
+    emailed to confirm. Followed up at a few weeks and then monthly, tightening and
+    publishing the instructions each round.
+  tags: [process-improvement, stakeholder-management, intake-assessment, compliance]
+  skills: [skill.process-improvement, skill.change-management, skill.stakeholder-management, skill.hipaa-compliance]
+  audience: [clinical, nonprofit, exec, leadership, product, tech]
+  themes: [research-to-decision, people-development, service]
+  metrics: ["13–14 page packet → consolidated form", "receipt confirmed < 24h"]
+  verified: false
+  status: draft
+- id: bullet.prc-incomplete-referral-enforcement
+  role_id: role.prc-baker-intake
+  text: >
+    Held the line on incomplete referrals, including from the agency's own acute units,
+    against real pressure to get people off the street faster. An admission without
+    Medi-Cal enrollment and TB/COVID clearance meant the client's case workers could not
+    reach them and their benefits could lapse; the rule protected the client's continuity
+    of care, not just the billing.
+  tags: [intake-assessment, policy-design, compliance, case-management]
+  skills: [skill.clinical-intake, skill.program-design, skill.case-management]
+  audience: [clinical, nonprofit, tech, product, leadership]
+  themes: [service, research-to-decision]
+  verified: false
+  status: draft
+- id: bullet.prc-leadership-presentations
+  role_id: role.prc-baker-intake
+  text: >
+    Presented the intake workflow and the board to senior leadership including the CEO
+    and the leadership of all four houses, and separately to the full staff of the
+    agency's acute unit, the most frequent internal referral source.
+  tags: [stakeholder-management, group-facilitation, process-improvement]
+  skills: [skill.stakeholder-management, skill.people-development]
+  audience: [exec, leadership, clinical, nonprofit]
+  themes: [people-development, research-to-decision]
+  verified: false
+  status: draft
+
+- id: bullet.baaahs-hr-crisis-night
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Led the response when rangers called for help with a participant who was delirious
+    and unaware of their surroundings, moving in a way that risked harm. With a partner,
+    contained the space away from hazards and other participants, used their name,
+    mirrored their language, redirected when they tried to leave, and got water into
+    them until they calmed and slept under watch. Debriefed the shaken rangers that
+    night, brought in an attending physician to talk through likely cause and protocol,
+    and followed up with the participant after the event.
+  tags: [harm-reduction, crisis-response, substance-use, peer-support, leadership]
+  skills: [skill.harm-reduction, skill.crisis-communication, skill.people-development]
+  audience: [clinical, nonprofit, tech, product]
+  themes: [harm-reduction, service]
+  verified: false
+  status: draft
+
+- id: bullet.baaahs-hr-aftercare
+  role_id: role.baaahs-harm-reduction
+  text: >
+    After hard events, rangers got a guaranteed check-in, outreach from a clinician or
+    clinician-in-training, and crisis-line information (988) in hand.
+  tags: [harm-reduction, peer-support, people-development, program-design]
+  skills: [skill.harm-reduction, skill.people-development, skill.program-design]
+  audience: [clinical, nonprofit, tech, product, leadership]
+  themes: [harm-reduction, people-development]
+  verified: false
+  status: draft
+- id: bullet.jump450-airtable-pipeline
+  role_id: role.jump450-spm
+  text: >
+    Built the Airtable layer behind the Wegmans reporting stack: linked tables and a
+    Slack-fed ingest that filed data and creative into the shared drive Tableau read
+    from. Specified the Airtable-to-Tableau API connection and the back-end model,
+    built by the technical team, so reporting could slice by any Wegmans identifier —
+    store, time, brand — without a new build per request.
+  tags: [data-analysis, automation, process-improvement, project-management]
+  skills: [skill.pm-tooling, skill.workflow-automation, skill.data-modeling, skill.martech-analytics]
+  audience: [tech, product, exec]
+  themes: [tinkering, scaling]
+  verified: false
+  status: draft
+- id: bullet.jump450-roi-attribution-fix
+  role_id: role.jump450-spm
+  text: >
+    Caught a too-good number before the client acted on it. After sales data was
+    joined to campaign spend, ROI came back far above expectation and Wegmans was
+    ready to celebrate. Traced it to attribution against total spend instead of
+    per-product spend, had IT flag and exclude awareness-only campaigns from sales
+    ROI, and re-tied sales to the right campaigns. The corrected ROI was lower but
+    real, and it surfaced a product nobody had noticed as a winner.
+  tags: [data-analysis, process-improvement, stakeholder-management]
+  skills: [skill.data-analysis, skill.martech-analytics, skill.stakeholder-management, skill.data-modeling]
+  audience: [tech, product, exec, leadership]
+  themes: [research-to-decision, craft]
+  verified: false
+  status: draft

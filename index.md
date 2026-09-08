@@ -16,13 +16,16 @@ layout: default
  Systems lens surfaces the PRC Baker bullets tagged health-it and data-analysis,
  and skips the group-facilitation ones; the Teaching lens does the reverse.
 
- THE AXIS IS MODALITY, NOT INDUSTRY (decision 2026-08-24). Clinical = working
- with a person in distress · Systems = working through systems and data ·
- Teaching = working with a group in a room · Onsite = working in physical space
- with fixed deadlines · Arts = working in an expressive medium. Never add an
- industry-shaped lens ("Healthcare"); rename or retag instead. Tag vocabulary lives in
+ THE AXIS IS SETTING since 2026-09-08 (Dyl): Clinical & Health IT (key
+ `clinical`) = behavioral-health programs and the systems inside them · Agency
+ Work (`agency`) = agencies and their clients · Independent Creative Work
+ (`arts`) = his own and other artists' work, kept out of every other panel.
+ The 08-24 "modality" axis (Clinical / Systems / Teaching / Onsite / Arts) is
+ retired; old keys alias in _includes/scripts.html. Tag vocabulary lives in
  _data/bullets.yml. Within a role, the bullets shown are the first N matching in
  that file — reorder there, in the source database, to change the pick.
+ Bullets with status: draft never render (lens-role.html), so unverified
+ voice-memo drafts can sync in safely.
 
  TO ADD OR REMOVE A LENS: add a button in the sidebar and a matching panel with
  the same data-lens value. Nothing else needs to change.
@@ -94,11 +97,11 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
  asserting and start explaining. The page now opens by naming itself as a made
  thing and handing over the controls; the credentials moved down to Education,
  where someone looking for them will look.
- The greeting is Dyl's own line, semicolon included.
+ The greeting is Dyl's own two lines (2026-09-08), nothing more — no CTA sentence after it.
 {%- endcomment -%}
 <header class="hero hero--greeting">
-  <p class="greeting">Thanks for being here;</p>
-  <p class="greeting__what">I&rsquo;ve worked in clinics, agencies, and theaters, and I want what I&rsquo;ve learned there to leave people better off. Read the part you came for.</p>
+  <p class="greeting">Thanks for being here,</p>
+  <p class="greeting__what">I&rsquo;ve worked in a variety of environments, and I want what I&rsquo;ve learned to leave people better off.</p>
 </header>
 
 <div class="lens-layout" id="experience">
@@ -106,10 +109,9 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   <nav class="lensbar" data-lensbar aria-label="View experience">
     <h2 class="lensbar__title">View Experience</h2>
     <ul>
-      <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical</button></li>
-      <li><button type="button" data-lens="digital" aria-pressed="false">Health IT &amp; Data</button></li>
-      <li><button type="button" data-lens="teaching" aria-pressed="false">Teaching</button></li>
-      <li><button type="button" data-lens="arts" aria-pressed="false">Arts and Event Production</button></li>
+      <li><button type="button" data-lens="clinical" aria-pressed="false">Clinical &amp; Health IT</button></li>
+      <li><button type="button" data-lens="agency" aria-pressed="false">Agency Work</button></li>
+      <li><button type="button" data-lens="arts" aria-pressed="false">Independent Creative Work</button></li>
       <li><button type="button" data-lens="all" aria-pressed="false">All</button></li>
     </ul>
   </nav>
@@ -126,10 +128,9 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   {%- endcomment -%}
   <section class="lens-panel lens-prompt is-active" data-lens="start">
     <ul class="lens-menu">
-      <li><button type="button" data-lens="clinical"><span class="lens-menu__name">Clinical</span><span class="lens-menu__what">Intake and assessment, groups, clinical documentation, and harm reduction.</span></button></li>
-      <li><button type="button" data-lens="digital"><span class="lens-menu__name">Health IT &amp; Data</span><span class="lens-menu__what">EHR workflow, documentation compliance, utilization reporting, and referral pipelines.</span></button></li>
-      <li><button type="button" data-lens="teaching"><span class="lens-menu__name">Teaching</span><span class="lens-menu__what">Psychoeducation and skills groups, drug-safety workshops, clinician training, and agile coaching.</span></button></li>
-      <li><button type="button" data-lens="arts"><span class="lens-menu__name">Arts and Event Production</span><span class="lens-menu__what">Performance films made for other artists, immersive installations, live events, touring crews, and records.</span></button></li>
+      <li><button type="button" data-lens="clinical"><span class="lens-menu__name">Clinical &amp; Health IT</span><span class="lens-menu__what">Intake and assessment, groups, harm reduction, EHR workflow, and utilization reporting.</span></button></li>
+      <li><button type="button" data-lens="agency"><span class="lens-menu__name">Agency Work</span><span class="lens-menu__what">Project management for agencies and their clients: scoping, budgets, reporting, agile coaching, and experiential production.</span></button></li>
+      <li><button type="button" data-lens="arts"><span class="lens-menu__name">Independent Creative Work</span><span class="lens-menu__what">Performance films for other artists, dance and theater, records as Sleep Nod, and arts venues and festivals.</span></button></li>
       <li><button type="button" data-lens="all"><span class="lens-menu__name">All</span><span class="lens-menu__what">The whole record, in one page.</span></button></li>
     </ul>
     <p class="lens-menu__aside">Or take the one-page <a href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">r&eacute;sum&eacute; (PDF)</a>.</p>
@@ -139,8 +140,9 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
   <section class="lens-panel" data-lens="all">
     <h2 class="section__title">Experience</h2>
     {% include lens-roles.html title="Behavioral health" ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" limit="4" %}
-    {% include lens-roles.html title="Project management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.future-colossal-cpm,role.evia-producer,role.cafe-suspiro-biz-dev" limit="3" %}
-    {% include lens-roles.html title="Arts &amp; community" ids="role.sleep-nod-producer,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator,role.baaahs-food-director,role.crfw-consultant" limit="2" %}
+    {% include lens-roles.html title="Independent projects" ids="role.crfw-archive-lead" limit="3" %}
+    {% include lens-roles.html title="Agency &amp; consulting" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.future-colossal-cpm,role.evia-producer,role.cafe-suspiro-biz-dev" limit="3" %}
+    {% include lens-roles.html title="Independent creative work" ids="role.sleep-nod-producer,role.easy-street-producer,role.velocity-production,role.base-arts-coordinator,role.baaahs-food-director,role.crfw-consultant" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Project management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.program-design,skill.budget-management,skill.data-analysis,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management" %}
@@ -153,55 +155,59 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {% include lens-projects.html ids="project.sleep-nod-reel-2018,project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019,project.rehearsal-13-problems-2016,project.material-deviation-2018,project.tim-e-2017,project.clear-and-sweet-2016,project.worth-my-salt-2014,project.still-becoming,project.desert-mode" %}
   </section>
 
-  {%- comment -%} ═══ CLINICAL ═══ {%- endcomment -%}
+  {%- comment -%}
+   ═══ CLINICAL & HEALTH IT ═══
+   Merged 2026-09-08 at Dyl's direction: the old "Clinical" and "Health IT &
+   Data" (key `digital`) lenses became one. data-lens stays "clinical";
+   /#view-digital is aliased to it in _includes/scripts.html. The Teaching lens
+   was cut the same day (/#view-teaching aliases to "all"). No creative work in
+   this panel — Dyl: "don't link creative work to the other tabs."
+  {%- endcomment -%}
   <section class="lens-panel" data-lens="clinical">
-    <h2 class="section__title">Clinical</h2>
-    <p class="lens-intro">Intake and assessment, groups, clinical documentation, and harm reduction.</p>
-    {% include lens-roles.html ids="role.prc-baker-intake,role.baaahs-harm-reduction,role.lifelong-outreach" tags="intake-assessment,case-management,group-facilitation,clinical-documentation,health-it,compliance,dual-diagnosis,harm-reduction,psychoeducation,crisis-response,peer-support,outreach,substance-use,queer-competency" limit="7" %}
-    {% include lens-roles.html title="Systems work from other settings" ids="role.jump450-spm,role.edelman-spm,role.ab-scrum" tags="process-improvement,data-analysis,health-it,automation" limit="2" %}
+    <h2 class="section__title">Clinical &amp; Health IT</h2>
+    <p class="lens-intro">Intake and assessment, groups, harm reduction, EHR workflow, and utilization reporting.</p>
+    {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" limit="8" %}
+    {% include lens-roles.html title="Harm reduction &amp; outreach" ids="role.baaahs-harm-reduction,role.lifelong-outreach" tags="harm-reduction,crisis-response,psychoeducation,outreach,peer-support,substance-use,case-management,program-design,policy-design,queer-competency" limit="4" %}
+    {%- comment -%} CRFW archive: lead with the policy / sensitivity-triage bullets (the T&S-shaped evidence), not the storage work. {%- endcomment -%}
+    {% include lens-roles.html title="Systems work from other settings" ids="role.crfw-archive-lead" tags="trust-and-safety,policy-design" limit="3" %}
+    {% include lens-roles.html ids="role.jump450-spm,role.edelman-spm" tags="data-analysis,automation,process-improvement" limit="3" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Clinical" ids="skill.clinical-intake,skill.clinical-assessments,skill.clinical-documentation,skill.clinical-note-formats,skill.case-management,skill.harm-reduction,skill.overdose-response,skill.group-facilitation,skill.psychoeducation,skill.community-outreach,skill.crisis-communication" key="skill.clinical-intake,skill.clinical-documentation,skill.case-management,skill.harm-reduction" %}
-    {% include skill-group.html title="Systems &amp; documentation" ids="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation,skill.hipaa-compliance,skill.process-improvement,skill.data-analysis,skill.program-design,skill.project-management,skill.microsoft-365" key="skill.epic-superuser,skill.medical-records-research,skill.billable-documentation" %}
-
-    <h2 class="section__title">Writing</h2>
-    {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
-  </section>
-
-  {%- comment -%} ═══ SYSTEMS, DATA & HEALTH IT (data-lens stays "digital" so /#view-digital deep links keep working) ═══ {%- endcomment -%}
-  <section class="lens-panel" data-lens="digital">
-    <h2 class="section__title">Health IT &amp; Data</h2>
-    <p class="lens-intro">EHR workflow, documentation compliance, utilization reporting, and referral pipelines.</p>
-    {% include lens-roles.html title="Inside a behavioral-health program" ids="role.prc-baker-intake" tags="health-it,compliance,data-analysis,process-improvement,automation" limit="6" %}
-    {% include lens-roles.html title="Agency project management" ids="role.edelman-spm,role.ab-scrum,role.jump450-spm,role.cafe-suspiro-biz-dev,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,scrum,stakeholder-management,budget-management,leadership,revenue" limit="3" %}
-
-    <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Health IT" ids="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.medical-records-research,skill.clinical-note-formats,skill.clinical-documentation" key="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance" %}
-    {% include skill-group.html title="Project management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.program-design,skill.people-development" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.data-analysis" %}
-    {% include skill-group.html title="Tools" ids="skill.pm-tooling,skill.workflow-automation,skill.ai-llm-systems,skill.martech-analytics,skill.microsoft-365" key="skill.workflow-automation" %}
+    {% include skill-group.html title="Health IT" ids="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.medical-records-research,skill.data-analysis,skill.process-improvement,skill.program-design,skill.content-policy-triage,skill.data-modeling" key="skill.epic-superuser,skill.billable-documentation,skill.hipaa-compliance,skill.data-analysis" %}
+    {% include skill-group.html title="Tools" ids="skill.workflow-automation,skill.ai-llm-systems,skill.pm-tooling,skill.microsoft-365" key="skill.workflow-automation" %}
 
     <h2 class="section__title">Selected Projects</h2>
-    {% include lens-projects.html ids="project.cv-database,project.windows-111-2019,project.arctic-refuge-2019,project.megatrends-2019" %}
-  </section>
-
-  {%- comment -%} ═══ TEACHING & FACILITATION — working with a group in a room ═══ {%- endcomment -%}
-  <section class="lens-panel" data-lens="teaching">
-    <h2 class="section__title">Teaching</h2>
-    <p class="lens-intro">Psychoeducation and skills groups for dual-diagnosis clients. Drug-safety workshops at festivals. Training clinicians on documentation, and coaching twelve brand teams through an agile transition.</p>
-    {% include lens-roles.html title="Groups &amp; training in care settings" ids="role.prc-baker-intake,role.baaahs-harm-reduction" tags="group-facilitation,psychoeducation,program-design,mentorship" limit="4" %}
-    {% include lens-roles.html title="Agile coaching" ids="role.ab-scrum,role.edelman-spm,role.jump450-spm" tags="agile,scrum,mentorship" limit="3" %}
-    {% include lens-roles.html title="Arts workshops" ids="role.base-arts-coordinator,role.sleep-nod-producer" tags="organizing,grant-administration" limit="1" %}
-
-    <h2 class="section__title">Skills</h2>
-    {% include skill-group.html title="Facilitation" ids="skill.group-facilitation,skill.psychoeducation,skill.program-design,skill.people-development,skill.agile-scrum,skill.community-outreach,skill.crisis-communication,skill.harm-reduction" key="skill.group-facilitation,skill.psychoeducation,skill.people-development,skill.agile-scrum" %}
-    {% include skill-group.html title="Assessment &amp; research" ids="skill.clinical-assessments,skill.clinical-intake,skill.data-analysis,skill.clinical-documentation,skill.microsoft-365" key="skill.clinical-assessments,skill.data-analysis" %}
-
-    <h2 class="section__title">Writing</h2>
-    {% include lens-projects.html ids="project.still-becoming,project.desert-mode" %}
+    {% include lens-projects.html ids="project.cv-database" %}
   </section>
 
   {%- comment -%}
-   ═══ ARTS AND EVENT PRODUCTION ═══
+   ═══ AGENCY WORK ═══
+   Added 2026-09-08 at Dyl's direction (replaces the cut Teaching lens). The
+   agency years: Edelman, Jump450, Future Colossal, Evia; plus the client-side
+   consulting (Anheuser-Busch scrum, Cafe Suspiro). The experiential projects
+   made at Future Colossal live here, not in the creative panel — they were
+   agency deliverables. data-lens "agency" is new; nothing aliases to it.
+  {%- endcomment -%}
+  <section class="lens-panel" data-lens="agency">
+    <h2 class="section__title">Agency Work</h2>
+    <p class="lens-intro">Project management for agencies and their clients: scoping, budgets, reporting, agile coaching, and experiential production.</p>
+    {% include lens-roles.html title="Agency project management" ids="role.edelman-spm,role.jump450-spm,role.future-colossal-cpm,role.evia-producer" tags="project-management,process-improvement,data-analysis,automation,agile,stakeholder-management,budget-management,leadership,revenue,event-production,immersive,video-direction" limit="4" %}
+    {% include lens-roles.html title="Consulting" ids="role.ab-scrum,role.cafe-suspiro-biz-dev" tags="agile,scrum,leadership,process-improvement,automation,data-analysis,budget-management,stakeholder-management" limit="4" %}
+
+    <h2 class="section__title">Skills</h2>
+    {% include skill-group.html title="Project management" ids="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management,skill.budget-management,skill.data-analysis,skill.people-development,skill.change-management" key="skill.project-management,skill.agile-scrum,skill.process-improvement,skill.stakeholder-management" %}
+    {% include skill-group.html title="Tools" ids="skill.pm-tooling,skill.workflow-automation,skill.martech-analytics,skill.microsoft-365,skill.adobe-creative-suite" key="skill.pm-tooling,skill.workflow-automation" %}
+
+    <h2 class="section__title">Selected Projects</h2>
+    {% include lens-projects.html ids="project.arctic-refuge-2019,project.windows-111-2019,project.megatrends-2019" %}
+  </section>
+
+  {%- comment -%}
+   ═══ INDEPENDENT CREATIVE WORK (renamed 2026-09-08; was "Arts and Event Production") ═══
+   2026-09-08: Future Colossal / Evia and their projects moved to Agency Work;
+   the PRC "Programming in a care setting" group is gone; Writing moved here
+   from the clinical/teaching panels. Creative work lives ONLY in this panel.
    Merged 2026-09-02 from the old "Onsite Projects" and "Arts" lenses, at Dyl's
    direction. They were one modality pretending to be two: physical space, a
    fixed date, other people's vision to serve. Splitting them buried the
@@ -213,12 +219,10 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
    last and stays short. Do not promote "My own work" up this panel.
   {%- endcomment -%}
   <section class="lens-panel" data-lens="arts">
-    <h2 class="section__title">Arts and Event Production</h2>
-    <p class="lens-intro">Performance films made for other artists, immersive installations, live events, and touring crews. Records under Sleep Nod.</p>
+    <h2 class="section__title">Independent Creative Work</h2>
+    <p class="lens-intro">Performance films for other artists, dance and theater, records as Sleep Nod, and arts venues and festivals.</p>
     {% include lens-roles.html title="Hired by other artists" ids="role.sleep-nod-producer" tags="documentary,video-direction,arts-administration,grant-administration,event-production,project-management" limit="3" %}
-    {% include lens-roles.html title="Immersive &amp; live events" ids="role.future-colossal-cpm,role.evia-producer,role.baaahs-food-director,role.easy-street-producer" tags="event-production,project-management,budget-management,stakeholder-management,leadership,immersive,installation,community,mutual-aid" limit="3" %}
-    {% include lens-roles.html title="Venues, grants &amp; community" ids="role.velocity-production,role.base-arts-coordinator,role.crfw-consultant" tags="arts-administration,grant-administration,event-production,organizing,community,performance" limit="2" %}
-    {% include lens-roles.html title="Programming in a care setting" ids="role.prc-baker-intake" tags="program-design" limit="2" %}
+    {% include lens-roles.html title="Venues, festivals &amp; community" ids="role.velocity-production,role.base-arts-coordinator,role.easy-street-producer,role.baaahs-food-director,role.crfw-consultant" tags="arts-administration,grant-administration,event-production,organizing,community,performance,mutual-aid" limit="2" %}
 
     <h2 class="section__title">Skills</h2>
     {% include skill-group.html title="Production" ids="skill.event-production,skill.project-management,skill.budget-management,skill.stakeholder-management,skill.program-design,skill.people-development" key="skill.event-production,skill.project-management,skill.budget-management" %}
@@ -233,9 +237,9 @@ Available for <strong>part- or full-time</strong> work: behavioral-health operat
     {%- endcomment -%}
     {% include lens-projects.html title="Start here" ids="project.sleep-nod-reel-2018" %}
     {% include lens-projects.html title="Made with other artists" ids="project.material-deviation-2018,project.no-one-2018,project.tim-e-2017,project.great-hunger-2017,project.as-you-like-it-2017,project.fuzzy-math-2017,project.rehearsal-13-problems-2016,project.clear-and-sweet-2016,project.bodies-of-water-2016,project.its-a-boy-2015,project.cold-light-day-2014,project.worth-my-salt-2014,project.disagreeable-tale-2014" %}
-    {% include lens-projects.html title="Immersive &amp; events" ids="project.arctic-refuge-2019,project.megatrends-2019,project.windows-111-2019" %}
-    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.melody-nelson-2015,project.work-magic-thinking-2015" %}
+    {% include lens-projects.html title="My own work" ids="project.artpg-2022,project.lesser-evils-2017,project.dogged-2016,project.melody-nelson-2015,project.work-magic-thinking-2015" %}
     {% include lens-projects.html title="Music" ids="project.responsibilities-2025,project.whyers-2022,project.talking-to-myself-2022" %}
+    {% include lens-projects.html title="Writing" ids="project.still-becoming,project.desert-mode" %}
   </section>
 
   </div>

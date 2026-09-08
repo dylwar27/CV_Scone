@@ -57,8 +57,6 @@
   tags: [programming, self-directed]
   audience: [tech, general]
   status: active
-  notes: "Confirm whether to include on clinical-audience CVs."
-
 - id: edu.pmp
   institution: "Project Management Institute (PMI)"
   type: certificate

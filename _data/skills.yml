@@ -83,8 +83,6 @@
   audience: [clinical, academic]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-06-02. Familiar with SOAP, DAP, and PIRP progress-note formats, closing summaries, and treatment planning."
-
 - id: skill.clinical-assessments
   name: "Clinical Assessment Instruments (AOA-07 Domains, SDOH, ACE)"
   category: technical
@@ -94,8 +92,6 @@
   audience: [clinical, academic]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-06-02. Familiar with AOA-07 Domains, SDOH, and ACE assessments (also ANSA, MSE per intake bullet)."
-
 - id: skill.crisis-communication
   name: "Crisis-Aware Communication"
   category: technical
@@ -120,8 +116,8 @@
   name: "Program Design"
   category: leadership
   proficiency: proficient
-  last_used: 2026-05
-  evidence: [role.prc-baker-intake, role.baaahs-harm-reduction, bullet.prc-group-programming, bullet.baaahs-hr-program-design]
+  last_used: 2026-09
+  evidence: [role.prc-baker-intake, role.baaahs-harm-reduction, bullet.prc-group-programming, bullet.baaahs-hr-program-design, bullet.crfw-content-policy]
   audience: [clinical, nonprofit, art-grant]
   visibility: public
   status: active
@@ -132,8 +128,8 @@
   name: "Project Management (PMP)"
   category: leadership
   proficiency: expert
-  last_used: 2026-05
-  evidence: [role.edelman-spm, role.future-colossal-cpm, role.jump450-spm, bullet.edelman-sow-scoping, bullet.jump450-pmo]
+  last_used: 2026-09
+  evidence: [role.edelman-spm, role.future-colossal-cpm, role.jump450-spm, bullet.edelman-sow-scoping, bullet.jump450-pmo, role.crfw-archive-lead, bullet.crfw-program-ops, bullet.crfw-scope-reduction, bullet.crfw-custody-plan]
   audience: [tech, exec, nonprofit]
   visibility: public
   status: active
@@ -162,8 +158,8 @@
   name: "Stakeholder Management"
   category: leadership
   proficiency: expert
-  last_used: 2022-12
-  evidence: [role.edelman-spm, role.future-colossal-cpm, bullet.edelman-sow-scoping, bullet.fc-sow-management]
+  last_used: 2026-09
+  evidence: [role.edelman-spm, role.future-colossal-cpm, bullet.edelman-sow-scoping, bullet.fc-sow-management, role.crfw-archive-lead, bullet.crfw-stakeholder-family]
   audience: [exec, tech, leadership]
   visibility: public
   status: active
@@ -172,8 +168,8 @@
   name: "Process Improvement & Documentation"
   category: technical
   proficiency: expert
-  last_used: 2026-05
-  evidence: [role.jump450-spm, role.prc-baker-intake, bullet.prc-bed-utilization, bullet.jump450-pmo, bullet.jump450-automation]
+  last_used: 2026-09
+  evidence: [role.jump450-spm, role.prc-baker-intake, bullet.prc-bed-utilization, bullet.jump450-pmo, bullet.jump450-automation, role.crfw-archive-lead, bullet.crfw-quarantine-provenance, bullet.crfw-program-ops]
   audience: [tech, exec, clinical, nonprofit]
   visibility: public
   status: active
@@ -182,21 +178,11 @@
   name: "Data Analysis & Reporting (Access, Excel, Tableau, Airtable)"
   category: technical
   proficiency: proficient
-  last_used: 2025-11
-  evidence: [role.edelman-spm, role.jump450-spm, role.cafe-suspiro-biz-dev, role.prc-baker-intake, bullet.edelman-margin-improvement, bullet.jump450-analytics-report, bullet.prc-digital-workflow, bullet.prc-capacity-forecast, bullet.jump450-dashboard-migration]
+  last_used: 2026-09
+  evidence: [role.edelman-spm, role.jump450-spm, role.cafe-suspiro-biz-dev, role.prc-baker-intake, bullet.edelman-margin-improvement, bullet.jump450-analytics-report, bullet.prc-digital-workflow, bullet.prc-capacity-forecast, bullet.jump450-dashboard-migration, bullet.crfw-archive-manifest]
   audience: [tech, exec, clinical, civic]
   visibility: public
   status: active
-  source: >
-    Renamed 2026-09-01. Was "Data Analysis (SQL, R, Tableau)". SQL and R were dropped from
-    the label because neither survives follow-up: the SQL was composed through the Microsoft
-    Access query builder and validated by reading the generated query back against intent,
-    not hand-authored, and R is Google Data Analytics coursework with no work evidence.
-    The honest ceiling, stated by Dyl 2026-08-31: specified the logic, read queries back to
-    verify them, did not write the SQL text. Anthropic reqs a19/a20 require "SQL and/or data
-    analysis tools" - the Tableau/Access/Airtable evidence satisfies that without an SQL claim.
-    DYL TO CONFIRM this removal.
-
 - id: skill.microsoft-365
   name: "Microsoft 365 (Excel, Teams, Office Suite, Forms)"
   category: tool
@@ -206,8 +192,6 @@
   audience: [clinical, nonprofit, exec, tech]
   visibility: public
   status: active
-  source: "Evidence extended 2026-08-25 (Ophelia interview). Functions Dyl names: SUMIF, COUNTIF, INDEX/MATCH, VLOOKUP, pivot tables — used in combination; checksum tabs for self-checking trackers."
-
 - id: skill.clinical-data-translation
   name: "Clinician–Data Translation"
   category: leadership
@@ -217,16 +201,6 @@
   audience: [clinical, tech, product, exec, nonprofit, civic]
   visibility: public
   status: draft
-  source: >
-    Ophelia interview 2026-08-25. Dyl's framing: clinicians aren't trained in data —
-    the language used to describe it assumes query fluency they don't have, so they
-    need extra time and attention to provide data in a queryable form. Engineers
-    aren't trained to discuss sensitive topics with clinicians, who use vagueness on
-    purpose to protect clients (the client is their first priority). So the data side
-    has to learn to ask questions clinicians can feel comfortable answering. This is
-    the skill of sitting between the two. Candidate for the assessment-and-co-design
-    positioning; promote once a second piece of evidence outside PRC is logged.
-
 - id: skill.people-development
   name: "People Development & Mentorship"
   category: leadership
@@ -303,8 +277,8 @@
   name: "Arts Administration"
   category: leadership
   proficiency: expert
-  last_used: 2023-12
-  evidence: [role.sleep-nod-producer, role.crfw-consultant, role.base-arts-coordinator, role.velocity-production, bullet.sleep-nod-grants, bullet.crfw-estate-grants]
+  last_used: 2026-09
+  evidence: [role.sleep-nod-producer, role.crfw-consultant, role.base-arts-coordinator, role.velocity-production, bullet.sleep-nod-grants, bullet.crfw-estate-grants, role.crfw-archive-lead, bullet.crfw-catalog-reconciliation]
   audience: [art-grant, nonprofit, residency]
   visibility: public
   status: active
@@ -328,8 +302,6 @@
   audience: [art-grant, creative, residency]
   visibility: public
   status: active
-  source: "LinkedIn import 2026-06-02 (Adobe Audition listed under Evia / Easy Street)"
-
 # ── Health IT / Compliance (added 2026-08-24, dump session) ───────────────────
 
 - id: skill.epic-superuser
@@ -341,8 +313,6 @@
   audience: [clinical, nonprofit, leadership]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Designated program Epic resource; authored template/SmartPhrase library; built census and utilization reporting; trained clinicians. NOT an Epic build/config analyst — do not claim implementation-team experience."
-
 - id: skill.medical-records-research
   name: "Medical Records Research & Retrieval"
   category: technical
@@ -352,8 +322,6 @@
   audience: [clinical, nonprofit, academic]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Chased 3–5 outside providers per client via Epic pull, Epic messaging, phone, and email; reconstructed incomplete social histories."
-
 - id: skill.billable-documentation
   name: "Billable Documentation & Reimbursement Compliance (Medi-Cal)"
   category: technical
@@ -363,8 +331,6 @@
   audience: [clinical, nonprofit]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Wrote to reimbursement standard, reviewed and corrected others' documentation, fixed what got kicked back. Claims submission itself sat with another team."
-
 - id: skill.hipaa-compliance
   name: "HIPAA & PHI Handling"
   category: technical
@@ -374,28 +340,80 @@
   audience: [clinical, nonprofit, civic]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Formally HIPAA trained; led fax-to-digital migration with IT under HIPAA-compliant controls."
-
 # ── Automation / AI (added 2026-08-24, dump session) ──────────────────────────
 
 - id: skill.workflow-automation
   name: "Workflow Automation & No-Code Integration (Zapier, Airtable, Slack)"
   category: technical
   proficiency: proficient
-  last_used: 2021-07
-  evidence: [role.jump450-spm, bullet.jump450-automation, bullet.jump450-asset-taxonomy, role.ab-scrum, bullet.ab-portfolio-trackers]
+  last_used: 2026-09
+  evidence: [role.jump450-spm, bullet.jump450-automation, bullet.jump450-asset-taxonomy, role.ab-scrum, bullet.ab-portfolio-trackers, role.crfw-archive-lead, bullet.crfw-program-ops]
   audience: [tech, product, exec, leadership]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Built the Wegmans Slack/Zapier/Airtable asset pipeline with a 13-attribute tagging schema, pre-LLM."
-
 - id: skill.ai-llm-systems
   name: "LLM-Assisted System Design"
   category: technical
-  proficiency: working
-  last_used: 2026-08
-  evidence: [project.cv-database]
+  proficiency: proficient
+  last_used: 2026-09
+  evidence: [project.cv-database, role.crfw-archive-lead, bullet.crfw-agent-direction, bullet.crfw-vault-schema]
   audience: [tech, product, general]
   visibility: public
   status: active
-  source: "Confirmed by Dyl 2026-08-24. Designed a structured YAML CV database plus an agent ingest workflow; colleagues have picked up his tools informally. Evidence: project.cv-database."
+# ── Archive / preservation / infrastructure (added 2026-09-02, CRFW ingest) ────
+
+- id: skill.digital-preservation
+  name: "Digital Preservation & Archival Practice"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-09
+  evidence: [role.crfw-archive-lead, bullet.crfw-archive-manifest, bullet.crfw-quarantine-provenance, bullet.crfw-vault-schema, bullet.crfw-catalog-reconciliation, bullet.crfw-video-catalog, bullet.crfw-custody-plan]
+  audience: [tech, product, academic, art-grant, nonprofit]
+  visibility: public
+  status: active
+- id: skill.content-policy-triage
+  name: "Sensitive-Content Policy & Triage"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-09
+  evidence: [role.crfw-archive-lead, bullet.crfw-content-policy, bullet.crfw-voice-memo-triage, bullet.crfw-stakeholder-family]
+  audience: [tech, product, clinical, nonprofit, academic]
+  visibility: public
+  status: active
+- id: skill.cloud-infrastructure
+  name: "Static Site Deployment & Object Storage (Cloudflare Pages, R2, DNS)"
+  category: technical
+  proficiency: working
+  last_used: 2026-09
+  evidence: [role.crfw-archive-lead, bullet.crfw-site-shipped, bullet.crfw-audio-hosting, bullet.crfw-custody-plan, project.cv-database]
+  audience: [tech, product]
+  visibility: public
+  status: active
+- id: skill.agent-direction
+  name: "AI Agent Direction (written protocols, sub-agent fan-out, unattended runs)"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-09
+  evidence: [role.crfw-archive-lead, bullet.crfw-agent-direction, bullet.crfw-voice-memo-triage, bullet.crfw-program-ops, project.cv-database]
+  audience: [tech, product, exec, leadership]
+  visibility: public
+  status: active
+- id: skill.data-modeling
+  name: "Schema Design & Single-Source-of-Truth Data Modeling"
+  category: technical
+  proficiency: proficient
+  last_used: 2026-09
+  evidence: [role.crfw-archive-lead, bullet.crfw-vault-schema, bullet.crfw-archive-manifest, project.cv-database]
+  audience: [tech, product, academic]
+  visibility: public
+  status: active
+# ── DRAFT — voice memo 2026-09-02 ────────────────────────────────────────────
+- id: skill.change-management
+  name: "Change Management"
+  category: leadership
+  proficiency: proficient
+  last_used: 2025-11
+  evidence: [bullet.prc-packet-consolidation, bullet.prc-digital-workflow, bullet.prc-leadership-presentations, bullet.jump450-automation]
+  audience: [clinical, nonprofit, exec, leadership, product, tech]
+  visibility: public
+  status: draft

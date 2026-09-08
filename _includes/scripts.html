@@ -18,8 +18,9 @@
   var buttons = bar.querySelectorAll('button[data-lens]');
   var clickable = document.querySelectorAll('button[data-lens]');
   var panels  = document.querySelectorAll('.lens-panel[data-lens]');
-  // The Arts and Onsite lenses merged 2026-09-02. Old deep links still land.
-  var ALIAS = { onsite: 'arts' };
+  // Old deep links still land: Arts+Onsite merged 2026-09-02; Health IT & Data
+  // folded into Clinical and Teaching cut 2026-09-08.
+  var ALIAS = { onsite: 'arts', digital: 'clinical', teaching: 'all' };
 
   function show(lens, push) {
     var found = false;

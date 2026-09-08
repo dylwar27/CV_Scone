@@ -19,18 +19,10 @@
   audience: [clinical, nonprofit, academic]
   visibility: public
   status: active
-  notes: >
-    Confirmed in interview 2026-06-01. Two phases under one role:
-    (1) Residential Counselor Feb–Aug 2024, also acting Assistant Director of the house;
-    (2) Intake Specialist Aug 2024–Nov 2025 across 4 houses (~32–48 intakes/mo total).
-    Role ended Nov 2025 when Dyl went on medical leave to recover from illness.
-    Tools: Epic & Avatar EHR, SQL (maintained/extended an existing DB), Microsoft Excel,
-    Microsoft Teams, Microsoft 365 / Office suite, online forms, website edits.
-    Treatment plans co-signed by supervising LMFT (confirmed 2026-06-01)."
-
 - id: role.baaahs-harm-reduction
   title: "Harm Reduction Program Lead"
   org: "Independent — multiple festivals (incl. BAAAHS)"
+  url: "https://baaahs.org"
   aliases: ["Harm Reduction Volunteer", "Harm Reduction Program Lead / Advisor", "BAAAHS Harm Reduction"]
   location: "San Francisco, CA / festival sites"
   type: volunteer
@@ -41,21 +33,6 @@
   audience: [clinical, nonprofit, art-grant]
   visibility: public
   status: active
-  notes: >
-    Confirmed in interview 2026-06-01. Reframed from BAAAHS-specific 'Program Lead'
-    to a multi-festival harm-reduction practice (~1x/year across festivals).
-    TITLE SET 2026-09-01 by Dyl: "Harm Reduction Program Lead" in BOTH the résumé and
-    LinkedIn. He designed the program and trained the rangers, so Lead is the accurate
-    word; the two documents had disagreed and a recruiter comparing them would have seen it.
-    BAAAHS is the flagship event where Dyl designed the HR program and trained 3 rangers;
-    currently serving in a frontline ranger capacity. Events run ~200–800 attendees.
-    Volunteer role with clinical scope. Linked (not merged) with role.lifelong-outreach
-    to evidence multi-year harm-reduction breadth. Co-occurs under MD/LMFT observation
-    for in-scope crisis response.
-    2026-08-25 (Ophelia interview): led the program at one festival run; volunteered
-    on three other festivals' harm-reduction teams; assisted in psychiatric and
-    medical crises."
-
 - id: role.lifelong-outreach
   title: "Onsite Outreach & Care Coordinator"
   org: "Lifelong AIDS Alliance"
@@ -69,8 +46,6 @@
   audience: [clinical, nonprofit]
   visibility: public
   status: active
-  notes: "MH CV lists as paid; Living CV has a parallel 'Volunteer' entry for the same org/period. Likely started volunteer then became paid. Confirm."
-
 # ── Arts / Production ─────────────────────────────────────────────────────────
 
 - id: role.sleep-nod-producer
@@ -82,15 +57,19 @@
   start: 2009-01
   end: present
   industry: [arts, nonprofit, media]
+  artifacts:
+    - label: "Seattle Channel Art Zone — rehearsal segment on Dylan Ward"
+      url: "https://www.seattlechannel.org/ArtZone/segments?videoid=x53858"
+    - label: "SeattleDances — coverage of the work"
+      url: "https://seattledances.com/tag/dylan-ward/"
   tags: [arts-administration, grant-administration, event-production, video-direction, documentary, performance]
   audience: [art-grant, creative, residency, nonprofit]
   visibility: public
   status: active
-  notes: "Umbrella role for all freelance arts/production work. Ran concurrently with other jobs."
-
 - id: role.evia-producer
   title: "Producer"
   org: "Evia Events"
+  url: "https://www.eviaevents.com"
   location: "Seattle, WA"
   type: full-time
   start: 2016-07
@@ -100,8 +79,6 @@
   audience: [creative, nonprofit, exec]
   visibility: public
   status: active
-  notes: "Major clients: Microsoft Ignite, AWS ReInvent. Led large video production teams."
-
 - id: role.easy-street-producer
   title: "Event Producer and Barista"
   org: "Easy Street Records and Cafe"
@@ -115,8 +92,6 @@
   audience: [art-grant, creative]
   visibility: public
   status: active
-  notes: "Long-running concurrent role. Mix of event production and cafe service."
-
 # ── Business / Project Management ─────────────────────────────────────────────
 
 - id: role.future-colossal-cpm
@@ -137,8 +112,6 @@
   audience: [creative, exec, tech]
   visibility: public
   status: active
-  notes: "Clients: Do Something Strategic, Netflix, EY. Produced Arctic Refuge, Megatrends, Windows 1.11."
-
 - id: role.edelman-spm
   title: "Senior Project Manager"
   org: "Edelman DxI"
@@ -152,8 +125,6 @@
   audience: [exec, tech, leadership]
   visibility: public
   status: active
-  notes: "Clients: Melissa and Doug, Citigroup, Starbucks, McKinsey. SOWs up to $2.2M."
-
 - id: role.ab-scrum
   title: "Scrum Master (Consultant)"
   org: "Anheuser-Busch"
@@ -170,16 +141,10 @@
   audience: [tech, exec]
   visibility: public
   status: active
-  notes: >
-    Enriched from voice memo 2026-06-02. Scrum transition for the Beyond Beer
-    division (non-beer brands incl. MD 20/20, wine, malt). Tools: Microsoft Project,
-    Azure DevOps. Outcomes: 12 brand teams → 1 unit; 7 routines → 3; coordination
-    ~3 days → <24h. Confirmed 2026-06-02: all 12 brand teams were within the
-    Beyond Beer division.
-
 - id: role.jump450-spm
   title: "Senior Project Manager"
   org: "Jump450 Media"
+  url: "https://jump450.com"
   location: "New York, NY"
   type: full-time
   start: 2020-03
@@ -194,28 +159,23 @@
   audience: [tech, exec]
   visibility: public
   status: active
-  notes: "Clients: Wegmans, Monro Auto. Founded PMO with SPMs and CCO."
-
 - id: role.cafe-suspiro-biz-dev
   title: "Business Development Consultant"
   aliases: ["Business Analyst & Barista"]
   org: "Cafe Suspiro"
+  url: "https://cafesuspiro.com"
   location: "San Francisco, CA"
   type: contract
   start: 2023-09
   end: 2024-02
   industry: [hospitality, small-business]
+  artifacts:
+    - label: "Daily Coffee News — Café Suspiro profile"
+      url: "https://dailycoffeenews.com/2022/12/13/cafe-suspiro-strikes-a-familiar-chord-in-san-francisco-with-coffee-records-and-books/"
   tags: [data-analysis, budget-management, process-improvement]
   audience: [exec, nonprofit]
   visibility: public
   status: active
-  notes: >
-    Enriched from voice memo 2026-06-02. Self-initiated: Dyl was working as a
-    barista after moving to San Francisco and proactively ran a business-development
-    analysis for the owner — a sales-trend (Pareto-style) analysis over the year plus
-    an item-level profitability report, with a mix-shift recommendation to push
-    profit margin from ~40% toward 60%.
-
 # ── Volunteer ─────────────────────────────────────────────────────────────────
 
 - id: role.baaahs-food-director
@@ -231,11 +191,10 @@
   audience: [art-grant, nonprofit, creative]
   visibility: public
   status: active
-  notes: "Two BAAAHS events: fundraiser in SF (750 attendees, $14k raised) and Wild Inclinations campout in Mendocino."
-
 - id: role.crfw-consultant
   title: "Family Consultant"
   org: "CRFW (Colin Richard Ferguson Ward) Fund"
+  url: "https://crfw.place"
   location: "Denver, CO"
   type: volunteer
   start: 2018-01
@@ -245,16 +204,18 @@
   audience: [art-grant, nonprofit]
   visibility: public
   status: active
-  notes: "CRFW is Dyl's family; advising the use of an artistic estate. Sensitive — confirm visibility."
-
 - id: role.base-arts-coordinator
   title: "Volunteer Event and Workshop Coordinator"
   org: "BASE Art Space"
+  url: "https://thisisbase.org"
   location: "Seattle, WA"
   type: volunteer
   start: 2016-01
   end: 2017-01
   industry: [arts, nonprofit]
+  artifacts:
+    - label: "SeattleDances — Base opens in Georgetown (first resident artist)"
+      url: "https://seattledances.com/2016/08/base-new-dance-space-arrives-in-georgetown/"
   tags: [event-production, community, arts-administration, organizing]
   audience: [art-grant, nonprofit, residency]
   visibility: public
@@ -270,5 +231,19 @@
   industry: [arts, nonprofit, dance]
   tags: [event-production, documentary, video-direction, arts-administration, community]
   audience: [art-grant, nonprofit, residency]
+  visibility: public
+  status: active
+- id: role.crfw-archive-lead
+  title: "Project Lead & Digital Archivist"
+  org: "CRFW Archive"
+  url: "https://crfw.place"
+  org_url: "https://crfw.place"
+  location: "San Francisco, CA / Denver, CO"
+  type: volunteer
+  start: 2026-04
+  end: present
+  industry: [arts, nonprofit, archives, technology]
+  tags: [digital-preservation, trust-and-safety, infrastructure, agent-direction, arts-administration, stakeholder-management, project-management, programming]
+  audience: [tech, product, clinical, art-grant, creative, bio, about-page, nonprofit]
   visibility: public
   status: active

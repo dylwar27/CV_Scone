@@ -36,8 +36,25 @@ mkdir -p "$DEST"
 
 for f in "${PUBLIC_FILES[@]}"; do
   if [ -f "$SRC/$f" ]; then
-    cp "$SRC/$f" "$DEST/$f"
-    echo "synced  $f"
+    # Strip editorial / private fields that never render (notes, source, star).
+    # 2026-09-08: roles.yml carries a SENSITIVE `notes:` on role.crfw-archive-lead
+    # and this repo is public. Text-level so the source file's comments survive.
+    python3 - "$SRC/$f" "$DEST/$f" <<'PY'
+import re, sys
+src, dst = sys.argv[1], sys.argv[2]
+out, skipping = [], False
+for line in open(src, encoding="utf-8"):
+    if re.match(r"^  (notes|source|star):", line):
+        skipping = True
+        continue
+    if skipping:
+        if line.startswith("    ") or line.strip() == "":
+            continue
+        skipping = False
+    out.append(line)
+open(dst, "w", encoding="utf-8").write("".join(out))
+PY
+    echo "synced  $f (editorial fields stripped)"
   else
     echo "WARN: $SRC/$f missing, skipped" >&2
   fi
