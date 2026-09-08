@@ -46,14 +46,14 @@
 - id: edu.ggu-cs
   institution: "Golden Gate University (via Outlier)"
   type: course
-  credential: "A.S., Applied Computer Science (in progress / paused)"
+  credential: "Applied Computer Science coursework (not enrolled)"
   field: "Applied Computer Science"
   start: 2024-01
-  end: ongoing
+  end: 2024-12
   location: "San Francisco, CA"
   honors: []
   highlights:
-    - "Paused after determining clinical path was higher motivation."
+    - "Coursework only; not enrolled in a degree programme."
   tags: [programming, self-directed]
   audience: [tech, general]
   status: draft

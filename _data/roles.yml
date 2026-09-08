@@ -21,7 +21,7 @@
   status: active
 - id: role.baaahs-harm-reduction
   title: "Harm Reduction Program Lead"
-  org: "Independent — multiple festivals (incl. BAAAHS)"
+  org: "BAAAHS and related events"
   url: "https://baaahs.org"
   aliases: ["Harm Reduction Volunteer", "Harm Reduction Program Lead / Advisor", "BAAAHS Harm Reduction"]
   location: "San Francisco, CA / festival sites"
@@ -38,7 +38,7 @@
   org: "Lifelong AIDS Alliance"
   url: "https://www.lifelong.org"
   location: "Seattle, WA"
-  type: part-time
+  type: volunteer
   start: 2007-01
   end: 2012-01
   industry: [nonprofit, public-health]
@@ -73,7 +73,7 @@
   location: "Seattle, WA"
   type: full-time
   start: 2016-07
-  end: 2019-11
+  end: 2018-12
   industry: [events, media]
   tags: [event-production, video-direction, documentary, leadership, project-management]
   audience: [creative, nonprofit, exec]
