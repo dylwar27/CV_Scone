@@ -569,9 +569,10 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 }
 
 // On a phone the 23 press/project pills were 31px tall in tight rows — the last
-// tap target under 44px (site-qa run 11, 2026-09-04). Phone only; desktop keeps
-// the compact pills.
-@media (max-width: 45.99rem) {
+// tap target under 44px (site-qa run 11, 2026-09-04). Phones, plus any wider
+// touch screen such as a tablet (run 21, 2026-10-12); mouse desktops keep the
+// compact pills.
+@media (max-width: 45.99rem), (pointer: coarse) {
   .links { gap: .5rem; }
   .link-pill {
     display: inline-flex;
