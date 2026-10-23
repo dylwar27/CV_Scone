@@ -11,12 +11,18 @@
   "@type": "Person",
   "name": {{ p.name | jsonify }},
   "url": {{ site.url | append: "/" | jsonify }},
+  "jobTitle": "Counselor in Training (MHRS) and Project Manager (PMP)",
+  "description": {{ site.description | jsonify }},
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Palo Alto University" },
+    { "@type": "CollegeOrUniversity", "name": "University of Washington" }
+  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": {{ p.location.city | jsonify }},
     "addressRegion": {{ p.location.region | jsonify }},
     "addressCountry": {{ p.location.country | jsonify }}
   },
-  "sameAs": [{{ site.linkedin_url | jsonify }}]
+  "sameAs": [{{ site.linkedin_url | jsonify }}, "https://vimeo.com/dfw", "https://github.com/dylwar27"]
 }
 </script>

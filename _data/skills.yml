@@ -5,17 +5,17 @@
 # ── Clinical ──────────────────────────────────────────────────────────────────
 
 - id: skill.clinical-intake
-  name: "Clinical Intake & Assessment"
+  name: "Intake"  # was "Clinical Intake & Assessment" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
-  evidence: [role.prc-baker-intake, bullet.prc-referral-intake, bullet.prc-bed-utilization]
+  evidence: [role.prc-baker-intake, bullet.prc-referral-intake, bullet.prc-bed-utilization, role.pau-sgic-trainee, bullet.sgic-intake-assessment]
   audience: [clinical, academic]
   visibility: public
   status: active
 
 - id: skill.harm-reduction
-  name: "Harm Reduction Practice"
+  name: "Harm reduction"  # was "Harm Reduction Practice" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: expert
   last_used: 2026-05
@@ -25,7 +25,7 @@
   status: active
 
 - id: skill.overdose-response
-  name: "Overdose Response (Naloxone)"
+  name: "Naloxone"  # was "Overdose Response (Naloxone)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
@@ -35,7 +35,7 @@
   status: active
 
 - id: skill.group-facilitation
-  name: "Group Facilitation"
+  name: "Group facilitation"  # was "Group Facilitation" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: proficient
   last_used: 2026-05
@@ -45,7 +45,7 @@
   status: active
 
 - id: skill.case-management
-  name: "Case Management & Care Coordination"
+  name: "Case management"  # was "Case Management & Care Coordination" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
@@ -55,7 +55,7 @@
   status: active
 
 - id: skill.community-outreach
-  name: "Community & Street-Based Outreach"
+  name: "Outreach"  # was "Community & Street-Based Outreach" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2023-09
@@ -65,35 +65,44 @@
   status: active
 
 - id: skill.clinical-documentation
-  name: "Clinical Documentation (Epic, Avatar)"
+  name: "Clinical documentation"  # was "Clinical Documentation (Epic, Avatar)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
-  evidence: [role.prc-baker-intake, bullet.prc-epic-documentation, bullet.prc-treatment-plans]
+  evidence: [role.prc-baker-intake, bullet.prc-epic-documentation, bullet.prc-treatment-plans, role.pau-sgic-trainee, bullet.sgic-progress-notes]
   audience: [clinical]
   visibility: public
   status: active
 
 - id: skill.clinical-note-formats
-  name: "Clinical Note Formats & Documentation Frameworks (SOAP, DAP, PIRP)"
+  name: "SOAP, DAP, PIRP notes"  # was "Clinical Note Formats & Documentation Frameworks (SOAP, DAP, PIRP)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
-  evidence: [role.prc-baker-intake, bullet.prc-treatment-plans, bullet.prc-epic-documentation, bullet.prc-note-systems]
+  evidence: [role.prc-baker-intake, bullet.prc-treatment-plans, bullet.prc-epic-documentation, bullet.prc-note-systems, bullet.sgic-progress-notes]
   audience: [clinical, academic]
   visibility: public
   status: active
 - id: skill.clinical-assessments
-  name: "Clinical Assessment Instruments (AOA-07 Domains, SDOH, ACE)"
+  name: "Assessment (AOA-07, ANSA, SDOH, ACE)"  # was "Clinical Assessment Instruments (AOA-07 Domains, SDOH, ACE)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
-  last_used: 2026-05
-  evidence: [role.prc-baker-intake, bullet.prc-referral-intake]
+  last_used: 2026-10
+  evidence: [role.prc-baker-intake, bullet.prc-referral-intake, role.pau-sgic-trainee, bullet.sgic-intake-assessment]
+  audience: [clinical, academic]
+  visibility: public
+  status: active
+- id: skill.act
+  name: "Acceptance and Commitment Therapy (ACT)"
+  category: technical
+  proficiency: novice
+  last_used: 2026-10
+  evidence: [role.pau-sgic-trainee, bullet.sgic-act-training, bullet.sgic-individual-therapy]
   audience: [clinical, academic]
   visibility: public
   status: active
 - id: skill.crisis-communication
-  name: "Crisis-Aware Communication"
+  name: "Crisis communication"  # was "Crisis-Aware Communication" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: working
   last_used: 2026-05
@@ -103,7 +112,7 @@
   status: active
 
 - id: skill.psychoeducation
-  name: "Psychoeducation & Group Programming"
+  name: "Psychoeducation"  # was "Psychoeducation & Group Programming" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-05
@@ -113,7 +122,7 @@
   status: active
 
 - id: skill.program-design
-  name: "Program Design"
+  name: "Program design"  # was "Program Design" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: proficient
   last_used: 2026-09
@@ -125,7 +134,7 @@
 # ── Project Management / Business ─────────────────────────────────────────────
 
 - id: skill.project-management
-  name: "Project Management (PMP)"
+  name: "Project management (PMP)"  # was "Project Management (PMP)" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: expert
   last_used: 2026-09
@@ -145,7 +154,7 @@
   status: active
 
 - id: skill.budget-management
-  name: "Budget Management"
+  name: "Budgets"  # was "Budget Management" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: proficient
   last_used: 2022-12
@@ -155,7 +164,7 @@
   status: active
 
 - id: skill.stakeholder-management
-  name: "Stakeholder Management"
+  name: "Stakeholder management"  # was "Stakeholder Management" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: expert
   last_used: 2026-09
@@ -165,7 +174,7 @@
   status: active
 
 - id: skill.process-improvement
-  name: "Process Improvement & Documentation"
+  name: "Process improvement"  # was "Process Improvement & Documentation" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: expert
   last_used: 2026-09
@@ -175,7 +184,7 @@
   status: active
 
 - id: skill.data-analysis
-  name: "Data Analysis & Reporting (Access, Excel, Tableau, Airtable)"
+  name: "Reporting"  # was "Data Analysis & Reporting (Access, Excel, Tableau, Airtable)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-09
@@ -184,7 +193,7 @@
   visibility: public
   status: active
 - id: skill.microsoft-365
-  name: "Microsoft 365 (Excel, Teams, Office Suite, Forms)"
+  name: "Excel, Teams, Forms"  # was "Microsoft 365 (Excel, Teams, Office Suite, Forms)" — one idea per chip, 2026-10-22 site register pass
   category: tool
   proficiency: proficient
   last_used: 2025-11
@@ -202,7 +211,7 @@
   visibility: public
   status: draft
 - id: skill.people-development
-  name: "People Development & Mentorship"
+  name: "Mentorship"  # was "People Development & Mentorship" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: proficient
   last_used: 2022-12
@@ -212,7 +221,7 @@
   status: active
 
 - id: skill.pm-tooling
-  name: "Project & Work Management Tools (Jira, Monday.com, Trello, TeamGantt, MS Project, Azure DevOps)"
+  name: "Jira, Monday.com, Azure DevOps, MS Project"  # was "Project & Work Management Tools (Jira, Monday.com, Trello, TeamGantt, MS Project, Azure DevOps)" — one idea per chip, 2026-10-22 site register pass
   category: tool
   proficiency: expert
   last_used: 2022-12
@@ -222,7 +231,7 @@
   status: active
 
 - id: skill.martech-analytics
-  name: "Marketing & Analytics Stack (Tableau, Google Ads, Domo, Airtable, Zapier, Slack)"
+  name: "Tableau, Google Ads, Domo"  # was "Marketing & Analytics Stack (Tableau, Google Ads, Domo, Airtable, Zapier, Slack)" — one idea per chip, 2026-10-22 site register pass
   category: tool
   proficiency: proficient
   last_used: 2022-12
@@ -234,7 +243,7 @@
 # ── Arts / Production ─────────────────────────────────────────────────────────
 
 - id: skill.event-production
-  name: "Event Production"
+  name: "Event production"  # was "Event Production" — one idea per chip, 2026-10-22 site register pass
   category: creative
   proficiency: expert
   last_used: 2023-12
@@ -244,7 +253,7 @@
   status: active
 
 - id: skill.video-production
-  name: "Video Direction & Documentary Production"
+  name: "Video direction"  # was "Video Direction & Documentary Production" — one idea per chip, 2026-10-22 site register pass
   category: creative
   proficiency: expert
   last_used: 2023-01
@@ -254,7 +263,7 @@
   status: active
 
 - id: skill.sound-design
-  name: "Sound Design & Composition"
+  name: "Sound design"  # was "Sound Design & Composition" — one idea per chip, 2026-10-22 site register pass
   category: creative
   proficiency: expert
   last_used: 2022-12
@@ -274,7 +283,7 @@
   status: active
 
 - id: skill.arts-administration
-  name: "Arts Administration"
+  name: "Arts administration"  # was "Arts Administration" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: expert
   last_used: 2026-09
@@ -284,7 +293,7 @@
   status: active
 
 - id: skill.grant-administration
-  name: "Grant Administration"
+  name: "Grant administration"  # was "Grant Administration" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2023-01
@@ -294,7 +303,7 @@
   status: active
 
 - id: skill.adobe-creative-suite
-  name: "Adobe Creative Suite (incl. Audition)"
+  name: "Adobe Audition, Creative Suite"  # was "Adobe Creative Suite (incl. Audition)" — one idea per chip, 2026-10-22 site register pass
   category: tool
   proficiency: proficient
   last_used: 2019-11
@@ -305,7 +314,7 @@
 # ── Health IT / Compliance (added 2026-08-24, dump session) ───────────────────
 
 - id: skill.epic-superuser
-  name: "Epic Superuser & Clinical Template Design"
+  name: "Epic superuser"  # was "Epic Superuser & Clinical Template Design" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2025-11
@@ -314,7 +323,7 @@
   visibility: public
   status: active
 - id: skill.medical-records-research
-  name: "Medical Records Research & Retrieval"
+  name: "Records research"  # was "Medical Records Research & Retrieval" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2025-11
@@ -323,7 +332,7 @@
   visibility: public
   status: active
 - id: skill.billable-documentation
-  name: "Billable Documentation & Reimbursement Compliance (Medi-Cal)"
+  name: "Medi-Cal documentation compliance"  # was "Billable Documentation & Reimbursement Compliance (Medi-Cal)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2025-11
@@ -332,7 +341,7 @@
   visibility: public
   status: active
 - id: skill.hipaa-compliance
-  name: "HIPAA & PHI Handling"
+  name: "HIPAA"  # was "HIPAA & PHI Handling" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2025-11
@@ -343,7 +352,7 @@
 # ── Automation / AI (added 2026-08-24, dump session) ──────────────────────────
 
 - id: skill.workflow-automation
-  name: "Workflow Automation & No-Code Integration (Zapier, Airtable, Slack)"
+  name: "Zapier, Airtable, Slack"  # was "Workflow Automation & No-Code Integration (Zapier, Airtable, Slack)" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-09
@@ -352,7 +361,7 @@
   visibility: public
   status: active
 - id: skill.ai-llm-systems
-  name: "LLM-Assisted System Design"
+  name: "AI agent direction"  # was "LLM-Assisted System Design" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-09
@@ -372,7 +381,7 @@
   visibility: public
   status: active
 - id: skill.content-policy-triage
-  name: "Sensitive-Content Policy & Triage"
+  name: "Content policy"  # was "Sensitive-Content Policy & Triage" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-09
@@ -399,7 +408,7 @@
   visibility: public
   status: active
 - id: skill.data-modeling
-  name: "Schema Design & Single-Source-of-Truth Data Modeling"
+  name: "Data modeling"  # was "Schema Design & Single-Source-of-Truth Data Modeling" — one idea per chip, 2026-10-22 site register pass
   category: technical
   proficiency: proficient
   last_used: 2026-09
@@ -409,7 +418,7 @@
   status: active
 # ── DRAFT — voice memo 2026-09-02 ────────────────────────────────────────────
 - id: skill.change-management
-  name: "Change Management"
+  name: "Change management"  # was "Change Management" — one idea per chip, 2026-10-22 site register pass
   category: leadership
   proficiency: proficient
   last_used: 2025-11

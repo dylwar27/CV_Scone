@@ -13,14 +13,15 @@
 (function () {
   var bar = document.querySelector('[data-lensbar]');
   if (!bar) return;
-  // Sidebar buttons carry the pressed state; the start-panel menu buttons are
-  // wired to the same handler so the menu is a real way in, not decoration.
+  // Three tabs, three panels (2026-10-22). The start menu and the All panel
+  // are gone; the page lands on Clinical.
   var buttons = bar.querySelectorAll('button[data-lens]');
   var clickable = document.querySelectorAll('button[data-lens]');
   var panels  = document.querySelectorAll('.lens-panel[data-lens]');
   // Old deep links still land: Arts+Onsite merged 2026-09-02; Health IT & Data
-  // folded into Clinical and Teaching cut 2026-09-08.
-  var ALIAS = { onsite: 'arts', digital: 'clinical', teaching: 'all' };
+  // folded into Clinical and Teaching cut 2026-09-08; All cut 2026-10-22.
+  var ALIAS = { onsite: 'arts', digital: 'clinical', teaching: 'clinical', all: 'clinical' };
+  var DEFAULT = 'clinical';
 
   function show(lens, push) {
     var found = false;
@@ -42,7 +43,7 @@
       if (layout && layout.getBoundingClientRect().top < 0) layout.scrollIntoView();
     }
     if (push && history.replaceState) {
-      history.replaceState(null, '', lens === 'start' ? location.pathname : '#view-' + lens);
+      history.replaceState(null, '', '#view-' + lens);
     }
     return true;
   }
@@ -56,6 +57,6 @@
   // Deep link: /#view-clinical opens straight into that lens.
   var m = location.hash.match(/^#view-([a-z]+)$/);
   var want = m ? (ALIAS[m[1]] || m[1]) : null;
-  if (!want || !show(want, false)) show('start', false);
+  if (!want || !show(want, false)) show(DEFAULT, false);
 })();
 </script>

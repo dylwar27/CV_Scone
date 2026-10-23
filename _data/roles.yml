@@ -6,6 +6,21 @@
 
 # ── Clinical / Behavioral Health ──────────────────────────────────────────────
 
+- id: role.pau-sgic-trainee
+  title: "MFT Trainee"
+  org: "Sexual and Gender Identities Clinic (SGIC), Palo Alto University"
+  aliases: ["Marriage and Family Therapist Trainee", "Unlicensed Marriage and Family Therapist Trainee", "SGIC practicum"]
+  url: "https://paloaltou.edu/sexual-and-gender-identities-clinic"
+  location: "Mountain View, CA"
+  type: practicum
+  start: 2026-09
+  end: present
+  industry: [behavioral-health, academic]
+  supervisors: ["Licensed Psychologist, CA #36631", "Licensed Psychologist, CA #32558"]
+  tags: [intake-assessment, clinical-documentation, queer-competency]
+  audience: [clinical, academic, nonprofit]
+  visibility: public
+  status: active
 - id: role.prc-baker-intake
   title: "Intake Specialist and Residential Counselor"
   org: "PRC Baker Places"
@@ -27,7 +42,7 @@
   location: "San Francisco, CA / festival sites"
   type: volunteer
   start: 2023-01
-  end: present
+  end: 2026-05   # Dyl 2026-10-08: May 2026 is correct "until I take on more". Was `present`. Résumés swept 2026-10-08 (master, alt, Anthropic, PAU, Headway; AI Trainer already had it).
   industry: [nonprofit, arts, public-health]
   tags: [harm-reduction, outreach, psychoeducation, crisis-response, queer-competency, event-production, substance-use, peer-support]
   audience: [clinical, nonprofit, art-grant]
@@ -39,7 +54,7 @@
   url: "https://www.lifelong.org"
   location: "Seattle, WA"
   type: volunteer
-  start: 2007-01
+  start: 2006-08
   end: 2012-01
   industry: [nonprofit, public-health]
   tags: [harm-reduction, outreach, peer-support, case-management, queer-competency, substance-use]

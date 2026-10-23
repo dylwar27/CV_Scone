@@ -1,0 +1,10 @@
+# Dylan Ward
+
+> Counselor in training (MHRS, NPI-registered) and project manager (PMP) in Oakland, CA. Two years running intake at a dual-diagnosis residential program in San Francisco, where I also built the referral workflow, the utilization reporting and the Epic templates the program ran on. Before that, five years of agency project management in New York. M.A. Clinical Mental Health Counseling, Palo Alto University, expected June 2027.
+
+The site has three views of the same record: Clinical (https://dylanward.work/#view-clinical), Agency (https://dylanward.work/#view-agency) and Creative (https://dylanward.work/#view-arts). Every panel is in the HTML; no JavaScript is needed to read it.
+
+- Résumé, one page: https://dylanward.work/assets/Dylan_Ward_Resume.pdf
+- Résumé, plain text: https://dylanward.work/resume.txt
+- Contact: dyl@dylanward.work
+- LinkedIn: https://www.linkedin.com/in/dylwar

@@ -44,8 +44,8 @@
     <ul>
     {%- assign shown = 0 -%}
     {%- for b in role_bullets -%}
-      {%- comment -%} Drafts never render (2026-09-08): unverified voice-memo bullets sync in with status: draft. {%- endcomment -%}
-      {%- if shown < limit and b.status != "draft" -%}
+      {%- comment -%} Drafts never render (2026-09-08): unverified voice-memo bullets sync in with status: draft. Archived never render either (2026-10-22): superseded parents of -v2 entries. {%- endcomment -%}
+      {%- if shown < limit and b.status != "draft" and b.status != "archived" -%}
         {%- if include.tags == nil or include.tags == "" -%}
           {%- assign hit = true -%}
         {%- else -%}

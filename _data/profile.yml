@@ -8,7 +8,7 @@ basics:
   email: "dylanrfw@gmail.com"
   phone: "(415) 238-0307"
   location:
-    city: "San Francisco"
+    city: "Oakland"
     region: "CA"
     country: "US"
   links:
@@ -121,13 +121,14 @@ summaries:
     audience: [clinical, nonprofit, academic]
     length: short
     status: draft
+    source: "Rewritten by Claude 2026-10-22 in the PM-résumé register; not yet Dyl's words. Open: do summary.clinical, summary.general and summary.bio-long still need to exist, or does summary.assessment-codesign with one swapped sentence cover them? Dyl 2026-10-22: idk — stays draft."
+    notes: "Previous text (pre-2026-10-22): Intake specialist and residential counselor at a dual-diagnosis behavioral health facility, currently in graduate study at Palo Alto University (M.A., Clinical Mental Health Counseling, 2027). Registered MHRS with background in harm reduction, case management, group facilitation, and community outreach. Prior career in arts production and corporate project management informs a structured, client-centered approach to behavioral health work."
     text: >
-      Intake specialist and residential counselor at a dual-diagnosis behavioral
-      health facility, currently in graduate study at Palo Alto University (M.A.,
-      Clinical Mental Health Counseling, 2027). Registered MHRS with background in
-      harm reduction, case management, group facilitation, and community outreach.
-      Prior career in arts production and corporate project management informs
-      a structured, client-centered approach to behavioral health work.
+      Counselor in training. Two years running intake at a dual-diagnosis residential
+      program in San Francisco; now an MFT trainee at PAU's Sexual and Gender
+      Identities Clinic. MHRS. Before that, harm reduction outreach in Seattle and
+      five years of agency project management in New York. M.A. in Clinical Mental
+      Health Counseling in progress (Palo Alto University, expected Jun 2027).
 
   - id: summary.art-grant
     audience: [art-grant, residency, creative]
@@ -165,4 +166,4 @@ summaries:
       and produced immersive experiences for Ernst & Young and The Wilderness Society.
       He is currently serializing a novel and grief essay arc on Substack.
 
-      He lives in San Francisco.
+      He lives in Oakland.

@@ -174,7 +174,7 @@
   role: "Director + Producer"
   description: >
     Director and producer of a dance-film residency at Velocity Dance Center,
-    sponsored by the Glen Kawasaki Foundation. Featuring talent from Portland's
+    sponsored by the Glenn Kawasaki Foundation. Featuring talent from Portland's
     Northwest Dance Project and Seattle's Whim W'Him. Premiered at the Dance
     Waves Festival, Nicosia, Cyprus, 2015.
   artifacts:
@@ -220,8 +220,8 @@
   role: "Sound Designer"
   description: >
     Sound score based heavily on Prokofiev's Romeo et Juliette for Whim W'Him,
-    premiering at the Intiman Theater, Seattle. Critically acclaimed; received
-    special mention from Michael Upchurch of The Seattle Times.
+    premiering at the Intiman Theater, Seattle. Special mention from Michael Upchurch
+    in The Seattle Times.
   artifacts:
     - label: "Whim W'Him"
       url: "https://www.whimwhim.org"
@@ -424,7 +424,7 @@
   description: >
     Serialized science-fiction novel centered on the Tougen / Adam / Sebastien
     story arc, ~400k words, published on Substack as Sleep Nod. Chapters 1–7 plus
-    additional episodes; Chapter 6.5 unpublished.
+    additional episodes.
   url: "https://sleepnod.substack.com"
   tags: [writing, time-based-media]
   audience: [bio, creative, art-grant]
@@ -446,17 +446,17 @@
   themes: [resilience, memory, reinvention]
   status: active
 - id: project.cv-database
-  title: "Curriculum Viatae — Structured CV Database & Agent Ingest Pipeline"
+  title: "Curriculum Viatae — CV database"
   type: software
   start: 2026-05
   end: ongoing
   role: "Designer and sole builder"
   description: >
-    A structured YAML database of every role, accomplishment, project, and skill, with a
-    closed tagging vocabulary that lets a résumé be reassembled for any audience. Includes
-    a documented schema, an ingest contract that turns raw documents and spoken notes into
-    draft entries, and a Jekyll site that renders the same database through switchable
-    lenses.
+    A YAML database of every role, project and skill, tagged so a résumé can be assembled
+    for any audience. A schema, an ingest contract that turns documents and voice notes into
+    draft entries, and this site, which renders the database through the views above. I
+    specified, directed and verified the build with AI coding agents rather than writing the
+    code myself.
   url: "https://dylanward.work"
   artifacts:
     - label: "Live CV site"
@@ -677,4 +677,53 @@
   tags: [video-direction, time-based-media, sound-design]
   audience: [art-grant, creative]
   themes: [craft, design]
+  status: active
+
+# ── Added 2026-10-22 (site register pass) ─────────────────────────────────────
+# The two public tools from reference_public_tools, so the site carries proof of
+# work the résumé can point at. Descriptions drafted by Claude from each README;
+# Dyl said "go all" 2026-10-22. No adoption claims (nobody has counted users).
+
+- id: project.pid5-scorer
+  title: "PID-5 Adult scorer"
+  type: software
+  start: 2026-01
+  end: ongoing
+  role: "Designer and sole builder"
+  description: >
+    A free web page that administers the 220-item PID-5 (Adult) and scores it the way the
+    APA manual does: 25 facets, 5 domains, reverse-coded items, proration for missing
+    answers. One file, works offline, stores nothing. Not a diagnosis; results are for a
+    qualified professional to interpret.
+  url: ""  # the link is the "Use it" artifact below; a url here would also render a "Read it" pill
+  artifacts:
+    - label: "Use it"
+      url: "https://dylwar27.github.io/pid5-adult-scorer/"
+    - label: "Source"
+      url: "https://github.com/dylwar27/pid5-adult-scorer"
+  tags: [ai-tooling, programming, intake-assessment, psychoeducation]
+  audience: [clinical, tech, general]
+  themes: [tinkering, craft]
+  status: active
+
+- id: project.influence-genogram
+  title: "Influence genogram"
+  type: software
+  start: 2026-01
+  end: ongoing
+  role: "Designer and sole builder"
+  description: >
+    A free tool for mapping how people, institutions and cultural forces shaped a worldview
+    over time. Built for a class assignment. Keyboard and screen-reader support throughout,
+    a colour-blind-safe palette, and profiles that stay on your own device. Optional writing
+    features run on the user's own Anthropic API key.
+  url: ""  # the link is the "Use it" artifact below; a url here would also render a "Read it" pill
+  artifacts:
+    - label: "Use it"
+      url: "https://dylwar27.github.io/genogram/"
+    - label: "Source"
+      url: "https://github.com/dylwar27/genogram"
+  tags: [ai-tooling, programming, psychoeducation]
+  audience: [clinical, academic, tech, general]
+  themes: [tinkering, craft, curiosity]
   status: active

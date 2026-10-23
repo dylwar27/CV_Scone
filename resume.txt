@@ -1,0 +1,52 @@
+Dylan Ward
+Oakland, CA · dyl@dylanward.work · linkedin.com/in/dylwar · dylanward.work
+
+Counselor in training and digital project manager. Two years running intake at a dual-diagnosis residential program in San Francisco, where I also rebuilt the systems around the job: the referral pipeline, the utilization reporting, and the Epic templates the program ran on. Before that, five years of agency project management in New York. MHRS, NPI-registered, PMP. M.A. in Clinical Mental Health Counseling in progress (Palo Alto University, expected Jun 2027).
+
+EXPERIENCE
+
+MFT Trainee
+Sexual and Gender Identities Clinic, Palo Alto University · Mountain View, CA | Sep 2026 – present
+  - Run intake assessments for new clients using the DASS-21 and OQ-45.
+  - See individual clients for therapy and write the progress note for each session, supervised by two licensed psychologists (CA #36631, #32558).
+  - Train and practice in Acceptance and Commitment Therapy (ACT).
+
+Intake Specialist and Residential Counselor
+PRC Baker Places · San Francisco, CA | Jan 2024 – Nov 2025
+  - Ran intake for four residential houses: 32–48 assessments a month, mostly at jails and hospitals, administering ANSA, AOA-07, SDOH, MSE, and ACE assessments, each written into a treatment plan.
+  - Digitized intake and referral tracking. Average bed utilization rose from 62% to over 78%.
+  - Replaced a fax-based referral process across four houses, partner jails, and SF DPH with a digital workflow — online forms, Teams routing, and the agency's referral database, which I extended to carry it. Placements got 25–50% faster and missed referrals dropped to near zero.
+  - Built the program's utilization reporting: same-day census from Epic, longitudinal trends in Access and Excel, read by agency leadership and SF DPH.
+  - Owned documentation compliance for intake. Turned Medi-Cal medical-necessity rules into criteria and templates clinicians could apply, audited against them, and fixed what failed. No client of mine went unbilled for want of documentation.
+  - Served as the site's Epic resource: wrote its template and SmartPhrase library and trained three clinicians on documentation workflows.
+
+Harm Reduction Program Lead
+BAAAHS and related events · San Francisco, CA / festival sites | Jan 2023 – May 2026
+  - Designed the harm-reduction program for a queer arts community's festivals of 200–800 people, and trained the volunteers who run it.
+
+Senior Project Manager
+Edelman DxI · New York, NY | Nov 2021 – Dec 2022
+  - Found senior-labor utilization running 10–15% over target through actual-versus-expected hour analysis in Edelman's reporting platform and Tableau. My staffing recommendations returned it to target, and margin grew 10% year over year.
+
+Scrum Master (Consultant)
+Anheuser-Busch · New York, NY | Jul 2021 – Nov 2021
+  - Led the Scrum transition for the Beyond Beer division, consolidating twelve brand teams into one operating unit. The data-gathering-to-insight pipeline fell from about three days to under 24 hours.
+  - Trained six teams across the country on agile methodology.
+
+Senior Project Manager
+Jump450 Media · New York, NY | Mar 2020 – Jul 2021
+  - Built a Slack-integrated approval pipeline (Zapier, Airtable) between Wegmans and Jump450. Asset time-to-market fell from 2–3 weeks to 3–4 days, with granular data on each asset's social and digital ad performance.
+
+EARLIER
+  2019–2020 — Creative Project Manager, Future Colossal · New York, NY
+  2016–2019 — Producer, Evia Events · Seattle, WA
+  2009–Present — Arts Producer & Grant Administrator, Self-Employed (Sleep Nod) · USA
+  2006–2012 — Onsite Outreach & Care Coordinator, Lifelong AIDS Alliance · Seattle, WA
+
+EDUCATION & CREDENTIALS
+  M.A., Clinical Mental Health Counseling · Palo Alto University (expected Jun 2027)
+  B.A., Comparative History & Theater Production · University of Washington — Minor in Dance (2013)
+  Mental Health Rehabilitation Specialist (MHRS), CA DHCS · NPI-registered · PMP, Project Management Institute (#3151150) · Google Data Analytics Certificate
+
+SKILLS
+  Clinical Intake & Assessment · Billable Documentation & Reimbursement Compliance (Medi-Cal) · Epic Superuser & Clinical Template Design · HIPAA & PHI Handling · Project Management (PMP) · Agile / Scrum · Data Analysis & Reporting (Access, Excel, Tableau, Airtable) · Workflow Automation & No-Code Integration (Zapier, Airtable, Slack)

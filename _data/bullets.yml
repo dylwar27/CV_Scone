@@ -4,6 +4,51 @@
 # Sources: Dylan Ward MH CV 26.docx, DylanW_CV_living.docx, DW_PersonalStatementv2.docx
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# role.pau-sgic-trainee  (added 2026-10-07)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.sgic-intake-assessment
+  role_id: role.pau-sgic-trainee
+  text: >
+    Run intake assessments for new clients using the DASS-21 and OQ-45.
+  tags: [intake-assessment]
+  skills: [skill.clinical-intake, skill.clinical-assessments]
+  audience: [clinical, academic]
+  themes: [service]
+  verified: true
+  status: active
+- id: bullet.sgic-individual-therapy
+  role_id: role.pau-sgic-trainee
+  text: >
+    See individual clients for therapy, supervised by two licensed psychologists
+    (CA #36631, #32558).
+  tags: [queer-competency]
+  skills: [skill.act]
+  audience: [clinical, academic]
+  themes: [service]
+  verified: true
+  status: active
+- id: bullet.sgic-progress-notes
+  role_id: role.pau-sgic-trainee
+  text: >
+    Write the progress note for each session.
+  tags: [clinical-documentation]
+  skills: [skill.clinical-documentation, skill.clinical-note-formats]
+  audience: [clinical, academic]
+  verified: true
+  status: active
+- id: bullet.sgic-act-training
+  role_id: role.pau-sgic-trainee
+  text: >
+    Train and practice in Acceptance and Commitment Therapy (ACT).
+  tags: []
+  skills: [skill.act]
+  audience: [clinical, academic]
+  themes: [curiosity]
+  verified: true
+  status: active
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # role.prc-baker-intake
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -32,7 +77,21 @@
   themes: [research-to-decision, service]
   metrics: ["3–5 outside providers reconciled per client", "assessment turnaround ~7 days → 24–72 hours"]
   verified: true
+  status: archived  # superseded by bullet.prc-records-research-v2 (2026-10-22 site register pass)
+
+- id: bullet.prc-records-research-v2
+  role_id: role.prc-baker-intake
+  text: >
+    Completed AOA-07 intake assessments from records research: Epic first, then
+    three to five outside providers per client by message, phone and email.
+    Assessment turnaround fell from about seven days to 24–72 hours.
+  tags: [health-it, intake-assessment, case-management, clinical-documentation, process-improvement]
+  skills: [skill.medical-records-research, skill.clinical-assessments, skill.clinical-intake, skill.epic-superuser]
+  audience: [clinical, nonprofit, academic]
+  themes: [research-to-decision, service]
+  metrics: [3–5 outside providers reconciled per client, assessment turnaround ~7 days → 24–72 hours]
   status: active
+
 - id: bullet.prc-digital-workflow
   role_id: role.prc-baker-intake
   text: >
@@ -59,7 +118,22 @@
     - "referral-receipt confirmation: a few business days → a few hours"
     - "missed/dropped referrals: a few per month (fax) → near zero, locatable in minutes not days"
   verified: true
+  status: archived  # superseded by bullet.prc-digital-workflow-v2 (2026-10-22 site register pass)
+
+- id: bullet.prc-digital-workflow-v2
+  role_id: role.prc-baker-intake
+  text: >
+    Built the digital intake workflow: online forms, Teams routing, email and
+    website updates across four houses, partner jails and SF DPH, on top of the
+    agency's referral database, which I extended to carry it. It replaced a fax
+    process.
+  tags: [process-improvement, data-analysis, clinical-documentation, stakeholder-management]
+  skills: [skill.process-improvement, skill.data-analysis, skill.microsoft-365]
+  audience: [clinical, nonprofit, exec, tech]
+  themes: [0-to-1, research-to-decision, scaling]
+  metrics: [client placement 25–50% faster, 'referral-receipt confirmation: a few business days → a few hours', 'missed/dropped referrals: a few per month (fax) → near zero, locatable in minutes not days']
   status: active
+
 - id: bullet.prc-epic-superuser
   role_id: role.prc-baker-intake
   text: >
@@ -99,7 +173,22 @@
   themes: [research-to-decision, 0-to-1]
   metrics: ["4 houses", "length-of-stay buckets at 45 / 90 / 120 days", "daily refresh"]
   verified: true
+  status: archived  # superseded by bullet.prc-capacity-forecast-v2 (2026-10-22 register pass)
+
+- id: bullet.prc-capacity-forecast-v2
+  role_id: role.prc-baker-intake
+  text: >
+    Built the 90-day bed forecast SF DPH used to route clients and track treatment
+    wait times. Stays bucketed at 45, 90, and 120 days so extensions showed before
+    they blocked a bed. Each referral showed which clearances were still missing.
+    Refreshed daily.
+  tags: [health-it, data-analysis, process-improvement, stakeholder-management, intake-assessment]
+  skills: [skill.data-analysis, skill.microsoft-365, skill.process-improvement, skill.clinical-data-translation]
+  audience: [clinical, exec, leadership, nonprofit, civic, tech]
+  themes: [research-to-decision, 0-to-1]
+  metrics: ["4 houses", "length-of-stay buckets at 45 / 90 / 120 days", "daily refresh"]
   status: active
+
 - id: bullet.prc-billable-documentation
   role_id: role.prc-baker-intake
   text: >
@@ -310,7 +399,20 @@
   themes: [harm-reduction, community-building, 0-to-1]
   metrics: ["events ~200–800 attendees"]
   verified: true
+  status: archived  # superseded by bullet.baaahs-hr-program-design-v2 (2026-10-22 site register pass)
+
+- id: bullet.baaahs-hr-program-design-v2
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Designed the harm reduction program for BAAAHS, a queer arts community whose
+    events draw 200–800 people.
+  tags: [harm-reduction, program-design, event-production, outreach]
+  skills: [skill.harm-reduction, skill.program-design]
+  audience: [clinical, nonprofit]
+  themes: [harm-reduction, community-building, 0-to-1]
+  metrics: [events ~200–800 attendees]
   status: active
+
 - id: bullet.baaahs-hr-escalation-protocol
   role_id: role.baaahs-harm-reduction
   text: >
@@ -336,7 +438,19 @@
   themes: [harm-reduction, people-development]
   metrics: ["3 rangers trained"]
   verified: true
+  status: archived  # superseded by bullet.baaahs-hr-volunteer-training-v2 (2026-10-22 site register pass)
+
+- id: bullet.baaahs-hr-volunteer-training-v2
+  role_id: role.baaahs-harm-reduction
+  text: >
+    Trained three volunteer rangers on the protocol in person.
+  tags: [harm-reduction, outreach, leadership, queer-competency]
+  skills: [skill.harm-reduction, skill.group-facilitation]
+  audience: [clinical, nonprofit, art-grant]
+  themes: [harm-reduction, people-development]
+  metrics: [3 rangers trained]
   status: active
+
 - id: bullet.baaahs-hr-scope-boundary
   role_id: role.baaahs-harm-reduction
   text: >
@@ -413,9 +527,9 @@
 - id: bullet.baaahs-hr-breadth
   role_id: role.baaahs-harm-reduction
   text: >
-    Practiced harm reduction for over 15 years across both paid public-health
-    outreach (Lifelong AIDS Alliance, 2007–2012) and volunteer festival contexts
-    (2023–present), spanning substance use, sexual health, psychological first aid,
+    Practiced harm reduction for over 15 years across public-health outreach
+    (Lifelong AIDS Alliance, 2006–2012) and festival harm-reduction teams
+    (2023–2026), spanning substance use, sexual health, psychological first aid,
     and crisis response.
   tags: [harm-reduction, substance-use, peer-support, queer-competency]
   skills: [skill.harm-reduction]
@@ -452,7 +566,21 @@
   themes: [service, community-building, scaling]
   metrics: ["~20–50 contacts/night", "~2,000+ contacts/year", "5 years, 1–2 nights/week"]
   verified: true
+  status: archived  # superseded by bullet.lifelong-venue-outreach-v2 (2026-10-22 site register pass)
+
+- id: bullet.lifelong-venue-outreach-v2
+  role_id: role.lifelong-outreach
+  text: >
+    Ran late-night HIV/STI prevention outreach in Seattle bathhouses and bars, one
+    or two nights a week for five years. Handed out condoms and safer-sex materials
+    and talked with 20–50 men a night.
+  tags: [outreach, harm-reduction, queer-competency, community]
+  skills: [skill.community-outreach, skill.harm-reduction]
+  audience: [clinical, nonprofit]
+  themes: [service, community-building, scaling]
+  metrics: [~20–50 contacts/night, '~2,000+ contacts/year', '5 years, 1–2 nights/week']
   status: active
+
 - id: bullet.lifelong-surveillance-data
   role_id: role.lifelong-outreach
   text: >
@@ -466,7 +594,21 @@
   themes: [research-to-decision, service]
   metrics: ["nightly census of ~20–50/venue", "field data into county MSM surveillance"]
   verified: true
+  status: archived  # superseded by bullet.lifelong-surveillance-data-v2 (2026-10-22 site register pass)
+
+- id: bullet.lifelong-surveillance-data-v2
+  role_id: role.lifelong-outreach
+  text: >
+    Logged a venue census and referral tally every night for Lifelong. The data fed
+    Public Health – Seattle & King County's HIV/STI surveillance and early PrEP
+    recruitment.
+  tags: [outreach, data-analysis, queer-competency, community]
+  skills: [skill.community-outreach]
+  audience: [clinical, nonprofit]
+  themes: [research-to-decision, service]
+  metrics: [nightly census of ~20–50/venue, field data into county MSM surveillance]
   status: active
+
 - id: bullet.lifelong-sti-navigation
   role_id: role.lifelong-outreach
   text: >
@@ -490,10 +632,21 @@
   audience: [clinical, nonprofit]
   themes: [harm-reduction, service]
   verified: true
-  status: active
+  status: archived  # superseded by bullet.lifelong-harm-reduction-counseling-v2 (2026-10-22 site register pass)
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.sleep-nod-producer
 # ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.lifelong-harm-reduction-counseling-v2
+  role_id: role.lifelong-outreach
+  text: >
+    Gave 1:1 harm-reduction counseling on safer sex and substance use in bathhouses
+    and community venues.
+  tags: [harm-reduction, substance-use, peer-support, queer-competency]
+  skills: [skill.harm-reduction]
+  audience: [clinical, nonprofit]
+  themes: [harm-reduction, service]
+  status: active
 
 - id: bullet.sleep-nod-documentary
   role_id: role.sleep-nod-producer
@@ -570,7 +723,22 @@
   themes: [research-to-decision, scaling]
   metrics: [margin-improvement, "senior-labor utilization 10–15% over target → back to target"]
   verified: true
+  status: archived  # superseded by bullet.edelman-margin-improvement-v2 (2026-10-22 site register pass)
+
+- id: bullet.edelman-margin-improvement-v2
+  role_id: role.edelman-spm
+  text: >
+    Found senior-labor utilization running 10–15% over target in Edelman's reporting
+    platform and Tableau. Took quarterly staffing recommendations to the portfolio
+    VP. Utilization came back to target and portfolio margin rose 10% year over
+    year.
+  tags: [data-analysis, budget-management, stakeholder-management]
+  skills: [skill.data-analysis, skill.budget-management, skill.martech-analytics]
+  audience: [exec, leadership]
+  themes: [research-to-decision, scaling]
+  metrics: [margin-improvement, senior-labor utilization 10–15% over target → back to target]
   status: active
+
 - id: bullet.edelman-focus-group-program
   role_id: role.edelman-spm
   text: >
@@ -607,7 +775,19 @@
   audience: [exec, leadership]
   themes: [0-to-1, people-development]
   verified: true
+  status: archived  # superseded by bullet.edelman-comms-consolidation-v2 (2026-10-22 site register pass)
+
+- id: bullet.edelman-comms-consolidation-v2
+  role_id: role.edelman-spm
+  text: >
+    Reorganized how the merged creative, account, digital and media teams met,
+    reviewed work and tracked hours, and standardized it in Monday.com.
+  tags: [process-improvement, stakeholder-management, project-management, leadership]
+  skills: [skill.process-improvement, skill.stakeholder-management, skill.pm-tooling]
+  audience: [exec, leadership]
+  themes: [0-to-1, people-development]
   status: active
+
 - id: bullet.edelman-starbucks-reporting
   role_id: role.edelman-spm
   text: >
@@ -687,7 +867,20 @@
   themes: [scaling, 0-to-1]
   metrics: ["7 routines → 3", "data-to-insight ~3 days → <24h"]
   verified: true
+  status: archived  # superseded by bullet.ab-routine-consolidation-v2 (2026-10-22 site register pass)
+
+- id: bullet.ab-routine-consolidation-v2
+  role_id: role.ab-scrum
+  text: >
+    Consolidated seven team routines into three across the division. Getting from
+    data to a decision went from about three days of email to under 24 hours.
+  tags: [agile, scrum, process-improvement, leadership]
+  skills: [skill.agile-scrum, skill.process-improvement]
+  audience: [tech, exec]
+  themes: [scaling, 0-to-1]
+  metrics: [7 routines → 3, data-to-insight ~3 days → <24h]
   status: active
+
 - id: bullet.ab-portfolio-trackers
   role_id: role.ab-scrum
   text: >
@@ -715,7 +908,19 @@
   audience: [exec, leadership]
   themes: [0-to-1]
   verified: true
+  status: archived  # superseded by bullet.jump450-pmo-v2 (2026-10-22 site register pass)
+
+- id: bullet.jump450-pmo-v2
+  role_id: role.jump450-spm
+  text: >
+    Co-founded the agency PMO with the other senior PMs and the CCO. Documented the
+    practices and shared them across the agency.
+  tags: [project-management, process-improvement, leadership]
+  skills: [skill.project-management, skill.process-improvement]
+  audience: [exec, leadership]
+  themes: [0-to-1]
   status: active
+
 - id: bullet.jump450-automation
   role_id: role.jump450-spm
   text: >
@@ -730,7 +935,21 @@
   themes: [tinkering, 0-to-1]
   metrics: ["asset approval: 2–3 weeks → 3–4 days"]
   verified: true
+  status: archived  # superseded by bullet.jump450-automation-v2 (2026-10-22 register pass)
+
+- id: bullet.jump450-automation-v2
+  role_id: role.jump450-spm
+  text: >
+    Built an approval pipeline with Wegmans in Slack, Zapier, and Airtable. Assets
+    went into one Slack channel and landed in Airtable for approval. Time-to-market
+    fell from 2–3 weeks to 3–4 days.
+  tags: [process-improvement, project-management, data-analysis]
+  skills: [skill.process-improvement, skill.data-analysis, skill.pm-tooling, skill.martech-analytics]
+  audience: [tech, exec]
+  themes: [tinkering, 0-to-1]
+  metrics: ["asset approval: 2–3 weeks → 3–4 days"]
   status: active
+
 - id: bullet.jump450-analytics-report
   role_id: role.jump450-spm
   text: >
@@ -745,7 +964,21 @@
   themes: [research-to-decision]
   metrics: [time-saved, "media-team labor −~1/3"]
   verified: true
+  status: archived  # superseded by bullet.jump450-analytics-report-v2 (2026-10-22 register pass)
+
+- id: bullet.jump450-analytics-report-v2
+  role_id: role.jump450-spm
+  text: >
+    Rebuilt campaign reporting in Tableau, fed from Airtable and Wegmans' social,
+    Google, and ad-tracker data. Biweekly reports became screenshots instead of
+    hand-gathered decks. Saved each team member 4–6 hours a week.
+  tags: [data-analysis, process-improvement]
+  skills: [skill.data-analysis, skill.process-improvement, skill.martech-analytics]
+  audience: [tech, exec]
+  themes: [research-to-decision]
+  metrics: [time-saved, "media-team labor −~1/3"]
   status: active
+
 - id: bullet.jump450-dashboard-migration
   role_id: role.jump450-spm
   text: >
@@ -906,10 +1139,22 @@
   themes: [scaling]
   metrics: [production-time-reduction]
   verified: true
-  status: active
+  status: archived  # superseded by bullet.evia-production-time-v2 (2026-10-22 site register pass)
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.easy-street-producer
 # ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.evia-production-time-v2
+  role_id: role.evia-producer
+  text: >
+    Set up onsite communication on Skype for Business. Average production time fell
+    25% at large events.
+  tags: [process-improvement, event-production, project-management]
+  skills: [skill.process-improvement, skill.event-production]
+  audience: [exec]
+  themes: [scaling]
+  metrics: [production-time-reduction]
+  status: active
 
 - id: bullet.easy-street-theater
   role_id: role.easy-street-producer
@@ -933,7 +1178,20 @@
   themes: [scaling]
   metrics: [sales-growth]
   verified: true
+  status: archived  # superseded by bullet.easy-street-sales-growth-v2 (2026-10-22 site register pass)
+
+- id: bullet.easy-street-sales-growth-v2
+  role_id: role.easy-street-producer
+  text: >
+    Reworked the service flow and mise en place. Daily sales rose 35% within three
+    years.
+  tags: [process-improvement, revenue]
+  skills: [skill.process-improvement]
+  audience: [exec]
+  themes: [scaling]
+  metrics: [sales-growth]
   status: active
+
 - id: bullet.easy-street-cafe-volume
   role_id: role.easy-street-producer
   text: >
@@ -972,10 +1230,21 @@
   audience: [art-grant, creative]
   themes: [community-building, 0-to-1]
   verified: true
-  status: active
+  status: archived  # superseded by bullet.baaahs-food-program-v2 (2026-10-22 site register pass)
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.crfw-consultant (volunteer)
 # ═══════════════════════════════════════════════════════════════════════════════
+
+- id: bullet.baaahs-food-program-v2
+  role_id: role.baaahs-food-director
+  text: >
+    Designed and ran the fresh-food program for a three-day campout of 125 people in
+    a remote setting: transport, purchasing, storage and safety.
+  tags: [event-production, mutual-aid, community, organizing]
+  skills: [skill.event-production]
+  audience: [art-grant, creative]
+  themes: [community-building, 0-to-1]
+  status: active
 
 - id: bullet.crfw-estate-grants
   role_id: role.crfw-consultant
@@ -1020,7 +1289,20 @@
   themes: [community-building, service]
   metrics: [funds-raised]
   verified: true
+  status: archived  # superseded by bullet.velocity-gala-v2 (2026-10-22 site register pass)
+
+- id: bullet.velocity-gala-v2
+  role_id: role.velocity-production
+  text: >
+    Helped plan fundraising galas that raised up to $500k. Approached individual
+    patrons with Velocity to fund production grants for emerging dance artists.
+  tags: [arts-administration, event-production, community]
+  skills: [skill.arts-administration, skill.stakeholder-management]
+  audience: [art-grant, nonprofit]
+  themes: [community-building, service]
+  metrics: [funds-raised]
   status: active
+
 - id: bullet.velocity-documentary
   role_id: role.velocity-production
   text: >
@@ -1061,7 +1343,21 @@
   themes: [research-to-decision]
   metrics: ["profit margin ~40% → target 60%"]
   verified: true
+  status: archived  # superseded by bullet.suspiro-gp-optimization-v2 (2026-10-22 site register pass)
+
+- id: bullet.suspiro-gp-optimization-v2
+  role_id: role.cafe-suspiro-biz-dev
+  text: >
+    Found the menu items under a 0.7 gross-profit margin and ran a profitability
+    analysis on the owner's best sellers. Recommended recipe, price and sales-mix
+    changes to move overall margin from about 40% toward 60%.
+  tags: [data-analysis, budget-management, process-improvement]
+  skills: [skill.data-analysis, skill.budget-management]
+  audience: [exec]
+  themes: [research-to-decision]
+  metrics: [profit margin ~40% → target 60%]
   status: active
+
 - id: bullet.suspiro-barista
   role_id: role.cafe-suspiro-biz-dev
   text: >
@@ -1073,7 +1369,7 @@
   themes: [service, craft]
   metrics: ["up to 75–100 customers/day"]
   verified: false
-  status: active
+  status: archived  # hidden from renders 2026-10-22 (Dyl: go all) — barista duty was printing under the Business Development Consultant role on the All panel
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # role.crfw-archive-lead (volunteer / independent estate project)
@@ -1102,6 +1398,19 @@
   themes: [memory, 0-to-1, research-to-decision]
   metrics: [volume, file-count, coverage]
   verified: true
+  status: archived  # superseded by bullet.crfw-archive-manifest-v2 (2026-10-22 site register pass)
+
+- id: bullet.crfw-archive-manifest-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    Inventoried a 304 GB, 48,538-file digital estate into a SQLite manifest, with
+    SHA-256 checksums on the 35,866 files actually on disk. 179 GB existed only as
+    cloud placeholders; that was the archive's biggest custody risk.
+  tags: [digital-preservation, data-analysis, infrastructure]
+  skills: [skill.digital-preservation, skill.data-modeling]
+  audience: [tech, product, art-grant, nonprofit]
+  themes: [memory, 0-to-1, research-to-decision]
+  metrics: [volume, file-count, coverage]
   status: active
 
 - id: bullet.crfw-quarantine-provenance
@@ -1117,6 +1426,19 @@
   themes: [memory, craft]
   metrics: [file-count, error-rate]
   verified: true
+  status: archived  # superseded by bullet.crfw-quarantine-provenance-v2 (2026-10-22 site register pass)
+
+- id: bullet.crfw-quarantine-provenance-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    Moved 32,652 files (17.7 GB) into quarantine in five batches. Nothing was
+    deleted and every original path was logged, so any decision can be reversed. Re-
+    pathed the whole archive and repointed every tool and catalog entry.
+  tags: [digital-preservation, process-improvement, infrastructure]
+  skills: [skill.digital-preservation, skill.process-improvement]
+  audience: [tech, product, nonprofit, art-grant]
+  themes: [memory, craft]
+  metrics: [file-count, error-rate]
   status: active
 
 - id: bullet.crfw-vault-schema
@@ -1137,6 +1459,19 @@
   themes: [0-to-1, craft, memory]
   metrics: [record-count]
   verified: true
+  status: archived  # superseded by bullet.crfw-vault-schema-v2 (2026-10-22 site register pass)
+
+- id: bullet.crfw-vault-schema-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    Designed the archive's knowledge base: 2,300 records across 18 entity types,
+    each with provenance, confidence, a sensitivity tier and a publish gate. The
+    public site, the database and the explorer are all generated from it.
+  tags: [digital-preservation, data-analysis, program-design]
+  skills: [skill.data-modeling, skill.digital-preservation]
+  audience: [tech, product, academic, art-grant]
+  themes: [0-to-1, craft, memory]
+  metrics: [record-count]
   status: active
 
 - id: bullet.crfw-content-policy
@@ -1159,6 +1494,20 @@
   themes: [service, craft, resilience]
   metrics: [coverage, error-rate]
   verified: true
+  status: archived  # superseded by bullet.crfw-content-policy-v2 (2026-10-22 site register pass)
+
+- id: bullet.crfw-content-policy-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    Wrote the publishing policy for a dead person's personal material: quote it
+    verbatim, no machine interpretation, and hold anything that names a living
+    person who hasn't consented. 89 of 866 posts stayed private. 1,420 pages shipped
+    with none of them in it.
+  tags: [trust-and-safety, policy-design, digital-preservation]
+  skills: [skill.content-policy-triage]
+  audience: [tech, product, clinical, nonprofit, academic]
+  themes: [service, craft, resilience]
+  metrics: [coverage, error-rate]
   status: active
 
 - id: bullet.crfw-voice-memo-triage
@@ -1181,7 +1530,22 @@
   themes: [service, resilience, memory]
   metrics: [file-count, coverage]
   verified: true
+  status: archived  # superseded by bullet.crfw-voice-memo-triage-v2 (2026-10-22 register pass)
+
+- id: bullet.crfw-voice-memo-triage-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    Wrote the handling rules for 317 private voice recordings: flag, don't
+    interpret; name no living person. Directed the classification pass across
+    isolated review agents. Escalated 21 to human review. Recommended no public
+    access by default.
+  tags: [trust-and-safety, policy-design, digital-preservation]
+  skills: [skill.content-policy-triage, skill.agent-direction]
+  audience: [tech, product, clinical, academic, nonprofit]
+  themes: [service, resilience, memory]
+  metrics: [file-count, coverage]
   status: active
+
 
 - id: bullet.crfw-site-shipped
   role_id: role.crfw-archive-lead
@@ -1320,6 +1684,19 @@
   audience: [clinical, nonprofit, exec, leadership, art-grant, bio]
   themes: [service, community-building, resilience]
   verified: true
+  status: archived  # superseded by bullet.crfw-stakeholder-family-v2 (2026-10-22 site register pass)
+
+- id: bullet.crfw-stakeholder-family-v2
+  role_id: role.crfw-archive-lead
+  text: >
+    The project's stakeholders and reviewers are a bereaved family. Ran two rounds
+    of feedback with the artist's mother. Set up a story-intake channel that
+    defaults to unpublished and never contacts grieving people automatically.
+    Drafted the approaches to a photographer and a music writer.
+  tags: [stakeholder-management, trust-and-safety, community, arts-administration]
+  skills: [skill.stakeholder-management, skill.content-policy-triage]
+  audience: [clinical, nonprofit, exec, leadership, art-grant, bio]
+  themes: [service, community-building, resilience]
   status: active
 
 - id: bullet.crfw-program-ops

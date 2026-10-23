@@ -405,38 +405,22 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   padding: .8rem 1.4rem;
 }
 
-// ── Lens layout: sidebar + panels ────────────────────────────────────────────
+// ── Lens layout: tab row + panels ────────────────────────────────────────────
+// 2026-10-22: the sidebar became a tab row above the panels at every width,
+// and the start menu / All panel went away. One row of three, the page lands
+// on Clinical.
 
 .lens-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   scroll-margin-top: 1.5rem;
 }
 
 // Grid children default to min-width:auto, which lets the horizontally
 // scrolling lens bar stretch the whole layout on narrow screens.
 .lens-layout > * { min-width: 0; }
-
-@media (min-width: 62rem) {
-  .lens-layout {
-    grid-template-columns: 13.5rem minmax(0, 1fr);
-    gap: 3rem;
-    align-items: start;
-  }
-}
-
-.lensbar__title {
-  font-size: .78rem;
-  font-weight: 600;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin: 0 0 .8rem;
-  padding-bottom: .7rem;
-  border-bottom: 2px solid var(--ink);
-}
 
 // On a phone the pills WRAP rather than scroll sideways (site-qa run 1,
 // 2026-09-03): at 390px the fifth lens sat entirely off-screen with no hint
@@ -477,26 +461,20 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   font-weight: 500;
 }
 
-@media (min-width: 62rem) {
-  .lensbar {
-    position: sticky;
-    top: 2rem;
-  }
-  .lensbar ul {
-    flex-direction: column;
-    gap: .15rem;
-    overflow: visible;
-  }
-  .lensbar button {
-    width: 100%;
-    white-space: normal;
-    border-radius: 7px;
-    border-color: transparent;
-    background: transparent;
-    padding: .5rem .7rem;
-  }
-  .lensbar button:hover { background: var(--panel); border-color: var(--rule); }
-  .lensbar button.is-active { background: var(--accent); border-color: var(--accent); }
+// The row sticks to the top while a long panel scrolls, so switching views
+// never means scrolling back up. Background matches the page so content
+// passes cleanly underneath.
+.lensbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg);
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+@media (min-width: 46rem) {
+  .lensbar button { font-size: 1rem; padding: .5rem 1.1rem; }
 }
 
 // Windows High Contrast / forced colors strips backgrounds, and the teal
@@ -515,7 +493,6 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 
 // Progressive enhancement: with no JS every panel renders (full CV, crawlable).
 // With JS, only the selected lens shows.
-.lens-prompt { display: none; }
 .js .lens-panel { display: none; }
 .js .lens-panel.is-active { display: block; }
 
@@ -585,16 +562,15 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 
 .entry ul:empty { display: none; }
 
-// ── Print: the lens on screen, or "All" from the start menu ──────────────────
-// Printing every panel put the same roles on paper five times over (26 pages;
-// site-qa run 9, 2026-09-04). Now print shows the lens the reader chose; from
-// the start menu it prints "All". Without JS every panel still renders.
+// ── Print: the view on screen ────────────────────────────────────────────────
+// Printing every panel put the same roles on paper several times over (site-qa
+// run 9, 2026-09-04). Print shows the view the reader chose. Without JS every
+// panel still renders.
 
 @media print {
-  .lensbar, .lens-prompt, .js .lens-panel.lens-prompt, .hero__cta { display: none !important; }
+  .lensbar, .hero__cta { display: none !important; }
   .js .lens-panel { display: none !important; }
-  .js .lens-panel.is-active:not(.lens-prompt),
-  .js .lens-prompt.is-active ~ .lens-panel[data-lens="all"] { display: block !important; }
+  .js .lens-panel.is-active { display: block !important; }
   .lens-layout { display: block; padding-top: 0; }
   .link-pill { border: none; padding: 0 .4rem 0 0; }
 }
@@ -640,66 +616,6 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
   color: var(--muted);
 }
 
-// ── Start-panel menu ─────────────────────────────────────────────────────────
-// The empty prompt panel became a menu: the reader sees the whole shape of the
-// career before clicking. These buttons share the sidebar's JS handler.
-
-.lens-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  max-width: 42rem;
-  border-top: 1px solid var(--rule);
-}
-
-.lens-menu li { margin: 0; }
-
-.lens-menu button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  font: inherit;
-  cursor: pointer;
-  background: none;
-  border: 0;
-  border-bottom: 1px solid var(--rule);
-  padding: 1.05rem .5rem 1.05rem 0;
-  color: inherit;
-}
-
-.lens-menu button:hover,
-.lens-menu button:focus-visible {
-  background: var(--accent-soft);
-  padding-left: .75rem;
-  padding-right: .25rem;
-}
-
-.lens-menu__name {
-  display: block;
-  font-family: $serif;
-  font-size: 1.22rem;
-  line-height: 1.3;
-  color: var(--ink);
-  margin-bottom: .12rem;
-}
-
-.lens-menu button:hover .lens-menu__name,
-.lens-menu button:focus-visible .lens-menu__name { color: var(--accent-ink); }
-
-.lens-menu__what {
-  display: block;
-  font-size: .92rem;
-  line-height: 1.5;
-  color: var(--muted);
-}
-
-.lens-menu__aside {
-  margin: 1.1rem 0 0;
-  font-size: .88rem;
-  color: var(--faint);
-  max-width: 42rem;
-}
-
 // Credential chips now live in the Education section, not the hero.
 .creds--edu { margin: 0 0 .5rem; }
 
@@ -718,6 +634,6 @@ a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
 .entry__org a:hover, .entry__org a:focus { color: var(--accent-ink); text-decoration-color: currentColor; }
 
 @media print {
-  .lens-menu, .lens-menu__aside, .hero--greeting { display: none !important; }
+  .hero--greeting { display: none !important; }
   .entry__org a { color: #000; text-decoration: none; }
 }
