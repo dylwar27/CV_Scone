@@ -9,54 +9,26 @@
     <p class="site-footer__legal">&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</p>
   </div>
 </footer>
+{%- comment -%}
+  Old deep links (2026-10-24). The chooser and its tabs are gone; each track is
+  its own page now. The résumés and older posts link to /#view-clinical and
+  friends, so on the main page those hashes forward to the matching track page.
+  Same aliases the tab script used: digital/teaching/all were folded into
+  Clinical, onsite into Creative; Agency is now Project management and
+  Creative is now Events & production.
+{%- endcomment -%}
+{%- if page.url == "/" %}
 <script>
 (function () {
-  var bar = document.querySelector('[data-lensbar]');
-  if (!bar) return;
-  // Three tabs, three panels (2026-10-22). The start menu and the All panel
-  // are gone; the page lands on Clinical.
-  var buttons = bar.querySelectorAll('button[data-lens]');
-  var clickable = document.querySelectorAll('button[data-lens]');
-  var panels  = document.querySelectorAll('.lens-panel[data-lens]');
-  // Old deep links still land: Arts+Onsite merged 2026-09-02; Health IT & Data
-  // folded into Clinical and Teaching cut 2026-09-08; All cut 2026-10-22.
-  var ALIAS = { onsite: 'arts', digital: 'clinical', teaching: 'clinical', all: 'clinical' };
-  var DEFAULT = 'clinical';
-
-  function show(lens, push) {
-    var found = false;
-    for (var i = 0; i < panels.length; i++) {
-      var on = panels[i].getAttribute('data-lens') === lens;
-      panels[i].classList.toggle('is-active', on);
-      if (on) found = true;
-    }
-    if (!found) return false;
-    for (var j = 0; j < buttons.length; j++) {
-      var active = buttons[j].getAttribute('data-lens') === lens;
-      buttons[j].setAttribute('aria-pressed', active ? 'true' : 'false');
-      buttons[j].classList.toggle('is-active', active);
-    }
-    // A click from the sticky sidebar while deep in a long panel would otherwise
-    // land mid-way through the new one; bring the lens layout back into view.
-    if (push) {
-      var layout = document.querySelector('.lens-layout');
-      if (layout && layout.getBoundingClientRect().top < 0) layout.scrollIntoView();
-    }
-    if (push && history.replaceState) {
-      history.replaceState(null, '', '#view-' + lens);
-    }
-    return true;
-  }
-
-  for (var k = 0; k < clickable.length; k++) {
-    clickable[k].addEventListener('click', function () {
-      show(this.getAttribute('data-lens'), true);
-    });
-  }
-
-  // Deep link: /#view-clinical opens straight into that lens.
   var m = location.hash.match(/^#view-([a-z]+)$/);
-  var want = m ? (ALIAS[m[1]] || m[1]) : null;
-  if (!want || !show(want, false)) show(DEFAULT, false);
+  if (!m) return;
+  var TO = {
+    clinical: 'clinical', digital: 'clinical', teaching: 'clinical', all: 'clinical',
+    agency: 'projects',
+    arts: 'events', onsite: 'events'
+  };
+  var to = TO[m[1]];
+  if (to) location.replace('{{ "/" | relative_url }}' + to + '/');
 })();
 </script>
+{%- endif %}

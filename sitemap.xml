@@ -4,6 +4,9 @@ layout: none
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://dylanward.work/</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod></url>
+  <url><loc>https://dylanward.work/clinical/</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod></url>
+  <url><loc>https://dylanward.work/projects/</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod></url>
+  <url><loc>https://dylanward.work/events/</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod></url>
   <url><loc>https://dylanward.work/assets/Dylan_Ward_Resume.pdf</loc></url>
   <url><loc>https://dylanward.work/resume.txt</loc></url>
 </urlset>

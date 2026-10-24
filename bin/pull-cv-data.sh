@@ -44,7 +44,7 @@ import re, sys
 src, dst = sys.argv[1], sys.argv[2]
 out, skipping = [], False
 for line in open(src, encoding="utf-8"):
-    if re.match(r"^  (notes|source|star):", line):
+    if re.match(r"^  (notes|source|star|email|phone):", line):
         skipping = True
         continue
     if skipping:

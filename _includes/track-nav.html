@@ -1,0 +1,18 @@
+{%- comment -%}
+  Bottom of each track page (2026-10-24): back to the main page, the other two
+  tracks, and the PDF. Hidden in print (.jump), so a printed track page stays a
+  clean one-page résumé. Param: current = clinical | projects | events.
+{%- endcomment -%}
+<nav class="jump" aria-label="More">
+  <a href="{{ '/' | relative_url }}">Main page</a>
+  {%- unless include.current == "clinical" %}
+  <a href="{{ '/clinical/' | relative_url }}">Clinical operations</a>
+  {%- endunless -%}
+  {%- unless include.current == "projects" %}
+  <a href="{{ '/projects/' | relative_url }}">Project management</a>
+  {%- endunless -%}
+  {%- unless include.current == "events" %}
+  <a href="{{ '/events/' | relative_url }}">Events &amp; production</a>
+  {%- endunless %}
+  <a href="{{ '/assets/Dylan_Ward_Resume.pdf' | relative_url }}">One-page r&eacute;sum&eacute; (PDF)</a>
+</nav>
